@@ -23,7 +23,7 @@ Next.js Web ───────► FastAPI REST API ───────► P
                            │
                            ├── Ingestion & processing workers
                            ├── Bounded multi-agent workflows
-                           ├── Alert and brief generation
+                           ├── Workday brief generation
                            └── Playwright PDF generation
 
 Local collectors / WorkBuddy ──► Restricted Ingestion API
@@ -143,7 +143,7 @@ MVP 搜索：
 - Payload: JSON serializer，不使用不受信任的任意对象反序列化
 - Scheduling: 只允许一个有效 Scheduler；MVP 可由一个 Worker 启用 Scheduler
 
-08:00融资审核批次、08:00免打扰Alert汇总和08:30 Brief截止是三个独立的幂等任务；需错峰或设置队列优先级，且分别保存运行审计。
+调度基于版本化的中国大陆官方工作日历。仅工作日运行08:00融资审核批次、08:30 Brief截止和09:00发布；调休补班日运行，非工作日跳过Brief任务。采集、处理与满足自动证据门槛的融资看板更新全年持续运行。任务保持独立幂等并分别保存运行审计。
 
 所有任务必须：
 
@@ -178,9 +178,9 @@ MVP 搜索：
 ### 6.2 Logged-in and Chinese App Sources
 
 - 云端：公开来源和无需个人登录的持续采集。
-- 本地/WorkBuddy：微信公众号、小红书及需要个人账号的 B站、X、LinkedIn 等。
+- 本地Codex与WorkBuddy：均可处理需要个人账号的来源；WorkBuddy优先覆盖微信公众号、小红书、B站等中国App，Codex同时负责X、LinkedIn及其他登录态平台。
 - 个人 Cookie、Session、Token 和 Browser Profile 永不上传云端。
-- 本地采集器只上传规范化候选内容、必要证据和健康状态。
+- Codex与WorkBuddy通过同一受限Ingestion API，只上传规范化候选内容、必要证据和健康状态。
 - 每台设备使用独立、可撤销且权限受限的 Ingestion Token。
 - 本地来源未及时同步时，Brief 必须显示覆盖缺口。
 
@@ -235,6 +235,8 @@ MVP 搜索：
 
 PDF 在 Railway 的低优先级后台任务生成。PDF 失败不阻塞网页发布和通知，可重试并稍后补发链接。PDF 保留可点击原始来源，不作为唯一历史格式；同时保存结构化数据和 Markdown 导出。
 
+长假后的PDF仍只渲染15–25条核心内容，并链接到Web端可展开的“假期更多动态”；额外Event保留在结构化数据库中。
+
 ## 10. Object Storage
 
 - Provider: **Cloudflare R2**
@@ -245,27 +247,21 @@ PDF 在 Railway 的低优先级后台任务生成。PDF 失败不阻塞网页发
 
 存储网页快照、论文/公告、字幕、允许保存的媒体、生成 PDF 和导出文件。关键对象必须有独立备份，业务代码不得依赖 R2 专有 API。
 
-## 11. Delivery and Alerts
+## 11. Delivery
 
 ### 11.1 Daily Brief and Feishu Agent
 
-- Conversation layer: **Hermes Agent**
+- Conversation layer: 首选 **Hermes Agent**；生产接入不稳定时使用直接飞书应用/机器人Adapter降级
 - Channel: 飞书第三方智能体，MVP只向Admin私聊
 - Push：09:00发送前三条重点、Web Brief和PDF入口
 - Q&A：通过受限只读Tools/API查询事件、融资和最多5家公司对比
 - Interface: `NotificationChannel` + scoped agent tools
 
-Hermes不得直连PostgreSQL，也不得拥有审核、编辑Watchlist或其他写权限。每次发送写入 `DeliveryAttempt`，包含渠道、目标、Brief版本、时间、结果、错误和重试次数。飞书/Hermes失败不阻塞Web或PDF；MVP不提供邮件兜底。
+Hermes与直接飞书降级Adapter均不得直连PostgreSQL，也不得拥有审核、编辑Watchlist或其他写权限；两者必须复用相同Tool API、Scope、限流和审计。每次发送写入 `DeliveryAttempt`，包含渠道、目标、Brief版本、时间、结果、错误和重试次数。飞书/Hermes失败不阻塞Web或PDF；MVP不提供邮件兜底。
 
-### 11.2 Breaking Alerts
+### 11.2 Deferred Breaking Alerts
 
-采用：规则高召回 → Event 合并/去重/旧闻识别 → Verifier 模型复核 → 必要时人工审核。
-
-- P0：证据明确的重大事件可自动立即提醒。
-- P1：高影响但证据不足，进入快速人工审核。
-- P2：普通更新进入下一份 Brief。
-- 同一 Event 只允许一个有效突发提醒；实质变化可作为 Update。
-- Watchlist、阈值和每日上限由 Admin 配置，不写死。
+MVP不实现突发提醒、夜间提醒或免打扰汇总。重大事件仍进入优先审核，但只在下一个中国大陆法定工作日的09:00 Brief递送。未来若重新启用提醒，必须重新确认触发条件、免打扰、去重和权限，并更新产品文档。
 
 ## 12. Deployment
 
@@ -384,11 +380,10 @@ Notes 正文、划线文本和私人搜索词不得进入分析事件。关键�
 
 - UI 视觉风格与 `UI_STYLE_GUIDE.md`；
 - 首批 Source Registry 与 Watchlist 清单；
-- 融资来源等级、汇率供应商和Timeline对比视觉；
-- Hermes生产部署、飞书第三方智能体授权及未来部门权限；
+- 首批融资来源名单、汇率供应商和Timeline对比视觉；
+- Hermes生产部署、直接飞书降级Adapter、飞书授权及未来部门权限；
 - 国内模型供应商及具体模型，等待固定评测集对比；
-- Assessment 初始权重、自动发布和提醒阈值；
-- WorkBuddy 交换协议的最终字段与错误语义；
+- Codex/WorkBuddy本地采集交换协议的最终字段与错误语义；
 - 未来研究 Agent 的产品形态、权限和工具集合；
 - 公开发布、商业模式和多组织权限；
 - 公开/商业化后的部署与通知方案。

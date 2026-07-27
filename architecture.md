@@ -10,7 +10,7 @@
 > 多Agent规则：[`AGENTS.md`](./AGENTS.md)
 > 实际进度：[`progress.md`](./progress.md)
 
-本文件描述系统如何拆分、组件如何通信、数据如何流动，以及关键故障如何降级。它不替代产品需求，也不锁定仍未确认的UI、模型、来源清单和评分阈值。
+本文件描述系统如何拆分、组件如何通信、数据如何流动，以及关键故障如何降级。它不替代产品需求，也不锁定仍未确认的UI、模型、来源清单和Assessment权重。
 
 ## 1. 架构目标
 
@@ -18,10 +18,10 @@
 
 1. 重要信息尽量不漏；
 2. 所有发布事实可追溯至原始来源；
-3. 每天09:00稳定发布，即使部分来源或下游失败；
+3. 每个中国大陆法定工作日09:00稳定发布，即使部分来源或下游失败；
 4. 同一真实事件只形成一个Event；
 5. 融资统计可重算、可解释、可纠正；
-6. 人工审核控制在每天30分钟内；
+6. 人工审核控制在每个工作日30分钟内；
 7. Hermes、WorkBuddy、模型和云平台均可替换；
 8. 个人登录态不离开本地；
 9. 核心数据可备份、导出和迁移；
@@ -48,15 +48,18 @@ MVP采用 **Monorepo + Modular Monolith + 独立Worker**。当前规模不拆微
 flowchart LR
     Admin["Admin / 战投用户"]
     PublicSources["公开来源\n官网、RSS、arXiv、媒体、监管"]
-    ChinaApps["中国App与登录态来源"]
-    WorkBuddy["WorkBuddy / 本地采集器"]
+    LoggedInSources["中国App、X、LinkedIn\n及其他登录态来源"]
+    CodexLocal["Codex本地采集器"]
+    WorkBuddy["WorkBuddy本地采集器"]
     System["Embodied News"]
     Models["OpenAI与候选国内模型"]
     Feishu["飞书"]
     Hermes["Hermes Agent"]
 
     PublicSources -->|"公开采集"| System
-    ChinaApps -->|"本地登录态访问"| WorkBuddy
+    LoggedInSources -->|"本地登录态访问"| CodexLocal
+    LoggedInSources -->|"本地登录态访问"| WorkBuddy
+    CodexLocal -->|"受限Ingestion API"| System
     WorkBuddy -->|"受限Ingestion API"| System
     System -->|"结构化模型请求"| Models
     Admin -->|"Web审核与阅读"| System
@@ -67,8 +70,9 @@ flowchart LR
 
 信任边界：
 
-- 公开网页、上传文件和WorkBuddy输入均是不可信内容；
-- WorkBuddy可信地代表一台授权设备，但其提交内容仍需核验；
+- 公开网页、上传文件、Codex与WorkBuddy输入均是不可信内容；
+- Codex与WorkBuddy分别可信地代表一台授权本地设备，但其提交内容仍需核验；
+- 授权设备可自动提交候选，但Ingestion API成功只代表接收，不代表核验、正式入库或发布；
 - Hermes只可信地持有受限只读凭证，不可信任其自由生成内容；
 - 模型输出是候选判断，必须通过Schema验证、规则和发布门槛；
 - Admin是MVP唯一可执行审核和纠正的用户。
@@ -149,7 +153,7 @@ backend/src/
   domain/
     intelligence/            Source、Event、Entity、Topic、Assessment
     financing/               融资聚合、断言、状态和统计规则
-    publishing/              Brief、版本、Alert、Delivery
+    publishing/              Brief、版本、Delivery、工作日历
     review/                  ReviewBatch、ReviewItem、ReviewDecision
     identity/                User、Role、Permission、API credential
   application/
@@ -298,7 +302,7 @@ sequenceDiagram
 
 所有入口进入同一条处理链。CSV/JSON允许部分成功：成功行入队，失败行返回稳定错误码和行号。
 
-个人Cookie、Session、Token和Browser Profile永不进入云端。WorkBuddy离线或数据陈旧必须显示覆盖降级。
+个人Cookie、Session、Token和Browser Profile永不进入云端。任一Codex/WorkBuddy本地采集器离线或数据陈旧时，必须按受影响平台显示覆盖降级。
 
 ## 9. 融资处理流
 
@@ -324,6 +328,10 @@ flowchart TD
     Decision --> Reject["rejected"]
 ```
 
+独立来源按原始证据链判断，而不是按URL或媒体数量判断。转载同一报道、引用同一匿名爆料或复述同一社交帖子只形成一个证据链；公司与投资机构分别发布的公告可形成两个独立证据链。官方一手来源也必须通过实体、关键字段和冲突校验。
+
+Source Registry保存版本化可信度等级与分数：A为90–100、B为75–89、C为55–74、D为0–54。A级通过校验可单独确认，两个不同证据链的B级可多来源确认，两个C级不能自动确认，D级只能待核实。等级调整创建新版本，不回写旧Assessment。
+
 必须分离：
 
 - `verification_status`；
@@ -333,21 +341,27 @@ flowchart TD
 
 重要性评分不能代替事实核验。待证实、冲突、驳回、撤回或被替代数据默认不进入正式统计。
 
+Daily Brief自动进入门槛为：证据状态合格、相关性评分≥70、影响力评分≥60且无冲突或风险标记。各分项使用0–100；相关性、事件影响、来源可信度、新颖性、Watchlist相关性、多来源验证的初始权重为25%、25%、20%、10%、10%、10%。综合分只用于排序和栏目，权重与阈值作为版本化配置保存；已确认但低影响内容进入“更多值得关注”，其他相关候选继续保留。
+
+融资FX派生值优先使用正式公告日汇率；当天无值时使用此前最近可用工作日；只知月份时使用月末最后可用工作日并标记估算。换算记录保存供应商、汇率日期、方法和版本；后续补充披露不覆盖旧值，只有交易日期被正式纠正时创建新版本并重算。
+
 ## 10. 审核与早间调度
 
 ```mermaid
 timeline
-    title Asia/Shanghai 每日关键调度
+    title Asia/Shanghai 中国大陆法定工作日调度
     08:00 : 生成融资ReviewBatch
-          : 汇总免打扰Alert（独立任务）
     08:00-08:30 : Admin处理最多15个必审项
     08:30 : 冻结Brief候选快照
     08:30-09:00 : Editor编排与发布前校验
     09:00 : 发布Web Brief
           : Hermes向飞书私聊递送
     09:00之后 : PDF完成或重试
-              : 迟到高优先级事件走Alert
 ```
+
+调度器读取版本化的中国大陆官方工作日历：调休补班日按工作日运行，非工作日跳过全部Brief、PDF和飞书递送任务。采集、处理、核验与满足自动证据门槛的融资看板更新全年持续运行；待审核事件保留至下一工作日批次。非工作日及08:30后事件进入下一个工作日Brief，早报页显示上一份Brief和下一次发布时间。
+
+长假后Brief Composer仍选择15–25条核心内容和3–5条重点；其他相关Event进入可展开的“假期更多动态”。BriefVersion保存累计候选数、核心收录数和覆盖区间；PDF只渲染核心内容并链接到Web完整列表。
 
 审核中心：
 
@@ -357,7 +371,7 @@ timeline
 - 支持通过、修改后通过、待证实、驳回、合并、重新处理和批量通过；
 - 未审核时只允许满足自动证据门槛的内容发布。
 
-08:00融资审核、08:00 Alert汇总、08:30 Brief冻结必须具有不同任务类型、幂等键和运行审计。
+08:00融资审核、08:30 Brief冻结和09:00发布必须具有不同任务类型、幂等键和运行审计。MVP不创建Alert汇总任务。
 
 ## 11. Brief生成与递送
 
@@ -433,7 +447,7 @@ flowchart LR
 - Hermes不是唯一Scheduler或事实源；
 - Prompt Injection不能改变工具权限。
 
-Hermes生产部署方式、飞书第三方智能体授权步骤和凭证轮换仍需单独验证并形成运行手册。
+Hermes是首选对话层。其生产部署或第三方智能体授权不稳定时，系统可切换到直接飞书应用/机器人Adapter；两者复用同一Agent Tool Gateway、只读Scope、限流和审计。具体授权步骤、凭证轮换和切换手册仍需验证。
 
 ## 13. API边界
 
@@ -487,7 +501,7 @@ Hermes生产部署方式、飞书第三方智能体授权步骤和凭证轮换�
 
 队列：
 
-- `high`：09:00发布、突发Alert、关键审核后处理；
+- `high`：09:00发布、关键审核后处理；
 - `default`：常规采集、Event处理、融资核验、递送；
 - `low`：历史回溯、PDF、重新嵌入、批量导出。
 
@@ -513,7 +527,7 @@ brief-delivery:{brief_version_id}:{channel}:{recipient}
 pdf-render:{brief_version_id}:{template_version}
 ```
 
-任务重放不得重复创建Event、融资累计、Alert、Brief条目、模型费用或消息递送。
+任务重放不得重复创建Event、融资累计、Brief条目、模型费用或消息递送。
 
 ## 15. 搜索与Read Model
 
@@ -533,6 +547,8 @@ MVP只实现早报、事件、融资和Hermes问答需要的查询：
 - 每张卡片记录时间范围、交易类型、核验/发布状态、未披露数量和更新时间；
 - 首页融资总额只含股权融资与战略投资；
 - 缓存/物化视图可丢弃并重建。
+
+31家公司回溯采用分层覆盖：19家全栈至少检查官方渠道与两个外部融资/新闻来源，5家大脑和7家本体至少检查官方渠道与一个外部来源。按公司保存检查来源、最后检查时间、覆盖状态和缺口；无融资结果必须有覆盖证据，不能由空白推断。
 
 ## 16. 存储架构
 
@@ -634,7 +650,7 @@ PostgreSQL保存：
 - Brief发布与纠正；
 - PDF生成；
 - Hermes/飞书调用；
-- Alert与DeliveryAttempt；
+- DeliveryAttempt；
 - 备份和恢复检查。
 
 Admin需要看到：
@@ -649,7 +665,7 @@ Admin需要看到：
 
 ## 19. 备份与恢复
 
-- 每日Brief发布后执行PostgreSQL逻辑备份；
+- 每份工作日Brief发布后执行PostgreSQL逻辑备份，同时保持数据库每日备份策略；
 - R2根据SHA-256清单进行对象增量备份；
 - 备份加密并存入独立故障域；
 - 保留7天每日、8周每周、12个月每月备份；
@@ -664,7 +680,7 @@ Admin需要看到：
 | 故障 | 用户表现 | 系统行为 | 是否阻塞09:00 Web |
 | --- | --- | --- | --- |
 | 单个公开来源失败 | 显示覆盖缺口 | 有限重试，保留最后成功时间 | 否 |
-| WorkBuddy离线 | 中国App覆盖降级 | 保留待同步状态 | 否 |
+| Codex或WorkBuddy本地采集器离线 | 对应登录态平台覆盖降级 | 按设备保留待同步状态 | 否 |
 | Redis短暂不可用 | 任务延迟 | 从PostgreSQL审计恢复/重放 | 视恢复时间，必须告警 |
 | 模型供应商失败 | 摘要/核验降级 | 规则、缓存结果或后备模型 | 否，禁止编造 |
 | Event聚类低置信 | 进入审核 | 不自动错误合并 | 否 |
@@ -702,7 +718,7 @@ FastAPI与Worker使用同一Python镜像、不同启动命令。生产容器必�
 
 - Next.js、FastAPI、RQ默认在本机运行；
 - Docker Compose运行本地PostgreSQL和Redis；
-- WorkBuddy与本地采集器作为独立进程；
+- Codex本地采集器与WorkBuddy作为独立进程；
 - 本地不得连接生产数据库做普通开发；
 - CI必须真实构建生产镜像。
 
@@ -728,7 +744,7 @@ MVP没有高并发目标，主要容量风险来自采集、模型处理、历�
 资源原则：
 
 - 08:00–09:00暂停或限速非关键历史回溯；
-- `high`队列预留给审核后处理、Brief和突发Alert；
+- `high`队列预留给审核后处理和工作日Brief；
 - PDF与批量回溯进入`low`队列；
 - 单任务设置正文大小、附件大小、页面数、模型调用数和最长时限；
 - 对Source、设备、Hermes工具和用户API分别限流；
@@ -768,12 +784,11 @@ MVP没有高并发目标，主要容量风险来自采集、模型处理、历�
 
 以下事项尚未锁定：
 
-- Hermes生产部署方式和飞书第三方智能体授权；
-- 首批具体Source Registry及可信度等级；
-- WorkBuddy最终交换Schema、版本和错误语义；
-- 汇率供应商与历史重算策略；
+- Hermes生产部署、直接飞书降级Adapter和飞书授权；
+- 首批具体Source Registry名单；
+- Codex/WorkBuddy本地采集最终交换Schema、版本和错误语义；
+- 具体汇率供应商；
 - 国内模型及评测结果；
-- Assessment初始权重和自动发布阈值；
 - Timeline最终可视化形式；
 - UI视觉规范；
 - 公开和部门级权限。
@@ -793,11 +808,12 @@ MVP没有高并发目标，主要容量风险来自采集、模型处理、历�
 - 任务可幂等重放；
 - Brief发布使用不可变快照；
 - 部分来源、PDF或飞书失败不阻塞Web；
-- WorkBuddy个人登录态不上云；
+- Codex与WorkBuddy个人登录态均不上云；
 - Hermes只读且通过白名单工具；
 - 所有发布事实可回溯；
 - 关键运行、审核、递送与模型调用可审计；
 - Schema变化通过Alembic；
 - 核心数据可备份、恢复和导出；
 - MVP成本保持在预算内；
+- 可控时钟通过7个完整工作日周期调度测试；真实09:00连续工作日运行证据按实际数量记录并在不足7个工作日时上线后继续补足；
 - `design-document.md`第13节验收可被自动或人工验证。
