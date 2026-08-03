@@ -1,8 +1,8 @@
 # Agent 协作与职责说明
 
-> 版本：v0.1  
+> 版本：v0.2
 > 状态：生效  
-> 更新日期：2026-07-30  
+> 更新日期：2026-08-03
 > 架构基线：`architecture.md`  
 > 产品基线：`PRD.md`
 
@@ -18,14 +18,14 @@
 6. GitHub Actions执行定时任务、补跑、构建和发布。
 7. GitHub Pages托管公开新闻网站。
 
-当前阶段是工程实现准备期。开始主要功能前，先完成工程骨架、领域契约、运行时 Schema、Fixture、Mock 和飞书字段设计。
+当前已完成工程骨架、领域契约、候选处理和日报基础能力，正在进入公开投影、网站、自动化和七天真实闭环验收。
 
 ## 2. 协作原则
 
 1. `architecture.md` 是组件、数据流、部署、安全边界和架构不变量的最高参考。
 2. `PRD.md` 定义产品范围和用户价值。
-3. Codex是主工程和集成 Agent。
-4. Claude Code只做独立只读审核。
+3. 主 Agent 是唯一任务编排者和最终集成负责人。
+4. 开发、Git、每日搜索、测试和 UI 由边界明确的专职子 Agent 执行。
 5. WorkBuddy和 OpenAI是产品中的研究 Agent，不是代码开发者。
 6. GitHub Actions是确定性自动化执行器，不自主改变业务规则。
 7. 人类团队拥有事实审核、公开决策和内部战投判断的最终权力。
@@ -34,25 +34,45 @@
 
 ## 3. 角色与职责
 
-### 3.1 Codex：主工程与集成 Agent
+### 3.1 主 Agent：Orchestrator / Tech Lead
 
-Codex负责：
+主 Agent 负责：
 
 - 维护架构和产品需求的一致性。
 - 冻结领域类型、运行时 Schema、公开 DTO 和飞书字段映射。
-- 开发项目飞书 CLI。
-- 开发 WorkBuddy候选导入和 OpenAI Provider。
-- 开发候选处理、去重、置信度、审核和日报流水线。
-- 开发 Next.js 静态网站。
-- 配置 GitHub Actions和 GitHub Pages。
-- 组织测试、集成、故障修复和生产验收。
-- 分配边界明确的辅助任务。
+- 把实施计划拆成单一可验证任务，指定文件边界、依赖和验收标准。
+- 只向一个代码开发 Agent 授予实现任务，避免多个开发者同时修改共享契约。
+- 组织两条独立测试线、UI 验收、Git 交付和生产验收。
 - 复现和处理 Claude Code审核意见。
 - 完成重大功能后更新 `progress.md`。
 
-Codex对最终集成结果、测试状态和交接完整性负责。
+主 Agent 原则上不与子 Agent 同时修改业务代码；只在集成冲突、紧急修复或共享契约必须统一时直接修改。主 Agent 对最终集成结果、测试状态和交接完整性负责。
 
-### 3.2 Claude Code：独立只读审核 Agent
+### 3.2 代码开发 Agent：Implementation Engineer
+
+唯一的主力代码实现者，负责 CLI、领域流水线、Provider、公开投影、自动化脚本和网站逻辑。必须在分配的文件范围内工作，为新行为增加测试，不执行 commit、push、merge 或发布。
+
+### 3.3 Git 管理 Agent：Release Manager
+
+唯一默认有权执行分支、暂存、commit、rebase、push 和 PR 操作的子 Agent。它先核对工作树、测试证据和变更范围，不修改业务逻辑，不自行解决产品或架构分歧。所有不可逆、对外可见或生产发布动作仍需用户明确授权。
+
+### 3.4 每日搜索管理 Agent：Research Operations
+
+维护观察清单、查询矩阵、国内 WorkBuddy 交接和海外 OpenAI 搜索运行；记录搜索覆盖、空结果、失败和候选转化。它只能创建候选或搜索建议，不能批准、发布、修改正式事件或读取内部战投备注。
+
+### 3.5 测试 Agent A：Contract & Integration QA
+
+负责领域契约、Schema、Provider Adapter、飞书 Repository、幂等、重试和公开数据隔离测试。优先构造失败路径和回归用例，不修改生产实现来让测试通过。
+
+### 3.6 测试 Agent B：E2E, Security & Reliability QA
+
+负责网站 E2E、base path、链接、移动端、敏感字段扫描、定时任务恢复、构建产物和发布 smoke test。与测试 Agent A 使用不同视角和验收清单，不重复代码开发 Agent 的自测结论。
+
+### 3.7 UI 设计 Agent：Product Designer
+
+负责信息架构、设计 token、组件规格、页面状态、响应式、可访问性和视觉验收。默认交付设计规格和审查意见；只在主 Agent 明确分配独立 UI 文件时修改样式或组件。
+
+### 3.8 Claude Code：阶段性独立只读审核
 
 Claude Code只在功能已经完成基础测试后介入，审核：
 
@@ -75,7 +95,7 @@ Claude Code不得：
 
 审核意见必须包含文件位置、复现条件、影响和优先级。Codex负责复现、修复和回归验证。
 
-### 3.3 WorkBuddy：国内研究 Agent
+### 3.9 WorkBuddy：国内研究工具
 
 WorkBuddy负责发现：
 
@@ -97,7 +117,7 @@ WorkBuddy不得：
 
 如果 WorkBuddy只有个人客户端，则不承担无人值守生产 SLA。只有确认公司级 API、统一身份和可交接运行环境后，才允许进入自动调度。
 
-### 3.4 OpenAI：海外研究与内容处理 Agent
+### 3.10 OpenAI：海外研究与内容处理 Provider
 
 OpenAI负责：
 
@@ -118,7 +138,7 @@ OpenAI不得：
 - 读取内部战投备注。
 - 绕过人工审核和公开字段投影。
 
-### 3.5 GitHub Actions：自动化执行器
+### 3.11 GitHub Actions：自动化执行器
 
 GitHub Actions负责运行已经冻结的 CLI 和脚本：
 
@@ -139,7 +159,7 @@ GitHub Actions不得：
 - 将生产 Secrets提供给不可信 Pull Request。
 - 在发布失败时修改飞书正式数据。
 
-### 3.6 人类产品与战投团队
+### 3.12 人类产品与战投团队
 
 人类团队负责：
 
@@ -154,9 +174,9 @@ GitHub Actions不得：
 
 飞书中的正式审核结果是发布决策依据。
 
-### 3.7 辅助开发 Agent
+### 3.13 其他临时辅助 Agent
 
-Codex可以将以下工作交给辅助开发 Agent：
+只有用户或主 Agent 明确需要额外专业能力时，才可在固定六个子 Agent 之外临时分配：
 
 - Fixture 和 Mock。
 - 独立单元测试。
@@ -176,18 +196,23 @@ Codex可以将以下工作交给辅助开发 Agent：
 - 环境变量和 Secrets 名称
 - 生产 GitHub Actions Workflow
 
-这些共享契约由 Codex统一修改和集成。
+这些共享契约由主 Agent 统一修改和集成。
 
 ## 4. 标准协作流程
 
 ```mermaid
 flowchart LR
-    User["用户确认方向"] --> CodexPlan["Codex 冻结任务与文件边界"]
-    CodexPlan --> Implement["Codex 或辅助 Agent 实现小任务"]
-    Implement --> Tests["执行任务测试"]
-    Tests --> Integrate["Codex 集成与全量验证"]
-    Integrate --> Review["Claude Code 只读审核重大功能"]
-    Review --> Fix["Codex 复现、修复与回归"]
+    User["用户确认方向"] --> Lead["主 Agent 冻结任务与文件边界"]
+    Lead --> Implement["代码开发 Agent 实现"]
+    Lead --> Design["UI Agent 交付规格"]
+    Implement --> QA1["测试 A：契约与集成"]
+    Implement --> QA2["测试 B：E2E、安全与可靠性"]
+    Design --> QA2
+    QA1 --> Integrate["主 Agent 集成与全量验证"]
+    QA2 --> Integrate
+    Integrate --> Git["Git Agent 检查与交付"]
+    Git --> Review["Claude Code 阶段性只读审核"]
+    Review --> Fix["主 Agent 分配修复与回归"]
     Fix --> Progress["更新 progress.md"]
     Progress --> Next["进入下一里程碑"]
 ```

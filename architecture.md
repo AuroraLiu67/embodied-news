@@ -1476,3 +1476,32 @@ MVP 架构不包含：
 5. 自动任务不得依赖个人电脑或交互式 Codex 会话。
 6. GitHub Pages只托管静态公开产物。
 7. 所有生产资源必须归公司并可交接。
+
+## 12. 开发 Agent 控制面
+
+开发协作采用一个主 Agent 和六个专职子 Agent，它们是工程控制面，不是生产数据流的一部分：
+
+```mermaid
+flowchart TB
+    Lead["主 Agent<br/>任务分解、契约和集成"]
+    Dev["代码开发 Agent"]
+    Git["Git 管理 Agent"]
+    Search["每日搜索管理 Agent"]
+    QA1["测试 A<br/>契约与集成"]
+    QA2["测试 B<br/>E2E、安全与可靠性"]
+    UI["UI 设计 Agent"]
+    Lead --> Dev
+    Lead --> Git
+    Lead --> Search
+    Lead --> QA1
+    Lead --> QA2
+    Lead --> UI
+    Dev --> QA1
+    Dev --> QA2
+    UI --> Dev
+    QA1 --> Lead
+    QA2 --> Lead
+    Git --> Lead
+```
+
+主 Agent 是唯一调度和最终集成负责人；代码开发 Agent 是唯一默认业务代码实现者；Git 管理 Agent 是唯一默认交付操作者；每日搜索管理 Agent 只能产生候选或建议；两个测试 Agent 保持独立验收视角；UI Agent 维护设计契约和视觉验收。详细权限、文件所有权和交接模板以 `agent-coordination.md` 为准。
