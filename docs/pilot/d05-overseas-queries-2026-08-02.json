@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1",
+  "queries": [
+    {
+      "queryId": "priority-companies",
+      "query": "Search official company, investor, regulator and government sources for funding announcements by priority overseas Physical AI and embodied intelligence companies, including Sunday Robotics, Figure AI, Physical Intelligence, Skild AI, 1X, Apptronik, Agility Robotics, Sanctuary AI, Field AI and adjacent emerging companies."
+    },
+    {
+      "queryId": "foundation-vla-world-models",
+      "query": "Search for funding announcements involving robotics foundation models, embodied foundation models, VLA, robot learning, world models, spatial intelligence, action models and physical reasoning."
+    },
+    {
+      "queryId": "humanoid-full-stack-mobile-manipulation",
+      "query": "Search for funding announcements involving humanoid robots, full-stack Physical AI, mobile manipulation, general-purpose robots, industrial robots, logistics robots and service robots."
+    },
+    {
+      "queryId": "simulation-data-video",
+      "query": "Search for funding announcements involving physical simulation, robot simulation, synthetic data, teleoperation data collection, motion capture, video generation for Physical AI and robotics training infrastructure."
+    },
+    {
+      "queryId": "arms-hands-sensors",
+      "query": "Search for funding announcements involving robotic arms, dexterous hands, end effectors, tactile sensing, force sensing, vision sensors, proprioception and multimodal robot sensors."
+    },
+    {
+      "queryId": "actuation-components",
+      "query": "Search for funding announcements involving robot actuators, motors, reducers, harmonic drives, planetary rollers, ball screws, linear motion, bearings, encoders, controllers and power electronics."
+    },
+    {
+      "queryId": "compute-energy-thermal",
+      "query": "Search for funding announcements involving edge AI compute for robots, inference chips, batteries, charging, thermal management, liquid cooling and other upstream Physical AI infrastructure."
+    },
+    {
+      "queryId": "new-players-broad",
+      "query": "Search broadly for newly announced funding of emerging overseas companies across the full Physical AI value chain, including companies not already present in the priority observation list."
+    }
+  ]
+}
