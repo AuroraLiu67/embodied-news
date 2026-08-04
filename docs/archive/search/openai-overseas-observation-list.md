@@ -1,5 +1,7 @@
 # OpenAI 海外 Physical AI 首批观察清单
 
+> 归档状态：2026-08-04 起停止作为现行搜索入口。海外搜索在当前 MVP 暂停；未来恢复时由 Codex Research Operations 重新建立网站清单与任务，不直接恢复本文。
+
 > 项目：具身智能公司动态雷达（Embodied Intelligence Radar）  
 > 版本：首批候选，待用户确认后录入飞书“观察清单”  
 > 责任边界：OpenAI 负责海外公开网络搜索、抽取、核验和中文摘要；本清单不代表已发生新闻，也不能绕过人工审核直接发布
@@ -8,7 +10,8 @@
 
 - 观察范围按完整 Physical AI 产业链定义，不限于名称中含有 `robot` 或 `robotics` 的公司。
 - 同一家公司可关联多个赛道。例如 Sunday 同时属于家庭本体、全栈系统、具身模型和数据采集。
-- P0 为首轮主动搜索对象；P1 保留在观察清单中，待两周命中率复盘后决定是否启用。
+- P0/P1 仅用于已发现线索的分类、排序和补搜参考，不触发每日或每周公司定点轮询。
+- 海外搜索是国内主线的轻量补充，只使用少量宽泛查询；本清单不要求逐项覆盖。
 - 公司官网、官方新闻稿、官方技术博客、官方 GitHub、客户公告和监管文件是一手来源。
 - 媒体、数据库和社交平台用于发现线索，关键事实仍需回溯一手来源。
 - `合作`、`试点`、`预订`、`规划产能`、`入围`和`送样`不能自动等同于收入、订单、交付或量产。
@@ -111,133 +114,23 @@
 | P1 | 精密加工与材料 | additive manufacturing, lightweight alloy, composite, precision machining | 能改善机器人重量、强度、成本或规模制造 |
 | P2 | 上游原材料 | rare earth magnet, copper, specialty steel, engineering polymer | 只有在明确影响 Physical AI 供应、成本或关键性能时收录 |
 
-## 4. 广覆盖英文检索词
+## 4. 轻量海外检索
 
-### 4.1 查询模板的实现要求
+海外不再维护或执行细粒度查询矩阵。日常运行保留3类宽泛意图：
 
-本章列出的查询词是查询模板、同义词词族和代表性示例，不是生产环境需要逐行执行的固定查询清单。最终实现必须根据飞书观察清单动态生成“有约束的查询矩阵”，不得只搜索下文展示的原句。
+1. Physical AI、embodied AI、robotics 相关融资、投资、并购和资本事件。
+2. Physical AI 公司的量产、产线、产能、交付、客户部署和规模商业化进展。
+3. 机器人基础模型、VLA、世界模型、控制模型、新机器人本体、新产品、重要版本和开源发布。
 
-查询矩阵由以下维度组成：
+搜索顺序优先公司、投资方、FA、监管、客户以及可靠商业、科技和产业媒体。事件词只使用以下精简词族：
 
-> 观察对象 × 赛道及同义词 × 事件动作 × 证据信号 × 来源范围 × 时间窗口
+- 资本：`funding`、`financing`、`investment`、`acquisition`、`merger`。
+- 量产与商业化：`mass production`、`production line`、`capacity`、`delivery`、`deployment`、`customer`。
+- 模型与产品：`new model`、`foundation model`、`VLA`、`launch`、`release`、`open source`、`new product`。
 
-矩阵展开必须服务于两个并行目标：
+本文件中的公司和赛道表主要用于对已发现线索分类、排序及必要补搜。每日可轮换选择少量高信号公司做概览检查，但不要求覆盖全部P0/P1公司，也不得形成公司×赛道×事件矩阵。发现明确线索后，才围绕公司、投资方、FA、客户或监管来源补充核验。
 
-1. **已知对象监控：** 对 P0/P1 公司、组织、产品和供应链对象持续检查融资、技术、产品、商业化和组织变化。
-2. **未知对象发现：** 不预设公司名称，通过赛道词、技术词、产品词、应用词、零部件词和事件词主动发现新玩家、新产品形态和新产业方向。
-
-生产搜索至少必须覆盖：
-
-- 新公司、新团队、大厂新业务、实验室商业化项目和刚结束隐身状态的创业公司。
-- 新融资、战略投资、并购、增资、产业资本入股和重要股权变化。
-- 新模型、新技术、论文、开源项目、数据集、评测和开发平台。
-- 新产品、新型号、新版本、新零部件和新的软硬件组合形态。
-- 新客户、新订单、试点、部署、交付、量产、产能、渠道和收入信号。
-- 新合作、供应商、供应链定点、联合研发、代工、生态关系和上下游变化。
-- 新应用场景、新赛道表达和突然升温的技术方向。
-
-不得对所有词做无差别笛卡尔积。矩阵生成器应按照查询意图选择有效组合：
-
-- 公司定向发现：公司或产品 × 融资/技术/商业化事件词。
-- 新玩家发现：赛道或技术词 × 创业/融资/发布/成立等发现词。
-- 技术核验：公司或赛道 × 技术词 × 论文/指标/GitHub/技术报告等证据词。
-- 商业化核验：公司或产品 × 客户/订单/部署/交付/产能等强证据词。
-- 上游发现：零部件 × Physical AI 应用 × 定点/量产/客户/供应等强信号词。
-- 来源追踪：已发现对象 × 官网、官方 GitHub、客户、投资机构或监管域名。
-
-搜索链路采用“广发现、严收录”：候选发现阶段允许一定噪声，但候选必须经过相关性判断、原始来源追踪、结构化抽取、去重、冲突检查和人工审核，才能进入正式事件、日报和网站。
-
-每次运行必须记录查询模板、实际展开查询、时间窗口、命中数量、有效候选数量和成本。系统根据结果调整频率：高价值组合升级；持续高噪声或零有效命中的组合降级或暂停；新发现的公司、产品、赛道和来源进入观察清单建议，等待人工确认。
-
-### 4.2 公司定向基础模板
-
-- `{company} funding OR financing OR investment OR valuation`
-- `{company} acquisition OR acquired OR merger`
-- `{company} launches OR unveils OR introduces OR releases`
-- `{company} technical report OR paper OR benchmark OR GitHub`
-- `{company} customer OR deployment OR order OR contract`
-- `{company} production OR factory OR manufacturing OR capacity`
-- `{company} shipment OR delivery OR fleet OR units`
-- `{company} partnership OR pilot OR proof of concept`
-- `{company} revenue OR sales OR commercial agreement`
-- `site:{official-domain} news OR blog OR press OR research`
-
-### 4.3 模型、世界模型与视频生成
-
-- `"embodied foundation model" OR "robot foundation model"`
-- `"vision-language-action" OR VLA OR "visuomotor policy"`
-- `"generalist robot policy" OR "universal robot policy"`
-- `"cross-embodiment" OR "multi-embodiment" robotics`
-- `"world model" AND (physical OR embodied OR action-conditioned)`
-- `"video world model" AND (control OR planning OR physics)`
-- `"action-conditioned video" OR "controllable video model"`
-- `"physical reasoning" OR "spatial intelligence" startup`
-- `"long-horizon manipulation" OR "whole-body control"`
-- `"physical agent" AND (model OR autonomy OR manipulation)`
-- `("video generation" OR "generative world model") AND (simulation OR robotics OR autonomous systems)`
-
-### 4.4 数据、仿真与训练
-
-- `"robot data" OR "physical AI data" funding`
-- `"real-world trajectories" OR "demonstration data" startup`
-- `teleoperation OR "skill capture" OR "wearable demonstration" robotics`
-- `"imitation learning" OR "behavior cloning" physical tasks`
-- `"robot learning platform" funding OR launch`
-- `"physics simulation" OR "neural simulator" funding`
-- `"synthetic data" AND (robotics OR physical AI OR autonomous machines)`
-- `Sim2Real OR "domain randomization" product OR platform`
-- `"digital twin" AND (robot training OR manipulation OR factory autonomy)`
-- `("Gaussian splatting" OR NeRF OR "3D reconstruction") AND (robotics OR embodied AI)`
-- `"robot benchmark" OR "physical AI evaluation" OR "robot safety testing"`
-
-### 4.5 本体、操作与商业部署
-
-- `humanoid OR "general-purpose robot" funding OR launch`
-- `"home robot" OR "domestic robot" funding OR preorder OR shipment`
-- `"mobile manipulation" OR "wheeled humanoid" deployment`
-- `"adaptive automation" OR "AI robot worker" factory`
-- `"warehouse manipulation" OR "piece picking" customer deployment`
-- `"dexterous manipulation" product OR benchmark`
-- `"autonomous manipulation" customer OR production`
-- `"robot fleet" paid deployment OR commercial operation`
-- `"physical automation" startup funding`
-- `("field robotics" OR "off-road autonomy") funding OR contract`
-- `("surgical robotics" OR "assistive robotics") AI autonomy funding`
-
-### 4.6 零部件、算力与上游供应链
-
-- `"robot actuator" OR "integrated joint" funding OR production`
-- `"frameless motor" OR "torque motor" humanoid`
-- `"axial flux motor" robotics OR mobile machine`
-- `"hollow-cup motor" robot OR dexterous hand`
-- `"planetary roller screw" humanoid OR actuator`
-- `"ball screw" robot joint OR humanoid supply`
-- `"harmonic drive" OR "cycloidal reducer" robot production`
-- `"dexterous hand" OR "robot gripper" funding OR mass production`
-- `"tactile sensor" OR "electronic skin" funding OR production`
-- `"force torque sensor" robotics launch OR customer`
-- `"event camera" OR "depth camera" robotics deployment`
-- `"robot compute" OR "edge AI module" launch`
-- `("AI accelerator" OR NPU OR "inference ASIC") AND (robotics OR autonomous machines OR physical AI)`
-- `("liquid cooling" OR "thermal management") AND (AI cluster OR edge compute OR robotics)`
-- `"robot contract manufacturing" OR "humanoid production line"`
-- `("high-flex cable" OR "robot connector" OR "slip ring") AND robotics`
-- `("rare earth magnet" OR "precision bearing" OR "lightweight composite") AND (humanoid OR robot actuator)`
-
-### 4.7 不含 `robot` 关键词的补充发现查询
-
-- `"physical AI" funding OR platform OR deployment`
-- `"embodied intelligence" startup OR funding OR model`
-- `"spatial intelligence" funding OR foundation model`
-- `"adaptive manipulation" startup OR product`
-- `"autonomous physical tasks" AI startup`
-- `"machine intelligence in the physical world" funding`
-- `"real-world AI" manipulation OR mobility OR manufacturing`
-- `"intelligent automation" AND (learning OR adaptive OR general-purpose)`
-- `"autonomous systems" AND (manipulation OR factory OR warehouse OR field)`
-- `"AI-native hardware" AND (actuator OR sensing OR edge inference)`
-- `"world simulation" AND (physical interaction OR control OR planning)`
-- `"foundation model" AND (motion OR action OR control OR 3D space)`
+当前 `openai-discover` 只接受 Physical AI 融资严格契约。量产、新模型和新产品必须保留可访问来源、实际发布日期和证据状态，先作为 Research Operations 研究线索交接，不能借融资入口直接创建错误类型候选。
 
 ## 5. 搜索去噪规则
 
@@ -249,27 +142,12 @@
 6. 演示视频必须标记是否自主、是否遥操作、是否剪辑、任务时长、重试次数和评测口径；无法确定时不得写成自主能力事实。
 7. 所有日报条目必须逐条保留原始来源 URL，不能把来源集中放到单独板块。
 
-## 6. 首轮启用建议
+## 6. 轻量运行复盘
 
-### 6.1 P0 公司与组织
-
-首轮启用 Sunday、Figure、1X、Apptronik、Agility Robotics、Boston Dynamics、Physical Intelligence、Skild AI、Google DeepMind Robotics、Generalist AI、NVIDIA Robotics 和 Tesla / Optimus。
-
-### 6.2 P0 赛道
-
-首轮启用以下 P0 赛道：
-
-- 智能与模型：具身基础模型、VLA、世界模型、全栈 Physical AI、跨本体与通用策略、长时程任务与自主体、视频生成与物理视频模型、空间智能与三维理解、多模态感知与行为生成、边缘具身 AI。
-- 数据与训练：真实世界数据采集、遥操作与示教设备、机器人学习、物理仿真、Sim2Real 与合成数据、数字孪生与世界重建。
-- 本体与应用：通用人形本体、轮式人形与移动操作、家庭机器人、工业具身智能、仓储与物流操作、四足与轮腿机器人、特种与户外自主系统、医疗/康复/辅助机器人、商业服务与零售机器人。
-- 操作与零部件：机械臂与协作机器人、灵巧手与末端执行器、触觉与力觉传感、视觉与三维传感器、一体化关节与执行器。
-- 算力与上游：机器人边缘算力、GPU/AI 加速器与推理芯片、液冷与热管理。
-
-### 6.3 两周复盘指标
-
-- 每个观察项产生的候选数量。
+- 海外轻量查询的运行次数、候选数量和空结果。
+- 融资、量产/部署、新模型/新产品三类线索的数量与来源质量。
 - 通过相关性判断的比例。
-- 进入融资、技术与产品、商业化三个日报板块的数量。
+- 进入融资候选及最终审核通过的数量。
 - 一手来源比例与重复来源比例。
 - 搜索和模型处理成本。
-- 连续两周零有效命中的 P1/P2 项默认暂停；稳定产生高价值候选的项目升级。
+- 海外投入不得挤占国内搜索与审核资源；持续高噪声或零有效命中的宽泛查询应暂停或合并。

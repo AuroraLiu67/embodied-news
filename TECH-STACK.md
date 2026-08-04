@@ -1,8 +1,8 @@
 # 具身智能公司动态雷达 MVP 技术选型
 
-> 版本：v0.2  
+> 版本：v0.3
 > 状态：Accepted for MVP  
-> 更新日期：2026-07-31  
+> 更新日期：2026-08-04
 > 架构基线：`architecture.md`  
 > 相关文档：`PRD.md`、`SPEC.md`
 
@@ -15,8 +15,10 @@
 | 唯一正式数据源 | 飞书多维表格 |
 | 数据操作 | 飞书 OpenAPI + 官方 Node.js SDK |
 | 项目操作入口 | TypeScript 飞书 CLI |
-| 国内研究 | WorkBuddy |
-| 海外搜索与 AI | OpenAI Responses API |
+| 国内搜索 | Codex Research Operations + Agent Reach + 公开网站 |
+| 公众号补充 | wechat-mp-rss，尚未验证，不是当前依赖 |
+| 海外搜索 | 当前暂停；未来由 Codex Research Operations 执行 |
+| AI 处理 | OpenAI Responses API |
 | Web 框架 | Next.js App Router + TypeScript |
 | 网站模式 | Next.js 静态导出 |
 | UI | Tailwind CSS + shadcn/ui |
@@ -46,8 +48,10 @@
 
 ```mermaid
 flowchart TB
-    WB["WorkBuddy 国内研究"] --> Candidate["研究候选"]
-    OpenAI["OpenAI 海外搜索、抽取与摘要"] --> Candidate
+    Research["Codex Research Operations<br/>国内网站资本线索"] --> Lead["原始线索"]
+    RSS["wechat-mp-rss<br/>待验证"] -.-> Lead
+    Lead --> Candidate["研究候选"]
+    OpenAI["OpenAI 抽取、核验与摘要"] --> Candidate
     Candidate --> Core["校验、归一化、去重和置信度"]
     Core --> CLI["项目飞书 CLI"]
     CLI --> Base["飞书多维表格：唯一正式数据源"]
@@ -56,7 +60,7 @@ flowchart TB
     Base --> Public["公开字段投影"]
     Public --> Build["Next.js 静态构建"]
     Build --> Pages["GitHub Pages"]
-    Actions["GitHub Actions"] --> OpenAI
+    Actions["GitHub Actions"] -.未来确定性搜索入口.-> Research
     Actions --> CLI
     Actions --> Build
     Actions --> Notify["飞书文本通知"]
@@ -71,10 +75,10 @@ flowchart TB
 只依赖公司已有或必要的三个平台：
 
 - 飞书：数据、审核和通知。
-- OpenAI：海外研究和 AI 处理。
+- OpenAI：候选后的 AI 处理。
 - GitHub：代码、自动化和网站托管。
 
-WorkBuddy作为可插拔的国内研究入口。
+WorkBuddy 已暂停；既有导入器仅作为历史兼容入口。
 
 ### 3.2 避免个人单点
 
@@ -139,12 +143,11 @@ CLI 不负责交互式飞书页面；审核仍在多维表格中完成。
 
 ### 6.1 用途
 
-- 海外 Web Search。
-- 候选相关性。
+- 候选相关性、事实抽取与必要核验。
 - 公司与融资字段抽取。
 - 多来源冲突比较。
 - 中文摘要。
-- 日报固定展示今日融资、技术与产品、商业化进展；板块内按重要性排序且每条内联原始来源。
+- 为周报生成候选摘要；每条公开内容内联原始来源。
 
 ### 6.2 接入
 
@@ -163,32 +166,22 @@ CLI 不负责交互式飞书页面；审核仍在多维表格中完成。
 - 单日和月度预算告警。
 - 在飞书自动化任务表中记录估算成本。
 
-## 7. WorkBuddy
+## 7. 搜索执行与兼容入口
 
-WorkBuddy负责：
+当前国内搜索由 Codex Research Operations 执行，使用 Agent Reach 的可用网页搜索/阅读后端、站内公开搜索与原站公开 HTML。执行前运行 `agent-reach doctor --json`，记录能力状态和访问限制。
 
-- 微信公众号融资 PR。
-- 国内公司和投资机构。
-- FA 稿件。
-- 国内产业和创投媒体。
+不直接爬取微信公众号。wechat-mp-rss 仅作尚未验证的补充；在确认稳定性、频控、条目日期和链接可访问性前，不进入生产完成标准。
 
-MVP 使用固定候选 Schema 导入。
+WorkBuddy 与 `workbuddy-import` 保留为兼容能力，不再承担现行搜索职责。
 
-如果 WorkBuddy只有个人客户端：
-
-- 不进入无人值守生产 SLA。
-- 由任意授权研究员运行并导出候选。
-- GitHub Actions处理已导入结果。
-- WorkBuddy不可用不阻塞网站发布。
-
-只有确认公司级云端 API、公司身份、权限和可交接性后，才实现自动 Provider。
+搜索定时化只有在公司可交接的运行环境中，能够无个人登录态地运行确定性入口、访问公开网站并记录审计结果时，才进入生产 SLA。Codex 桌面定时任务可用于试验，不能单独满足该条件。
 
 ## 8. Next.js 静态网站
 
 ### 8.1 选择 Next.js
 
 - 支持首页、动态路由式静态页面和共享组件。
-- 适合日报、归档、融资详情和数据看板。
+- 适合周报、归档、融资详情和数据看板。
 - Codex 和团队维护成本低。
 - 后续需要动态功能时有升级空间。
 
@@ -198,6 +191,7 @@ MVP 使用固定候选 Schema 导入。
 - 不使用服务端 Session。
 - 不在浏览器端读取飞书。
 - 所有动态路由在构建时生成。
+- 允许浏览器端链接、导航、筛选、排序、展开收起和图表切换；静态导出不等于无交互。
 - 资源路径支持 GitHub Pages 项目 base path。
 - 图片使用兼容静态导出的策略。
 
@@ -205,8 +199,8 @@ MVP 使用固定候选 Schema 导入。
 
 构建前由 CLI 生成经过校验的公开 JSON：
 
-- 最新日报。
-- 历史日报索引。
+- 最新周报。
+- 历史周报索引。
 - 融资事件、公司动态与逐条原始来源。
 - 公司公开资料。
 - 看板聚合。
@@ -270,7 +264,7 @@ GitHub Pages 不负责：
 
 ## 11. Codex Skill
 
-创建仓库级“公司动态日报网站发布”Skill，包含：
+目标是创建仓库级“资本动态周报网站发布”Skill；既有日报发布能力在迁移完成前保留：
 
 - 发布步骤。
 - 字段映射检查。
@@ -285,8 +279,8 @@ Codex可以显式调用 Skill 完成人工更新或维护。GitHub Actions不依
 
 MVP 只发：
 
-- 08:00 审核提醒与飞书视图链接。
-- 09:00 日报摘要与网站链接。
+- 每日搜索清洗完成后的人工核验提醒与飞书视图链接。
+- 次周一人工确认后的周报摘要与网站链接。
 - 失败、恢复和人工重试提醒。
 
 MVP 只私聊配置的个人 `open_id`，不发送群聊或消息卡片。发送失败不回滚飞书数据或网站发布。
@@ -354,13 +348,13 @@ MVP 只私聊配置的个人 `open_id`，不发送群聊或消息卡片。发送
 - 公司飞书租户和自建应用。
 - 公司 OpenAI API Project。
 - 公司 GitHub Organization 或可由公司多人管理的仓库。
-- 可移交 WorkBuddy账号。
+- 公司可交接的 Codex 搜索运行环境。
 
 可能费用：
 
 - OpenAI API 用量。
 - GitHub现有套餐或 Actions 用量。
-- WorkBuddy现有或企业方案。
+- Agent Reach 所需搜索后端的合规额度（如适用）。
 - 可选域名。
 
 上线前按公司现有套餐重新核对配额和商业使用条件。
@@ -372,9 +366,9 @@ MVP 只私聊配置的个人 `open_id`，不发送群聊或消息卡片。发送
 3. 冻结领域 Schema 和字段 ID 映射。
 4. 实现飞书 Repository 与 CLI。
 5. 实现 Mock Provider 和测试。
-6. 实现 WorkBuddy 候选导入。
-7. 实现 OpenAI 海外研究和 AI 处理。
-8. 实现候选去重、审核与日报。
+6. 保留兼容候选导入，实现 Codex 国内媒体网站资本线索任务。
+7. 实现 OpenAI 候选处理；海外发现保持暂停。
+8. 实现候选清洗、事件去重、人工核验与周报迁移。
 9. 实现 Next.js 静态网站。
 10. 实现公开字段导出。
 11. 配置 CI。
@@ -386,4 +380,4 @@ MVP 只私聊配置的个人 `open_id`，不发送群聊或消息卡片。发送
 
 ## 18. 决策摘要
 
-> 飞书多维表格是唯一正式数据源和内部审核后台；WorkBuddy发现国内公众号融资信息；OpenAI完成海外搜索、抽取与摘要；项目飞书 CLI 提供统一安全读写入口；Next.js 将飞书公开投影生成静态 HTML；GitHub Actions 运行定时任务和补跑；GitHub Pages 托管新闻网站；Codex负责实现和维护，Claude Code只做只读审核。
+> 飞书多维表格是唯一正式数据源和内部审核后台；Codex Research Operations 搜索国内媒体网站资本线索，海外当前暂停；OpenAI完成候选后的抽取、核验与摘要；项目飞书 CLI 提供统一安全读写入口；Next.js 将飞书公开投影生成静态 HTML；GitHub Actions 运行确定性任务和补跑；GitHub Pages 托管新闻网站；Codex负责实现和维护，Claude Code只做只读审核。

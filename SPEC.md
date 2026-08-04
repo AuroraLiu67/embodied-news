@@ -1,8 +1,8 @@
 # 具身智能公司动态雷达 MVP 工程规格
 
-> 版本：v0.2  
+> 版本：v0.3
 > 状态：Implementation contract  
-> 更新日期：2026-07-31  
+> 更新日期：2026-08-04
 > 架构基线：`architecture.md`  
 > 产品要求：`PRD.md`  
 > 技术选型：`TECH-STACK.md`
@@ -13,7 +13,7 @@
 
 本规格定义“飞书为唯一正式数据源、GitHub Actions 自动运行、GitHub Pages 托管静态网站”的实现契约。
 
-Codex 是主工程和集成 Agent；Claude Code 仅做只读审核；WorkBuddy 是国内研究工具，不承担代码实现。
+Codex 是主工程和集成 Agent，其 Research Operations 角色负责当前国内网站搜索；Claude Code 仅做只读审核。WorkBuddy 已暂停，既有文件导入仅作兼容能力。
 
 ## 2. 系统边界
 
@@ -21,10 +21,11 @@ Codex 是主工程和集成 Agent；Claude Code 仅做只读审核；WorkBuddy �
 
 - 飞书多维表格 Schema 与公司自建应用。
 - 飞书 CLI。
-- WorkBuddy 候选文件导入。
-- OpenAI 海外候选发现、相关性、抽取、核验和摘要。
+- Codex Research Operations 国内媒体网站资本线索发现与覆盖审计。
+- 原始线索经用户初筛后的候选转换；既有 WorkBuddy 候选文件导入保持兼容。
+- OpenAI 相关性、抽取、核验和摘要；既有海外候选发现入口暂停运行。
 - 公司归一化、事件去重、来源、置信度和审核状态。
-- 飞书候选审核、日报编辑和观察清单视图。
+- 飞书候选审核、周报编辑和观察清单视图；既有日报表与 DailyDigest 需要迁移。
 - 飞书文本通知。
 - GitHub Actions 定时调度、幂等补跑和手动重试。
 - Next.js 静态网站。
@@ -37,15 +38,18 @@ Codex 是主工程和集成 Agent；Claude Code 仅做只读审核；WorkBuddy �
 - Cloudflare、Vercel 或常在线个人电脑。
 - 独立管理后台和管理员账号系统。
 - Obsidian、Coze、飞书消息卡片。
-- 微信登录自动化或反爬绕过。
+- 微信登录自动化、公众号直接爬取或反爬绕过。
+- 当前 MVP 海外搜索自动运行。
 - 用户登录、评论、收藏和 CRM。
 
 ## 3. 高层架构
 
 ```mermaid
 flowchart TB
-    WB["WorkBuddy 国内研究"] --> Candidate["研究候选"]
-    OpenAI["OpenAI 海外研究与抽取"] --> Candidate
+    Research["Codex Research Operations<br/>国内网站资本线索"] --> Lead["原始线索"]
+    RSS["wechat-mp-rss<br/>待验证补充"] -.-> Lead
+    Lead --> Candidate["研究候选"]
+    OpenAI["OpenAI 抽取、核验与摘要"] --> Candidate
     Candidate --> Core["校验、归一化、去重、置信度"]
     Core --> CLI["飞书 CLI"]
     CLI --> Base["飞书多维表格：唯一正式数据源"]
@@ -54,7 +58,7 @@ flowchart TB
     Base --> Filter["公开字段过滤"]
     Filter --> Build["Next.js 静态构建"]
     Build --> Pages["GitHub Pages"]
-    Actions["GitHub Actions"] --> OpenAI
+    Actions["GitHub Actions"] -.未来确定性搜索入口.-> Research
     Actions --> CLI
     Actions --> Build
     Actions --> Notify["飞书文本通知"]
@@ -68,8 +72,8 @@ flowchart TB
 - `components/`：共享 UI 和图表组件。
 - `lib/domain/`：领域类型、规则和 Schema。
 - `lib/feishu/`：飞书客户端、字段映射和 Repository。
-- `lib/providers/`：OpenAI、WorkBuddy import 和通知 Provider。
-- `lib/pipeline/`：发现、抽取、去重、日报和调度。
+- `lib/providers/`：OpenAI、兼容候选导入和通知 Provider。
+- `lib/pipeline/`：发现、抽取、去重、周报和调度；既有 daily-digest 暂作迁移输入。
 - `lib/publication/`：公开字段投影与静态页面数据。
 - `cli/`：项目飞书 CLI。
 - `scripts/`：GitHub Actions 使用的确定性入口。
@@ -168,7 +172,7 @@ flowchart TB
 - `technologyTags`
 - `publicDescription`
 
-### 5.6 DailyDigest
+### 5.6 DailyDigest（既有兼容对象，待迁移）
 
 - `digestId`
 - `digestDate`
@@ -183,7 +187,21 @@ flowchart TB
 - `autoPublished`
 - `correctionNote`
 
-### 5.7 WatchItem
+### 5.7 WeeklyReport（目标契约，尚未实现）
+
+- `reportId`
+- `weekStart`
+- `weekEnd`
+- `scheduledPublishAt`
+- `title`
+- `fundingEventIds`
+- `sectionOrder`
+- `reviewStatus`
+- `publicationStatus`
+- `publishedAt`
+- `correctionNote`
+
+### 5.8 WatchItem
 
 - `watchId`
 - `type`
@@ -194,7 +212,7 @@ flowchart TB
 - `priority`
 - `enabled`
 
-### 5.6 InternalAssessment
+### 5.9 InternalAssessment
 
 - `assessmentId`
 - `companyId` 或 `eventId`
@@ -240,7 +258,7 @@ flowchart TB
 - 使用公司飞书自建应用。
 - 生产任务使用应用身份。
 - 应用只获得指定多维表格及发送文本消息所需权限。
-- 内部战投备注不授权给 WorkBuddy 或 OpenAI。
+- 内部战投备注不授权给 Research Operations、WorkBuddy 兼容入口或 OpenAI。
 - 公开网站构建只使用公开投影。
 
 ### 6.3 Repository 规则
@@ -293,7 +311,6 @@ flowchart TB
 
 职责：
 
-- 海外 Web Search。
 - 相关性判断。
 - 结构化抽取。
 - 冲突比较。
@@ -307,7 +324,7 @@ flowchart TB
 - 有每日调用、候选、Token 和成本上限。
 - 只返回候选或建议，不直接写飞书正式事件。
 
-### 8.2 WorkBuddyImportProvider
+### 8.2 WorkBuddyImportProvider（遗留兼容）
 
 输入为固定候选文件或标准输入，字段至少包括：
 
@@ -327,7 +344,7 @@ flowchart TB
 4. 去重。
 5. 写入“研究候选”。
 
-如果未来 WorkBuddy 提供企业 API，只替换 Provider 实现，不改变领域 Schema。
+WorkBuddy 当前暂停。该 Provider 只兼容历史 C01 文件；新的 Codex 网站搜索先产生原始线索，经用户初筛和候选转换后才能进入候选 Repository。
 
 ### 8.3 FeishuNotificationProvider
 
@@ -351,8 +368,8 @@ CLI 是人工操作、Codex 和 GitHub Actions 的统一入口。
 
 - 检查飞书连接与字段映射。
 - 初始化或验证多维表格 Schema。
-- 导入 WorkBuddy 候选。
-- 运行 OpenAI 候选发现。
+- 导入兼容候选文件。
+- 处理用户初筛后的 Codex 网站线索；暂停运行 OpenAI 海外发现入口。
 - 处理候选相关性、抽取和去重。
 - 列出待审核候选。
 - 生成指定日期日报草稿。
@@ -387,7 +404,7 @@ CLI 输出机器可读结果和简洁人类摘要；错误使用稳定错误码�
 - 公司、日期、轮次和金额相似时进入事件级去重。
 - 冲突事实保留多个来源并标记待复核。
 
-## 11. 审核与日报
+## 11. 审核与周报
 
 ### 11.1 审核状态
 
@@ -405,14 +422,14 @@ CLI 输出机器可读结果和简洁人类摘要；错误使用稳定错误码�
 - `CORRECTED`
 - `WITHDRAWN`
 
-### 11.3 日报规则
+### 11.3 周报规则
 
-- 每个业务日期最多一条日报。
+- 每个北京时间自然周最多一条周报，窗口固定为周一 00:00 至周日 23:59:59，次周一生成。
 - 条目只引用审核通过的融资事件或公司动态。
-- 日报固定为“今日融资、技术与产品、商业化进展”三个板块。
+- 当前搜索 MVP 周报只包含融资与广义资本动态。
 - 每个板块默认按 1–5 重要性评分降序，人工调整的最终顺序优先。
 - 每条内容必须关联并内联展示至少一个可访问原始来源；不得建立独立来源板块。
-- 09:00 时未完成人工审核，可发布自动稿并设置 `autoPublished=true`。
+- 未完成人工审核不得发布周报；当前不自动公开未经人工确认的内容。
 - 更正更新当前公开内容并保留更正说明。
 - 撤下内容不进入下一次网站构建。
 
@@ -448,7 +465,7 @@ CLI 输出机器可读结果和简洁人类摘要；错误使用稳定错误码�
 ### 13.1 路由
 
 - `/`
-- `/daily/[date]`
+- `/weekly/[weekStart]`
 - `/archive`
 - `/funding/[eventId]`
 - `/companies/[companyId]`
@@ -464,9 +481,9 @@ CLI 输出机器可读结果和简洁人类摘要；错误使用稳定错误码�
 
 ### 13.3 历史归档
 
-- 日报发布后进入归档。
-- 按月份生成索引。
-- 日期链接稳定。
+- 周报发布后进入归档。
+- 按年份和自然周生成索引。
+- 周起始日链接稳定。
 - 只生成已发布、已更正状态页面。
 
 ### 13.4 看板
@@ -532,7 +549,7 @@ CI 不调用真实外部服务。
 
 ## 15. 项目级 Codex Skill
 
-仓库包含“日报网站发布”Skill，用于 Codex重复执行：
+仓库目标包含“周报网站发布”Skill，用于 Codex重复执行；现有日报发布 Skill 在迁移完成前属于兼容实现：
 
 1. 检查飞书字段映射。
 2. 导出公开数据。
@@ -578,15 +595,15 @@ Skill 负责标准化人工和维护流程；GitHub Actions 运行确定性 CLI 
 
 - Mock WorkBuddy 导入到 Mock 飞书。
 - Mock OpenAI 候选进入候选表。
-- 审核状态生成日报。
+- 审核状态生成周报。
 - 飞书字段变化时快速失败。
 - 公开导出不包含内部字段。
 - 重试不重复写入。
 
 ### 17.3 E2E
 
-- 首页展示最新日报。
-- 日报、归档和融资详情互相导航。
+- 首页展示最新周报。
+- 周报、归档和融资详情互相导航。
 - 未审核自动发布标记正确。
 - 更正说明正确。
 - 看板统计与 Fixture 一致。
@@ -613,7 +630,7 @@ Skill 负责标准化人工和维护流程；GitHub Actions 运行确定性 CLI 
 - GitHub 仓库必须属于公司 Organization。
 - OpenAI Project 必须属于公司。
 - 飞书应用和多维表格必须属于公司租户。
-- WorkBuddy账号必须可移交。
+- Codex 搜索运行环境必须归公司并可移交；WorkBuddy 不再是生产账号要求。
 - 至少两名管理员具有恢复权限。
 - 操作手册包含密钥轮换、手动补跑和网站重新发布。
 
@@ -631,8 +648,8 @@ Skill 负责标准化人工和维护流程；GitHub Actions 运行确定性 CLI 
 
 MVP 完成必须满足：
 
-- 飞书能够完成审核和日报管理。
-- 海外自动研究与国内候选导入可运行。
+- 飞书能够完成每日候选审核和周报管理。
+- 国内网站每日搜索、清洗去重、人工核验和候选转换可运行。
 - GitHub Actions 可补跑和手动重试。
 - GitHub Pages 可公开访问。
 - 网站数据完全来自飞书公开投影。

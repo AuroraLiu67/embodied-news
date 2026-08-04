@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1",
+  "queries": [
+    {
+      "queryId": "overseas-physical-ai-funding",
+      "query": "Search priority company, investor, FA, regulator, and reliable business or technology media sources for newly published overseas funding, financing, investment, acquisition, or merger announcements involving Physical AI, embodied AI, humanoid robots, or robotics. Search broadly; do not enumerate a fixed company list."
+    },
+    {
+      "queryId": "overseas-robotics-value-chain-funding",
+      "query": "Search broadly for newly published overseas funding announcements involving robot foundation models, robot learning, data or simulation, humanoid or mobile manipulation systems, dexterous manipulation, sensing, actuators, or other clearly Physical AI-related infrastructure. Prioritize accessible original or reliable media sources."
+    },
+    {
+      "queryId": "overseas-new-players-funding",
+      "query": "Search for newly announced overseas Physical AI or robotics funding involving emerging companies not already known to the project. Use concise funding and investment terms, and return only results supported by an accessible source with a clear publication date."
+    }
+  ]
+}

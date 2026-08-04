@@ -2,317 +2,88 @@
   "schemaVersion": "1",
   "candidates": [
     {
-      "title": "帕西尼再获10亿元战略轮融资，累计35亿领跑全球具身感知赛道",
-      "sourceUrl": "https://www.36kr.com/p/3923645916409479",
-      "sourceName": "36氪",
+      "title": "蚂蚁灵波确认已启动首轮融资：拟募资15亿元 计划今年年底完成二轮融资",
+      "sourceUrl": "https://qzswap.stcn.com/wap_newsDetail.html?id=621007",
+      "sourceName": "证券时报",
       "contentType": "FUNDING",
       "sourceType": "MEDIA",
       "sourceTier": "AUTHORITATIVE",
-      "publishedAt": "2026-08-03T18:29:00+08:00",
-      "queries": [
-        "帕西尼 10亿元 战略轮 融资",
-        "具身智能 融资 2026年8月"
-      ],
-      "preliminarySummary": "帕西尼再获10亿元战略轮融资，累计融资35亿元，为全球触觉感知领域最大累计融资。本轮由全球消费电子与半导体万亿级巨头、中银国际投资、鲲鹏基金（大数据方向国家级基金）、合信方册联合领投，鼎晖百孚、成都交子人工智能基金、京铭资本、津融国盛联合投资，老股东知来资本超额加码。公司全栈自研具身感知产品矩阵，覆盖触觉传感器、多指灵巧手到人形机器人整机。赛道：P0-具身智能/触觉感知。证据状态：多源佐证（36氪、科创板日报、投资家网等）。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
+      "publishedAt": "2026-08-03T15:23:00+08:00",
+      "queries": ["具身智能 融资", "蚂蚁灵波 融资"],
+      "preliminarySummary": "8月3日，多家媒体报道蚂蚁集团旗下具身智能公司蚂蚁灵波已启动首轮融资，拟募资15亿元，目标年底完成二轮融资。蚂蚁灵波回应证券时报记者确认「确实在跟投资人接触」，定位为蚂蚁在具身领域的核心布局，持续聚焦通用机器人大脑。蚂蚁灵波是蚂蚁集团全资子公司，已推出LingBot-VLA、LingBot-VA、LingBot-Vision、LingBot-World等10余款模型。其他8/3来源：21世纪经济报道、中国经营报、极客网。",
+      "discoveredAt": "2026-08-04T11:14:00+08:00"
     },
     {
-      "title": "主动科技完成3.3亿元天使轮融资，刷新中国脑机接口领域天使轮纪录",
-      "sourceUrl": "https://www.163.com/dy/article/L3D93TV705198R3E.html",
-      "sourceName": "网易号（转载自投资界）",
-      "contentType": "FUNDING",
-      "sourceType": "MEDIA",
-      "sourceTier": "SECONDARY",
-      "publishedAt": "2026-08-03T09:45:00+08:00",
-      "queries": [
-        "主动科技 脑机接口 天使轮 融资 2026年8月",
-        "36氪 2026年8月3日 融资"
-      ],
-      "preliminarySummary": "主动科技完成3.3亿元天使轮融资，创中国脑机接口领域天使轮融资纪录。中科创星领投，联想之星、九合创投、道彤投资、英诺天使基金、华大松禾生科基金、济峰资本、嘉道资本跟投。公司专注侵入式脑机接口，构建运动（天枢）、视觉、情绪三大产品矩阵，已建成2500平GMP车间。赛道：P1-脑机接口。证据状态：多源佐证（投资界、36氪、每日经济新闻）。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "36氪首发 | 商飞团队创业eVTOL再获数亿元融资，已进入适航关键阶段",
-      "sourceUrl": "https://www.163.com/dy/article/L3DJU6JB05118DFD.html",
-      "sourceName": "网易号（转载自36氪）",
-      "contentType": "FUNDING",
-      "sourceType": "MEDIA",
-      "sourceTier": "SECONDARY",
-      "publishedAt": "2026-08-03T12:54:00+08:00",
-      "queries": [
-        "36氪 2026年8月3日 融资",
-        "eVTOL 融资 2026"
-      ],
-      "preliminarySummary": "亿维特航空完成数亿元A+轮融资，上城资本、普华资本等投资，深蓝资本任独家财务顾问。公司核心团队来自中国商飞体系，创始人任文广参与运8、ARJ21、C919研发。已签约890余架意向订单，覆盖ET9载人版/载货版及ET3氢锂混动机型。国内首家采用自研800V高压电推进系统完成验证飞行的2吨级eVTOL整机企业。赛道：P1-eVTOL/低空经济。证据状态：单源报道（36氪首发）。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "奇点逃逸获千万级种子轮融资，搭建面向组织的AI协作底座",
-      "sourceUrl": "https://www.163.com/dy/article/L3DALLN00556MDP3.html",
-      "sourceName": "网易号（转载自潮汛网）",
-      "contentType": "FUNDING",
-      "sourceType": "MEDIA",
-      "sourceTier": "SECONDARY",
-      "publishedAt": "2026-08-03T10:12:00+08:00",
-      "queries": [
-        "奇点逃逸 种子轮 融资 星连资本 水木创投 2026年8月"
-      ],
-      "preliminarySummary": "奇点逃逸完成千万级种子轮融资，星连资本与水木创投联合领投，奇绩创坛跟投。创始人薛传奕为清华博士，研究方向覆盖强化学习与多智能体。公司研发AI原生团队协作操作系统Nexus，让人、Agent、任务、知识和工具基于统一组织状态持续协作，系统从每次协作中有证据地变强。赛道：P1-AI Agent/协作平台。证据状态：单源报道（潮汛网首发）。注意：此前误标来源为36氪，实际发布方为潮汛网（IPO频道）。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "昉擎科技完成A1轮融资，估值破百亿成为智能计算独角兽",
-      "sourceUrl": "https://www.163.com/dy/article/L3DP4OQH05198R3E.html",
-      "sourceName": "网易号（转载自投资界）",
-      "contentType": "FUNDING",
-      "sourceType": "MEDIA",
-      "sourceTier": "SECONDARY",
-      "publishedAt": "2026-08-03T14:25:00+08:00",
-      "queries": [
-        "投资界 2026年8月3日 融资 科技",
-        "昉擎科技 A1轮"
-      ],
-      "preliminarySummary": "昉擎科技完成A1轮融资，估值超百亿人民币。徐汇资本、珠海科技产业集团两大地方国资战略投资，中金资本、国泰海通创意投资、尚势资本、水木创投、明嘉资本参投，老股东钧山资本、多维资本等超额追投。公司2023年成立，基于原创分离式架构和4D Memory理论，自主研发芯片、硬件系统与软件栈，提供低延迟、高扩展性的下一代智能计算系统。赛道：P1-智能计算芯片。证据状态：单源报道（投资界）。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "求之科技完成1亿美元天使+轮融资，具身智能赛道再添独角兽",
-      "sourceUrl": "https://www.163.com/dy/article/L3DSB3O305198R3E.html",
-      "sourceName": "网易号（转载自投资界）",
-      "contentType": "FUNDING",
-      "sourceType": "MEDIA",
-      "sourceTier": "SECONDARY",
-      "publishedAt": "2026-08-03T15:21:00+08:00",
-      "queries": [
-        "求之科技 天使轮 融资 2026年8月",
-        "投资界 2026年8月3日 融资",
-        "庚辛资本"
-      ],
-      "preliminarySummary": "距首轮超1亿美元天使轮融资不足一月，求之科技再度完成1亿美元天使+轮融资。IDG、星连、武岳峰、达晨、九阳、华映、滨湖区产业集团等参投，老股东悉数追加，庚辛资本任核心财务顾问。清华AIR孵化，发布分层式具身智能基础模型ORION、虚实混合数据闭环系统LOOP与高保真仿真器DISCOVERSE。无锡/北京/深圳三地研发，200余人团队。赛道：P0-具身智能/人形机器人。证据状态：多源佐证（投资界、投中网、联想创投）。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "破壳机器人完成亿美元级Pre-A轮融资，顺为经纬联合领投",
+      "title": "破壳机器人完成亿美元级Pre-A轮融资",
       "sourceUrl": "https://www.stcn.com/article/detail/4054882.html",
       "sourceName": "证券时报",
       "contentType": "FUNDING",
       "sourceType": "MEDIA",
       "sourceTier": "AUTHORITATIVE",
       "publishedAt": "2026-08-03T00:00:00+08:00",
-      "queries": [
-        "破壳机器人 Pre-A轮 顺为 经纬 2026年8月3日",
-        "投中网 创业邦 2026年8月3日 融资"
-      ],
-      "preliminarySummary": "破壳机器人完成亿美元级Pre-A轮融资，顺为资本与经纬创投联合领投，九坤创投、钧山资本、SEE Fund、猎聘投资、元诺资本、钟鼎资本参投，云启资本、小米战投等老股东追加。公司2026年4月成立，聚焦家庭场景机器人操作能力，技术路线为WAM（世界动作模型）+全链路真机强化学习+真实世界数据。创始人许华哲。赛道：P0-具身智能/家庭机器人。证据状态：多源佐证（证券时报、中国证券报、大河财立方）。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
+      "queries": ["具身智能 融资", "破壳机器人 融资 Pre-A 2026年8月3日"],
+      "preliminarySummary": "8月3日，通用具身智能公司破壳机器人（PokeBot）完成亿美元级Pre-A轮融资。本轮由顺为资本与经纬创投共同领投，九坤创投、钧山资本、SEE Fund、猎聘投资、元诺资本、钟鼎资本等机构参与，老股东云启资本、小米战投、弘晖基金、英诺天使基金、东方嘉富等持续加注。破壳机器人成立于2026年4月，聚焦家庭服务场景具身智能，创始人许华哲为清华大学交叉信息研究院助理教授，曾联合创办星海图。其他8/3来源：中国证券报（中证网）、投资界、大河财立方。",
+      "discoveredAt": "2026-08-04T11:25:00+08:00"
     },
     {
-      "title": "晚点独家丨蚂蚁灵波启动首轮融资，拟募资15亿元，年底完成二轮融资",
-      "sourceUrl": "https://www.163.com/dy/article/L3DOIAAS0531M1CO.html",
-      "sourceName": "网易号（转载自晚点LatePost）",
-      "contentType": "FUNDING",
-      "sourceType": "MEDIA",
-      "sourceTier": "SECONDARY",
-      "publishedAt": "2026-08-03T14:17:00+08:00",
-      "queries": [
-        "蚂蚁灵波 融资 2026年8月",
-        "晚点 甲子光年 暗涌 2026年8月3日"
-      ],
-      "preliminarySummary": "蚂蚁集团旗下具身智能公司灵波科技启动首轮融资，拟募资15亿元，目标年底完成二轮融资。灵波布局覆盖Vision、Depth、Mapping、Video、World Model、VA、VLA完整大脑链条，已发布LingBot系列10余款模型，LingBot-VLA 2.0适配17个品牌20多种机器人构型。独立融资主因集团算力预算挤压。赛道：P0-具身智能/机器人大脑。证据状态：单源报道（晚点独家），有蚂蚁灵波官方回应佐证。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "德塔智能完成近5亿元天使++轮融资，半年六轮加码人形机器人基础模型",
-      "sourceUrl": "https://www.nbd.com.cn/articles/2026-08-03/4530498.html",
-      "sourceName": "每日经济新闻",
-      "contentType": "FUNDING",
-      "sourceType": "MEDIA",
-      "sourceTier": "AUTHORITATIVE",
-      "publishedAt": "2026-08-03T17:53:00+08:00",
-      "queries": [
-        "德塔智能 近5亿元 天使轮 人形机器人 融资 2026年8月",
-        "人形机器人 具身智能 2026年8月 融资"
-      ],
-      "preliminarySummary": "德塔智能完成近5亿元天使++轮融资，成立半年内第六轮。投资方含多家上市公司产业方及头部财务机构，此前投资方包括智元机器人、乐聚机器人、星海图等主机厂及高瓴创投、元禾控股等。公司2026年1月成立，自研原生三维世界引擎，采用'大脑+小脑+力位混合'三层架构。同期发布头戴式全身全景数采设备Delta D1。模型已进入电网巡检、汽车上下料等工业场景验证。赛道：P0-具身智能/人形机器人基础模型。证据状态：多源佐证（每日经济新闻、36氪、thebotage等）。注意：该URL为每日经济新闻VC/PE周报汇总文章，含多条融资事件，此候选代表该汇总文章的德塔智能部分。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "阿里联手红杉，投了'淘宝第一位程序员'——贝联珠贯完成超亿元A轮融资",
-      "sourceUrl": "https://www.163.com/dy/article/L3D795PK05568W0A.html",
-      "sourceName": "网易号（转载自新浪财经）",
-      "contentType": "FUNDING",
-      "sourceType": "MEDIA",
-      "sourceTier": "SECONDARY",
-      "publishedAt": "2026-08-03T09:13:00+08:00",
-      "queries": [
-        "贝联珠贯 A轮 融资 AI Agent 运维 2026年8月",
-        "阿里云 红杉 投资"
-      ],
-      "preliminarySummary": "贝联珠贯完成超亿元A轮融资，阿里云领投，红杉中国、元璟资本超额跟投。创始人林昊（毕玄）为前阿里P10，核心产品SREAgent为大模型+Agent+数据的运维垂直AI Agent，提供L4级智能运维服务，已服务金融、能源、汽车等多个行业。2025年淘宝第一位程序员蔡景现（多隆）加入。赛道：P1-AI Agent/智能运维。证据状态：多源佐证（36氪、新浪财经、每日经济新闻）。事件日期为7月30日。原URL为每日经济新闻VC/PE周报汇总，已替换为新浪财经独立报道。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "农业机器人领域国家专精特新'小巨人'，拿下数亿元融资",
-      "sourceUrl": "https://m.10jqka.com.cn/20260803/c678615664.shtml",
-      "sourceName": "同花顺（转载自OFweek机器人网）",
-      "contentType": "FUNDING",
-      "sourceType": "MEDIA",
-      "sourceTier": "SECONDARY",
-      "publishedAt": "2026-08-03T10:15:00+08:00",
-      "queries": [
-        "中科原动力 B2轮 数亿元 奇瑞 融资 2026年8月",
-        "VC/PE周报 2026年8月3日"
-      ],
-      "preliminarySummary": "中科原动力完成B2轮数亿元融资，奇瑞控股集团旗下奇瑞智能科技独家投资。中科院微电子所孵化，李德毅院士任首席科学家，已形成农机无人作业系统、新能源智能农机、具身智能农业机器人等产品体系，累计无人作业超100万亩次，覆盖20余省。公司已完成8轮融资，投资方包括国科创投、中金资本、创世伙伴CCV等。赛道：P0-具身智能/农业机器人。证据状态：多源佐证。事件日期标注'近日'。原URL为每日经济新闻VC/PE周报汇总，已替换为同花顺转载OFweek机器人网8月3日独立报道。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "方石机器人完成数千万元A+轮融资，加码新生产基地建设",
-      "sourceUrl": "https://www.stcn.com/article/detail/4054464.html",
+      "title": "求之科技再度完成1亿美元天使+轮融资",
+      "sourceUrl": "https://www.stcn.com/article/detail/4055000.html",
       "sourceName": "证券时报",
       "contentType": "FUNDING",
       "sourceType": "MEDIA",
       "sourceTier": "AUTHORITATIVE",
       "publishedAt": "2026-08-03T00:00:00+08:00",
-      "queries": [
-        "方石机器人 A+轮 融资 2026年8月",
-        "2026年8月3日 机器人 融资"
-      ],
-      "preliminarySummary": "方石机器人完成数千万元A+轮融资，济南鹊华科创投投资，资金用于新生产基地建设和产能扩充。公司聚焦建筑施工现场的无人化、智能化升级，已形成覆盖地坪施工、墙面处理、地砖铺贴等场景的模块化产品矩阵，深度合作中国建筑、中国铁建等超100家头部建筑企业，落地500余个标杆工程。产品远销全球10多个国家和地区。赛道：P0-机器人/智能建造。证据状态：多源佐证（证券时报、投资界）。原URL为大河财立方汇总快讯，已替换为证券时报独立报道。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
+      "queries": ["具身智能 融资", "求之科技 融资 2026年8月"],
+      "preliminarySummary": "8月3日，无锡滨湖区企业求之科技（DISCOVER Robotics）宣布完成1亿美元天使+轮融资，距首轮超1亿美元天使轮仅一个月。本轮由IDG、星连、武岳峰、达晨、九阳、华映、滨湖区产业集团等共同参投，老股东悉数追加。求之科技已构建「模型-数据-仿真」全栈技术底座，发布分层式具身基础模型ORION、虚实混合数据闭环系统LOOP与仿真器DISCOVERSE。创始人周谷越为清华智能产业研究院副教授、大疆前核心创始团队成员。其他8/3来源：澎湃新闻、中国基金报。",
+      "discoveredAt": "2026-08-04T11:25:00+08:00"
     },
     {
-      "title": "幺正量子完成数亿元A轮融资，深创投领投加速量子计算研发",
-      "sourceUrl": "https://eu.36kr.com/zh/newsflashes/3923156103818628",
-      "sourceName": "36氪",
+      "title": "帕西尼再获10亿元战略轮融资 累计35亿登顶全球触觉感知赛道",
+      "sourceUrl": "https://www.zhangtongshe.com/article/detail?id=102584",
+      "sourceName": "张通社",
+      "contentType": "FUNDING",
+      "sourceType": "MEDIA",
+      "sourceTier": "SECONDARY",
+      "publishedAt": "2026-08-03T00:00:00+08:00",
+      "queries": ["具身智能 融资", "帕西尼 10亿 战略融资 2026年8月"],
+      "preliminarySummary": "8月3日，帕西尼人工智能科技（北京）股份有限公司（原帕西尼感知科技）确认完成10亿元战略轮融资，累计融资约35亿元，投后估值超百亿元。本轮由全球消费电子与半导体万亿级巨头、中银国际投资、鲲鹏基金（大数据方向国家级基金）、合信方册联合领投，鼎晖百孚、成都交子人工智能基金、京铭资本、津融国盛联合投资，老股东知来资本追加。帕西尼核心团队源自日本早稻田大学菅野机器人实验室，主打ITPU多维触觉传感技术，覆盖触觉传感器、灵巧手到人形机器人全链路。其他8/3来源：极客网。21世纪经济报道、投资界版本发布于8月4日。",
+      "discoveredAt": "2026-08-04T11:30:00+08:00"
+    },
+    {
+      "title": "方石机器人完成数千万元A+轮融资",
+      "sourceUrl": "https://news.qq.com/rain/a/20260803A0B08V00",
+      "sourceName": "科创板日报",
       "contentType": "FUNDING",
       "sourceType": "MEDIA",
       "sourceTier": "AUTHORITATIVE",
       "publishedAt": "2026-08-03T00:00:00+08:00",
-      "queries": [
-        "幺正量子 A轮 融资 2026年8月",
-        "2026年8月3日 量子 融资"
-      ],
-      "preliminarySummary": "幺正量子完成数亿元A轮融资，深创投领投，社保基金湾区科创基金、广发信德、京铭资本、普华资本、启赋资本、达晨财智、华控基金、首程控股、协鑫能科等跟投。资金用于加速QCCD技术路线全栈能力，瞄准量子优越性与量子纠错。距Pre-A轮不足四个月。公司成立于2022年，孵化自中科大郭光灿院士团队，是国内QCCD离子阱量子计算领军企业。赛道：P1-量子计算。证据状态：多源佐证（36氪、证券时报、新浪财经）。原URL为大河财立方汇总快讯，已替换为36氪独立快讯。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
+      "queries": ["机器人 融资", "方石机器人 A轮 融资 建筑 2026年8月3日"],
+      "preliminarySummary": "8月3日，北京方石机器人有限公司宣布完成数千万元A+轮融资，本轮投资方为济南鹊华科创投，资金主要用于新生产基地建设和产能扩充。方石机器人成立于2019年，聚焦建筑施工场景的智能化升级，产品覆盖地坪、墙面、地砖及石材铺贴等施工工艺机器人，已与中建、中国铁建等超100家头部建筑企业合作，落地500余个标杆工程。其他8/3来源：投资界、新浪财经、瑞财经。",
+      "discoveredAt": "2026-08-04T11:32:00+08:00"
     },
     {
-      "title": "阿里巴巴正式发布新一代基座大模型Qwen3.8，总参数量2.4万亿",
-      "sourceUrl": "https://36kr.com/newsflashes/3923193948614025",
-      "sourceName": "36氪",
-      "contentType": "TECHNOLOGY",
-      "sourceType": "MEDIA",
-      "sourceTier": "AUTHORITATIVE",
-      "publishedAt": "2026-08-03T00:00:00+08:00",
-      "queries": [
-        "2026年8月3日 AI 新产品 发布 大模型",
-        "阿里巴巴 Qwen3.8"
-      ],
-      "preliminarySummary": "阿里云千问团队发布Qwen3.8-Max，总参数2.4万亿（激活95B），在编程和专业办公方面能力大幅提升。Arena榜单中整体性能处于全球第一梯队，CodeArena排名全球第四。模型独立编程16天完成oh-my-cli项目。API定价国内输入12元/百万Tokens。Qwen3.8-Max和27B将于下周开源。赛道：P1-大模型。证据状态：多源佐证（36氪、凤凰科技、阿里研究院）。原URL与千问办公共用凤凰科技汇总页面，已替换为36氪独立快讯。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "阿里'千问办公'（QwenWork）开启公测，全面瞄准企业级市场",
-      "sourceUrl": "https://www.36kr.com/newsflashes/3923216741756293",
-      "sourceName": "36氪",
-      "contentType": "PRODUCT",
-      "sourceType": "MEDIA",
-      "sourceTier": "AUTHORITATIVE",
-      "publishedAt": "2026-08-03T00:00:00+08:00",
-      "queries": [
-        "千问办公 QwenWork Agent 产品 公测",
-        "阿里 2026年8月3日"
-      ],
-      "preliminarySummary": "阿里巴巴旗下企业级Agent产品千问办公（QwenWork）开启公测。网页版和PC客户端已开放，钉钉端近期接入。整合QoderWork、MuleRun、悟空三款产品，支持桌面端/云端/企业协同Agent。已初步打通钉钉IM，未来连接企业数据库和工作流。支持将工作过程沉淀为'组织级Skill'向团队共享。同步接入Qwen3.8 API。赛道：P1-AI Agent/企业服务。证据状态：多源佐证（36氪、南方都市报、凤凰科技）。原URL与Qwen3.8-Max共用凤凰科技汇总页面，已替换为36氪独立快讯。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "阿里涨超7%！千问3.8今日发布，与月之暗面达成算力协议",
-      "sourceUrl": "https://new.qq.com/rain/a/20260803A09CI700",
-      "sourceName": "腾讯新闻（易简财经）",
-      "contentType": "COMMERCIALIZATION",
-      "sourceType": "MEDIA",
-      "sourceTier": "SECONDARY",
-      "publishedAt": "2026-08-03T17:49:00+08:00",
-      "queries": [
-        "阿里 月之暗面 算力 合作 2026年8月3日"
-      ],
-      "preliminarySummary": "阿里巴巴港股收涨超7%。同日三大动态：发布Qwen3.8-Max（2.4T参数）、千问办公公测、与月之暗面达成算力协议。月之暗面可使用约2万枚英伟达芯片组成的算力集群，占Kimi系列总算力相当大比例。阿里为月之暗面最大互联网大厂投方（投8亿美元，账面获利约42亿美元）。该合作标志阿里'芯片+云'两层能力对外交付验证。赛道：P1-AI算力基础设施。证据状态：单源报道（易简财经）。注意：此前误标sourceName为腾讯新闻，实际发布方为易简财经。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "MiniMax H3视频模型正式开源，十六家芯片厂商同日完成适配",
-      "sourceUrl": "https://www.cnstock.com/commonDetail/754438",
-      "sourceName": "上海证券报",
-      "contentType": "TECHNOLOGY",
-      "sourceType": "MEDIA",
-      "sourceTier": "AUTHORITATIVE",
-      "publishedAt": "2026-08-03T00:00:00+08:00",
-      "queries": [
-        "MiniMax H3 开源 视频模型 2026年8月3日",
-        "2026年8月3日 开源 技术突破"
-      ],
-      "preliminarySummary": "MiniMax H3通用全模态生成模型正式开源，视频编辑能力Artificial Analysis榜单全球第一。可统一理解文本、图像、视频、音频，生成最高2K分辨率、最长15秒带原生立体声的视频。华为昇腾、摩尔线程、沐曦、海光信息、AMD、Intel等16家芯片厂商及HuggingFace、魔搭等社区同日完成Day 0适配。视频生成价格0.8元/秒，为同级旗舰模型的三分之一。赛道：P1-多模态/视频生成。证据状态：多源佐证。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "专访酷哇杨学：世界模型的下半场，是把一次成功变成长期服务",
-      "sourceUrl": "https://new.qq.com/rain/a/20260803A05E8B00",
-      "sourceName": "腾讯新闻（甲子光年）",
+      "title": "部署万台机器人后，酷哇科技宣布引入首席科学家",
+      "sourceUrl": "https://www.163.com/dy/article/L3E19DDP05568W0A.html",
+      "sourceName": "新浪财经",
       "contentType": "TECHNOLOGY",
       "sourceType": "MEDIA",
       "sourceTier": "SECONDARY",
-      "publishedAt": "2026-08-03T12:18:00+08:00",
-      "queries": [
-        "甲子光年 2026年8月3日 酷哇 具身智能 世界模型"
-      ],
-      "preliminarySummary": "酷哇科技宣布杨学（上海交大长聘教轨助理教授、全球前2%顶尖科学家）出任首席科学家，与上海交通大学共建通用具身智能联合实验室，推进模型研发、真机验证和人才培养。酷哇已有万台级真机部署于全球50多城市，积累约50PB物理交互数据。杨学提出重点攻关鲁棒性、轻量化决策和系统可靠性。赛道：P0-具身智能/世界模型/自动驾驶。证据状态：单源报道（甲子光年专访）。注意：此前误标sourceName为甲子光年，实际页面为腾讯新闻转载甲子光年内容。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
+      "publishedAt": "2026-08-03T16:47:30+08:00",
+      "queries": ["具身智能 融资", "酷哇科技 首席科学家 世界模型 部署万台机器人 2026"],
+      "preliminarySummary": "8月3日下午，具身智能全栈方案商酷哇科技宣布聘任人工智能学者杨学博士担任首席科学家，并将与上海交通大学启动筹建「上海交通大学-酷哇科技通用具身智能联合实验室」。酷哇科技业务已覆盖全球50多个城市和地区，形成万台级机器人真实部署，自研COOWAM双层智能体世界模型架构驱动不同形态机器人。杨学为上海市启源学者、CCF优秀博士学位论文奖得主，连续三年入选斯坦福全球前2%顶尖科学家榜单。杨学的研究将首先落在驱动COOWAM系统化升级上。其他8/3来源：电科技。注：上观新闻、中国经济时报版本发布于8月4日。",
+      "discoveredAt": "2026-08-04T11:14:00+08:00"
     },
     {
-      "title": "出海破2000，插旗60国，墨甲机器人出海再加速",
-      "sourceUrl": "https://www.163.com/dy/article/L3D94DBI0514R9KQ.html",
-      "sourceName": "网易号（转载自北青网）",
-      "contentType": "COMMERCIALIZATION",
-      "sourceType": "MEDIA",
-      "sourceTier": "SECONDARY",
-      "publishedAt": "2026-08-03T09:45:00+08:00",
-      "queries": [
-        "墨甲机器人 全球交付 2000台 出海 2026年8月3日",
-        "2026年8月3日 交付 部署 机器人"
-      ],
-      "preliminarySummary": "7月30日墨甲机器人全球交付仪式在芜湖举行，宣布累计交付突破2000台，覆盖60余国。产品以人形机器人墨茵和四足机器狗Argos为主，覆盖汽车营销、智慧警务、医疗导诊等100+场景。已获欧盟CE、美国FCC认证。奇瑞集团孵化，共享奇瑞近30年全球化渠道。赛道：P0-具身智能/机器人出海。证据状态：多源佐证。事件日期为7月30日。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "华勤技术首批轮式双臂机器人F1正式出货，进军具身智能硬件ODM",
+      "title": "华勤技术开启智能机器人量产新纪元：首批轮式双臂机器人F1正式出货",
       "sourceUrl": "https://news.10jqka.com.cn/field/20260803/678616972.shtml",
-      "sourceName": "同花顺（转载自上海市通信制造业行业协会）",
+      "sourceName": "上海市通信制造业行业协会",
       "contentType": "COMMERCIALIZATION",
       "sourceType": "MEDIA",
       "sourceTier": "SECONDARY",
-      "publishedAt": "2026-08-03T11:03:00+08:00",
-      "queries": [
-        "华勤技术 F1 轮式双臂机器人 出货",
-        "2026年8月3日 量产 交付 机器人"
-      ],
-      "preliminarySummary": "华勤技术（603296）在南昌制造中心举行F1轮式双臂机器人首批订单出货仪式。继数采机器人后，标志公司机器人业务正式进入规模化交付期。华勤依托3C ODM积累的全栈研发量产底座，为具身物理模型领域合作伙伴提供整机定制ODM方案。赛道：P0-具身智能/机器人ODM。证据状态：单源报道。事件日期为7月26日。注意：此前误标sourceName为上海市通信制造业行业协会，实际页面为同花顺转载。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
-    },
-    {
-      "title": "中原'智造'新名片：首批'河南造'T800人形机器人量产下线",
-      "sourceUrl": "https://www.cbia.com.cn/Home/Infoforum/infodetail/code/ATH1785739353AGG",
-      "sourceName": "中国电池工业协会（转载自河南省政府网）",
-      "contentType": "PRODUCT",
-      "sourceType": "MEDIA",
-      "sourceTier": "SECONDARY",
-      "publishedAt": "2026-08-03T00:00:00+08:00",
-      "queries": [
-        "众擎 T800 人形机器人 量产 下线 河南",
-        "人形机器人 量产 2026年8月"
-      ],
-      "preliminarySummary": "首批'河南造'众擎T800人形机器人在郑州高新区量产下线。T800身高1.73米，搭载新一代视觉感知系统，可规模化部署于智慧交通、商业零售、工业智造和科研教育等全域场景。河南投资集团联合郑州产投等战略投资众擎机器人，推动全球制造基地落地。河南已将具身智能写入'十五五'规划。赛道：P0-具身智能/人形机器人量产。证据状态：单源报道（河南省政府网）。事件日期为7月24日。注意：此前误标sourceName为河南省政府网，实际页面为中国电池工业协会网站转载。",
-      "discoveredAt": "2026-08-03T19:22:28+08:00"
+      "publishedAt": "2026-08-03T11:03:19+08:00",
+      "queries": ["机器人 量产 出货", "具身智能 机器人 量产 工厂 2026年8月3日 发布"],
+      "preliminarySummary": "8月3日，上海市通信制造业行业协会发布华勤技术（603296）资讯：7月26日，华勤技术在南昌制造中心举行F1轮式双臂机器人首批订单出货仪式，合作方为一家深耕具身物理模型的新锐企业。华勤技术表示，依托3C ODM领域研发制造底座，已打造多品类机器人一体化交付体系，本次批量交付标志着公司机器人业务第二增长曲线进入规模化交付期。注：事件本身发生于7月26日，8月3日为协会发布报道日期。",
+      "discoveredAt": "2026-08-04T11:35:00+08:00"
     }
   ]
 }
