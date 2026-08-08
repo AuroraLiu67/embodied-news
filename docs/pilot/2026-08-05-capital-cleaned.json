@@ -1,0 +1,824 @@
+{
+  "schemaVersion": "capital-search-cleaned-2",
+  "artifactType": "cleaned_event_suggestions",
+  "sourceArtifact": "docs/pilot/2026-08-05-capital-raw.json",
+  "searchTargetDate": "2026-08-05",
+  "timezone": "Asia/Shanghai",
+  "formalCandidate": false,
+  "feishuImportable": false,
+  "statistics": {
+    "rawLeadCount": 48,
+    "uniqueNormalizedUrlCount": 47,
+    "exactUrlMergeCount": 0,
+    "nonTargetDateExcludedLeadCount": 21,
+    "dateUncertainExcludedLeadCount": 1,
+    "businessDateQualifiedLeadCount": 26,
+    "suggestedEventCount": 15,
+    "suggestedMergedGroupCount": 3,
+    "keepCount": 15,
+    "needsHumanCount": 0,
+    "suggestRejectCount": 21,
+    "accessFailedCount": 0,
+    "dateConflictInCleanCount": 0
+  },
+  "urlNormalization": {
+    "removedTrackingParameters": 0,
+    "removedFragments": 0,
+    "verifiedMobileDesktopMerges": 0,
+    "notes": "R003 and R046 differ only by the optional www host form and normalize to the same 36kr article URL; R046 is retained as an explicit correction audit record and only R046 enters clean. No unknown query parameter was removed; the signed WeChat URL is preserved verbatim because its parameters are functional."
+  },
+  "events": [
+    {
+      "eventId": "E001",
+      "classification": "KEEP",
+      "companyRaw": "广纳四维",
+      "companyStandardSuggested": "广纳四维",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundSuggested": "连续两轮，具体轮次未明确",
+      "amountSuggested": {
+        "text": "合计近2亿元",
+        "currency": "CNY"
+      },
+      "investorsSuggested": [
+        "广州产投等"
+      ],
+      "eventDate": null,
+      "sourceIds": [
+        "R024"
+      ],
+      "primarySourceSuggested": "R024",
+      "fieldEvidence": {
+        "company": [
+          "R002:title",
+          "R024:title"
+        ],
+        "status": [
+          "R002:title",
+          "R024:title"
+        ],
+        "amount": [
+          "R002:title",
+          "R024:title"
+        ],
+        "investors": [
+          "R024:summary"
+        ]
+      },
+      "conflicts": [],
+      "missing": [
+        "具体轮次",
+        "完整投资方",
+        "事件日期"
+      ],
+      "humanTodos": [
+        "确认标准公司名称和具体轮次"
+      ]
+    },
+    {
+      "eventId": "E002",
+      "classification": "KEEP",
+      "companyRaw": "巽霖科技",
+      "companyStandardSuggested": "巽霖科技",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundSuggested": "B轮",
+      "amountSuggested": {
+        "text": "近2亿元",
+        "currency": "CNY"
+      },
+      "investorsSuggested": [],
+      "eventDate": null,
+      "sourceIds": [
+        "R040"
+      ],
+      "primarySourceSuggested": "R040",
+      "fieldEvidence": {
+        "company": [
+          "R005:title",
+          "R006:title",
+          "R035:title",
+          "R040:title"
+        ],
+        "round": [
+          "R005:title",
+          "R035:title",
+          "R040:title"
+        ],
+        "amount": [
+          "R005:title",
+          "R035:title",
+          "R040:title"
+        ]
+      },
+      "conflicts": [],
+      "missing": [
+        "投资方"
+      ],
+      "humanTodos": [
+        "确认投资方和主来源"
+      ]
+    },
+    {
+      "eventId": "E003",
+      "classification": "KEEP",
+      "companyRaw": "同创永益",
+      "companyStandardSuggested": "北京同创永益科技发展有限公司",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundSuggested": "新一轮股权融资",
+      "amountSuggested": {
+        "text": "近亿元",
+        "currency": "CNY"
+      },
+      "investorsSuggested": [
+        "深圳市龙岗区引导基金投资有限公司等"
+      ],
+      "eventDate": null,
+      "sourceIds": [
+        "R025"
+      ],
+      "primarySourceSuggested": "R025",
+      "fieldEvidence": {
+        "company": [
+          "R025:summary"
+        ],
+        "status": [
+          "R025:title"
+        ],
+        "amount": [
+          "R025:summary"
+        ],
+        "investors": [
+          "R025:summary"
+        ]
+      },
+      "conflicts": [],
+      "missing": [
+        "完整投资方"
+      ],
+      "humanTodos": [
+        "确认标准公司名"
+      ]
+    },
+    {
+      "eventId": "E004",
+      "classification": "KEEP",
+      "companyRaw": "姆特科技/派姆特科技",
+      "companyStandardSuggested": "派姆特科技",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundSuggested": "B轮",
+      "amountSuggested": {
+        "text": "近亿元",
+        "currency": "CNY"
+      },
+      "investorsSuggested": [
+        "苏州高端装备产业专项母基金",
+        "天津泰达"
+      ],
+      "eventDate": null,
+      "sourceIds": [
+        "R026"
+      ],
+      "primarySourceSuggested": "R026",
+      "fieldEvidence": {
+        "company": [
+          "R026:title",
+          "R026:summary"
+        ],
+        "round": [
+          "R026:title"
+        ],
+        "amount": [
+          "R026:title"
+        ],
+        "investors": [
+          "R026:summary"
+        ]
+      },
+      "conflicts": [
+        "标题简称为姆特科技，摘要称派姆特科技"
+      ],
+      "missing": [],
+      "humanTodos": [
+        "确认标准公司名称"
+      ]
+    },
+    {
+      "eventId": "E005",
+      "classification": "KEEP",
+      "companyRaw": "杭州联汇科技（Om AI联汇）",
+      "companyStandardSuggested": "杭州联汇科技有限公司",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundSuggested": "新一轮融资",
+      "amountSuggested": {
+        "text": "数亿元",
+        "currency": "CNY"
+      },
+      "investorsSuggested": [
+        "前海母基金",
+        "杭州政府产业基金等"
+      ],
+      "eventDate": null,
+      "sourceIds": [
+        "R027",
+        "R043"
+      ],
+      "primarySourceSuggested": "R027",
+      "fieldEvidence": {
+        "company": [
+          "R027:summary",
+          "R043:title",
+          "R044:title"
+        ],
+        "round": [
+          "R027:title"
+        ],
+        "amount": [
+          "R027:title",
+          "R043:title",
+          "R044:title"
+        ],
+        "investors": [
+          "R027:summary",
+          "R043:title",
+          "R044:title"
+        ]
+      },
+      "conflicts": [
+        "雷峰网正文日期未确认"
+      ],
+      "missing": [
+        "完整投资方"
+      ],
+      "humanTodos": [],
+      "mergeDecision": "HUMAN_CONFIRMED_SAME_EVENT"
+    },
+    {
+      "eventId": "E006",
+      "classification": "KEEP",
+      "companyRaw": "哲源科技",
+      "companyStandardSuggested": "哲源科技",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundSuggested": "A2轮",
+      "amountSuggested": {
+        "text": "近2亿元",
+        "currency": "CNY"
+      },
+      "investorsSuggested": [],
+      "eventDate": null,
+      "sourceIds": [
+        "R028"
+      ],
+      "primarySourceSuggested": "R028",
+      "fieldEvidence": {
+        "company": [
+          "R028:title"
+        ],
+        "round": [
+          "R028:title"
+        ],
+        "amount": [
+          "R028:title"
+        ]
+      },
+      "conflicts": [],
+      "missing": [
+        "投资方"
+      ],
+      "humanTodos": [
+        "补核投资方"
+      ]
+    },
+    {
+      "eventId": "E007",
+      "classification": "KEEP",
+      "companyRaw": "华秋电子",
+      "companyStandardSuggested": "华秋电子",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundSuggested": "D轮",
+      "amountSuggested": {
+        "text": "数亿元",
+        "currency": "CNY"
+      },
+      "investorsSuggested": [
+        "招银国际",
+        "广新基金",
+        "成都高新",
+        "鸿石资本等"
+      ],
+      "eventDate": null,
+      "sourceIds": [
+        "R029",
+        "R041"
+      ],
+      "primarySourceSuggested": "R029",
+      "fieldEvidence": {
+        "company": [
+          "R029:title",
+          "R041:title"
+        ],
+        "round": [
+          "R029:title",
+          "R041:title"
+        ],
+        "amount": [
+          "R029:title",
+          "R041:title"
+        ],
+        "investors": [
+          "R029:summary",
+          "R041:summary"
+        ]
+      },
+      "conflicts": [],
+      "missing": [
+        "完整投资方"
+      ],
+      "humanTodos": [],
+      "mergeDecision": "HUMAN_CONFIRMED_SAME_EVENT"
+    },
+    {
+      "eventId": "E008",
+      "classification": "KEEP",
+      "companyRaw": "宏德新材",
+      "companyStandardSuggested": "宏德新材",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundSuggested": "A+轮",
+      "amountSuggested": {
+        "text": "超亿元",
+        "currency": "CNY"
+      },
+      "investorsSuggested": [],
+      "eventDate": null,
+      "sourceIds": [
+        "R030",
+        "R031"
+      ],
+      "primarySourceSuggested": "R030",
+      "fieldEvidence": {
+        "company": [
+          "R030:title",
+          "R031:title"
+        ],
+        "round": [
+          "R030:title",
+          "R031:title"
+        ],
+        "amount": [
+          "R030:title",
+          "R031:title"
+        ]
+      },
+      "conflicts": [],
+      "missing": [
+        "投资方"
+      ],
+      "humanTodos": [
+        "补核投资方"
+      ],
+      "mergeDecision": "HUMAN_CONFIRMED_SAME_EVENT"
+    },
+    {
+      "eventId": "E009",
+      "classification": "KEEP",
+      "companyRaw": "TNGlobal/Jumpstart Media",
+      "companyStandardSuggested": null,
+      "eventType": "ACQUISITION",
+      "financingStatus": "已完成",
+      "roundSuggested": "收购",
+      "amountSuggested": {
+        "text": "未披露",
+        "currency": null
+      },
+      "investorsSuggested": [],
+      "eventDate": null,
+      "sourceIds": [
+        "R032"
+      ],
+      "primarySourceSuggested": "R032",
+      "fieldEvidence": {
+        "status": [
+          "R032:title"
+        ],
+        "eventType": [
+          "R032:title"
+        ]
+      },
+      "conflicts": [],
+      "missing": [
+        "收购金额",
+        "双方标准名称"
+      ],
+      "humanTodos": [
+        "AI补核收购双方标准名称"
+      ],
+      "scopeDecision": "HUMAN_CONFIRMED_KEEP_OVERSEAS_EVENT"
+    },
+    {
+      "eventId": "E010",
+      "classification": "KEEP",
+      "companyRaw": "Electronic Arts/收购方待核",
+      "companyStandardSuggested": "Electronic Arts",
+      "eventType": "ACQUISITION",
+      "financingStatus": "已完成",
+      "roundSuggested": "收购",
+      "amountSuggested": {
+        "text": "约3700亿元",
+        "currency": "CNY"
+      },
+      "investorsSuggested": [
+        "沙特主权基金等/待核"
+      ],
+      "eventDate": null,
+      "sourceIds": [
+        "R038"
+      ],
+      "primarySourceSuggested": "R038",
+      "fieldEvidence": {
+        "company": [
+          "R038:title"
+        ],
+        "status": [
+          "R038:title"
+        ],
+        "amount": [
+          "R038:title"
+        ],
+        "investors": [
+          "R038:summary"
+        ]
+      },
+      "conflicts": [],
+      "missing": [
+        "完整收购方",
+        "交易币种原文",
+        "交易进展"
+      ],
+      "humanTodos": [
+        "AI补核收购方和金额币种"
+      ],
+      "scopeDecision": "HUMAN_CONFIRMED_KEEP_OVERSEAS_EVENT"
+    },
+    {
+      "eventId": "E011",
+      "classification": "KEEP",
+      "companyRaw": "蓝凌星通",
+      "companyStandardSuggested": "蓝凌星通",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundSuggested": "股权融资",
+      "amountSuggested": {
+        "text": "数千万元",
+        "currency": "CNY"
+      },
+      "investorsSuggested": [],
+      "eventDate": null,
+      "sourceIds": [
+        "R039"
+      ],
+      "primarySourceSuggested": "R039",
+      "fieldEvidence": {
+        "company": [
+          "R039:title"
+        ],
+        "status": [
+          "R039:title"
+        ],
+        "amount": [
+          "R039:title"
+        ]
+      },
+      "conflicts": [],
+      "missing": [
+        "投资方"
+      ],
+      "humanTodos": [
+        "补核投资方"
+      ]
+    },
+    {
+      "eventId": "E012",
+      "classification": "KEEP",
+      "companyRaw": "酉术量子",
+      "companyStandardSuggested": "酉术量子",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundSuggested": "未明确",
+      "amountSuggested": {
+        "text": "数千万元",
+        "currency": "CNY"
+      },
+      "investorsSuggested": [],
+      "eventDate": null,
+      "sourceIds": [
+        "R042"
+      ],
+      "primarySourceSuggested": "R042",
+      "fieldEvidence": {
+        "company": [
+          "R042:title"
+        ],
+        "status": [
+          "R042:title"
+        ],
+        "amount": [
+          "R042:title"
+        ]
+      },
+      "conflicts": [],
+      "missing": [
+        "轮次",
+        "投资方"
+      ],
+      "humanTodos": [
+        "补核轮次和投资方",
+        "确认是否为8月4日事件的8月5日转载"
+      ]
+    },
+    {
+      "eventId": "E013",
+      "classification": "KEEP",
+      "companyRaw": "若创科技（Strutt）",
+      "companyStandardSuggested": "若创科技",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundSuggested": "Pre-A+轮",
+      "amountSuggested": {
+        "text": "本轮未披露；累计融资近1亿美元",
+        "currency": "USD"
+      },
+      "investorsSuggested": [],
+      "eventDate": null,
+      "sourceIds": [
+        "R046"
+      ],
+      "primarySourceSuggested": "R046",
+      "fieldEvidence": {
+        "company": [
+          "R046:body"
+        ],
+        "status": [
+          "R046:title/body"
+        ],
+        "round": [
+          "R046:body"
+        ],
+        "amount": [
+          "R046:title/body"
+        ],
+        "sourceDate": [
+          "R046:visible_body_date"
+        ]
+      },
+      "conflicts": [],
+      "missing": [
+        "本轮单独金额",
+        "投资方具体名称",
+        "事件日期"
+      ],
+      "humanTodos": [
+        "后续AI补核投资方具体名称；不得从泛称猜测"
+      ]
+    },
+    {
+      "eventId": "E014",
+      "classification": "KEEP",
+      "companyRaw": "无界开物（上海）量子科技有限公司（无界量子）",
+      "companyStandardSuggested": "无界开物（上海）量子科技有限公司",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundSuggested": "天使轮",
+      "amountSuggested": {
+        "text": "数千万元人民币",
+        "currency": "CNY"
+      },
+      "investorsSuggested": [
+        "复旦科创",
+        "险峰",
+        "前海方舟",
+        "中赢创投"
+      ],
+      "eventDate": null,
+      "sourceIds": [
+        "R047"
+      ],
+      "primarySourceSuggested": "R047",
+      "fieldEvidence": {
+        "company": [
+          "R047:public_search_title/summary"
+        ],
+        "status": [
+          "R047:public_search_title"
+        ],
+        "round": [
+          "R047:public_search_title"
+        ],
+        "amount": [
+          "R047:public_search_title"
+        ],
+        "investors": [
+          "R047:public_search_summary"
+        ],
+        "sourceDate": [
+          "R047:public_search_timestamp"
+        ]
+      },
+      "conflicts": [],
+      "missing": [
+        "稳定长期文章URL",
+        "事件日期"
+      ],
+      "humanTodos": [
+        "后续AI寻找同日稳定公开交叉来源；当前公众号签名URL可能失效"
+      ],
+      "evidenceBoundary": "微信公众号公开搜索索引确认标题、时间和摘要；未将搜索摘要表述为已阅读全文"
+    },
+    {
+      "eventId": "E015",
+      "classification": "KEEP",
+      "companyRaw": "星际荣耀",
+      "companyStandardSuggested": "星际荣耀",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundSuggested": "E轮（首笔资金完成交割）",
+      "amountSuggested": {
+        "text": "近10亿元人民币",
+        "currency": "CNY"
+      },
+      "investorsSuggested": [
+        "多家银行系AIC（具体名称未披露）"
+      ],
+      "eventDate": null,
+      "sourceIds": [
+        "R048"
+      ],
+      "primarySourceSuggested": "R048",
+      "fieldEvidence": {
+        "company": [
+          "R048:title/body"
+        ],
+        "status": [
+          "R048:title/body"
+        ],
+        "round": [
+          "R048:title/body"
+        ],
+        "amount": [
+          "R048:title/body"
+        ],
+        "investors": [
+          "R048:body"
+        ],
+        "sourceDate": [
+          "R048:visible_body_date"
+        ]
+      },
+      "conflicts": [],
+      "missing": [
+        "投资方具体名称",
+        "事件日期",
+        "用户提及的搜狐和亿欧原始链接"
+      ],
+      "humanTodos": [
+        "后续AI补核清单内搜狐交叉来源和投资方具体名称"
+      ],
+      "sourceScopeNote": "每日经济新闻为用户漏报复核时使用的公开补充来源，不计入17站覆盖完成度"
+    }
+  ],
+  "suggestedMergeGroups": [
+    {
+      "groupId": "G001",
+      "company": "杭州联汇科技（Om AI联汇）",
+      "sourceIds": [
+        "R027",
+        "R043"
+      ],
+      "strongMatch": "公司、数亿元、前海母基金领投一致",
+      "humanDecision": "CONFIRMED_MERGE",
+      "primarySource": "R027"
+    },
+    {
+      "groupId": "G002",
+      "company": "华秋电子",
+      "sourceIds": [
+        "R029",
+        "R041"
+      ],
+      "strongMatch": "公司、D轮、金额及投资方一致",
+      "humanDecision": "CONFIRMED_MERGE",
+      "primarySource": "R029"
+    },
+    {
+      "groupId": "G003",
+      "company": "宏德新材",
+      "sourceIds": [
+        "R030",
+        "R031"
+      ],
+      "strongMatch": "同站、公司、A+轮和超亿元一致",
+      "humanDecision": "CONFIRMED_MERGE",
+      "primarySource": "R030"
+    }
+  ],
+  "audit": {
+    "humanConfirmedValues": [],
+    "machineSuggestionsOnly": true,
+    "approvedAt": null,
+    "weeklyIssue": null,
+    "historyCheckPerformed": false,
+    "historyCheckReason": "No Feishu or formal data access authorized.",
+    "businessDateRule": "Strict target-date gate per search-strategy.md v6; original-page visible date is authoritative, with WeChat public-index evidence explicitly marked",
+    "userDecisions": [
+      {
+        "decidedAt": "2026-08-06",
+        "decision": "G001-G003 confirmed as same-event groups",
+        "primarySources": {
+          "G001": "R027",
+          "G002": "R029",
+          "G003": "R030"
+        }
+      },
+      {
+        "decidedAt": "2026-08-06",
+        "decision": "Exclude fund first-close, registration, establishment and GP-investment events from clean",
+        "excludedRawIds": [
+          "R018",
+          "R019",
+          "R020",
+          "R021",
+          "R022",
+          "R023",
+          "R033"
+        ]
+      },
+      {
+        "decidedAt": "2026-08-06",
+        "decision": "Exclude Investment Daily 24h roundup because its covered events belong to 2026-08-04",
+        "excludedRawIds": [
+          "R034"
+        ]
+      },
+      {
+        "decidedAt": "2026-08-06",
+        "decision": "Keep overseas-company acquisition events found in domestic media; do not exclude solely because the transaction parties are foreign",
+        "eventIds": [
+          "E009",
+          "E010"
+        ]
+      },
+      {
+        "decidedAt": "2026-08-07",
+        "decision": "Add user-identified missed target-date events and preserve correction evidence",
+        "addedRawIds": [
+          "R046",
+          "R047",
+          "R048"
+        ],
+        "addedEventIds": [
+          "E013",
+          "E014",
+          "E015"
+        ]
+      }
+    ]
+  },
+  "businessDateGate": {
+    "timezone": "Asia/Shanghai",
+    "requiredSourceDate": "2026-08-05",
+    "result": "PASS",
+    "rule": "Only sources with confirmed visible publication date on target day may enter clean",
+    "relativeTimeBasis": "Recalculated at 2026-08-06T10:03:04+08:00 and verified against article body",
+    "excludedRawIds": [
+      "R001",
+      "R002",
+      "R003",
+      "R004",
+      "R005",
+      "R006",
+      "R007",
+      "R008",
+      "R009",
+      "R010",
+      "R011",
+      "R012",
+      "R013",
+      "R014",
+      "R015",
+      "R016",
+      "R017",
+      "R035",
+      "R036",
+      "R037",
+      "R045"
+    ],
+    "dateUncertainRawIds": [
+      "R044"
+    ]
+  }
+}

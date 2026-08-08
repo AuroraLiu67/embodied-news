@@ -1,0 +1,946 @@
+{
+  "schemaVersion": "capital-search-cleaned-2",
+  "artifactType": "capital_search_cleaned_reviewed",
+  "taskId": "DAILY-CAPITAL-SEARCH-<2026.8.4>",
+  "searchTargetDate": "2026-08-04",
+  "timezone": "Asia/Shanghai",
+  "formalCandidate": false,
+  "feishuImportable": false,
+  "statistics": {
+    "rawLeadCount": 34,
+    "excludedSourceCount": 13,
+    "retainedSourceCount": 21,
+    "uniqueRetainedUrlCount": 21,
+    "suggestedEventCount": 16,
+    "confirmedMergedGroupCount": 4,
+    "keepCount": 16,
+    "needsHumanCount": 0,
+    "dateConflictInCleanCount": 0
+  },
+  "businessDateGate": {
+    "requiredSourceDate": "2026-08-04",
+    "result": "PASS",
+    "verifiedSourceCount": 21,
+    "pendingDateCount": 0,
+    "rule": "Only visible-body-date-confirmed target-day sources enter clean"
+  },
+  "retainedSources": [
+    {
+      "sourceId": "R002",
+      "media": "投资界",
+      "title": "帕西尼再获10亿元战略轮融资，累计融资35亿",
+      "url": "https://www.pedaily.cn/news/567202",
+      "publishedAt": "2026-08-04T09:19:00+08:00",
+      "company": "帕西尼",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "战略轮",
+      "amountText": "10亿元",
+      "eventGroupId": null,
+      "evidenceStatus": [
+        "BODY_VERIFIED"
+      ]
+    },
+    {
+      "sourceId": "R003",
+      "media": "投资界",
+      "title": "蔚蓝恒星完成数亿元天使+轮融资，成立十个月估值超30亿",
+      "url": "https://www.pedaily.cn/news/567208",
+      "publishedAt": "2026-08-04T10:29:00+08:00",
+      "company": "蔚蓝恒星",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "天使+轮",
+      "amountText": "数亿元",
+      "eventGroupId": "G01",
+      "evidenceStatus": [
+        "BODY_VERIFIED",
+        "CROSS_SOURCE"
+      ]
+    },
+    {
+      "sourceId": "R004",
+      "media": "投资界",
+      "title": "嘉立创敲钟，深圳千亿IPO诞生",
+      "url": "https://www.pedaily.cn/news/567209",
+      "publishedAt": "2026-08-04T10:39:00+08:00",
+      "company": "嘉立创",
+      "eventType": "IPO_LISTING",
+      "financingStatus": "COMPLETED",
+      "roundText": null,
+      "amountText": null,
+      "eventGroupId": "G03",
+      "evidenceStatus": [
+        "BODY_VERIFIED",
+        "CROSS_SOURCE"
+      ]
+    },
+    {
+      "sourceId": "R005",
+      "media": "投资界",
+      "title": "上海新苡萃生物（NewPro）完成数千万元PreA轮融资，深耕合成生物技术",
+      "url": "https://www.pedaily.cn/news/567210",
+      "publishedAt": "2026-08-04T10:36:00+08:00",
+      "company": "新苡萃生物",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "Pre-A轮",
+      "amountText": "数千万元",
+      "eventGroupId": null,
+      "evidenceStatus": [
+        "BODY_VERIFIED"
+      ]
+    },
+    {
+      "sourceId": "R006",
+      "media": "投资界",
+      "title": "为光能源完成数亿元B轮融资，加速固态变压器（SST）技术创新",
+      "url": "https://www.pedaily.cn/news/567211",
+      "publishedAt": "2026-08-04T10:49:00+08:00",
+      "company": "为光能源",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "B轮",
+      "amountText": "数亿元",
+      "eventGroupId": null,
+      "evidenceStatus": [
+        "BODY_VERIFIED"
+      ]
+    },
+    {
+      "sourceId": "R011",
+      "media": "投资界",
+      "title": "CMC资本完成对太洋科技的战略投资，切入金属铍全产业链领域",
+      "url": "https://www.pedaily.cn/news/567220",
+      "publishedAt": "2026-08-04T11:31:00+08:00",
+      "company": "太洋科技",
+      "eventType": "STRATEGIC_INVESTMENT",
+      "financingStatus": "COMPLETED",
+      "roundText": "战略投资",
+      "amountText": "未披露",
+      "eventGroupId": null,
+      "evidenceStatus": [
+        "BODY_VERIFIED"
+      ]
+    },
+    {
+      "sourceId": "R012",
+      "media": "投资界",
+      "title": "听象科技（昂听Elehear）完成数千万元新一轮融资，加速声学与AI算法研发",
+      "url": "https://www.pedaily.cn/news/567233",
+      "publishedAt": "2026-08-04T13:54:00+08:00",
+      "company": "听象科技",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "新一轮融资",
+      "amountText": "数千万元",
+      "eventGroupId": null,
+      "evidenceStatus": [
+        "BODY_VERIFIED"
+      ]
+    },
+    {
+      "sourceId": "R013",
+      "media": "投资界",
+      "title": "德玛克精工完成4.2亿元C轮融资",
+      "url": "https://www.pedaily.cn/news/567234",
+      "publishedAt": "2026-08-04T14:00:00+08:00",
+      "company": "德玛克精工",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "C轮",
+      "amountText": "4.2亿元",
+      "eventGroupId": null,
+      "evidenceStatus": [
+        "BODY_VERIFIED"
+      ]
+    },
+    {
+      "sourceId": "R014",
+      "media": "投资界",
+      "title": "酉术量子完成数千万元融资，以原创算法打开量子科学计算通用入口",
+      "url": "https://www.pedaily.cn/news/567235",
+      "publishedAt": "2026-08-04T14:13:00+08:00",
+      "company": "酉术量子",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "未披露",
+      "amountText": "数千万元",
+      "eventGroupId": null,
+      "evidenceStatus": [
+        "BODY_VERIFIED"
+      ]
+    },
+    {
+      "sourceId": "R015",
+      "media": "投资界",
+      "title": "陶世智能完成1.4亿元融资，估值破10亿",
+      "url": "https://www.pedaily.cn/news/567236",
+      "publishedAt": "2026-08-04T14:21:00+08:00",
+      "company": "陶世智能",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "待核",
+      "amountText": "1.4亿元",
+      "eventGroupId": "G04",
+      "evidenceStatus": [
+        "BODY_VERIFIED",
+        "CROSS_SOURCE"
+      ]
+    },
+    {
+      "sourceId": "R017",
+      "media": "投资界",
+      "title": "恺望数据完成逾亿元新一轮战略融资，亦庄产业基金、华方资本、天际资本联合领投",
+      "url": "https://www.pedaily.cn/news/567244",
+      "publishedAt": "2026-08-04T16:13:00+08:00",
+      "company": "恺望数据",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "新一轮战略融资",
+      "amountText": "逾亿元",
+      "eventGroupId": null,
+      "evidenceStatus": [
+        "BODY_VERIFIED"
+      ]
+    },
+    {
+      "sourceId": "R018",
+      "media": "投资界",
+      "title": "巽霖科技完成近2亿元B轮融资，半年已融资三轮",
+      "url": "https://www.pedaily.cn/news/567247",
+      "publishedAt": "2026-08-04T17:04:00+08:00",
+      "company": "巽霖科技",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "B轮",
+      "amountText": "近2亿元",
+      "eventGroupId": "G02",
+      "evidenceStatus": [
+        "BODY_VERIFIED",
+        "CROSS_SOURCE"
+      ]
+    },
+    {
+      "sourceId": "R020",
+      "media": "36氪",
+      "title": "一层‘布’涨价270%之后，投资机构用数亿元投票玻璃基板，巽霖科技完成近2亿元B轮融资",
+      "url": "https://36kr.com/p/3924953930856578",
+      "publishedAt": "2026-08-04",
+      "company": "巽霖科技",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "B轮",
+      "amountText": "近2亿元",
+      "eventGroupId": "G02",
+      "evidenceStatus": [
+        "BODY_VERIFIED",
+        "CROSS_SOURCE"
+      ],
+      "publishedAtPrecision": "DATE"
+    },
+    {
+      "sourceId": "R021",
+      "media": "36氪",
+      "title": "一层‘布’涨价270%之后，投资机构用数亿元投票玻璃基板，巽霖科技完成近2亿元B轮融资",
+      "url": "https://36kr.com/p/3924953058605444",
+      "publishedAt": "2026-08-04",
+      "company": "巽霖科技",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "B轮",
+      "amountText": "近2亿元",
+      "eventGroupId": "G02",
+      "evidenceStatus": [
+        "BODY_VERIFIED",
+        "CROSS_SOURCE",
+        "SAME_MEDIA_VARIANT"
+      ],
+      "publishedAtPrecision": "DATE"
+    },
+    {
+      "sourceId": "R022",
+      "media": "36氪",
+      "title": "用Physical AI解决实验工具痛点，术也科技获Pre-A轮融资",
+      "url": "https://36kr.com/p/3924586316331392",
+      "publishedAt": "2026-08-04",
+      "company": "术也科技",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "Pre-A轮",
+      "amountText": "数千万元",
+      "eventGroupId": null,
+      "evidenceStatus": [
+        "BODY_VERIFIED"
+      ],
+      "publishedAtPrecision": "DATE"
+    },
+    {
+      "sourceId": "R024",
+      "media": "36氪",
+      "title": "金融活水浇灌科创新苗，宁波极稳科技完成数千万天使轮融资",
+      "url": "https://36kr.com/p/3924658163792262",
+      "publishedAt": "2026-08-04",
+      "company": "极稳科技",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "天使轮",
+      "amountText": "数千万元",
+      "eventGroupId": null,
+      "evidenceStatus": [
+        "BODY_VERIFIED"
+      ],
+      "publishedAtPrecision": "DATE"
+    },
+    {
+      "sourceId": "R027",
+      "media": "36氪",
+      "title": "36氪首发｜两位‘三清’博士联合创业做空间态势感知服务，完成数千万天使+轮融资",
+      "url": "https://36kr.com/p/3924634192673153",
+      "publishedAt": "2026-08-04",
+      "company": "清博空天",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "天使+轮",
+      "amountText": "数千万元",
+      "eventGroupId": null,
+      "evidenceStatus": [
+        "BODY_VERIFIED",
+        "COMPANY_NAME_USER_VERIFIED"
+      ],
+      "publishedAtPrecision": "DATE"
+    },
+    {
+      "sourceId": "R028",
+      "media": "36氪",
+      "title": "36氪首发｜为果链、头部灵巧手公司供货，新型减速器厂商完成超亿元融资，估值破10亿",
+      "url": "https://36kr.com/p/3924628805351811",
+      "publishedAt": "2026-08-04",
+      "company": "陶世智能",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "待核",
+      "amountText": "超亿元",
+      "eventGroupId": "G04",
+      "evidenceStatus": [
+        "BODY_VERIFIED",
+        "COMPANY_NAME_USER_VERIFIED",
+        "CROSS_SOURCE"
+      ],
+      "publishedAtPrecision": "DATE"
+    },
+    {
+      "sourceId": "R029",
+      "media": "36氪",
+      "title": "风火轮萤图完成3000万元种子+轮融资，发力具身智能主动交互",
+      "url": "https://36kr.com/p/3923260535221634",
+      "publishedAt": "2026-08-04",
+      "company": "风火轮萤图",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "种子+轮",
+      "amountText": "3000万元",
+      "eventGroupId": null,
+      "evidenceStatus": [
+        "BODY_VERIFIED"
+      ],
+      "publishedAtPrecision": "DATE"
+    },
+    {
+      "sourceId": "R030",
+      "media": "36氪",
+      "title": "估值超30亿，核聚变商业化破局者：蔚蓝恒星完成数亿元天使+轮融资",
+      "url": "https://36kr.com/p/3924623449503874",
+      "publishedAt": "2026-08-04",
+      "company": "蔚蓝恒星",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundText": "天使+轮",
+      "amountText": "数亿元",
+      "eventGroupId": "G01",
+      "evidenceStatus": [
+        "BODY_VERIFIED",
+        "CROSS_SOURCE"
+      ],
+      "publishedAtPrecision": "DATE"
+    },
+    {
+      "sourceId": "R034",
+      "media": "创业邦",
+      "title": "工程师打样打出千亿IPO！今天，华强北又诞生了一个超级神话",
+      "url": "https://www.cyzone.cn/article/842083.html",
+      "publishedAt": "2026-08-04T00:00:00+08:00",
+      "publishedAtPrecision": "DATE",
+      "company": "嘉立创",
+      "eventType": "IPO_LISTING",
+      "financingStatus": "COMPLETED",
+      "roundText": null,
+      "amountText": null,
+      "eventGroupId": "G03",
+      "evidenceStatus": [
+        "BODY_VERIFIED",
+        "CROSS_SOURCE"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "eventId": "E001",
+      "classification": "KEEP",
+      "companyRaw": "蔚蓝恒星",
+      "companyStandardSuggested": "蔚蓝恒星",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "天使+轮",
+      "amountSuggested": {
+        "text": "数亿元",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R003",
+        "R030"
+      ],
+      "primarySourceSuggested": "R003",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R003",
+          "publishedAt": "2026-08-04T10:29:00+08:00"
+        },
+        {
+          "sourceId": "R030",
+          "publishedAt": "2026-08-04"
+        }
+      ],
+      "conflicts": [],
+      "missing": [],
+      "humanTodos": [],
+      "aiFollowups": []
+    },
+    {
+      "eventId": "E002",
+      "classification": "KEEP",
+      "companyRaw": "巽霖科技",
+      "companyStandardSuggested": "巽霖科技",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "B轮",
+      "amountSuggested": {
+        "text": "近2亿元",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R018",
+        "R020",
+        "R021"
+      ],
+      "primarySourceSuggested": "R018",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R018",
+          "publishedAt": "2026-08-04T17:04:00+08:00"
+        },
+        {
+          "sourceId": "R020",
+          "publishedAt": "2026-08-04"
+        },
+        {
+          "sourceId": "R021",
+          "publishedAt": "2026-08-04"
+        }
+      ],
+      "conflicts": [],
+      "missing": [],
+      "humanTodos": [],
+      "aiFollowups": []
+    },
+    {
+      "eventId": "E003",
+      "classification": "KEEP",
+      "companyRaw": "嘉立创",
+      "companyStandardSuggested": "嘉立创",
+      "eventType": "IPO_LISTING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": null,
+      "amountSuggested": {
+        "text": null,
+        "currency": null
+      },
+      "sourceIds": [
+        "R004",
+        "R034"
+      ],
+      "primarySourceSuggested": "R004",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R004",
+          "publishedAt": "2026-08-04T10:39:00+08:00"
+        },
+        {
+          "sourceId": "R034",
+          "publishedAt": "2026-08-04T00:00:00+08:00"
+        }
+      ],
+      "conflicts": [],
+      "missing": [
+        "轮次",
+        "金额"
+      ],
+      "humanTodos": [],
+      "aiFollowups": [
+        "补核轮次",
+        "补核金额"
+      ]
+    },
+    {
+      "eventId": "E004",
+      "classification": "KEEP",
+      "companyRaw": "陶世智能",
+      "companyStandardSuggested": "陶世智能",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "待核",
+      "amountSuggested": {
+        "text": "1.4亿元",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R015",
+        "R028"
+      ],
+      "primarySourceSuggested": "R015",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R015",
+          "publishedAt": "2026-08-04T14:21:00+08:00"
+        },
+        {
+          "sourceId": "R028",
+          "publishedAt": "2026-08-04"
+        }
+      ],
+      "conflicts": [
+        "金额精度：R015为1.4亿元，R028为超亿元；两者不矛盾，采用主来源精确表述"
+      ],
+      "missing": [
+        "轮次"
+      ],
+      "humanTodos": [],
+      "aiFollowups": [
+        "补核轮次"
+      ]
+    },
+    {
+      "eventId": "E005",
+      "classification": "KEEP",
+      "companyRaw": "新苡萃生物",
+      "companyStandardSuggested": "新苡萃生物",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "Pre-A轮",
+      "amountSuggested": {
+        "text": "数千万元",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R005"
+      ],
+      "primarySourceSuggested": "R005",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R005",
+          "publishedAt": "2026-08-04T10:36:00+08:00"
+        }
+      ],
+      "conflicts": [],
+      "missing": [],
+      "humanTodos": [],
+      "aiFollowups": []
+    },
+    {
+      "eventId": "E006",
+      "classification": "KEEP",
+      "companyRaw": "为光能源",
+      "companyStandardSuggested": "为光能源",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "B轮",
+      "amountSuggested": {
+        "text": "数亿元",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R006"
+      ],
+      "primarySourceSuggested": "R006",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R006",
+          "publishedAt": "2026-08-04T10:49:00+08:00"
+        }
+      ],
+      "conflicts": [],
+      "missing": [],
+      "humanTodos": [],
+      "aiFollowups": []
+    },
+    {
+      "eventId": "E007",
+      "classification": "KEEP",
+      "companyRaw": "太洋科技",
+      "companyStandardSuggested": "太洋科技",
+      "eventType": "STRATEGIC_INVESTMENT",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "战略投资",
+      "amountSuggested": {
+        "text": "未披露",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R011"
+      ],
+      "primarySourceSuggested": "R011",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R011",
+          "publishedAt": "2026-08-04T11:31:00+08:00"
+        }
+      ],
+      "conflicts": [],
+      "missing": [
+        "金额"
+      ],
+      "humanTodos": [],
+      "aiFollowups": [
+        "补核金额"
+      ]
+    },
+    {
+      "eventId": "E008",
+      "classification": "KEEP",
+      "companyRaw": "听象科技",
+      "companyStandardSuggested": "听象科技",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "新一轮融资",
+      "amountSuggested": {
+        "text": "数千万元",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R012"
+      ],
+      "primarySourceSuggested": "R012",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R012",
+          "publishedAt": "2026-08-04T13:54:00+08:00"
+        }
+      ],
+      "conflicts": [],
+      "missing": [],
+      "humanTodos": [],
+      "aiFollowups": []
+    },
+    {
+      "eventId": "E009",
+      "classification": "KEEP",
+      "companyRaw": "德玛克精工",
+      "companyStandardSuggested": "德玛克精工",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "C轮",
+      "amountSuggested": {
+        "text": "4.2亿元",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R013"
+      ],
+      "primarySourceSuggested": "R013",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R013",
+          "publishedAt": "2026-08-04T14:00:00+08:00"
+        }
+      ],
+      "conflicts": [],
+      "missing": [],
+      "humanTodos": [],
+      "aiFollowups": []
+    },
+    {
+      "eventId": "E010",
+      "classification": "KEEP",
+      "companyRaw": "酉术量子",
+      "companyStandardSuggested": "酉术量子",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "未披露",
+      "amountSuggested": {
+        "text": "数千万元",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R014"
+      ],
+      "primarySourceSuggested": "R014",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R014",
+          "publishedAt": "2026-08-04T14:13:00+08:00"
+        }
+      ],
+      "conflicts": [],
+      "missing": [
+        "轮次"
+      ],
+      "humanTodos": [],
+      "aiFollowups": [
+        "补核轮次"
+      ]
+    },
+    {
+      "eventId": "E011",
+      "classification": "KEEP",
+      "companyRaw": "恺望数据",
+      "companyStandardSuggested": "恺望数据",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "新一轮战略融资",
+      "amountSuggested": {
+        "text": "逾亿元",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R017"
+      ],
+      "primarySourceSuggested": "R017",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R017",
+          "publishedAt": "2026-08-04T16:13:00+08:00"
+        }
+      ],
+      "conflicts": [],
+      "missing": [],
+      "humanTodos": [],
+      "aiFollowups": []
+    },
+    {
+      "eventId": "E012",
+      "classification": "KEEP",
+      "companyRaw": "术也科技",
+      "companyStandardSuggested": "术也科技",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "Pre-A轮",
+      "amountSuggested": {
+        "text": "数千万元",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R022"
+      ],
+      "primarySourceSuggested": "R022",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R022",
+          "publishedAt": "2026-08-04"
+        }
+      ],
+      "conflicts": [],
+      "missing": [],
+      "humanTodos": [],
+      "aiFollowups": []
+    },
+    {
+      "eventId": "E013",
+      "classification": "KEEP",
+      "companyRaw": "极稳科技",
+      "companyStandardSuggested": "极稳科技",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "天使轮",
+      "amountSuggested": {
+        "text": "数千万元",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R024"
+      ],
+      "primarySourceSuggested": "R024",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R024",
+          "publishedAt": "2026-08-04"
+        }
+      ],
+      "conflicts": [],
+      "missing": [],
+      "humanTodos": [],
+      "aiFollowups": []
+    },
+    {
+      "eventId": "E014",
+      "classification": "KEEP",
+      "companyRaw": "清博空天",
+      "companyStandardSuggested": "清博空天",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "天使+轮",
+      "amountSuggested": {
+        "text": "数千万元",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R027"
+      ],
+      "primarySourceSuggested": "R027",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R027",
+          "publishedAt": "2026-08-04"
+        }
+      ],
+      "conflicts": [],
+      "missing": [],
+      "humanTodos": [],
+      "aiFollowups": []
+    },
+    {
+      "eventId": "E015",
+      "classification": "KEEP",
+      "companyRaw": "风火轮萤图",
+      "companyStandardSuggested": "风火轮萤图",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "种子+轮",
+      "amountSuggested": {
+        "text": "3000万元",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R029"
+      ],
+      "primarySourceSuggested": "R029",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R029",
+          "publishedAt": "2026-08-04"
+        }
+      ],
+      "conflicts": [],
+      "missing": [],
+      "humanTodos": [],
+      "aiFollowups": []
+    },
+    {
+      "eventId": "E016",
+      "classification": "KEEP",
+      "companyRaw": "帕西尼",
+      "companyStandardSuggested": "帕西尼",
+      "eventType": "FUNDING",
+      "financingStatus": "COMPLETED",
+      "roundSuggested": "战略轮",
+      "amountSuggested": {
+        "text": "10亿元",
+        "currency": "CNY"
+      },
+      "sourceIds": [
+        "R002"
+      ],
+      "primarySourceSuggested": "R002",
+      "sourcePublishedAt": [
+        {
+          "sourceId": "R002",
+          "publishedAt": "2026-08-04T09:19:00+08:00"
+        }
+      ],
+      "conflicts": [],
+      "missing": [],
+      "humanTodos": [],
+      "aiFollowups": [
+        "补核投资方"
+      ]
+    }
+  ],
+  "confirmedEventGroups": [
+    {
+      "groupId": "G01",
+      "company": "蔚蓝恒星",
+      "sourceIds": [
+        "R003",
+        "R030"
+      ],
+      "primarySource": "R003",
+      "decision": "HUMAN_CONFIRMED_SAME_EVENT"
+    },
+    {
+      "groupId": "G02",
+      "company": "巽霖科技",
+      "sourceIds": [
+        "R018",
+        "R020",
+        "R021"
+      ],
+      "primarySource": "R018",
+      "decision": "HUMAN_CONFIRMED_SAME_EVENT"
+    },
+    {
+      "groupId": "G03",
+      "company": "嘉立创",
+      "sourceIds": [
+        "R004",
+        "R034"
+      ],
+      "primarySource": "R004",
+      "decision": "HUMAN_CONFIRMED_SAME_EVENT"
+    },
+    {
+      "groupId": "G04",
+      "company": "陶世智能",
+      "sourceIds": [
+        "R015",
+        "R028"
+      ],
+      "primarySource": "R015",
+      "decision": "MACHINE_STRONG_MATCH_MERGED"
+    }
+  ],
+  "excludedSourceIds": [
+    "R001",
+    "R007",
+    "R008",
+    "R009",
+    "R010",
+    "R016",
+    "R019",
+    "R023",
+    "R025",
+    "R026",
+    "R031",
+    "R032",
+    "R033"
+  ],
+  "pendingHumanChecks": [],
+  "audit": {
+    "sourceArtifact": "docs/pilot/2026-08-04-capital-search.md",
+    "cleanedAt": "2026-08-06",
+    "rulesApplied": [
+      "strict target-day body-date gate",
+      "user exclusions preserved",
+      "exact URL retention",
+      "same-event grouping",
+      "primary source suggestion"
+    ],
+    "userDecisions": [
+      "exclude R001,R007-R010,R016,R019,R023,R025-R026,R031-R033",
+      "confirm G01-G03 same events"
+    ],
+    "notes": [
+      "Fund/GP and analysis items remain excluded per user decisions",
+      "Overseas events are not excluded solely for being overseas",
+      "Recovered R002 Pasini financing omitted by the previous cleaning artifact"
+    ]
+  }
+}

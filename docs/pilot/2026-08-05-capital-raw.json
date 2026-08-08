@@ -1,0 +1,1352 @@
+{
+  "schemaVersion": "capital-search-raw-1",
+  "artifactType": "immutable_raw_search",
+  "taskId": "DAILY-CAPITAL-SEARCH-2026-08-05",
+  "searchTargetDate": "2026-08-05",
+  "timezone": "Asia/Shanghai",
+  "firstSeenAt": "2026-08-06T00:26:02+08:00",
+  "formalCandidate": false,
+  "feishuImportable": false,
+  "agentReach": {
+    "doctorRan": true,
+    "webBackend": "Jina Reader",
+    "webStatus": "ok",
+    "exaStatus": "configured_not_live_verified",
+    "xueqiuStatus": "public_api_unavailable",
+    "rssUsed": false
+  },
+  "coverage": [
+    {
+      "media": "36氪",
+      "domain": "36kr.com",
+      "completed": true,
+      "channels": [
+        "article_search",
+        "newsflash_search",
+        "site_search",
+        "Jina Reader",
+        "browser-visible-date verification"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO",
+        "投资",
+        "上市"
+      ],
+      "range": "文章及快讯首屏至明确进入更早结果",
+      "checkedCount": 70,
+      "targetLeadCount": 18,
+      "stopReason": "列表进入更早日期/无更多目标日结果",
+      "limitations": "旧R003因Reader日期解析错误被误排；浏览器正文复核为2026-08-05，追加R046纠错记录。动态搜索必须等待加载并以页面可见日期为准"
+    },
+    {
+      "media": "投资界",
+      "domain": "pedaily.cn",
+      "completed": true,
+      "channels": [
+        "站内搜索框（异步等待/重试）",
+        "融资栏目",
+        "并购栏目",
+        "最新列表",
+        "公开正文"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO",
+        "投资",
+        "基金",
+        "上市"
+      ],
+      "range": "首页、融资列表、滚动资讯第1至3页",
+      "checkedCount": 120,
+      "targetLeadCount": 20,
+      "stopReason": "第3页明确进入2026-08-04",
+      "limitations": "后续必须直接覆盖融资和并购栏目，通用搜索或一次失败不能替代栏目翻页"
+    },
+    {
+      "media": "投中网",
+      "domain": "chinaventure.com.cn",
+      "completed": true,
+      "channels": [
+        "site_search",
+        "public_sections"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO"
+      ],
+      "range": "两轮限定域名查询及公开栏目",
+      "checkedCount": 10,
+      "targetLeadCount": 0,
+      "stopReason": "连续查询无目标日结果",
+      "limitations": "动态列表和索引召回有限"
+    },
+    {
+      "media": "创业邦",
+      "domain": "cyzone.cn",
+      "completed": true,
+      "channels": [
+        "homepage_embedded_list",
+        "article_pages",
+        "site_search"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO",
+        "上市"
+      ],
+      "range": "首页2026-08-05条目至进入2026-08-04",
+      "checkedCount": 50,
+      "targetLeadCount": 6,
+      "stopReason": "列表明确进入8月4日",
+      "limitations": "站内搜索动态加载，依赖公开内嵌列表补足"
+    },
+    {
+      "media": "机器之心",
+      "domain": "jiqizhixin.com",
+      "completed": true,
+      "channels": [
+        "site_search",
+        "limited_site_query"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO"
+      ],
+      "range": "两轮合理尝试",
+      "checkedCount": 10,
+      "targetLeadCount": 0,
+      "stopReason": "站内搜索失败且限定域名搜索无目标日结果",
+      "limitations": "动态加载/搜索错误"
+    },
+    {
+      "media": "高工机器人",
+      "domain": "gg-robot.com",
+      "completed": true,
+      "channels": [
+        "public_page_attempt",
+        "limited_site_query"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO"
+      ],
+      "range": "两轮合理尝试",
+      "checkedCount": 5,
+      "targetLeadCount": 0,
+      "stopReason": "连接/证书问题后停止",
+      "limitations": "连接不稳定；未绕过证书或访问控制"
+    },
+    {
+      "media": "甲子光年",
+      "domain": "jazzyear.com",
+      "completed": true,
+      "channels": [
+        "public_search",
+        "site_search"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO"
+      ],
+      "range": "可见结果至更早日期",
+      "checkedCount": 10,
+      "targetLeadCount": 0,
+      "stopReason": "结果明确早于目标日",
+      "limitations": "搜索排序及分页可见性有限"
+    },
+    {
+      "media": "量子位",
+      "domain": "qbitai.com",
+      "completed": true,
+      "channels": [
+        "financing_tag",
+        "site_search",
+        "Jina Reader"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO"
+      ],
+      "range": "融资标签首屏至2026-07及更早",
+      "checkedCount": 20,
+      "targetLeadCount": 1,
+      "stopReason": "列表进入更早日期",
+      "limitations": "唯一相对时间命中正文实际为7月15日"
+    },
+    {
+      "media": "雷峰网",
+      "domain": "leiphone.com",
+      "completed": true,
+      "channels": [
+        "article_search",
+        "site_search"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO"
+      ],
+      "range": "五个关键词首屏至更早日期",
+      "checkedCount": 40,
+      "targetLeadCount": 1,
+      "stopReason": "首屏目标日后进入更早日期",
+      "limitations": "搜索排序非严格时间序"
+    },
+    {
+      "media": "智东西",
+      "domain": "zhidx.com",
+      "completed": true,
+      "channels": [
+        "public_search_attempt",
+        "site_search"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO"
+      ],
+      "range": "两轮合理尝试",
+      "checkedCount": 10,
+      "targetLeadCount": 0,
+      "stopReason": "连续无可确认目标日结果",
+      "limitations": "动态加载，零可见结果不代表无消息"
+    },
+    {
+      "media": "凤凰网",
+      "domain": "ifeng.com",
+      "completed": true,
+      "channels": [
+        "site_search"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO"
+      ],
+      "range": "限定域名宽搜及目标日补查",
+      "checkedCount": 10,
+      "targetLeadCount": 0,
+      "stopReason": "连续查询无目标日结果",
+      "limitations": "综合站点转载多、搜索索引噪声高"
+    },
+    {
+      "media": "机器人大讲堂",
+      "domain": "leaderobot.com",
+      "completed": true,
+      "channels": [
+        "public_list_attempt",
+        "site_search"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO"
+      ],
+      "range": "公开入口及两轮查询",
+      "checkedCount": 5,
+      "targetLeadCount": 0,
+      "stopReason": "连续无可确认目标日结果",
+      "limitations": "公开索引覆盖有限"
+    },
+    {
+      "media": "搜狐网",
+      "domain": "sohu.com",
+      "completed": true,
+      "channels": [
+        "site_search",
+        "public_articles"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO"
+      ],
+      "range": "宽搜与目标日补查",
+      "checkedCount": 30,
+      "targetLeadCount": 0,
+      "stopReason": "结果进入无关招标/行情及更早内容",
+      "limitations": "复盘确认旧搜索过早停止于噪声/空结果，存在漏报星际荣耀风险；后续须等待站内异步搜索、重试并充分翻页"
+    },
+    {
+      "media": "东方财富",
+      "domain": "eastmoney.com",
+      "completed": true,
+      "channels": [
+        "site_search",
+        "public_news_attempt"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO"
+      ],
+      "range": "宽搜与目标日补查",
+      "checkedCount": 30,
+      "targetLeadCount": 0,
+      "stopReason": "连续结果为融资融券、百科或行情页",
+      "limitations": "关键词歧义严重；未将两融行情计为公司融资"
+    },
+    {
+      "media": "新浪财经",
+      "domain": "finance.sina.com.cn",
+      "completed": true,
+      "channels": [
+        "site_search",
+        "public_articles"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO"
+      ],
+      "range": "宽搜与目标日补查",
+      "checkedCount": 20,
+      "targetLeadCount": 0,
+      "stopReason": "结果进入更早日期/宏观融资内容",
+      "limitations": "转载多，未确认目标日公司资本事件"
+    },
+    {
+      "media": "雪球",
+      "domain": "xueqiu.com",
+      "completed": true,
+      "channels": [
+        "public_site_search"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO"
+      ],
+      "range": "公开索引两轮查询",
+      "checkedCount": 10,
+      "targetLeadCount": 0,
+      "stopReason": "公开API不可用且索引无目标日结果",
+      "limitations": "未使用登录、Cookie或个人会话"
+    },
+    {
+      "media": "财联社",
+      "domain": "cls.cn",
+      "completed": true,
+      "channels": [
+        "public_flash_search",
+        "article_site_search"
+      ],
+      "queries": [
+        "融资",
+        "获投",
+        "并购",
+        "收购",
+        "IPO"
+      ],
+      "range": "公开快讯/文章宽搜及目标日补查",
+      "checkedCount": 20,
+      "targetLeadCount": 0,
+      "stopReason": "结果为两融主题或更早内容",
+      "limitations": "公开搜索索引延迟，零结果不代表无消息"
+    }
+  ],
+  "rawLeads": [
+    {
+      "id": "R001",
+      "media": "36氪",
+      "title": "NeObage计划天使轮融资500万 出让10%股权",
+      "url": "https://36kr.com/p/3924904544287111",
+      "listTime": "12小时前",
+      "sourcePublishedAt": "2026-08-06",
+      "bodyAccess": "AVAILABLE",
+      "company": "NeObage",
+      "eventType": "FUNDING",
+      "financingStatus": "融资意向",
+      "roundText": "天使轮",
+      "amountText": "500万元",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NEEDS_HUMAN",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R002",
+      "media": "36氪",
+      "title": "锚定2027 AR全彩光波导规模化商用，「广纳四维」完成近2亿元融资",
+      "url": "https://36kr.com/p/3926026867669124",
+      "listTime": "13小时前",
+      "sourcePublishedAt": "2026-08-06",
+      "bodyAccess": "AVAILABLE",
+      "company": "广纳四维",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "连续两轮/未明确",
+      "amountText": "近2亿元",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NEEDS_HUMAN",
+        "NON_TARGET_DATE",
+        "POSSIBLE_DUPLICATE_EVENT",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R003",
+      "media": "36氪",
+      "title": "36氪首发｜大疆前高管押注个人出行机器人，累计融资近亿美元",
+      "url": "https://36kr.com/p/3926003098843272",
+      "listTime": "13小时前",
+      "sourcePublishedAt": "2026-08-06",
+      "bodyAccess": "AVAILABLE",
+      "company": "未明确",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "未明确",
+      "amountText": "累计近亿美元",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NEEDS_HUMAN",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R004",
+      "media": "36氪",
+      "title": "Insforce用AI+零代码重构保险核心系统，寻求战略融资",
+      "url": "https://36kr.com/p/3924857747110279",
+      "listTime": "昨天",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "LIMITED",
+      "company": "Insforce",
+      "eventType": "FUNDING",
+      "financingStatus": "融资意向",
+      "roundText": "战略融资",
+      "amountText": "未披露",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NEEDS_HUMAN",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R005",
+      "media": "36氪",
+      "title": "一层‘布’涨价270%之后，巽霖科技完成近2亿元B轮融资",
+      "url": "https://36kr.com/p/3924953930856578",
+      "listTime": "昨天",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "LIMITED",
+      "company": "巽霖科技",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "B轮",
+      "amountText": "近2亿元",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NON_TARGET_DATE",
+        "POSSIBLE_DUPLICATE_EVENT",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R006",
+      "media": "36氪",
+      "title": "一层‘布’涨价270%之后，巽霖科技完成近2亿元B轮融资",
+      "url": "https://36kr.com/p/3924953058605444",
+      "listTime": "昨天",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "LIMITED",
+      "company": "巽霖科技",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "B轮",
+      "amountText": "近2亿元",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NON_TARGET_DATE",
+        "POSSIBLE_DUPLICATE_EVENT",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R007",
+      "media": "36氪",
+      "title": "用Physical AI解决实验工具痛点，术也科技获Pre-A轮融资",
+      "url": "https://36kr.com/p/3924586316331392",
+      "listTime": "昨天",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "LIMITED",
+      "company": "术也科技",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "Pre-A轮",
+      "amountText": "数千万元",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R008",
+      "media": "36氪",
+      "title": "宇树上市，融资补‘脑’",
+      "url": "https://36kr.com/p/3924518036756359",
+      "listTime": "昨天",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "LIMITED",
+      "company": "宇树科技",
+      "eventType": "IPO_ANALYSIS",
+      "financingStatus": "进行中",
+      "roundText": "未披露",
+      "amountText": "未披露",
+      "investorsText": "未披露",
+      "tags": [
+        "BROAD_CAPITAL_EVENT",
+        "DATE_CONFLICT",
+        "NEEDS_HUMAN",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R009",
+      "media": "36氪",
+      "title": "宁波极稳科技完成数千万天使轮融资",
+      "url": "https://36kr.com/p/3924658163792262",
+      "listTime": "昨天",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "LIMITED",
+      "company": "极稳科技",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "天使轮",
+      "amountText": "数千万元",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R010",
+      "media": "36氪",
+      "title": "同轮融资估值差出700亿",
+      "url": "https://36kr.com/p/3924600833210760",
+      "listTime": "昨天",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "LIMITED",
+      "company": "未明确",
+      "eventType": "CAPITAL_ANALYSIS",
+      "financingStatus": "未明确",
+      "roundText": "未明确",
+      "amountText": "未明确",
+      "investorsText": "未披露",
+      "tags": [
+        "BROAD_CAPITAL_EVENT",
+        "DATE_CONFLICT",
+        "NEEDS_HUMAN",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R011",
+      "media": "36氪",
+      "title": "知穹寻求种子轮融资",
+      "url": "https://36kr.com/p/3920671785037186",
+      "listTime": "昨天",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "LIMITED",
+      "company": "知穹",
+      "eventType": "FUNDING",
+      "financingStatus": "融资意向",
+      "roundText": "种子轮",
+      "amountText": "未披露",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NEEDS_HUMAN",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R012",
+      "media": "36氪",
+      "title": "清博空天完成数千万天使+轮融资",
+      "url": "https://36kr.com/p/3924634192673153",
+      "listTime": "昨天",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "LIMITED",
+      "company": "清博空天",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "天使+轮",
+      "amountText": "数千万元",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R013",
+      "media": "36氪",
+      "title": "新型减速器厂商陶世智能完成超亿元融资，估值破10亿",
+      "url": "https://36kr.com/p/3924628805351811",
+      "listTime": "昨天",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "LIMITED",
+      "company": "陶世智能",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "未明确",
+      "amountText": "超亿元",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NON_TARGET_DATE",
+        "POSSIBLE_DUPLICATE_EVENT",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R014",
+      "media": "36氪",
+      "title": "风火轮萤图完成3000万元种子+轮融资",
+      "url": "https://36kr.com/p/3923260535221634",
+      "listTime": "昨天",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "LIMITED",
+      "company": "风火轮萤图",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "种子+轮",
+      "amountText": "3000万元",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R015",
+      "media": "36氪",
+      "title": "蔚蓝恒星完成数亿元天使+轮融资",
+      "url": "https://36kr.com/p/3924623449503874",
+      "listTime": "昨天",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "LIMITED",
+      "company": "蔚蓝恒星",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "天使+轮",
+      "amountText": "数亿元",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R016",
+      "media": "36氪",
+      "title": "中信金融资产北京壹号院盘活收官",
+      "url": "https://36kr.com/p/3924622433302916",
+      "listTime": "昨天",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "LIMITED",
+      "company": "中信金融资产/北京壹号院",
+      "eventType": "ASSET_RESTRUCTURING",
+      "financingStatus": "已完成",
+      "roundText": "不适用",
+      "amountText": "未披露",
+      "investorsText": "未披露",
+      "tags": [
+        "BROAD_CAPITAL_EVENT",
+        "DATE_CONFLICT",
+        "NEEDS_HUMAN",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R017",
+      "media": "36氪",
+      "title": "低空补能生态项目寻求200万元种子轮融资",
+      "url": "https://36kr.com/p/3920970203213192",
+      "listTime": "昨天",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "LIMITED",
+      "company": "未明确",
+      "eventType": "FUNDING",
+      "financingStatus": "融资意向",
+      "roundText": "种子轮",
+      "amountText": "200万元",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NEEDS_HUMAN",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R018",
+      "media": "投资界",
+      "title": "比邻星上海四期创投基金完成首关及备案",
+      "url": "https://news.pedaily.cn/202608/567298.shtml",
+      "listTime": "6小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "比邻星上海四期创投基金",
+      "eventType": "FUND_FIRST_CLOSE",
+      "financingStatus": "已完成",
+      "roundText": "首关及备案",
+      "amountText": "未披露",
+      "investorsText": "国家级引导基金、沪杭国资平台及上市公司等",
+      "tags": [
+        "BROAD_CAPITAL_EVENT"
+      ]
+    },
+    {
+      "id": "R019",
+      "media": "投资界",
+      "title": "弘卓资本新一期科技基金完成首关",
+      "url": "https://news.pedaily.cn/202608/567296.shtml",
+      "listTime": "6小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "弘卓资本新一期科技基金",
+      "eventType": "FUND_FIRST_CLOSE",
+      "financingStatus": "已完成",
+      "roundText": "首关",
+      "amountText": "10亿元",
+      "investorsText": "未披露",
+      "tags": [
+        "BROAD_CAPITAL_EVENT"
+      ]
+    },
+    {
+      "id": "R020",
+      "media": "投资界",
+      "title": "天河新兴数字产业基金完成备案",
+      "url": "https://news.pedaily.cn/202608/567295.shtml",
+      "listTime": "6小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "天河新兴数字产业基金",
+      "eventType": "FUND_REGISTRATION",
+      "financingStatus": "已完成",
+      "roundText": "备案",
+      "amountText": "1亿元",
+      "investorsText": "未披露",
+      "tags": [
+        "BROAD_CAPITAL_EVENT"
+      ]
+    },
+    {
+      "id": "R021",
+      "media": "投资界",
+      "title": "陕西君盈启睿生物经济创业投资基金完成备案",
+      "url": "https://news.pedaily.cn/202608/567293.shtml",
+      "listTime": "6小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "陕西君盈启睿生物经济创业投资基金",
+      "eventType": "FUND_REGISTRATION",
+      "financingStatus": "已完成",
+      "roundText": "设立/备案",
+      "amountText": "3亿元",
+      "investorsText": "陕投集团、江门睿联医药投资等",
+      "tags": [
+        "BROAD_CAPITAL_EVENT"
+      ]
+    },
+    {
+      "id": "R022",
+      "media": "投资界",
+      "title": "陕西社保科创股权投资基金完成落地",
+      "url": "https://news.pedaily.cn/202608/567291.shtml",
+      "listTime": "6小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "陕西社保科创股权投资基金",
+      "eventType": "FUND_ESTABLISHMENT",
+      "financingStatus": "已完成",
+      "roundText": "工商注册",
+      "amountText": "100亿元",
+      "investorsText": "全国社保基金理事会、中银金融资产、西安高新创投、长安汇通等",
+      "tags": [
+        "BROAD_CAPITAL_EVENT"
+      ]
+    },
+    {
+      "id": "R023",
+      "media": "投资界",
+      "title": "首关15亿，上海生物医药基金二期落地",
+      "url": "https://news.pedaily.cn/202608/567290.shtml",
+      "listTime": "7小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "上海生物医药基金二期",
+      "eventType": "FUND_FIRST_CLOSE",
+      "financingStatus": "已完成",
+      "roundText": "首关",
+      "amountText": "15亿元",
+      "investorsText": "上海医药、上海国投先导、浦东创投、国泰海通等",
+      "tags": [
+        "BROAD_CAPITAL_EVENT"
+      ]
+    },
+    {
+      "id": "R024",
+      "media": "投资界",
+      "title": "广纳四维完成近2亿元融资，加速AR全彩光波导规模化商用",
+      "url": "https://news.pedaily.cn/202608/567283.shtml",
+      "listTime": "8小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "广纳四维",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "连续两轮/未明确",
+      "amountText": "近2亿元",
+      "investorsText": "广州产投等",
+      "tags": [
+        "POSSIBLE_DUPLICATE_EVENT"
+      ]
+    },
+    {
+      "id": "R025",
+      "media": "投资界",
+      "title": "同创永益完成新一轮股权融资，锚定AI数字韧性赛道",
+      "url": "https://news.pedaily.cn/202608/567282.shtml",
+      "listTime": "8小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "同创永益",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "新一轮股权融资",
+      "amountText": "近亿元",
+      "investorsText": "深圳市龙岗区引导基金投资有限公司等",
+      "tags": []
+    },
+    {
+      "id": "R026",
+      "media": "投资界",
+      "title": "姆特科技完成近亿元B轮融资，持续开展产品研发迭代",
+      "url": "https://news.pedaily.cn/202608/567275.shtml",
+      "listTime": "10小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "派姆特科技/姆特科技",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "B轮",
+      "amountText": "近亿元",
+      "investorsText": "苏州高端装备产业专项母基金领投、天津泰达跟投",
+      "tags": [
+        "NEEDS_HUMAN"
+      ]
+    },
+    {
+      "id": "R027",
+      "media": "投资界",
+      "title": "Om AI联汇完成新一轮数亿元融资，加速端侧AI商业化落地",
+      "url": "https://news.pedaily.cn/202608/567266.shtml",
+      "listTime": "13小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "杭州联汇科技（Om AI联汇）",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "新一轮融资",
+      "amountText": "数亿元",
+      "investorsText": "前海母基金领投，杭州政府产业基金等参投",
+      "tags": [
+        "POSSIBLE_DUPLICATE_EVENT"
+      ]
+    },
+    {
+      "id": "R028",
+      "media": "投资界",
+      "title": "哲源科技完成近2亿元A2轮融资，推进生命世界模型驱动的AI4S平台建设",
+      "url": "https://news.pedaily.cn/202608/567265.shtml",
+      "listTime": "6小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "哲源科技",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "A2轮",
+      "amountText": "近2亿元",
+      "investorsText": "未披露",
+      "tags": []
+    },
+    {
+      "id": "R029",
+      "media": "投资界",
+      "title": "华秋电子完成数亿元D轮融资，加速AI重构电子产业全链路",
+      "url": "https://news.pedaily.cn/202608/567264.shtml",
+      "listTime": "6小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "华秋电子",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "D轮",
+      "amountText": "数亿元",
+      "investorsText": "招银国际领投，广新基金、成都高新、鸿石资本等参与",
+      "tags": [
+        "POSSIBLE_DUPLICATE_EVENT"
+      ]
+    },
+    {
+      "id": "R030",
+      "media": "投资界",
+      "title": "宏德新材完成超亿元A+轮融资，推动全球复合材料工程化应用",
+      "url": "https://news.pedaily.cn/202608/567259.shtml",
+      "listTime": "7小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "宏德新材",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "A+轮",
+      "amountText": "超亿元",
+      "investorsText": "未披露",
+      "tags": [
+        "POSSIBLE_DUPLICATE_EVENT"
+      ]
+    },
+    {
+      "id": "R031",
+      "media": "投资界",
+      "title": "快讯｜宏德新材完成超亿元A+轮融资",
+      "url": "https://news.pedaily.cn/202608/567260.shtml",
+      "listTime": "7小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "宏德新材",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "A+轮",
+      "amountText": "超亿元",
+      "investorsText": "未披露",
+      "tags": [
+        "POSSIBLE_DUPLICATE_EVENT"
+      ]
+    },
+    {
+      "id": "R032",
+      "media": "投资界",
+      "title": "动点国际TNGlobal宣布收购Jumpstart Media，连接香港与亚洲创新生态",
+      "url": "https://news.pedaily.cn/202608/567270.shtml",
+      "listTime": "4小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "TNGlobal/Jumpstart Media",
+      "eventType": "ACQUISITION",
+      "financingStatus": "已完成",
+      "roundText": "收购",
+      "amountText": "未披露",
+      "investorsText": "不适用",
+      "tags": [
+        "BROAD_CAPITAL_EVENT"
+      ]
+    },
+    {
+      "id": "R033",
+      "media": "投资界",
+      "title": "上海国投，一举投7家GP",
+      "url": "https://news.pedaily.cn/202608/567285.shtml",
+      "listTime": "目标日列表",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "上海国投",
+      "eventType": "FUND_INVESTMENT",
+      "financingStatus": "已完成",
+      "roundText": "投资7家GP",
+      "amountText": "未披露",
+      "investorsText": "上海国投",
+      "tags": [
+        "BROAD_CAPITAL_EVENT"
+      ]
+    },
+    {
+      "id": "R034",
+      "media": "投资界",
+      "title": "投资界24h｜红杉斩获今年第10家IPO；钟鼎投出一个千亿IPO；SpaceX腰斩",
+      "url": "https://news.pedaily.cn/202608/567258.shtml",
+      "listTime": "7小时前",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "多主体",
+      "eventType": "CAPITAL_ROUNDUP",
+      "financingStatus": "未明确",
+      "roundText": "多事件汇总",
+      "amountText": "未明确",
+      "investorsText": "未明确",
+      "tags": [
+        "BROAD_CAPITAL_EVENT",
+        "NEEDS_HUMAN"
+      ]
+    },
+    {
+      "id": "R035",
+      "media": "投资界",
+      "title": "巽霖科技完成近2亿元B轮融资，半年已融资三轮",
+      "url": "https://news.pedaily.cn/202608/567247.shtml",
+      "listTime": "23小时前",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "AVAILABLE",
+      "company": "巽霖科技",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "B轮",
+      "amountText": "近2亿元",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NON_TARGET_DATE",
+        "POSSIBLE_DUPLICATE_EVENT",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R036",
+      "media": "投资界",
+      "title": "恺望数据完成逾亿元新一轮战略融资",
+      "url": "https://news.pedaily.cn/202608/567244.shtml",
+      "listTime": "23小时前",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "AVAILABLE",
+      "company": "恺望数据",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "新一轮战略融资",
+      "amountText": "逾亿元",
+      "investorsText": "亦庄产业基金、华方资本、天际资本联合领投",
+      "tags": [
+        "DATE_CONFLICT",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R037",
+      "media": "投资界",
+      "title": "陶世智能完成1.4亿元融资，估值破10亿",
+      "url": "https://news.pedaily.cn/202608/567236.shtml",
+      "listTime": "1天前",
+      "sourcePublishedAt": "2026-08-04",
+      "bodyAccess": "AVAILABLE",
+      "company": "陶世智能",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "未明确",
+      "amountText": "1.4亿元",
+      "investorsText": "未披露",
+      "tags": [
+        "DATE_CONFLICT",
+        "NON_TARGET_DATE",
+        "POSSIBLE_DUPLICATE_EVENT",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R038",
+      "media": "创业邦",
+      "title": "‘买买买’的EA，3700亿把自己卖了",
+      "url": "https://www.cyzone.cn/article/842186.html",
+      "listTime": "2026-08-05",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "Electronic Arts/收购方待核",
+      "eventType": "ACQUISITION",
+      "financingStatus": "已完成",
+      "roundText": "收购",
+      "amountText": "约3700亿元",
+      "investorsText": "沙特主权基金等/待正文核验",
+      "tags": [
+        "BROAD_CAPITAL_EVENT",
+        "NEEDS_HUMAN"
+      ]
+    },
+    {
+      "id": "R039",
+      "media": "创业邦",
+      "title": "蓝凌星通完成数千万元股权融资",
+      "url": "https://www.cyzone.cn/article/842189.html",
+      "listTime": "2026-08-05",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "蓝凌星通",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "股权融资",
+      "amountText": "数千万元",
+      "investorsText": "未披露",
+      "tags": []
+    },
+    {
+      "id": "R040",
+      "media": "创业邦",
+      "title": "巽霖科技完成近2亿元B轮融资",
+      "url": "https://www.cyzone.cn/article/842167.html",
+      "listTime": "2026-08-05",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "巽霖科技",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "B轮",
+      "amountText": "近2亿元",
+      "investorsText": "未披露",
+      "tags": [
+        "POSSIBLE_DUPLICATE_EVENT"
+      ]
+    },
+    {
+      "id": "R041",
+      "media": "创业邦",
+      "title": "华秋获数亿元D轮融资，加速AI重构电子产业全链路",
+      "url": "https://www.cyzone.cn/article/842166.html",
+      "listTime": "2026-08-05",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "华秋电子",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "D轮",
+      "amountText": "数亿元",
+      "investorsText": "招银国际领投，广新基金、成都高新、鸿石资本等参与",
+      "tags": [
+        "POSSIBLE_DUPLICATE_EVENT"
+      ]
+    },
+    {
+      "id": "R042",
+      "media": "创业邦",
+      "title": "酉术量子完成数千万元融资",
+      "url": "https://www.cyzone.cn/article/842164.html",
+      "listTime": "2026-08-05",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "酉术量子",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "未明确",
+      "amountText": "数千万元",
+      "investorsText": "未披露",
+      "tags": []
+    },
+    {
+      "id": "R043",
+      "media": "创业邦",
+      "title": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化落地",
+      "url": "https://www.cyzone.cn/article/842163.html",
+      "listTime": "2026-08-05",
+      "sourcePublishedAt": "2026-08-05",
+      "bodyAccess": "AVAILABLE",
+      "company": "杭州联汇科技（Om AI联汇）",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "新一轮融资",
+      "amountText": "数亿元",
+      "investorsText": "前海母基金领投",
+      "tags": [
+        "POSSIBLE_DUPLICATE_EVENT"
+      ]
+    },
+    {
+      "id": "R044",
+      "media": "雷峰网",
+      "title": "资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化落地",
+      "url": "https://www.leiphone.com/category/industrynews/tAlZoYMQpcDwWWi2.html",
+      "listTime": "昨天 10:20",
+      "sourcePublishedAt": null,
+      "bodyAccess": "LIMITED",
+      "company": "杭州联汇科技（Om AI联汇）",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "新一轮融资",
+      "amountText": "数亿元",
+      "investorsText": "前海母基金领投",
+      "tags": [
+        "DATE_UNCERTAIN",
+        "NEEDS_HUMAN",
+        "POSSIBLE_DUPLICATE_EVENT"
+      ]
+    },
+    {
+      "id": "R045",
+      "media": "量子位",
+      "title": "估值4800亿，DeepSeek火速开启新一轮融资！最快明年IPO",
+      "url": "https://www.qbitai.com/2026/07/450101.html",
+      "listTime": "4小时前",
+      "sourcePublishedAt": "2026-07-15T08:54:59+08:00",
+      "bodyAccess": "AVAILABLE",
+      "company": "DeepSeek",
+      "eventType": "FUNDING_AND_IPO_PLAN",
+      "financingStatus": "进行中",
+      "roundText": "新一轮融资",
+      "amountText": "未披露",
+      "investorsText": "新投资者未披露",
+      "tags": [
+        "CONTENT_MISMATCH",
+        "DATE_CONFLICT",
+        "NEEDS_HUMAN",
+        "NON_TARGET_DATE",
+        "SUGGEST_REJECT"
+      ]
+    },
+    {
+      "id": "R046",
+      "media": "36氪",
+      "title": "36氪首发 | 大疆前高管押注个人出行机器人，累计融资近亿美元",
+      "url": "https://www.36kr.com/p/3926003098843272",
+      "listTime": "人工复核原站正文",
+      "sourcePublishedAt": "2026-08-05T10:17:00+08:00",
+      "bodyAccess": "AVAILABLE",
+      "company": "若创科技（Strutt）",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "Pre-A+轮",
+      "amountText": "本轮未披露；累计融资近1亿美元",
+      "investorsText": "未披露具体名称；原文仅描述全球出行科技公司、国内头部互联网公司旗下基金和大湾区产业基金",
+      "tags": [
+        "BODY_VERIFIED",
+        "MANUAL_RECALL_CORRECTION",
+        "CORRECTS_R003",
+        "EXACT_URL_DUPLICATE_AUDIT"
+      ]
+    },
+    {
+      "id": "R047",
+      "media": "量子客（微信公众号）",
+      "title": "量子计算公司「无界量子」完成数千万元天使轮融资",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1786107071&ver=6890&signature=OFXLzRtwS4-1R6LkuEHB3ooZrSd7voLzLrn7qCQsLHyThgGXit8HsESrYIxDffCZkcgJzuOpvZzN0k8LiAKmk8ihti2ycl5cZ5FGjBwRV926slXMShT3w0cWJV4ExmHM&new=1",
+      "listTime": "微信公众号公开搜索结果 2026-08-05 16:57:45",
+      "sourcePublishedAt": "2026-08-05T16:57:45+08:00",
+      "bodyAccess": "PUBLIC_SEARCH_INDEX_AND_RESOLVED_ARTICLE_URL",
+      "company": "无界开物（上海）量子科技有限公司（无界量子）",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "天使轮",
+      "amountText": "数千万元人民币",
+      "investorsText": "复旦科创领投，险峰、前海方舟、中赢创投共同参与",
+      "tags": [
+        "WECHAT_SUPPLEMENT",
+        "MANUAL_RECALL_CORRECTION",
+        "URL_MAY_EXPIRE",
+        "SOURCE_DATE_FROM_PUBLIC_INDEX"
+      ]
+    },
+    {
+      "id": "R048",
+      "media": "每日经济新闻（人工补充）",
+      "title": "星际荣耀完成近10亿元E轮融资，布局可复用液氧甲烷火箭",
+      "url": "https://www.nbd.com.cn/articles/2026-08-05/4532622.html",
+      "listTime": "人工补充并核验正文",
+      "sourcePublishedAt": "2026-08-05T10:57:39+08:00",
+      "bodyAccess": "AVAILABLE",
+      "company": "星际荣耀",
+      "eventType": "FUNDING",
+      "financingStatus": "已完成",
+      "roundText": "E轮（首笔资金完成交割）",
+      "amountText": "近10亿元人民币",
+      "investorsText": "以多家银行系AIC为主，页面未披露具体名称",
+      "tags": [
+        "BODY_VERIFIED",
+        "MANUAL_RECALL_CORRECTION",
+        "OUTSIDE_PRIMARY_SITE_LIST",
+        "SOHU_RECALL_GAP_EVIDENCE"
+      ]
+    }
+  ],
+  "rerun": {
+    "executedAt": "2026-08-06T10:03:04+08:00",
+    "strategyVersion": "v6",
+    "agentReachDoctor": "web=ok(Jina Reader); exa=configured and live query succeeded after network approval; xueqiu public API unavailable",
+    "channels": [
+      "Agent Reach Exa",
+      "Jina Reader",
+      "original public HTML",
+      "site-limited search",
+      "site search box with async wait/retry",
+      "WeChat public search supplement",
+      "manual public-source recall correction"
+    ],
+    "dateGate": "clean requires visible source date 2026-08-05 Asia/Shanghai",
+    "relativeTimeBasis": "All relative labels recalculated from 2026-08-06 Asia/Shanghai execution time and checked against article body"
+  },
+  "recallCorrection": {
+    "executedAt": "2026-08-07T01:19:23+08:00",
+    "reason": "User manual recall audit found three target-date events missed or wrongly excluded",
+    "addedRawIds": [
+      "R046",
+      "R047",
+      "R048"
+    ],
+    "notes": [
+      "R046 corrects the date/company extraction of original R003 without overwriting the immutable historical record; the URL is intentionally duplicated for correction audit",
+      "R047 is a WeChat public-search supplement and its signed URL may expire",
+      "R048 is an accessible manual supplemental source outside the primary website list; it does not count toward list coverage"
+    ]
+  }
+}
