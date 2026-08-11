@@ -4,8 +4,8 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "具身智能融资雷达",
-  description: "面向团队的具身智能融资新闻与研究入口",
+  title: "具身智能公司动态周报｜预览版",
+  description: "2026年8月3日至9日具身智能与硬科技公司资本动态周报预览",
 };
 
 type RootLayoutProps = Readonly<{
