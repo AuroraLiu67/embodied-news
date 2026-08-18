@@ -1,0 +1,3134 @@
+{
+  "schemaVersion": "1",
+  "mode": "PREVIEW",
+  "weekStart": "2026-08-10",
+  "weekEnd": "2026-08-16",
+  "counts": {
+    "original": 67,
+    "excludedP4": 0,
+    "public": 67,
+    "P1": 15,
+    "P2": 21,
+    "P3": 31
+  },
+  "events": [
+    {
+      "id": "weekly-event-1080bb7fff0d37d19be25bf7",
+      "companyStandardName": "宇树科技",
+      "companyDisplayName": "宇树科技",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "FULL_STACK_ROBOT",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 1,
+      "priorityReason": "P1/FULL_STACK_ROBOT;金额原币种量级6100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "宇树科技主要研发四足机器人、人形机器人及运动控制系统。本次资本事件为IPO，金额为合计募资约61亿元，状态为IPO申购及缴款阶段。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发四足机器人、人形机器人及运动控制系统",
+      "products": [],
+      "coreTechnology": [
+        "机器人本体",
+        "运动控制"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "IPO申购及缴款阶段",
+      "round": "IPO",
+      "amount": "合计募资约61亿元",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.36kr.com/p/3933423202844036",
+          "publishedAt": "2026-08-10 16:32"
+        },
+        {
+          "url": "https://36kr.com/p/3933488511270017",
+          "publishedAt": "2026-08-11 09:00（由搜狐转载页标注36氪来源，原页访问受限）"
+        },
+        {
+          "url": "https://www.sohu.com/a/1061288987_114778",
+          "publishedAt": "2026-08-11 09:00"
+        },
+        {
+          "url": "https://www.aihehuo.com/blog/9100-news-2026-08-11",
+          "publishedAt": "2026-08-11（页面日期）"
+        },
+        {
+          "url": "https://36kr.com/p/3933942187398785",
+          "publishedAt": "2026-08-11 07:47"
+        },
+        {
+          "url": "https://www.chinaventure.com.cn/news/80-20260812-392732.html",
+          "publishedAt": "2026-08-12 16:04:05"
+        },
+        {
+          "url": "https://www.chinaventure.com.cn/news/114-20260812-392725.html",
+          "publishedAt": "2026-08-12 11:00:55"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-0fac28f72be801e10ea325d5",
+      "companyStandardName": "艾欧智能（IO-AI Tech）",
+      "companyDisplayName": "艾欧智能（IO-AI Tech）",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "FULL_STACK_ROBOT",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 2,
+      "priorityReason": "P1/FULL_STACK_ROBOT;金额原币种量级300000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "艾欧智能（IO-AI Tech）主要研发具身智能机器人及软硬件一体化系统。本次资本事件为未明确，金额为数亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发具身智能机器人及软硬件一体化系统",
+      "products": [],
+      "coreTechnology": [
+        "具身智能机器人"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "未明确",
+      "amount": "数亿元人民币",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "顺为资本、松禾资本、深创投及未具名头部机器人本体企业"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.chinaventure.com.cn/news/114-20260812-392723.html",
+          "publishedAt": "2026-08-12 10:13:31"
+        },
+        {
+          "url": "https://news.pedaily.cn/202608/567593.shtml",
+          "publishedAt": "2026-08-12 10时"
+        },
+        {
+          "url": "https://36kr.com/p/3935994997407107",
+          "publishedAt": "2026-08-12 11:42"
+        },
+        {
+          "url": "https://www.cyzone.cn/article/842795.html",
+          "publishedAt": "2026-08-12"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-fdfb7b070d4f64e2060c9e96",
+      "companyStandardName": "戴盟机器人",
+      "companyDisplayName": "戴盟机器人",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "FULL_STACK_ROBOT",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 3,
+      "priorityReason": "P1/FULL_STACK_ROBOT;金额原币种量级300000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "戴盟机器人主要研发触觉感知、灵巧操作与具身智能机器人系统。本次资本事件为战略轮，金额为数亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发触觉感知、灵巧操作与具身智能机器人系统",
+      "products": [],
+      "coreTechnology": [
+        "具身智能机器人"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "战略轮",
+      "amount": "数亿元人民币",
+      "currency": "CNY",
+      "leadInvestors": [
+        "蚂蚁集团"
+      ],
+      "followInvestors": [
+        "老股东超额"
+      ],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567512.shtml",
+          "publishedAt": "2026-08-11 09:24"
+        },
+        {
+          "url": "https://finance.sina.cn/tech/2026-08-11/detail-inimwyqt7675858.d.html?fromtech=1&node_id=76524&vt=4",
+          "publishedAt": "2026-08-11 09:24"
+        },
+        {
+          "url": "https://www.cyzone.cn/article/842892.html",
+          "publishedAt": "2026-08-12"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-4951b5bb5b9f9bbc5ae7d1bb",
+      "companyStandardName": "桥介数物（BridgeDP Robotics）",
+      "companyDisplayName": "桥介数物（BridgeDP Robotics）",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "FULL_STACK_ROBOT",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 4,
+      "priorityReason": "P1/FULL_STACK_ROBOT;金额原币种量级100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "桥介数物（BridgeDP Robotics）主要研发具身智能机器人、控制系统与数据闭环。本次资本事件为Pre-A+++轮，金额为亿元级，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发具身智能机器人、控制系统与数据闭环",
+      "products": [],
+      "coreTechnology": [
+        "具身智能机器人"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "Pre-A+++轮",
+      "amount": "亿元级",
+      "currency": null,
+      "leadInvestors": [
+        "中国移动链长基金"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [
+        "复星创富、深创投追加"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.36kr.com/p/3936215569251457",
+          "publishedAt": "2026-08-12 19:03"
+        },
+        {
+          "url": "https://www.chinaventure.com.cn/news/114-20260812-392729.html",
+          "publishedAt": "2026-08-12 14:06:38"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/lrwCyiLDozDxFo2b.html",
+          "publishedAt": "2026-08-12 12:42"
+        },
+        {
+          "url": "https://news.pedaily.cn/202608/567600.shtml",
+          "publishedAt": "2026-08-12 约13时"
+        },
+        {
+          "url": "https://www.cyzone.cn/article/842889.html",
+          "publishedAt": "2026-08-12"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-bda5525271c86ba37a8aa190",
+      "companyStandardName": "诺仕机器人",
+      "companyDisplayName": "诺仕机器人",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "FULL_STACK_ROBOT",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 5,
+      "priorityReason": "P1/FULL_STACK_ROBOT;金额原币种量级100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "诺仕机器人主要研发具身智能机器人本体及系统。本次资本事件为A+轮，金额为近亿元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发具身智能机器人本体及系统",
+      "products": [],
+      "coreTechnology": [
+        "具身智能机器人"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "A+轮",
+      "amount": "近亿元",
+      "currency": null,
+      "leadInvestors": [
+        "顺为资本"
+      ],
+      "followInvestors": [
+        "望千铭诚"
+      ],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567646.shtml",
+          "publishedAt": "2026-08-13 10:24"
+        },
+        {
+          "url": "https://www.36kr.com/p/3937262359100805",
+          "publishedAt": "2026-08-13 09:10"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-c13ddc5a48ddecdc1195c298",
+      "companyStandardName": "慧仑科技",
+      "companyDisplayName": "慧仑科技",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "FULL_STACK_ROBOT",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 6,
+      "priorityReason": "P1/FULL_STACK_ROBOT;金额原币种量级100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "慧仑科技主要研发人形机器人及相关智能系统。本次资本事件为未明确，金额为超亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发人形机器人及相关智能系统",
+      "products": [],
+      "coreTechnology": [
+        "人形机器人"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "未明确",
+      "amount": "超亿元人民币",
+      "currency": "CNY",
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "中车国创基金、招银国际、四川科创等"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.tmtpost.com/nictation/8099508.html",
+          "publishedAt": "2026-08-11 22:12"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-62b0507850f3eb874e9e00ee",
+      "companyStandardName": "溯光灵迹",
+      "companyDisplayName": "溯光灵迹",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "FULL_STACK_ROBOT",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 7,
+      "priorityReason": "P1/FULL_STACK_ROBOT;金额未披露或非融资金额;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "溯光灵迹主要研发具身智能机器人与相关系统。本次资本事件为首轮融资，金额为未披露；投后估值亿元级，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发具身智能机器人与相关系统",
+      "products": [],
+      "coreTechnology": [
+        "具身智能机器人"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "首轮融资",
+      "amount": "未披露；投后估值亿元级",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "产业链上下游多家头部公司，未具名"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567642.shtml",
+          "publishedAt": "2026-08-13 10:06"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-f946c2ab82cf49049b0b438f",
+      "companyStandardName": "橡木果机器人",
+      "companyDisplayName": "橡木果机器人",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "FULL_STACK_ROBOT",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 8,
+      "priorityReason": "P1/FULL_STACK_ROBOT;金额未披露或非融资金额;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "橡木果机器人主要研发具身智能机器人本体及相关系统。本次资本事件为天使轮，金额为未披露，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发具身智能机器人本体及相关系统",
+      "products": [],
+      "coreTechnology": [
+        "具身智能机器人"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "天使轮",
+      "amount": "未披露",
+      "currency": null,
+      "leadInvestors": [
+        "招商局创投、蔚来资本联合"
+      ],
+      "followInvestors": [
+        "水木清华校友种子基金"
+      ],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567473.shtml",
+          "publishedAt": "2026-08-10 11:04"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-60958c295f8b85e50fbb1b38",
+      "companyStandardName": "原力无限（INFIFORCE）",
+      "companyDisplayName": "原力无限（INFIFORCE）",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "ROBOT_BODY",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 9,
+      "priorityReason": "P1/ROBOT_BODY;金额原币种量级1000000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "原力无限（INFIFORCE）主要研发Ego原生世界模型并服务机器人智能训练。本次资本事件为A轮及A+轮，金额为近10亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发Ego原生世界模型并服务机器人智能训练",
+      "products": [],
+      "coreTechnology": [
+        "Ego原生世界模型"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "A轮及A+轮",
+      "amount": "近10亿元人民币",
+      "currency": null,
+      "leadInvestors": [
+        "敦鸿资产及头部国资平台"
+      ],
+      "followInvestors": [
+        "浙大科创集团、盐都国控、丽水市国资公司等"
+      ],
+      "otherInvestors": [
+        "创世伙伴创投CCV等老股东加注"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567693.shtml",
+          "publishedAt": "2026-08-14 11:30"
+        },
+        {
+          "url": "https://www.36kr.com/p/3938979125312642",
+          "publishedAt": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-d1fd2c28cc2b66d195d61bb0",
+      "companyStandardName": "亮源新创（Light Origins）",
+      "companyDisplayName": "亮源新创（Light Origins）",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "VLA_WORLD_MODEL",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 10,
+      "priorityReason": "P1/VLA_WORLD_MODEL;金额原币种量级300000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "亮源新创（Light Origins）主要研发Physical AI基础模型及具身智能系统。本次资本事件为Pre-A轮，金额为数亿元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发Physical AI基础模型及具身智能系统",
+      "products": [],
+      "coreTechnology": [
+        "Physical AI基础模型"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "Pre-A轮",
+      "amount": "数亿元",
+      "currency": null,
+      "leadInvestors": [
+        "国科投资"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [
+        "招商局创投、襄禾资本等参与"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567689.shtml",
+          "publishedAt": "2026-08-14 10:28"
+        },
+        {
+          "url": "https://www.36kr.com/newsflashes/3938720679067011",
+          "publishedAt": "2026-08-14 01:53:52"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-67e4c45dc7556509b2fdacc0",
+      "companyStandardName": "Ropedia",
+      "companyDisplayName": "Ropedia",
+      "companyEnglishName": "Ropedia",
+      "regionScope": "OVERSEAS",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "VLA_WORLD_MODEL",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 11,
+      "priorityReason": "P1/VLA_WORLD_MODEL;金额原币种量级30000000;稳定ID兜底",
+      "officialWebsite": "https://ropedia.com/",
+      "introduction": "Ropedia主要为机器人基础模型、VLA和世界模型提供真实世界数据基础设施。本次资本事件为天使轮，金额为数千万美元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "为机器人基础模型、VLA和世界模型提供真实世界数据基础设施",
+      "products": [
+        "HOMIE",
+        "Experience Engine",
+        "Xperience-10M"
+      ],
+      "coreTechnology": [
+        "多模态4D数据采集",
+        "真实世界经验数据引擎"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "天使轮",
+      "amount": "数千万美元",
+      "currency": "USD",
+      "leadInvestors": [
+        "多家东南亚头部风险投资机构"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [
+        "多家一线美元基金及产业方参与",
+        "深渡资本任长期独家财务顾问"
+      ],
+      "financialAdviser": "深渡资本任长期独家财务顾问",
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.36kr.com/p/3927411140425861",
+          "publishedAt": "2026-08-10 13:55:20"
+        },
+        {
+          "url": "https://ropedia.com/",
+          "publishedAt": null
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-23e4685624315946354db8e0",
+      "companyStandardName": "诺因智能",
+      "companyDisplayName": "诺因智能",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "OTHER_EMBODIED_AI",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 12,
+      "priorityReason": "P1/OTHER_EMBODIED_AI;金额原币种量级500000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "诺因智能主要研发可折叠收纳的家务机器人及生成式智能系统。本次资本事件为天使++轮，金额为5亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发可折叠收纳的家务机器人及生成式智能系统",
+      "products": [],
+      "coreTechnology": [
+        "家务机器人",
+        "生成式机器人模型"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "天使++轮",
+      "amount": "5亿元人民币",
+      "currency": "CNY",
+      "leadInvestors": [
+        "经纬创投"
+      ],
+      "followInvestors": [
+        "红点创投、商汤国香资本、华登科技、L2F光源创业者基金"
+      ],
+      "otherInvestors": [
+        "光源资本独家FA"
+      ],
+      "financialAdviser": "光源资本独家FA",
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://36kr.com/p/3933076448558212",
+          "publishedAt": "2026-08-10 10:12"
+        },
+        {
+          "url": "https://news.pedaily.cn/202608/567457.shtml",
+          "publishedAt": "2026-08-10 10:27"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-816add1a9156ad84c4de0805",
+      "companyStandardName": "西湖机器人",
+      "companyDisplayName": "西湖机器人",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "OTHER_EMBODIED_AI",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 13,
+      "priorityReason": "P1/OTHER_EMBODIED_AI;金额原币种量级500000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "西湖机器人主要研发具身智能基础模型和机器人系统。本次资本事件为A轮；半年内第四轮，金额为本轮近亿元；半年累计5亿元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发具身智能基础模型和机器人系统",
+      "products": [],
+      "coreTechnology": [
+        "具身智能基础模型"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "A轮；半年内第四轮",
+      "amount": "本轮近亿元；半年累计5亿元",
+      "currency": null,
+      "leadInvestors": [
+        "海愿资本"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [
+        "赛富、小苗朗程、河南投资集团汇融基金等参与历史轮次"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567588.shtml",
+          "publishedAt": "2026-08-12 09:31"
+        },
+        {
+          "url": "https://36kr.com/p/3935865064537477",
+          "publishedAt": "2026-08-12 10:23"
+        },
+        {
+          "url": "https://www.cyzone.cn/article/842895.html",
+          "publishedAt": "2026-08-12"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-88b907fcd1a168762410e1a0",
+      "companyStandardName": "深海智人",
+      "companyDisplayName": "深海智人",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "OTHER_EMBODIED_AI",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 14,
+      "priorityReason": "P1/OTHER_EMBODIED_AI;金额原币种量级500000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "深海智人主要研发面向深海作业的智能机器人系统。本次资本事件为A轮，金额为超5亿元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发面向深海作业的智能机器人系统",
+      "products": [],
+      "coreTechnology": [
+        "深海机器人"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "A轮",
+      "amount": "超5亿元",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "光合创投、达晨财智、纪源资本、毅达资本、中保投资、中电科投资、凯辉基金管理的能源科技基金新进",
+        "正轩投资、云泽资本、云时资本、高捷资本、行至资本等追投"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567638.shtml",
+          "publishedAt": "2026-08-13 09:40"
+        },
+        {
+          "url": "https://www.36kr.com/p/3937295227796864",
+          "publishedAt": "2026-08-13 10:25"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-a6ea5b5f03e047df69946e79",
+      "companyStandardName": "线控科技",
+      "companyDisplayName": "线控科技",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P1",
+      "relevanceSubcategory": "OTHER_EMBODIED_AI",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 15,
+      "priorityReason": "P1/OTHER_EMBODIED_AI;金额原币种量级30000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "线控科技主要研发空间具身智能系统并面向多行业落地。本次资本事件为A轮，金额为数千万元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发空间具身智能系统并面向多行业落地",
+      "products": [],
+      "coreTechnology": [
+        "空间具身智能系统"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "A轮",
+      "amount": "数千万元",
+      "currency": null,
+      "leadInvestors": [
+        "江宁科创基金"
+      ],
+      "followInvestors": [
+        "云时资本"
+      ],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.36kr.com/p/3938721849113730",
+          "publishedAt": "2026-08-14 09:55"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-801b12fbf00d5c687e5a8520",
+      "companyStandardName": "灵猴机器人",
+      "companyDisplayName": "灵猴机器人",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "ROBOT_CORE_UPSTREAM",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 16,
+      "priorityReason": "P2/ROBOT_CORE_UPSTREAM;状态等级0;金额原币种量级100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "灵猴机器人主要研发面向具身智能机器人的核心零部件。本次资本事件为C轮，金额为超亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发面向具身智能机器人的核心零部件",
+      "products": [],
+      "coreTechnology": [
+        "机器人核心零部件"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "C轮",
+      "amount": "超亿元人民币",
+      "currency": "CNY",
+      "leadInvestors": [
+        "晨道资本"
+      ],
+      "followInvestors": [
+        "工业母机产业投资基金、信产基金及某双币基金"
+      ],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567522.shtml",
+          "publishedAt": "2026-08-11 10:02"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-d9c51efc2c129d9ba0e6a3ee",
+      "companyStandardName": "来画",
+      "companyDisplayName": "来画",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "PHYSICAL_AI_INFRASTRUCTURE",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 17,
+      "priorityReason": "P2/PHYSICAL_AI_INFRASTRUCTURE;状态等级0;金额原币种量级680000000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "来画主要提供AI动画与3D内容创作平台。本次资本事件为D轮，金额为6800万元；投后估值约37亿元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "提供AI动画与3D内容创作平台",
+      "products": [],
+      "coreTechnology": [
+        "AI动画",
+        "3D内容创作"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "D轮",
+      "amount": "6800万元；投后估值约37亿元",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "一家国内上市公司（未具名）"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.36kr.com/p/3936290296561026",
+          "publishedAt": "2026-08-14 09:29"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-d98bed71f27ef5860e152a33",
+      "companyStandardName": "潜界科技（LatentVerse）",
+      "companyDisplayName": "潜界科技（LatentVerse）",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "PHYSICAL_AI_INFRASTRUCTURE",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 18,
+      "priorityReason": "P2/PHYSICAL_AI_INFRASTRUCTURE;状态等级0;金额原币种量级300000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "潜界科技（LatentVerse）主要研发世界模型与物理环境仿真技术。本次资本事件为种子轮，金额为数亿元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发世界模型与物理环境仿真技术",
+      "products": [],
+      "coreTechnology": [
+        "世界模型"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "种子轮",
+      "amount": "数亿元",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "高瓴创投、清流资本、英诺基金、智元、星动纪元等"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567597.shtml",
+          "publishedAt": "2026-08-12 10:59"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-cbd6a498bb4e9fa0c10ec8f7",
+      "companyStandardName": "Simile（投中网原文拼作Simlie）",
+      "companyDisplayName": "Simile",
+      "companyEnglishName": null,
+      "regionScope": "OVERSEAS",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "PHYSICAL_AI_INFRASTRUCTURE",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 19,
+      "priorityReason": "P2/PHYSICAL_AI_INFRASTRUCTURE;状态等级0;金额原币种量级200000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "Simile（投中网原文拼作Simlie）主要研发AI人类行为模拟器与仿真模型。本次资本事件为B轮，金额为2亿美元；投后估值20亿美元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发AI人类行为模拟器与仿真模型",
+      "products": [],
+      "coreTechnology": [
+        "AI人类模拟器"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "B轮",
+      "amount": "2亿美元；投后估值20亿美元",
+      "currency": null,
+      "leadInvestors": [
+        "Greenoaks"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [
+        "Index、Hanabi、贝恩资本、A*、Factory、Definition、CVS Health Ventures等参与"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.chinaventure.com.cn/news/80-20260812-392724.html",
+          "publishedAt": "2026-08-12 10:21:46"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-ffd7329303bbdbad895380ee",
+      "companyStandardName": "元点科技（SCALEFORCE）",
+      "companyDisplayName": "元点科技（SCALEFORCE）",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "PHYSICAL_AI_INFRASTRUCTURE",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 20,
+      "priorityReason": "P2/PHYSICAL_AI_INFRASTRUCTURE;状态等级0;金额原币种量级30000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "元点科技（SCALEFORCE）主要为Physical AI和具身智能提供分布式数据采集与节点管理平台。本次资本事件为未明确，金额为数千万元人民币，状态为已完成。",
+      "companyBusiness": "为Physical AI和具身智能提供分布式数据采集与节点管理平台",
+      "products": [],
+      "coreTechnology": [
+        "数采节点管理平台"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "未明确",
+      "amount": "数千万元人民币",
+      "currency": "CNY",
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "中国具身智能产业方、恒旭资本、凯联资本"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.tmtpost.com/nictation/8099510.html",
+          "publishedAt": "2026-08-11 22:19"
+        },
+        {
+          "url": "https://news.pedaily.cn/202608/567582.shtml",
+          "publishedAt": "2026-08-12 09:02"
+        },
+        {
+          "url": "https://36kr.com/p/3935844473634182",
+          "publishedAt": "2026-08-12 10:25"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-e277c734f03b5c0df57bf787",
+      "companyStandardName": "典枢科技",
+      "companyDisplayName": "典枢科技",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "PHYSICAL_AI_INFRASTRUCTURE",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 21,
+      "priorityReason": "P2/PHYSICAL_AI_INFRASTRUCTURE;状态等级0;金额原币种量级10000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "典枢科技主要为Physical AI提供可信数据基础设施。本次资本事件为Pre-A轮股权融资，金额为千万级，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "为Physical AI提供可信数据基础设施",
+      "products": [],
+      "coreTechnology": [
+        "Physical AI数据基础设施"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "Pre-A轮股权融资",
+      "amount": "千万级",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "黄海金控、盐都国控、高曼资本"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567688.shtml",
+          "publishedAt": "2026-08-14 10:13"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-0e7c420ea45878c4eb1a89de",
+      "companyStandardName": "奇点智控",
+      "companyDisplayName": "奇点智控",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "ROBOT_RELATED_TECH",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 22,
+      "priorityReason": "P2/ROBOT_RELATED_TECH;状态等级0;金额原币种量级100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "奇点智控主要研发具身智能核心感知部件并推进量产。本次资本事件为天使轮，金额为近亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发具身智能核心感知部件并推进量产",
+      "products": [],
+      "coreTechnology": [
+        "机器人感知部件"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "天使轮",
+      "amount": "近亿元人民币",
+      "currency": null,
+      "leadInvestors": [
+        "隐峰资本"
+      ],
+      "followInvestors": [
+        "张江科投、浦东创投、傅利叶及两家未具名上市公司"
+      ],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567655.shtml",
+          "publishedAt": "2026-08-13 14:17"
+        },
+        {
+          "url": "https://www.36kr.com/p/3935080213118081",
+          "publishedAt": "2026-08-13"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-23e7fd5e86299d8e37a98cda",
+      "companyStandardName": "模量科技",
+      "companyDisplayName": "模量科技",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "ROBOT_RELATED_TECH",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 23,
+      "priorityReason": "P2/ROBOT_RELATED_TECH;状态等级0;金额原币种量级30000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "模量科技主要为机器人构建触觉感知基础设施。本次资本事件为Pre-A轮，金额为数千万元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "为机器人构建触觉感知基础设施",
+      "products": [],
+      "coreTechnology": [
+        "触觉基础设施"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "Pre-A轮",
+      "amount": "数千万元人民币",
+      "currency": "CNY",
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "猎鹰投资、益华资本",
+        "点石资本担任财务顾问"
+      ],
+      "financialAdviser": "点石资本担任财务顾问",
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567535.shtml",
+          "publishedAt": "2026-08-11T14:24:00+08:00"
+        },
+        {
+          "url": "https://36kr.com/p/3934529840659842",
+          "publishedAt": "2026-08-11 10:51"
+        },
+        {
+          "url": "https://36kr.com/newsflashes/3934456819334272",
+          "publishedAt": "2026-08-11"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-06428dc464f6cf1b4b3e40aa",
+      "companyStandardName": "倍飞智航",
+      "companyDisplayName": "倍飞智航",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "AUTONOMOUS_PHYSICAL_SYSTEM",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 24,
+      "priorityReason": "P2/AUTONOMOUS_PHYSICAL_SYSTEM;状态等级0;金额原币种量级100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "倍飞智航主要研发eVTOL飞行器并推进适航与商业化。本次资本事件为战略融资（创业邦项目卡另标A轮），金额为超亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发eVTOL飞行器并推进适航与商业化",
+      "products": [
+        "倍飞智航5000系列eVTOL"
+      ],
+      "coreTechnology": [
+        "eVTOL",
+        "飞控与适航"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "战略融资（创业邦项目卡另标A轮）",
+      "amount": "超亿元人民币",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "元筑投资、鑫飞资本联合投资"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.cyzone.cn/article/843137.html",
+          "publishedAt": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-eadce61a23679f58ce713f65",
+      "companyStandardName": "迅路创新",
+      "companyDisplayName": "迅路创新",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "AUTONOMOUS_DRIVING",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 25,
+      "priorityReason": "P2/AUTONOMOUS_DRIVING;状态等级1;金额原币种量级100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "迅路创新主要为低速短途出行场景提供智能驾驶与车辆系统。本次资本事件为新一轮，未明确，金额为超亿元人民币，状态为已完成（年初完成）。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "为低速短途出行场景提供智能驾驶与车辆系统",
+      "products": [],
+      "coreTechnology": [
+        "低速智能出行系统"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成（年初完成）",
+      "round": "新一轮，未明确",
+      "amount": "超亿元人民币",
+      "currency": "CNY",
+      "leadInvestors": [
+        "Brizan Ventures、弘晖基金"
+      ],
+      "followInvestors": [
+        "红杉中国、顺为资本、初心资本、高秉强、清水湾基金"
+      ],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567545.shtml",
+          "publishedAt": "2026-08-11T14:58:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-c3fab248802cb5bff7c82984",
+      "companyStandardName": "River AI",
+      "companyDisplayName": "River AI",
+      "companyEnglishName": null,
+      "regionScope": "OVERSEAS",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "GENERAL_AI",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 26,
+      "priorityReason": "P2/GENERAL_AI;状态等级0;金额原币种量级1100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "River AI主要研发通用AI模型与算力基础设施。本次资本事件为未明确，金额为11亿美元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发通用AI模型与算力基础设施",
+      "products": [],
+      "coreTechnology": [
+        "通用人工智能"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "未明确",
+      "amount": "11亿美元",
+      "currency": "USD",
+      "leadInvestors": [
+        "General Catalyst、AMP PBC"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [
+        "英伟达、AMD、Y Combinator、淡马锡参投"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.tmtpost.com/nictation/8099391.html",
+          "publishedAt": "2026-08-11 19:39"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-d03c8cd01ba4f27fe6c03b0c",
+      "companyStandardName": "Lovable",
+      "companyDisplayName": "Lovable",
+      "companyEnglishName": null,
+      "regionScope": "OVERSEAS",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "GENERAL_AI",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 27,
+      "priorityReason": "P2/GENERAL_AI;状态等级0;金额原币种量级400000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "Lovable主要提供Vibe Coding与AI应用开发平台。本次资本事件为C轮，金额为4亿美元；投后估值133亿美元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "提供Vibe Coding与AI应用开发平台",
+      "products": [
+        "Lovable"
+      ],
+      "coreTechnology": [
+        "生成式AI编程"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "C轮",
+      "amount": "4亿美元；投后估值133亿美元",
+      "currency": null,
+      "leadInvestors": [
+        "Menlo Ventures"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [
+        "腾讯等参投"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.tmtpost.com/8102019.html",
+          "publishedAt": "2026-08-13 14:51"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-36fa91b7585242344137768e",
+      "companyStandardName": "忆纪元科技（MemoraX AI）",
+      "companyDisplayName": "忆纪元科技（MemoraX AI）",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "GENERAL_AI",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 28,
+      "priorityReason": "P2/GENERAL_AI;状态等级0;金额原币种量级300000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "忆纪元科技（MemoraX AI）主要为大模型提供长期记忆与上下文基础设施。本次资本事件为种子++轮，金额为数亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "为大模型提供长期记忆与上下文基础设施",
+      "products": [],
+      "coreTechnology": [
+        "大模型记忆系统"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "种子++轮",
+      "amount": "数亿元人民币",
+      "currency": null,
+      "leadInvestors": [
+        "北洋海棠基金、尚势资本、仁爱资本联合"
+      ],
+      "followInvestors": [
+        "银杏谷资本"
+      ],
+      "otherInvestors": [
+        "华业天成、达泰资本等老股东追加"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.chinaventure.com.cn/news/113-20260812-392722.html",
+          "publishedAt": "2026-08-12 09:52:56"
+        },
+        {
+          "url": "https://news.pedaily.cn/202608/567590.shtml",
+          "publishedAt": "2026-08-12 09:32"
+        },
+        {
+          "url": "https://36kr.com/p/3935938639107720",
+          "publishedAt": "2026-08-12 13:58"
+        },
+        {
+          "url": "https://www.cyzone.cn/article/842858.html",
+          "publishedAt": "2026-08-12"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-a1e89d0aed2615e6e2cd13ee",
+      "companyStandardName": "希奥端计算",
+      "companyDisplayName": "希奥端计算",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "GENERAL_AI",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 29,
+      "priorityReason": "P2/GENERAL_AI;状态等级0;金额原币种量级300000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "希奥端计算主要研发端侧计算与AI芯片技术。本次资本事件为A轮，金额为数亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发端侧计算与AI芯片技术",
+      "products": [],
+      "coreTechnology": [
+        "端侧计算"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "A轮",
+      "amount": "数亿元人民币",
+      "currency": null,
+      "leadInvestors": [
+        "铭哲资本、现象资本及未具名头部VC联合"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [
+        "中信建投资本、中银国际、兆易创新等参与"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567612.shtml",
+          "publishedAt": "2026-08-12 15:09"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-cce228bc3b3fbe3b1d4caece",
+      "companyStandardName": "Pragmatik Labs（语用科技，p7k）",
+      "companyDisplayName": "Pragmatik Labs（语用科技，p7k）",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "GENERAL_AI",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 30,
+      "priorityReason": "P2/GENERAL_AI;状态等级0;金额原币种量级220000000.00000003;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "Pragmatik Labs（语用科技，p7k）主要研发通用人工智能模型与智能系统。本次资本事件为天使轮，金额为2.2亿美元，约合14.8亿元人民币，状态为已完成。",
+      "companyBusiness": "研发通用人工智能模型与智能系统",
+      "products": [],
+      "coreTechnology": [
+        "通用大模型"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "天使轮",
+      "amount": "2.2亿美元，约合14.8亿元人民币",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "高榕创投、红杉中国各投资1亿美元",
+        "腾讯投资2000万美元",
+        "上海未来产业基金参与"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": "20亿美元，约合135亿元人民币",
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.36kr.com/p/3936166786890886",
+          "publishedAt": "2026-08-12 17:45"
+        },
+        {
+          "url": "https://news.pedaily.cn/202608/567608.shtml",
+          "publishedAt": "2026-08-12 约15时"
+        },
+        {
+          "url": "https://www.36kr.com/p/3937876844543108",
+          "publishedAt": "2026-08-13"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-0c9565e64bffa275143eb190",
+      "companyStandardName": "万象智维",
+      "companyDisplayName": "万象智维",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "GENERAL_AI",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 31,
+      "priorityReason": "P2/GENERAL_AI;状态等级0;金额原币种量级30000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "万象智维主要提供端侧AI软硬件基础设施。本次资本事件为天使+轮，金额为数千万元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "提供端侧AI软硬件基础设施",
+      "products": [],
+      "coreTechnology": [
+        "端侧AI平台"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "天使+轮",
+      "amount": "数千万元人民币",
+      "currency": "CNY",
+      "leadInvestors": [
+        "韶音"
+      ],
+      "followInvestors": [
+        "瀚晖投资、知行资本、宝尔爱迪"
+      ],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567530.shtml",
+          "publishedAt": "2026-08-11 10:45"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-690ddabc382dddfa85ec28de",
+      "companyStandardName": "Noiz AI",
+      "companyDisplayName": "Noiz AI",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "GENERAL_AI",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 32,
+      "priorityReason": "P2/GENERAL_AI;状态等级0;金额原币种量级30000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "Noiz AI主要从声音信号中提取物理信息并开发AI声学能力。本次资本事件为种子轮，金额为数千万元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "从声音信号中提取物理信息并开发AI声学能力",
+      "products": [],
+      "coreTechnology": [
+        "声学AI",
+        "声音物理信息分析"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "种子轮",
+      "amount": "数千万元人民币",
+      "currency": "CNY",
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "金沙江创投"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567481.shtml",
+          "publishedAt": "2026-08-10 14:35"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-6d32b8099a491aba2312610b",
+      "companyStandardName": "和光智成",
+      "companyDisplayName": "和光智成",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "GENERAL_AI",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 33,
+      "priorityReason": "P2/GENERAL_AI;状态等级0;金额原币种量级30000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "和光智成主要以AI算法和机器人自主实验室服务材料研发客户。本次资本事件为天使轮，金额为数千万元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "以AI算法和机器人自主实验室服务材料研发客户",
+      "products": [
+        "AI新材料研发平台",
+        "机器人自主实验室"
+      ],
+      "coreTechnology": [
+        "AI材料发现",
+        "自动化实验"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "天使轮",
+      "amount": "数千万元人民币",
+      "currency": "CNY",
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "未披露"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.36kr.com/p/3931004388162953",
+          "publishedAt": "2026-08-10 09:30"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-48d7b3c89698fc19c47c20e0",
+      "companyStandardName": "中科芯知",
+      "companyDisplayName": "中科芯知",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "GENERAL_AI",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 34,
+      "priorityReason": "P2/GENERAL_AI;状态等级0;金额未披露或非融资金额;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "中科芯知主要研发面向具身智能的情绪感知大模型。本次资本事件为天使轮，金额为未披露，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发面向具身智能的情绪感知大模型",
+      "products": [],
+      "coreTechnology": [
+        "情绪感知大模型"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "天使轮",
+      "amount": "未披露",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "上海芯智衍企业管理合伙企业（有限合伙）",
+        "万创投行独家财务顾问"
+      ],
+      "financialAdviser": "万创投行独家财务顾问",
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567551.shtml",
+          "publishedAt": "2026-08-11T15:40:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-85cec93df0d9a7fb32cb8a2c",
+      "companyStandardName": "寻明生科",
+      "companyDisplayName": "寻明生科",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "OTHER_RELATED_TECH",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 35,
+      "priorityReason": "P2/OTHER_RELATED_TECH;状态等级0;金额原币种量级100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "寻明生科主要研发新一代生物基座模型并服务生命科学研发。本次资本事件为B系列融资，金额为1亿美元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发新一代生物基座模型并服务生命科学研发",
+      "products": [],
+      "coreTechnology": [
+        "生物基座模型"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "B系列融资",
+      "amount": "1亿美元",
+      "currency": "USD",
+      "leadInvestors": [
+        "后续轮产业投资人"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [
+        "Granite Asia等"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567524.shtml",
+          "publishedAt": "2026-08-11 10:37"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-c431b5d61ba44dd98fcc1bf4",
+      "companyStandardName": "澜存科技",
+      "companyDisplayName": "澜存科技",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P2",
+      "relevanceSubcategory": "OTHER_RELATED_TECH",
+      "industryCategory": null,
+      "industryLabel": null,
+      "businessLabel": null,
+      "capitalEventLabel": null,
+      "displayPriority": 36,
+      "priorityReason": "P2/OTHER_RELATED_TECH;状态等级0;金额原币种量级30000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "澜存科技主要研发连接物理世界的感知与数据基础设施。本次资本事件为Pre-A轮，金额为数千万元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发连接物理世界的感知与数据基础设施",
+      "products": [],
+      "coreTechnology": [
+        "物理世界感知系统"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "Pre-A轮",
+      "amount": "数千万元",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "锡创投"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567634.shtml",
+          "publishedAt": "2026-08-13 09:00"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-c2b1ffd5959830b994013491",
+      "companyStandardName": "谦合益邦",
+      "companyDisplayName": "谦合益邦",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "SEMICONDUCTOR_ELECTRONICS",
+      "industryLabel": "半导体与电子",
+      "businessLabel": "研发3D存算一体芯片",
+      "capitalEventLabel": "融资",
+      "displayPriority": 37,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级2000000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "谦合益邦主要研发3D存算一体芯片。本次资本事件为B轮，金额为超20亿元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。公开材料未披露的字段保持为空，本结果仅供后续人工核验。",
+      "companyBusiness": "研发3D存算一体芯片",
+      "products": [],
+      "coreTechnology": [
+        "3D存算一体芯片"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "B轮",
+      "amount": "超20亿元",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "国调基金、中国移动链长基金、山行资本、星连资本、石溪资本、木雁资本、金浦投资、南山资本、混沌投资、晨壹汇智、国策投资、国鑫创投、格致资本等"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567713.shtml",
+          "publishedAt": "2026-08-14 19:26"
+        },
+        {
+          "url": "https://www.36kr.com/p/3939287964073089",
+          "publishedAt": "2026-08-14"
+        },
+        {
+          "url": "https://www.36kr.com/newsflashes/3939302582713480",
+          "publishedAt": "2026-08-14 11:52:31"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-e14a487517248082123d32c1",
+      "companyStandardName": "不筹量子",
+      "companyDisplayName": "不筹量子",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "QUANTUM_TECH",
+      "industryLabel": "量子科技",
+      "businessLabel": "研发量子计算软硬件及产业化解决方案",
+      "capitalEventLabel": "融资",
+      "displayPriority": 38,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级1000000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "不筹量子主要研发量子计算软硬件及产业化解决方案。本次资本事件为A轮，金额为数亿元；累计近10亿元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发量子计算软硬件及产业化解决方案",
+      "products": [],
+      "coreTechnology": [
+        "量子计算"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "A轮",
+      "amount": "数亿元；累计近10亿元",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "国泰海通、金鼎资本、中芯聚源、上海科创集团等",
+        "高鹄资本任财务顾问"
+      ],
+      "financialAdviser": "高鹄资本任财务顾问",
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.chinaventure.com.cn/news/114-20260812-392731.html",
+          "publishedAt": "2026-08-12 14:33:55"
+        },
+        {
+          "url": "https://news.pedaily.cn/202608/567599.shtml",
+          "publishedAt": "2026-08-12 11时"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-fc84b3b4666e5c1470ab5740",
+      "companyStandardName": "星环聚能",
+      "companyDisplayName": "星环聚能",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "ENERGY_FUSION",
+      "industryLabel": "新能源与核聚变",
+      "businessLabel": "研发商业可控核聚变装置及关键工程技术",
+      "capitalEventLabel": "融资",
+      "displayPriority": 39,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级880000000.0000001;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "星环聚能主要研发商业可控核聚变装置及关键工程技术。本次资本事件为A++轮，金额为8.8亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发商业可控核聚变装置及关键工程技术",
+      "products": [
+        "NTST负三角球形托卡马克",
+        "CTRFR-1"
+      ],
+      "coreTechnology": [
+        "球形托卡马克",
+        "高温超导磁体"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "A++轮",
+      "amount": "8.8亿元人民币",
+      "currency": "CNY",
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "深投控资本、深担创投、农银资本、交银投资、纪源资本、永鑫方舟、可可资本、优势资本等"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567465.shtml",
+          "publishedAt": "2026-08-10 10:43"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-1be55e1bb8ebd5a6ac4f1e08",
+      "companyStandardName": "奇算光启",
+      "companyDisplayName": "奇算光启",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "OTHER_HARD_TECH",
+      "industryLabel": "其他硬科技",
+      "businessLabel": "研发面向高性能计算的光子计算与算力技术",
+      "capitalEventLabel": "融资",
+      "displayPriority": 40,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级300000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "奇算光启主要研发面向高性能计算的光子计算与算力技术。本次资本事件为天使轮及天使+轮，金额为累计数亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发面向高性能计算的光子计算与算力技术",
+      "products": [],
+      "coreTechnology": [
+        "光子计算"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "天使轮及天使+轮",
+      "amount": "累计数亿元人民币",
+      "currency": "CNY",
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "高瓴创投、真格基金、上海未来产业基金、同创伟业、深流资本、张江高科、百度风投等",
+        "明德资本担任FA"
+      ],
+      "financialAdviser": "明德资本担任FA",
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567459.shtml",
+          "publishedAt": "2026-08-10 10:37"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-62f75cf3cea5fb2f8ab85678",
+      "companyStandardName": "什方科技",
+      "companyDisplayName": "什方科技",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "OTHER_HARD_TECH",
+      "industryLabel": "其他硬科技",
+      "businessLabel": "为工业场景提供功能性涂层数字喷印技术",
+      "capitalEventLabel": "融资",
+      "displayPriority": 41,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级300000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "什方科技主要为工业场景提供功能性涂层数字喷印技术。本次资本事件为B轮及B+轮，金额为合计近3亿元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "为工业场景提供功能性涂层数字喷印技术",
+      "products": [],
+      "coreTechnology": [
+        "功能性涂层数字喷印"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "B轮及B+轮",
+      "amount": "合计近3亿元",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "五源资本、创世伙伴创投、同创伟业、恒旭资本、小米集团、蔚来资本",
+        "多家老股东追加"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567685.shtml",
+          "publishedAt": "2026-08-14 09:24"
+        },
+        {
+          "url": "https://news.pedaily.cn/202608/567686.shtml",
+          "publishedAt": "2026-08-14 09:31"
+        },
+        {
+          "url": "https://www.36kr.com/newsflashes/3938683650604160",
+          "publishedAt": "2026-08-14 01:16:12"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-ca42ca3c7e6aa29b20a7f898",
+      "companyStandardName": "虹信生物",
+      "companyDisplayName": "虹信生物",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "OTHER_HARD_TECH",
+      "industryLabel": "其他硬科技",
+      "businessLabel": "开发基于体内LNP-mRNA细胞靶向递送的免疫疗法",
+      "capitalEventLabel": "融资",
+      "displayPriority": 42,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级300000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "虹信生物主要开发基于体内LNP-mRNA细胞靶向递送的免疫疗法。本次资本事件为B轮，金额为数亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "开发基于体内LNP-mRNA细胞靶向递送的免疫疗法",
+      "products": [],
+      "coreTechnology": [
+        "LNP-mRNA递送"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "B轮",
+      "amount": "数亿元人民币",
+      "currency": null,
+      "leadInvestors": [
+        "中金资本旗下基金"
+      ],
+      "followInvestors": [
+        "国开科创、中银资产、苏高新金控、国舜投资及多家老股东"
+      ],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567637.shtml",
+          "publishedAt": "2026-08-13 09:33"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-cc89a99b2c6b9d2455d34c43",
+      "companyStandardName": "热数科技",
+      "companyDisplayName": "热数科技",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "AEROSPACE_LOW_ALTITUDE",
+      "industryLabel": "商业航天与低空经济",
+      "businessLabel": "提供高热流密度散热与算力卫星热控技术",
+      "capitalEventLabel": "资本动态",
+      "displayPriority": 43,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级300000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "热数科技主要提供高热流密度散热与算力卫星热控技术。本次资本事件为未披露，金额为数亿元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "提供高热流密度散热与算力卫星热控技术",
+      "products": [],
+      "coreTechnology": [
+        "高热流密度散热",
+        "算力卫星热控"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "未披露",
+      "amount": "数亿元",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "未披露"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.36kr.com/p/3937650326928776",
+          "publishedAt": "2026-08-13 08:26"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-ce6a93944e164ab52ce7a9e9",
+      "companyStandardName": "镓仁半导体",
+      "companyDisplayName": "镓仁半导体",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "SEMICONDUCTOR_ELECTRONICS",
+      "industryLabel": "半导体与电子",
+      "businessLabel": "推进氧化镓材料、器件与产业化",
+      "capitalEventLabel": "融资",
+      "displayPriority": 44,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级300000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "镓仁半导体主要推进氧化镓材料、器件与产业化。本次资本事件为A轮，金额为数亿元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "推进氧化镓材料、器件与产业化",
+      "products": [],
+      "coreTechnology": [
+        "氧化镓半导体"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "A轮",
+      "amount": "数亿元",
+      "currency": null,
+      "leadInvestors": [
+        "方广资本、深创投集团联合"
+      ],
+      "followInvestors": [
+        "远致星火、中国中车、株洲高科产投、华睿投资、余杭金控、传化资本、嘉道资本"
+      ],
+      "otherInvestors": [
+        "九智资本、毅岭资本追加"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567650.shtml",
+          "publishedAt": "2026-08-13 11:05"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-888dc6c408a904fadcc3a00c",
+      "companyStandardName": "霍德生物",
+      "companyDisplayName": "霍德生物",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "OTHER_HARD_TECH",
+      "industryLabel": "其他硬科技",
+      "businessLabel": "研发细胞治疗及再生医学产品",
+      "capitalEventLabel": "融资",
+      "displayPriority": 45,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级200000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "霍德生物主要研发细胞治疗及再生医学产品。本次资本事件为C轮首关，金额为近2亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发细胞治疗及再生医学产品",
+      "products": [],
+      "coreTechnology": [
+        "细胞治疗"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "C轮首关",
+      "amount": "近2亿元人民币",
+      "currency": "CNY",
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "天士力资本、海邦投资、广州健康产投等新股东",
+        "老股东隆门资本继续加持"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567467.shtml",
+          "publishedAt": "2026-08-10 11:00"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-13e83c18a9d433325aa3bf57",
+      "companyStandardName": "无限宇航",
+      "companyDisplayName": "无限宇航",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "AEROSPACE_LOW_ALTITUDE",
+      "industryLabel": "商业航天与低空经济",
+      "businessLabel": "研发商业航天器及空间技术产品",
+      "capitalEventLabel": "融资",
+      "displayPriority": 46,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "无限宇航主要研发商业航天器及空间技术产品。本次资本事件为A轮，金额为近亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发商业航天器及空间技术产品",
+      "products": [],
+      "coreTechnology": [
+        "商业航天"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "A轮",
+      "amount": "近亿元人民币",
+      "currency": null,
+      "leadInvestors": [
+        "鼎峰科创"
+      ],
+      "followInvestors": [
+        "云鼎资本、泰亚投资"
+      ],
+      "otherInvestors": [
+        "深担创投、松禾创投、守仁共创追加"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567604.shtml",
+          "publishedAt": "2026-08-12"
+        },
+        {
+          "url": "https://36kr.com/p/3935991981555075",
+          "publishedAt": "2026-08-12 11:38"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-28c43607b958389fe0287c0f",
+      "companyStandardName": "纳开量子",
+      "companyDisplayName": "纳开量子",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "QUANTUM_TECH",
+      "industryLabel": "量子科技",
+      "businessLabel": "研发量子信息与量子计算技术",
+      "capitalEventLabel": "融资",
+      "displayPriority": 47,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "纳开量子主要研发量子信息与量子计算技术。本次资本事件为天使轮及天使+轮，金额为累计超过1亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发量子信息与量子计算技术",
+      "products": [],
+      "coreTechnology": [
+        "量子技术"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "天使轮及天使+轮",
+      "amount": "累计超过1亿元人民币",
+      "currency": null,
+      "leadInvestors": [
+        "天使轮由高瓴创投",
+        "天使+轮由长石资本"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567652.shtml",
+          "publishedAt": "2026-08-13 11:39"
+        },
+        {
+          "url": "https://www.36kr.com/p/3937269383609474",
+          "publishedAt": "2026-08-13 13:53"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-85539022a3c9901c85d1d827",
+      "companyStandardName": "固芯能源",
+      "companyDisplayName": "固芯能源",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "ENERGY_FUSION",
+      "industryLabel": "新能源与核聚变",
+      "businessLabel": "研发新型能源技术与储能产品",
+      "capitalEventLabel": "资本动态",
+      "displayPriority": 48,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "固芯能源主要研发新型能源技术与储能产品。本次资本事件为未明确，金额为亿元级，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。公开材料未披露的字段保持为空，本结果仅供后续人工核验。",
+      "companyBusiness": "研发新型能源技术与储能产品",
+      "products": [],
+      "coreTechnology": [
+        "能源技术"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "未明确",
+      "amount": "亿元级",
+      "currency": null,
+      "leadInvestors": [
+        "投控东海"
+      ],
+      "followInvestors": [
+        "建元基金"
+      ],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567610.shtml",
+          "publishedAt": "2026-08-12 14:49"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-ab8a4b558148f9b685407714",
+      "companyStandardName": "派姆特科技",
+      "companyDisplayName": "派姆特科技",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "ADVANCED_MANUFACTURING_MATERIALS",
+      "industryLabel": "先进制造与材料",
+      "businessLabel": "为汽车、航空航天和工程机械客户提供三维精密测量设备与软件",
+      "capitalEventLabel": "融资",
+      "displayPriority": 49,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "派姆特科技主要为汽车、航空航天和工程机械客户提供三维精密测量设备与软件。本次资本事件为B轮，金额为近亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "为汽车、航空航天和工程机械客户提供三维精密测量设备与软件",
+      "products": [],
+      "coreTechnology": [
+        "三维精密测量"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "B轮",
+      "amount": "近亿元人民币",
+      "currency": "CNY",
+      "leadInvestors": [
+        "苏州战新基金独家"
+      ],
+      "followInvestors": [
+        "天津泰达"
+      ],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://36kr.com/p/3933542667385984",
+          "publishedAt": "2026-08-10 18:06"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-fda1ebe835d4100dea9bfe70",
+      "companyStandardName": "深度细胞",
+      "companyDisplayName": "深度细胞",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "BIOTECH_HEALTHCARE",
+      "industryLabel": "生物医药",
+      "businessLabel": "以单细胞与AI技术服务生命科学和药物研发",
+      "capitalEventLabel": "融资",
+      "displayPriority": 50,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级100000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "深度细胞主要以单细胞与AI技术服务生命科学和药物研发。本次资本事件为种子轮，金额为近亿元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "以单细胞与AI技术服务生命科学和药物研发",
+      "products": [],
+      "coreTechnology": [
+        "单细胞分析"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "种子轮",
+      "amount": "近亿元人民币",
+      "currency": "CNY",
+      "leadInvestors": [
+        "中科创星、顺禧基金、千骥资本共同"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [
+        "鼎峰科创、水木创投、清科控股参与投资"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567455.shtml",
+          "publishedAt": "2026-08-10 10:16"
+        },
+        {
+          "url": "https://news.pedaily.cn/202608/567456.shtml",
+          "publishedAt": "2026-08-10 10:18"
+        },
+        {
+          "url": "https://finance.sina.cn/tech/2026-08-10/detail-inimuvrr1363849.d.html?fromtech=1&node_id=76524&vt=4",
+          "publishedAt": "2026-08-10 10:16"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-272094397fe07eacba46acdc",
+      "companyStandardName": "飞声",
+      "companyDisplayName": "飞声",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "OTHER_HARD_TECH",
+      "industryLabel": "其他硬科技",
+      "businessLabel": "研发开放式AI助听器并拓展海外听力健康市场",
+      "capitalEventLabel": "融资",
+      "displayPriority": 51,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级30000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "飞声主要研发开放式AI助听器并拓展海外听力健康市场。本次资本事件为天使+轮，金额为数千万元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发开放式AI助听器并拓展海外听力健康市场",
+      "products": [],
+      "coreTechnology": [
+        "开放式AI助听器"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "天使+轮",
+      "amount": "数千万元人民币",
+      "currency": "CNY",
+      "leadInvestors": [
+        "慧和资产"
+      ],
+      "followInvestors": [
+        "方瑞资本担任财务顾问并"
+      ],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://36kr.com/p/3933467328413064",
+          "publishedAt": "2026-08-10 17:30"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-4e870c28a6891947360b5c01",
+      "companyStandardName": "格林威治光电",
+      "companyDisplayName": "格林威治光电",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "SEMICONDUCTOR_ELECTRONICS",
+      "industryLabel": "半导体与电子",
+      "businessLabel": "研发光电器件与相关技术产品",
+      "capitalEventLabel": "融资",
+      "displayPriority": 52,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级30000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "格林威治光电主要研发光电器件与相关技术产品。本次资本事件为A轮，金额为数千万元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发光电器件与相关技术产品",
+      "products": [],
+      "coreTechnology": [
+        "光电器件"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "A轮",
+      "amount": "数千万元",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "东证资本、金啸铜业、盈远双银基金"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567697.shtml",
+          "publishedAt": "2026-08-14 13:52"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-7679c2741637eeff864f4700",
+      "companyStandardName": "菁良科技",
+      "companyDisplayName": "菁良科技",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "ADVANCED_MANUFACTURING_MATERIALS",
+      "industryLabel": "先进制造与材料",
+      "businessLabel": "研发高端制造与工业技术产品",
+      "capitalEventLabel": "融资",
+      "displayPriority": 53,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级30000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "菁良科技主要研发高端制造与工业技术产品。本次资本事件为B+轮，金额为数千万元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发高端制造与工业技术产品",
+      "products": [],
+      "coreTechnology": [
+        "工业技术"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "B+轮",
+      "amount": "数千万元",
+      "currency": null,
+      "leadInvestors": [
+        "道远资本"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [
+        "松禾资本参与"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567619.shtml",
+          "publishedAt": "2026-08-12 16:43"
+        },
+        {
+          "url": "https://news.pedaily.cn/202608/567579.shtml",
+          "publishedAt": "2026-08-12 08时"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-bc317c2c95ab7f4f30512c10",
+      "companyStandardName": "复通汇智",
+      "companyDisplayName": "复通汇智",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "BIOTECH_HEALTHCARE",
+      "industryLabel": "生物医药",
+      "businessLabel": "面向医疗场景提供创新技术与产品",
+      "capitalEventLabel": "融资",
+      "displayPriority": 54,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级30000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "复通汇智主要面向医疗场景提供创新技术与产品。本次资本事件为天使轮，金额为数千万元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "面向医疗场景提供创新技术与产品",
+      "products": [],
+      "coreTechnology": [
+        "医疗科技"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "天使轮",
+      "amount": "数千万元人民币",
+      "currency": "CNY",
+      "leadInvestors": [
+        "元璟资本"
+      ],
+      "followInvestors": [
+        "垚山智医"
+      ],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567509.shtml",
+          "publishedAt": "2026-08-11 09:15"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-eb4b7c8fa61e6c21b7b6fa0a",
+      "companyStandardName": "亿兰科",
+      "companyDisplayName": "亿兰科",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "ENERGY_FUSION",
+      "industryLabel": "新能源与核聚变",
+      "businessLabel": "面向工商业客户提供储能系统与海外终端解决方案",
+      "capitalEventLabel": "融资",
+      "displayPriority": 55,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级30000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "亿兰科主要面向工商业客户提供储能系统与海外终端解决方案。本次资本事件为A轮，金额为数千万元人民币，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "面向工商业客户提供储能系统与海外终端解决方案",
+      "products": [],
+      "coreTechnology": [
+        "工商业储能系统集成"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "A轮",
+      "amount": "数千万元人民币",
+      "currency": "CNY",
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "时代伯乐追加投资",
+        "星汉资本担任独家FA"
+      ],
+      "financialAdviser": "星汉资本担任独家FA",
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.36kr.com/p/3929538649324672",
+          "publishedAt": "2026-08-10 08:00"
+        },
+        {
+          "url": "https://news.pedaily.cn/202608/567476.shtml",
+          "publishedAt": "2026-08-10 14:22"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-f488c13fa2279b508481bfa5",
+      "companyStandardName": "恒璇科技",
+      "companyDisplayName": "恒璇科技",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "ADVANCED_MANUFACTURING_MATERIALS",
+      "industryLabel": "先进制造与材料",
+      "businessLabel": "研发高端制造与智能硬件相关技术",
+      "capitalEventLabel": "融资",
+      "displayPriority": 56,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额原币种量级30000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "恒璇科技主要研发高端制造与智能硬件相关技术。本次资本事件为Pre-A轮，金额为数千万元，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发高端制造与智能硬件相关技术",
+      "products": [],
+      "coreTechnology": [
+        "智能硬件技术"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "Pre-A轮",
+      "amount": "数千万元",
+      "currency": null,
+      "leadInvestors": [
+        "九号资本、道翼资本"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [
+        "深担创投、深圳天使母基金共同投资"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.36kr.com/p/3937357830618505",
+          "publishedAt": "2026-08-14 09:00"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-0d3610437b5f16bb32369b9a",
+      "companyStandardName": "向量奇点（北京奇点向量科技有限公司）",
+      "companyDisplayName": "向量奇点（北京奇点向量科技有限公司）",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "QUANTUM_TECH",
+      "industryLabel": "量子科技",
+      "businessLabel": "研发中性原子量子计算机及相关技术",
+      "capitalEventLabel": "融资",
+      "displayPriority": 57,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额未披露或非融资金额;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "向量奇点（北京奇点向量科技有限公司）主要研发中性原子量子计算机及相关技术。本次资本事件为天使轮，金额为超亿元（投中网披露；亿欧未披露），状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发中性原子量子计算机及相关技术",
+      "products": [],
+      "coreTechnology": [
+        "中性原子量子计算"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "天使轮",
+      "amount": "超亿元（投中网披露；亿欧未披露）",
+      "currency": null,
+      "leadInvestors": [
+        "IDG资本"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [
+        "五源资本、耀途资本、英诺天使基金、零以创投及战略级产业合作伙伴滴普科技共同参与"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.chinaventure.com.cn/flash/20260814-89984.html",
+          "publishedAt": "2026-08-14 17:31:22"
+        },
+        {
+          "url": "https://www.iyiou.com/data/202608141138139",
+          "publishedAt": "2026-08-14 20:02"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-698823bc860e0742f4298a9e",
+      "companyStandardName": "迈斯拓扑",
+      "companyDisplayName": "迈斯拓扑",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "ADVANCED_MANUFACTURING_MATERIALS",
+      "industryLabel": "先进制造与材料",
+      "businessLabel": "研发先进制造与拓扑设计技术",
+      "capitalEventLabel": "融资",
+      "displayPriority": 58,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额未披露或非融资金额;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "迈斯拓扑主要研发先进制造与拓扑设计技术。本次资本事件为Pre-A轮，金额为未披露，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发先进制造与拓扑设计技术",
+      "products": [],
+      "coreTechnology": [
+        "拓扑设计"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "Pre-A轮",
+      "amount": "未披露",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "国新基金所属央企战新基金、国新创投基金"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567611.shtml",
+          "publishedAt": "2026-08-12 15:00"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-9c189ddd12021e37c1a9350f",
+      "companyStandardName": "国仪量子技术（合肥）股份有限公司",
+      "companyDisplayName": "国仪量子",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "QUANTUM_TECH",
+      "industryLabel": "量子科技",
+      "businessLabel": "研发量子精密测量与科学仪器并推进科创板上市",
+      "capitalEventLabel": "IPO / 上市",
+      "displayPriority": 59,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额未披露或非融资金额;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "国仪量子技术（合肥）股份有限公司主要研发量子精密测量与科学仪器并推进科创板上市。本次资本事件为IPO，金额为未提取，状态为已上市。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发量子精密测量与科学仪器并推进科创板上市",
+      "products": [],
+      "coreTechnology": [
+        "量子精密测量"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已上市",
+      "round": "IPO",
+      "amount": "未提取",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://finance.sina.com.cn/stock/wbstock/2026-08-11/doc-inimxewr7618072.shtml",
+          "publishedAt": "2026-08-11 11:02"
+        },
+        {
+          "url": "https://www.chinaventure.com.cn/news/80-20260812-392716.html",
+          "publishedAt": "2026-08-12 09:37:52"
+        },
+        {
+          "url": "https://news.pedaily.cn/202608/567710.shtml",
+          "publishedAt": "2026-08-14 16:45"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-f506556ae627a6e1bc31c9cf",
+      "companyStandardName": "育材堂",
+      "companyDisplayName": "育材堂",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "ADVANCED_MANUFACTURING_MATERIALS",
+      "industryLabel": "先进制造与材料",
+      "businessLabel": "研发先进金属材料并推进产业化",
+      "capitalEventLabel": "融资",
+      "displayPriority": 60,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级0;金额未披露或非融资金额;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "育材堂主要研发先进金属材料并推进产业化。本次资本事件为B轮和C轮，金额为未披露，状态为已完成。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发先进金属材料并推进产业化",
+      "products": [],
+      "coreTechnology": [
+        "先进金属材料"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成",
+      "round": "B轮和C轮",
+      "amount": "未披露",
+      "currency": null,
+      "leadInvestors": [
+        "C轮苏产投"
+      ],
+      "followInvestors": [],
+      "otherInvestors": [
+        "B轮中科创星"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567550.shtml",
+          "publishedAt": "2026-08-11 15:00"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-641806dca7ddeac665d48d08",
+      "companyStandardName": "爱仕特",
+      "companyDisplayName": "爱仕特",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "SEMICONDUCTOR_ELECTRONICS",
+      "industryLabel": "半导体与电子",
+      "businessLabel": "提供碳化硅功率半导体解决方案",
+      "capitalEventLabel": "融资",
+      "displayPriority": 61,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级1;金额原币种量级300000000;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "爱仕特主要提供碳化硅功率半导体解决方案。本次资本事件为B轮，金额为数亿元，状态为已完成并交割。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "提供碳化硅功率半导体解决方案",
+      "products": [],
+      "coreTechnology": [
+        "碳化硅功率半导体"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "已完成并交割",
+      "round": "B轮",
+      "amount": "数亿元",
+      "currency": null,
+      "leadInvestors": [
+        "中显芯科集团"
+      ],
+      "followInvestors": [
+        "杭州钱塘和达产业基金"
+      ],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567662.shtml",
+          "publishedAt": "2026-08-13 16:52"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-d36557f729981108d6bd51b3",
+      "companyStandardName": "韬润半导体",
+      "companyDisplayName": "韬润半导体",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "ENERGY_FUSION",
+      "industryLabel": "新能源与核聚变",
+      "businessLabel": "面向5G基站、AI数据中心和新能源汽车客户研发高速模拟及数模混合芯片",
+      "capitalEventLabel": "IPO / 上市",
+      "displayPriority": 62,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级1;金额未披露或非融资金额;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "韬润半导体面向通信、AI数据中心和新能源汽车研发高速模拟及数模混合芯片，产品覆盖ADC/DAC、SerDes、光通信DSP及定制ASIC。公司于2026年8月7日完成北京证监局IPO辅导备案，中金公司担任辅导机构。",
+      "companyBusiness": "面向5G基站、AI数据中心和新能源汽车客户研发高速模拟及数模混合芯片",
+      "products": [
+        "高速高精度ADC/DAC",
+        "超高速SerDes芯片",
+        "oDSP与信号链芯片",
+        "定制化数模混合ASIC"
+      ],
+      "coreTechnology": [
+        "高速模拟与数模混合芯片设计",
+        "短距及中长距光通信DSP"
+      ],
+      "foundingTeam": [
+        "创始人管逸，纽约大学硕士，曾任职博通APD部门，拥有近20年芯片设计经验"
+      ],
+      "financingStatus": "已完成IPO辅导备案登记",
+      "round": "IPO辅导备案",
+      "amount": "不适用",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "正轩投资等历史投资方",
+        "本文未披露本次新增投资"
+      ],
+      "financialAdviser": "中国国际金融股份有限公司（IPO辅导机构）",
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": "2018年以来完成12轮融资，累计融资超10亿元",
+      "sources": [
+        {
+          "url": "https://www.36kr.com/p/3937624373656961",
+          "publishedAt": "2026-08-13 15:30"
+        },
+        {
+          "url": "https://www.trendforce.cn/industry-news/optoelectronics/20260810-7128.html",
+          "publishedAt": "2026-08-10"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-2177fd979a64572e064c1150",
+      "companyStandardName": "张雪机车",
+      "companyDisplayName": "张雪机车",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "ADVANCED_MANUFACTURING_MATERIALS",
+      "industryLabel": "先进制造与材料",
+      "businessLabel": "研发和制造高性能摩托车及相关产品",
+      "capitalEventLabel": "资本动态",
+      "displayPriority": 63,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级2;金额未披露或非融资金额;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "张雪机车主要研发和制造高性能摩托车及相关产品。本次资本事件为未披露，金额为未披露，状态为获得投资。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发和制造高性能摩托车及相关产品",
+      "products": [],
+      "coreTechnology": [
+        "高性能摩托车"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "获得投资",
+      "round": "未披露",
+      "amount": "未披露",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [
+        "红杉中国独家投资"
+      ],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://news.pedaily.cn/202608/567651.shtml",
+          "publishedAt": "2026-08-13 11:26"
+        },
+        {
+          "url": "https://www.36kr.com/p/3937398499982727",
+          "publishedAt": "2026-08-13 12:44"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-47a38d6aa76b260993d05858",
+      "companyStandardName": "珈凯生物",
+      "companyDisplayName": "珈凯生物",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "BIOTECH_HEALTHCARE",
+      "industryLabel": "生物医药",
+      "businessLabel": "从事生物医药研发并完成上市",
+      "capitalEventLabel": "IPO / 上市",
+      "displayPriority": 64,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级2;金额未披露或非融资金额;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "珈凯生物主要从事生物医药研发并完成上市。本次资本事件为IPO，金额为未提取，状态为上市。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。公开材料未披露的字段保持为空，本结果仅供后续人工核验。",
+      "companyBusiness": "从事生物医药研发并完成上市",
+      "products": [],
+      "coreTechnology": [
+        "生物医药"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "上市",
+      "round": "IPO",
+      "amount": "未提取",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://finance.sina.com.cn/stock/wbstock/2026-08-11/doc-inimxewr7618072.shtml",
+          "publishedAt": "2026-08-11 11:02"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-7440768c3c5146b9ebc67631",
+      "companyStandardName": "超纯应材",
+      "companyDisplayName": "超纯应材",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "SEMICONDUCTOR_ELECTRONICS",
+      "industryLabel": "半导体与电子",
+      "businessLabel": "提供超高纯材料及半导体相关材料产品",
+      "capitalEventLabel": "IPO / 上市",
+      "displayPriority": 65,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级2;金额未披露或非融资金额;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "超纯应材主要提供超高纯材料及半导体相关材料产品。本次资本事件为IPO，金额为未提取，状态为上市。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "提供超高纯材料及半导体相关材料产品",
+      "products": [],
+      "coreTechnology": [
+        "超高纯材料"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "上市",
+      "round": "IPO",
+      "amount": "未提取",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://finance.sina.com.cn/stock/wbstock/2026-08-11/doc-inimxewr7618072.shtml",
+          "publishedAt": "2026-08-11 11:02"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-ec376913384a50fe458adbfa",
+      "companyStandardName": "天广实",
+      "companyDisplayName": "天广实",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "BIOTECH_HEALTHCARE",
+      "industryLabel": "生物医药",
+      "businessLabel": "研发抗体药物及生物医药管线，推进北交所IPO",
+      "capitalEventLabel": "IPO / 上市",
+      "displayPriority": 66,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级2;金额未披露或非融资金额;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "天广实主要研发抗体药物及生物医药管线，推进北交所IPO。本次资本事件为IPO，金额为拟募资3.492365亿元人民币，状态为拟于2026-08-11北交所上会。",
+      "companyBusiness": "研发抗体药物及生物医药管线，推进北交所IPO",
+      "products": [],
+      "coreTechnology": [
+        "抗体药物研发"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "拟于2026-08-11北交所上会",
+      "round": "IPO",
+      "amount": "拟募资3.492365亿元人民币",
+      "currency": "CNY",
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://www.tmtpost.com/8097690.html",
+          "publishedAt": "2026-08-10 19:33"
+        }
+      ]
+    },
+    {
+      "id": "weekly-event-fc4d47f500efd28f13f3d2de",
+      "companyStandardName": "贝特利",
+      "companyDisplayName": "贝特利",
+      "companyEnglishName": null,
+      "regionScope": "CHINA",
+      "relevanceTier": "P3",
+      "relevanceSubcategory": "OTHER_HARD_TECH",
+      "industryCategory": "ADVANCED_MANUFACTURING_MATERIALS",
+      "industryLabel": "先进制造与材料",
+      "businessLabel": "研发高分子材料并推进创业板IPO",
+      "capitalEventLabel": "IPO / 上市",
+      "displayPriority": 67,
+      "priorityReason": "P3/OTHER_HARD_TECH;状态等级2;金额未披露或非融资金额;稳定ID兜底",
+      "officialWebsite": null,
+      "introduction": "贝特利主要研发高分子材料并推进创业板IPO。本次资本事件为IPO，金额为未提取，状态为初步询价及推介。本条仅记录公开来源明确披露的事实，未披露字段保持为空并等待后续核验。",
+      "companyBusiness": "研发高分子材料并推进创业板IPO",
+      "products": [],
+      "coreTechnology": [
+        "高分子材料"
+      ],
+      "foundingTeam": [],
+      "financingStatus": "初步询价及推介",
+      "round": "IPO",
+      "amount": "未提取",
+      "currency": null,
+      "leadInvestors": [],
+      "followInvestors": [],
+      "otherInvestors": [],
+      "financialAdviser": null,
+      "useOfFunds": null,
+      "valuation": null,
+      "cumulativeFunding": null,
+      "sources": [
+        {
+          "url": "https://paper.cnstock.com/html/2026-08/11/content_2253742.htm",
+          "publishedAt": "2026-08-11"
+        }
+      ]
+    }
+  ]
+}

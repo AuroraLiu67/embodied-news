@@ -33,6 +33,10 @@ main {
   padding: 48px 0 96px;
 }
 
+.week-switcher { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.week-switcher a { padding: 8px 11px; border: 1px solid #b8c2ba; border-radius: 4px; color: #536158; font-size: 0.76rem; font-weight: 700; text-decoration: none; }
+.week-switcher a[aria-current="page"] { border-color: #19412d; background: #19412d; color: white; }
+
 .report-header {
   padding: 38px 0 46px;
   border-top: 6px solid #19412d;
