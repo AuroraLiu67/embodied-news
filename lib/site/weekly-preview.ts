@@ -1,8 +1,9 @@
-import currentWeeklyPreview from "../../public/data/weekly/2026-08-10.json";
-import archivedWeeklyPreview from "../../public/data/weekly/2026-08-03.json";
-import {parseAmountSortBucket} from "../pipeline/weekly-preview-projection";
+import currentWeeklyPreview from "../../public/data/weekly/2026-08-17.json";
+import previousWeeklyPreview from "../../public/data/weekly/2026-08-10.json";
+import firstWeeklyPreview from "../../public/data/weekly/2026-08-03.json";
+import {parseAmountSortBucket, weeklyPreviewProjectionSchema, type WeeklyPreviewProjection} from "../pipeline/weekly-preview-projection";
 
-type WeeklyPreviewData = typeof archivedWeeklyPreview;
+type WeeklyPreviewData = WeeklyPreviewProjection;
 
 function toPreviewCard(event: WeeklyPreviewData["events"][number], requireIntroduction = true) {
   const firstSource = event.sources[0];
@@ -67,8 +68,9 @@ export function createWeeklyPreviewReport(data: WeeklyPreviewData) {
   } as const;
 }
 
-export const currentWeeklyReport = createWeeklyPreviewReport(currentWeeklyPreview as WeeklyPreviewData);
-export const archivedWeeklyReport = createWeeklyPreviewReport(archivedWeeklyPreview);
+export const currentWeeklyReport = createWeeklyPreviewReport(weeklyPreviewProjectionSchema.parse(currentWeeklyPreview));
+export const previousWeeklyReport = createWeeklyPreviewReport(weeklyPreviewProjectionSchema.parse(previousWeeklyPreview));
+export const archivedWeeklyReport = createWeeklyPreviewReport(weeklyPreviewProjectionSchema.parse(firstWeeklyPreview));
 export const weeklyPreviewSample = archivedWeeklyReport;
 export const weeklyPreviewHighlight = archivedWeeklyReport.highlight;
 export const WEEKLY_PREVIEW_P1_COUNT = archivedWeeklyReport.counts.P1;

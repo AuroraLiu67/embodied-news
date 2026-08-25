@@ -52,11 +52,18 @@ function P3Table({events}: {events: readonly WeeklyPreviewSampleEvent[]}) {
 
 function displayWeek(start: string, end: string) { return `${start.replaceAll("-", ".")}–${end.slice(5).replace("-", ".")}`; }
 
-export function WeeklyReportPage({report, archive}: {report: WeeklyPreviewReport; archive: boolean}) {
+const weekOptions = [
+  {weekStart: "2026-08-17", href: "/", label: "本周 · 08.17—08.23"},
+  {weekStart: "2026-08-10", href: "/archive/2026-08-10-to-2026-08-16", label: "往期 · 08.10—08.16"},
+  {weekStart: "2026-08-03", href: "/archive/2026-08-03-to-2026-08-09", label: "往期 · 08.03—08.09"},
+] as const;
+
+export function WeeklyReportPage({report}: {report: WeeklyPreviewReport}) {
   const {counts, events, p1Events, p2Events, p3Events, highlight} = report;
+  const isArchive = report.weekStart !== "2026-08-17";
   return <main>
-    <nav className="week-switcher" aria-label="周报版本"><Link href="/" aria-current={!archive ? "page" : undefined}>本周 · 08.10—08.16</Link><Link href="/archive/2026-08-03-to-2026-08-09" aria-current={archive ? "page" : undefined}>往期 · 08.03—08.09</Link></nav>
-    <header className="report-header"><div className="preview-line"><span className="preview-badge">{archive ? "历史周报" : "本周预览"} · {counts.public}条</span><span>非飞书正式发布</span></div>
+    <nav className="week-switcher" aria-label="周报版本">{weekOptions.map((week) => <Link key={week.weekStart} href={week.href} aria-current={report.weekStart === week.weekStart ? "page" : undefined}>{week.label}</Link>)}</nav>
+    <header className="report-header"><div className="preview-line"><span className="preview-badge">{isArchive ? "历史周报" : "本周预览"} · {counts.public}条</span><span>非飞书正式发布</span></div>
       <p className="eyebrow">EMBODIED INTELLIGENCE · WEEKLY BRIEF</p><h1>具身智能公司动态周报</h1><p className="issue-date">{displayWeek(report.weekStart, report.weekEnd)}</p>
       <p className="deck">聚焦具身智能、Physical AI 与硬科技资本动态。P1/P2 使用完整简介卡片，P3 使用紧凑行业表格。</p>
       <dl className="statistics" aria-label="本周事件统计"><div><dt>收集</dt><dd>{counts.original}</dd></div><div><dt>周报收录</dt><dd>{counts.public}</dd></div><div><dt>P1</dt><dd>{counts.P1}</dd></div><div><dt>P2</dt><dd>{counts.P2}</dd></div><div><dt>P3</dt><dd>{counts.P3}</dd></div></dl>

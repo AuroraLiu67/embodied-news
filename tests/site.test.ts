@@ -2,8 +2,9 @@ import { describe, expect, it } from "vitest";
 
 import weeklyProjection from "../public/data/weekly/2026-08-03.json";
 import { site } from "../lib/site";
-import currentProjection from "../public/data/weekly/2026-08-10.json";
-import {archivedWeeklyReport, currentWeeklyReport, formatPrimaryInvestors, WEEKLY_PREVIEW_P1_COUNT, WEEKLY_PREVIEW_P2_COUNT, WEEKLY_PREVIEW_P3_COUNT, weeklyPreviewHighlight, weeklyPreviewSample} from "../lib/site/weekly-preview";
+import currentProjection from "../public/data/weekly/2026-08-17.json";
+import previousProjection from "../public/data/weekly/2026-08-10.json";
+import {archivedWeeklyReport, currentWeeklyReport, formatPrimaryInvestors, previousWeeklyReport, WEEKLY_PREVIEW_P1_COUNT, WEEKLY_PREVIEW_P2_COUNT, WEEKLY_PREVIEW_P3_COUNT, weeklyPreviewHighlight, weeklyPreviewSample} from "../lib/site/weekly-preview";
 
 describe("site metadata", () => {
   it("provides the minimum homepage content", () => {
@@ -14,20 +15,24 @@ describe("site metadata", () => {
 });
 
 describe("weekly preview sample", () => {
-  it("uses the reviewed 08-10 to 08-14 events for the full 08-10 to 08-16 issue", () => {
-    expect(currentWeeklyReport.weekStart).toBe("2026-08-10");
-    expect(currentWeeklyReport.weekEnd).toBe("2026-08-16");
-    expect(currentWeeklyReport.counts).toEqual({original: 67, excludedP4: 0, public: 67, P1: 15, P2: 21, P3: 31});
-    expect(currentWeeklyReport.events).toHaveLength(67);
+  it("uses the reviewed weekly-ready events for the 08-17 to 08-23 issue", () => {
+    expect(currentWeeklyReport.weekStart).toBe("2026-08-17");
+    expect(currentWeeklyReport.weekEnd).toBe("2026-08-23");
+    expect(currentWeeklyReport.counts).toEqual({original: 72, excludedP4: 4, public: 68, P1: 13, P2: 20, P3: 35});
+    expect(currentWeeklyReport.events).toHaveLength(68);
     expect(currentWeeklyReport.events.map((event) => event.companyDisplayName)).toEqual(
       currentProjection.events.map((event) => event.companyDisplayName),
     );
     expect(currentWeeklyReport.events.every((event) => event.sources.length === 1)).toBe(true);
-    expect(currentWeeklyReport.events.find((event) => event.companyDisplayName === "Simile")).toBeDefined();
-    expect(currentWeeklyReport.events.some((event) => event.companyDisplayName.includes("投中网原文拼作"))).toBe(false);
+    expect(currentWeeklyReport.events.find((event) => event.companyDisplayName === "数字华夏")?.introduction).toMatch(/夏澜R03/);
+    expect(currentWeeklyReport.events.some((event) => event.relevanceTier === ("P4" as never))).toBe(false);
   });
 
-  it("keeps the complete previous issue available as an 82-event archive", () => {
+  it("keeps both previous issues available as complete archives", () => {
+    expect(previousWeeklyReport.weekStart).toBe("2026-08-10");
+    expect(previousWeeklyReport.weekEnd).toBe("2026-08-16");
+    expect(previousWeeklyReport.counts).toEqual({original: 67, excludedP4: 0, public: 67, P1: 15, P2: 21, P3: 31});
+    expect(previousWeeklyReport.events.map((event) => event.companyDisplayName)).toEqual(previousProjection.events.map((event) => event.companyDisplayName));
     expect(archivedWeeklyReport.weekStart).toBe("2026-08-03");
     expect(archivedWeeklyReport.weekEnd).toBe("2026-08-09");
     expect(archivedWeeklyReport.counts).toEqual({original: 89, excludedP4: 7, public: 82, P1: 18, P2: 27, P3: 37});
