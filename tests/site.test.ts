@@ -6,7 +6,7 @@ import { site } from "../lib/site";
 import currentProjection from "../public/data/weekly/2026-08-24.json";
 import previousProjection from "../public/data/weekly/2026-08-17.json";
 import archivedProjection from "../public/data/weekly/2026-08-10.json";
-import {archivedWeeklyReport, currentWeeklyReport, firstArchivedWeeklyReport, formatPrimaryInvestors, previousWeeklyReport, WEEKLY_PREVIEW_P1_COUNT, WEEKLY_PREVIEW_P2_COUNT, WEEKLY_PREVIEW_P3_COUNT, weeklyPreviewHighlight, weeklyPreviewSample} from "../lib/site/weekly-preview";
+import {archivedWeeklyReport, currentAmountSummary, currentWeeklyReport, firstArchivedWeeklyReport, formatPrimaryInvestors, previousWeeklyReport, WEEKLY_PREVIEW_P1_COUNT, WEEKLY_PREVIEW_P2_COUNT, WEEKLY_PREVIEW_P3_COUNT, weeklyPreviewHighlight, weeklyPreviewSample} from "../lib/site/weekly-preview";
 
 describe("site metadata", () => {
   it("provides the minimum homepage content", () => {
@@ -59,6 +59,17 @@ describe("weekly preview sample", () => {
     const pageSource = readFileSync("app/weekly-report-page.tsx", "utf8");
     expect(pageSource).toContain('<a key={week.weekStart} href={staticWeekHref(week.href)}');
     expect(pageSource).not.toContain('from "next/link"');
+  });
+
+  it("ranks only published single-round events and separates cumulative disclosures", () => {
+    const publishedCompanies = new Set(currentWeeklyReport.events.map((event) => event.companyDisplayName));
+    expect(currentAmountSummary.singleRoundRanking).toHaveLength(10);
+    expect(currentAmountSummary.singleRoundRanking.map((item) => item.rank)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    expect(currentAmountSummary.singleRoundRanking.every((item) => publishedCompanies.has(item.company))).toBe(true);
+    expect(currentAmountSummary.singleRoundRanking.map((item) => item.company)).not.toContain("Owner");
+    expect(currentAmountSummary.singleRoundRanking.map((item) => item.company)).not.toContain("快造科技（Snapmaker）");
+    expect(currentAmountSummary.cumulativeFundingDisclosures.map((item) => item.company)).toContain("Sharpa");
+    expect(currentAmountSummary.currencyNormalization).toMatchObject({rateDate: "2026-08-28", usdToCny: 6.7811, eurToCny: 7.8683});
   });
   it("selects all 18 P1 events in their existing public projection order", () => {
     const projectedP1Names = weeklyProjection.events

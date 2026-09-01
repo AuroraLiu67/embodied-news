@@ -2,9 +2,21 @@ import currentWeeklyPreview from "../../public/data/weekly/2026-08-24.json";
 import previousWeeklyPreview from "../../public/data/weekly/2026-08-17.json";
 import archivedWeeklyPreview from "../../public/data/weekly/2026-08-10.json";
 import firstWeeklyPreview from "../../public/data/weekly/2026-08-03.json";
+import currentAmountSummaryJson from "../../public/data/weekly/2026-08-24-amount-summary.json";
+import {z} from "zod";
+import {safePublicHttpUrlSchema} from "../domain/schemas/primitives";
 import {parseAmountSortBucket, weeklyPreviewProjectionSchema, type WeeklyPreviewProjection} from "../pipeline/weekly-preview-projection";
 
 type WeeklyPreviewData = WeeklyPreviewProjection;
+
+const amountSummarySchema = z.object({
+  schemaVersion: z.literal("1.0.0"), weekStart: z.iso.date(), weekEnd: z.iso.date(),
+  currencyNormalization: z.object({rateDate: z.iso.date(), usdToCny: z.number().positive(), eurToCny: z.number().positive(), sourceName: z.string().trim().min(1).max(100), sourceUrl: safePublicHttpUrlSchema, note: z.string().trim().min(1).max(500)}).strict(),
+  singleRoundRanking: z.array(z.object({rank: z.number().int().positive(), company: z.string().trim().min(1).max(300), originalAmount: z.string().trim().min(1).max(300), normalizedAmount: z.string().trim().min(1).max(300), basis: z.string().trim().min(1).max(300)}).strict()).min(1).max(20),
+  cumulativeFundingDisclosures: z.array(z.object({company: z.string().trim().min(1).max(300), amount: z.string().trim().min(1).max(300), basis: z.string().trim().min(1).max(300)}).strict()).max(20),
+}).strict();
+
+export const currentAmountSummary = amountSummarySchema.parse(currentAmountSummaryJson);
 
 function toPreviewCard(event: WeeklyPreviewData["events"][number], requireIntroduction = true) {
   const firstSource = event.sources[0];
