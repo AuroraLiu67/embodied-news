@@ -189,3 +189,4 @@
 - 验证通过：站点专项11项、`pnpm typecheck`、`pnpm lint`、带`/embodied-news` base path的生产构建、四条静态周报路由、事件ID/URL/计数检查、公开敏感字段扫描和`git diff --check`。
 - 本期继续明确标记PREVIEW，不代表飞书正式发布记录；网站未读取第三周PENDING候选或内部战投数据。发布文件将按用户明确授权交由Git/Release Agent严格选择后commit、push并核验GitHub Pages。
 - 首次Pages部署后的浏览器smoke test发现，从最早归档通过Next客户端导航返回本周时可能复用上一期RSC内容；改用带`NEXT_PUBLIC_SITE_BASE_PATH`前缀的静态文档链接，确保每次周切换完整加载对应HTML。新增导航回归后站点专项13项、typecheck、lint及带`/embodied-news`的生产构建均通过，静态产物确认“本周”链接为`/embodied-news/`。
+- 根据上线后的内容完整度反馈，扩展第四期website-ready契约与生成器：69条全部补入可审计的二分地域和公司业务，P1/P2共47条由融资事实、业务事实和已披露投资方确定性生成完整简介；明确拆分领投、跟投/追加、其他投资方及3家FA。产品仅收录现有来源可核验的13个专名，未披露项继续留空。另核验并修正Soctera、基元律动的业务/融资字段，补充P3半导体与生物医药关键词分类；卡片标题同步改为“主要产品 / 业务”。全量37个测试文件367项、typecheck、lint、四期生产构建、敏感扫描和diff-check通过。

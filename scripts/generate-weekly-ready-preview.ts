@@ -18,6 +18,9 @@ const readyEventSchema = z.object({
   round: requiredText(300),
   amount: requiredText(500),
   investors: requiredText(2_000),
+  regionScope: z.enum(["CHINA", "OVERSEAS"]),
+  companyBusiness: requiredText(2_000),
+  products: z.array(requiredText(1_000)).max(20),
   sourcesMarkdown: requiredText(5_000),
   reportDate: z.iso.date(),
   sourceUrls: z.array(safePublicHttpUrlSchema).min(1).max(20),
@@ -80,6 +83,45 @@ function currencyFromAmount(amount: string): "CNY" | "USD" | "HKD" | "EUR" | nul
   return null;
 }
 
+function splitInvestorNames(value: string): string[] {
+  return value
+    .replace(/[（(][^）)]*(?:未具名|此前|官宣日|教授)[^）)]*[）)]/g, "")
+    .split(/[、/+]/)
+    .map((name) => name.trim())
+    .filter(Boolean);
+}
+
+function parseInvestors(value: string) {
+  if (/未披露|未完整披露|本轮机构未披露/.test(value)) return {leadInvestors: [], followInvestors: [], otherInvestors: [], financialAdviser: null};
+  const leadInvestors: string[] = [];
+  const followInvestors: string[] = [];
+  const otherInvestors: string[] = [];
+  let financialAdviser: string | null = null;
+  for (const rawClause of value.split(/[，；;]/)) {
+    const clause = rawClause.trim();
+    if (!clause) continue;
+    if (/(?:任|担任)FA/.test(clause)) {
+      financialAdviser = splitInvestorNames(clause.replace(/(?:任|担任)FA.*$/, "")).join("、") || null;
+      continue;
+    }
+    if (/领投/.test(clause)) {
+      const [leaders = "", remainder = ""] = clause.split(/(?:联合|独家)?领投/, 2);
+      leadInvestors.push(...splitInvestorNames(leaders));
+      otherInvestors.push(...splitInvestorNames(remainder));
+    } else if (/跟投|参投|追投|追加|加码|战略投资/.test(clause)) {
+      followInvestors.push(...splitInvestorNames(clause.replace(/(?:跟投|参投|追投|追加|加码|战略投资).*$/, "")));
+    } else {
+      otherInvestors.push(...splitInvestorNames(clause.replace(/独家$/, "")));
+    }
+  }
+  return {
+    leadInvestors: [...new Set(leadInvestors)],
+    followInvestors: [...new Set(followInvestors)],
+    otherInvestors: [...new Set(otherInvestors)],
+    financialAdviser,
+  };
+}
+
 async function main() {
   const {inputJson, inputMarkdown, output, weekStart, weekEnd} = parseArguments();
   const [jsonStats, markdownStats] = await Promise.all([stat(inputJson), stat(inputMarkdown)]);
@@ -106,9 +148,11 @@ async function main() {
     inputEventCount: ready.events.length,
     sourceEventCount: ready.inputEventCount,
     excludedP4Count: ready.excludedP4.length,
-    events: ready.events.map((event) => ({
+    events: ready.events.map((event) => {
+      const investors = parseInvestors(event.investors);
+      return ({
       eventKey: stableEventKey(event),
-      regionScope: null,
+      regionScope: event.regionScope,
       relevanceTier: event.relevanceTier,
       relevanceRationale: event.relevanceRationale,
       companyNameOriginal: event.company,
@@ -122,12 +166,12 @@ async function main() {
       round: event.round === "未披露" ? null : event.round,
       amount: /未披露|未提取/.test(event.amount) ? null : event.amount,
       currency: currencyFromAmount(event.amount),
-      leadInvestors: [],
-      followInvestors: [],
-      otherInvestors: /未披露|未完整披露/.test(event.investors) ? [] : [event.investors],
-      financialAdviser: null,
-      companyBusiness: event.relevanceRationale,
-      products: [],
+      leadInvestors: investors.leadInvestors,
+      followInvestors: investors.followInvestors,
+      otherInvestors: investors.otherInvestors,
+      financialAdviser: investors.financialAdviser,
+      companyBusiness: event.companyBusiness,
+      products: event.products,
       coreTechnology: [],
       foundingTeam: [],
       useOfFunds: null,
@@ -139,7 +183,7 @@ async function main() {
       conflicts: [],
       accessLimitations: [],
       researchStatus: event.status,
-    })),
+    });}),
     excludedP4: ready.excludedP4.map((event) => ({eventKey: stableEventKey(event), companyNameOriginal: event.company, relevanceTier: "P4"})),
   }, Buffer.byteLength(jsonText) + Buffer.byteLength(markdown));
   const projection = generateWeeklyPreviewProjection(enrichment, weekStart, weekEnd);

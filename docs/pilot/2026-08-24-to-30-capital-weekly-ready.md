@@ -4,192 +4,192 @@
 
 ### 小鹏机器人（鹏行智能）（P1）
 
-人形机器人IRON（76自由度，图灵AI芯片2250TOPS），2026底量产 [来源1](https://news.pedaily.cn/202608/568048.shtml)
+小鹏机器人（鹏行智能）聚焦人形机器人IRON（76自由度，图灵AI芯片2250TOPS），2026底量产。公司本次完成首轮融资，融资金额为超9亿美元（投后估值超63亿美元），披露的投资方包括IDG资本领投、高榕创投，腾讯/阿里战略投资。 [来源1](https://news.pedaily.cn/202608/568048.shtml)
 
 ### 枢途科技（P1）
 
-具身智能数据管线，服务国内60%估值百亿级具身企业 [来源1](https://news.pedaily.cn/202608/568029.shtml)
+枢途科技聚焦具身智能数据管线，服务国内60%估值百亿级具身企业。公司本次完成天使+++轮，融资金额为近亿元，披露的投资方包括基石资本、南山战新投、苏州趋势资本、能量守恒资本、杭实集团、西湖科创投。 [来源1](https://news.pedaily.cn/202608/568029.shtml)
 
 ### 食铁兽科技（PANDAG）（P1）
 
-商业园林机器人，PANDAG G1割草机器人落地KLPGA球场 [来源1](https://36kr.com/p/3947977664347270)
+食铁兽科技（PANDAG）聚焦商业园林机器人，PANDAG G1割草机器人落地KLPGA球场。公司本次完成A轮，融资金额为数千万元，披露的投资方包括云时资本独家，星辰资本任FA。 [来源1](https://36kr.com/p/3947977664347270)
 
 ### Embedd（P1）
 
-物理AI软件集成层，降低机器人/车/无人机软件集成成本 [来源1](https://techfundingnews.com/seedcamp-leads-2-7m-round-for-ukrainian-founded-physical-ai-startup-embedd/)
+Embedd聚焦物理AI软件集成层，降低机器人/车/无人机软件集成成本。公司本次完成Pre-seed轮，融资金额为270万美元，披露的投资方包括Seedcamp领投。 [来源1](https://techfundingnews.com/seedcamp-leads-2-7m-round-for-ukrainian-founded-physical-ai-startup-embedd/)
 
 ### Oshen（P1）
 
-自主海洋机器人 [来源1](https://www.eu-startups.com/2026/08/plymouth-based-oshen-raises-e4-27-million-to-scale-robot-swarms-that-act-as-the-oceans-eyes-and-ears/)
+Oshen聚焦自主海洋机器人。公司本次完成新一轮，融资金额为500万美元，投资方未完整披露。 [来源1](https://www.eu-startups.com/2026/08/plymouth-based-oshen-raises-e4-27-million-to-scale-robot-swarms-that-act-as-the-oceans-eyes-and-ears/)
 
 ### 影子科技（In2Mate）（P1）
 
-机器人灵巧手/具身智能（港科大教授创业半年） [来源1](https://www.163.com/dy/article/L560GEE905199LET.html)
+影子科技（In2Mate）聚焦机器人灵巧手/具身智能（港科大教授创业半年）。公司本次完成天使轮，融资金额为数百万美元，投资方未完整披露。 [来源1](https://www.163.com/dy/article/L560GEE905199LET.html)
 
 ### 邻家桥科技（P1）
 
-L3自动驾驶数字化人机交互，响应30ms [来源1](https://36kr.com/p/3950117041864066)
+邻家桥科技聚焦L3自动驾驶数字化人机交互，响应30ms。公司本次完成种子轮，融资金额为1000万元，投资方未完整披露。 [来源1](https://36kr.com/p/3950117041864066)
 
 ### Airbound（P1）
 
-自主飞行器/无人机 [来源1](https://techcrunch.com/2026/08/24/indias-airbound-bags-37m-to-take-on-trucks-with-rocket-like-drones/)
+Airbound聚焦自主飞行器/无人机。公司本次完成A轮，融资金额为3700万美元，披露的投资方包括Greenoaks领投，DoorDash等参投。 [来源1](https://techcrunch.com/2026/08/24/indias-airbound-bags-37m-to-take-on-trucks-with-rocket-like-drones/)
 
 ### 简智机器人（GenRobot.AI）（P1）
 
-无本体数据基础设施/物理AI评测闭环 [来源1](https://www.chinaventure.com.cn/flash/20260826-90019.html)
+简智机器人（GenRobot.AI）聚焦无本体数据基础设施/物理AI评测闭环。公司本次完成A轮，融资金额未披露，披露的投资方包括Momenta领投，老股东追投。 [来源1](https://www.chinaventure.com.cn/flash/20260826-90019.html)
 
 ### 迈步机器人（P1）
 
-国产医疗外骨骼（国内首家盈利），柔性驱动器 [来源1](https://36kr.com/p/3954658788506755)
+迈步机器人聚焦国产医疗外骨骼（国内首家盈利），柔性驱动器。公司本次完成战略投资，融资金额为近亿元，披露的投资方包括中信建投，浩观任FA。 [来源1](https://36kr.com/p/3954658788506755)
 
 ### 灵御智能（P1）
 
-具身智能基础设施，TA系列轮式夹爪机器人百台级部署京东七鲜 [来源1](https://36kr.com/p/3948044825279621)
+灵御智能聚焦具身智能基础设施，TA系列轮式夹爪机器人百台级部署京东七鲜。公司本次完成Pre-A轮（年内第三轮），融资金额为数亿元，披露的投资方包括株洲产投、飞图创投、未来边际创投、芯能创投。 [来源1](https://36kr.com/p/3948044825279621)
 
 ### Transfyr（P1）
 
-Physical AI科学平台 [来源1](https://www.transfyr.ai/news/transfyr-launches-physical-ai-platform-for-science-with-usd25m-seed-funding)
+Transfyr聚焦Physical AI科学平台。公司本次完成种子轮，融资金额为2500万美元，投资方未完整披露。 [来源1](https://www.transfyr.ai/news/transfyr-launches-physical-ai-platform-for-science-with-usd25m-seed-funding)
 
 ### 灵初智能（P1）
 
-具身智能灵巧操作，端到端PSI系列模型 [来源1](https://www.chinaventure.com.cn/flash/20260827-90028.html)
+灵初智能聚焦具身智能灵巧操作，端到端PSI系列模型。公司本次完成A轮，融资金额为超亿美元，投资方未完整披露。 [来源1](https://www.chinaventure.com.cn/flash/20260827-90028.html)
 
 ### 蜂巢互联（P1）
 
-物理AI仿真引擎/工业AI基础设施（深圳） [来源1](https://www.chinaventure.com.cn/flash/20260827-90026.html)
+蜂巢互联聚焦物理AI仿真引擎/工业AI基础设施（深圳）。公司本次完成新一轮（数月两轮），融资金额为12亿元，披露的投资方包括国资CVC+市场化机构+产业资本。 [来源1](https://www.chinaventure.com.cn/flash/20260827-90026.html)
 
 ### 星际觅元（P1）
 
-全域具身智能系统（南洋理工院士团队） [来源1](https://m.pedaily.cn/news/568230)
+星际觅元聚焦全域具身智能系统（南洋理工院士团队）。公司本次完成种子轮，融资金额为千万元，披露的投资方包括同创伟业领投，卧安机器人、旭源资本跟投。 [来源1](https://m.pedaily.cn/news/568230)
 
 ### 优理奇机器人（UniX AI）（P1）
 
-通用人形机器人（耶鲁博士杨丰瑜创立） [来源1](https://new.qq.com/rain/a/20260827A07XDP00)
+优理奇机器人（UniX AI）聚焦通用人形机器人（耶鲁博士杨丰瑜创立）。公司本次完成新一轮，融资金额为数千万元，披露的投资方包括柯力传感。 [来源1](https://new.qq.com/rain/a/20260827A07XDP00)
 
 ### 拉塞特机器人（P1）
 
-AI+养殖整体方案（轨道视觉机器人/智能饲喂） [来源1](https://www.dahecube.com/article.html?artid=284816)
+拉塞特机器人聚焦AI+养殖整体方案（轨道视觉机器人/智能饲喂）。公司本次完成股权融资（工商披露），融资金额未披露，披露的投资方包括温氏股份、金蝶软件、深圳欣农天下。 [来源1](https://www.dahecube.com/article.html?artid=284816)
 
 ### Sharpa（P1）
 
-灵巧手赛道（禾赛三创始人），创行业纪录 [来源1](https://www.nbd.com.cn/articles/2026-08-28/4563576.html)
+Sharpa聚焦灵巧手赛道（禾赛三创始人），创行业纪录。公司本次完成首轮披露（累计），融资金额为累计超45亿元（投后220亿），披露的投资方包括阿里/美团/腾讯/京东/传音同场押注。 [来源1](https://www.nbd.com.cn/articles/2026-08-28/4563576.html)
 
 ### 松应科技（P1）
 
-物理AI操作系统ORCA OS（上海闵行） [来源1](https://m.chinaventure.com.cn/news/110.html)
+松应科技聚焦物理AI操作系统ORCA OS（上海闵行）。公司本次完成A轮+A1轮（半年三轮），融资金额为数亿元，披露的投资方包括中金资本、武汉洪山资本领投。 [来源1](https://m.chinaventure.com.cn/news/110.html)
 
 ### 瞬适科技（InstAdapt）（P1）
 
-具身世界模型基础设施（上科大孵化） [来源1](https://so.html5.qq.com/page/real/search_news?docid=700)
+瞬适科技（InstAdapt）聚焦具身世界模型基础设施（上科大孵化）。公司本次完成种子轮，融资金额为千万美元，披露的投资方包括协创智慧、云晖资本、浦东创投、吴越天使。 [来源1](https://so.html5.qq.com/page/real/search_news?docid=700)
 
 ### 灵掌科技（P1）
 
-工业灵巧手（北航机器人所孵化，张超博士） [来源1](https://finance.sina.cn/2026-08-28/detail-inipvrtx89955)
+灵掌科技聚焦工业灵巧手（北航机器人所孵化，张超博士）。公司本次完成天使轮，融资金额为数千万元，披露的投资方包括凯龙高科、无锡未来天使基金、仁正基金、遨博智能。 [来源1](https://finance.sina.cn/2026-08-28/detail-inipvrtx89955)
 
 ## P2
 
 ### 涌泉创新（ToolDance）（P2）
 
-智能桌面CNC数控设备，首款ToolDance X1年内全球发售 [来源1](https://news.pedaily.cn/202608/568032.shtml)
+涌泉创新（ToolDance）聚焦智能桌面CNC数控设备，首款ToolDance X1年内全球发售。公司本次完成Pre-A轮，融资金额为累计数亿元，披露的投资方包括方广资本领投，耀途、靖亚、元生资本，源码资本加码。 [来源1](https://news.pedaily.cn/202608/568032.shtml)
 
 ### 穿越者（载人航天）（P2）
 
-亚轨道可重复使用载人飞船"穿越者壹号"，目标2028载人首飞 [来源1](https://www.chinaventure.com.cn/flash/20260824-90011.html)
+穿越者（载人航天）聚焦亚轨道可重复使用载人飞船"穿越者壹号"，目标2028载人首飞。公司本次完成Pre-A+轮，融资金额未披露，披露的投资方包括四川国经、金达资本、中天汇富、啟赋资本。 [来源1](https://www.chinaventure.com.cn/flash/20260824-90011.html)
 
 ### 锐莱热控（P2）
 
-宇航级主动液冷热控，液冷卫星系统国内市占率约90% [来源1](https://36kr.com/p/3953370022034820)
+锐莱热控聚焦宇航级主动液冷热控，液冷卫星系统国内市占率约90%。公司本次完成A+轮，融资金额为数千万，披露的投资方包括英诺天使、方广资本、集萃华财、湘江信成。 [来源1](https://36kr.com/p/3953370022034820)
 
 ### 明视脑机（Mindtrix）（P2）
 
-侵入式视皮层视觉重建脑机接口，1024通道柔性电极 [来源1](https://www.vbdata.cn/intelDetail/1078645)
+明视脑机（Mindtrix）聚焦侵入式视皮层视觉重建脑机接口，1024通道柔性电极。公司本次完成Pre-A轮系列，融资金额为累计约5亿元，投资方未完整披露。 [来源1](https://www.vbdata.cn/intelDetail/1078645)
 
 ### 脑器时代（P2）
 
-非侵入式脑机接口，"全能一号"运动BCI赋能卒中康复 [来源1](https://www.cnstock.com/commonDetail/772921)
+脑器时代聚焦非侵入式脑机接口，"全能一号"运动BCI赋能卒中康复。公司本次完成种子轮，融资金额为数千万，披露的投资方包括元禾璞华领投。 [来源1](https://www.cnstock.com/commonDetail/772921)
 
 ### 力磅科技（P2）
 
-体育消费智能设备 [来源1](https://www.163.com/dy/article/L54M528E05118K7K.html)
+力磅科技聚焦体育消费智能设备。公司本次完成天使轮，融资金额未披露，披露的投资方包括Brizan Ventures、后浪资本、和声AI投资等。 [来源1](https://www.163.com/dy/article/L54M528E05118K7K.html)
 
 ### 炎和科技（P2）
 
-钙钛矿光伏/太空能源（97年北大学霸创业） [来源1](https://new.qq.com/rain/a/20260825A0859C00)
+炎和科技聚焦钙钛矿光伏/太空能源（97年北大学霸创业）。公司本次完成A2+/A3/A4轮，融资金额为A轮整体超5亿元，披露的投资方包括TCL中环海河基金、元航资本、粤开资本、上海科创基金等。 [来源1](https://new.qq.com/rain/a/20260825A0859C00)
 
 ### 屹艮科技（P2）
 
-电池设计自动化BDA，宁德AI4S赛道首投 [来源1](https://www.163.com/dy/article/L56Q0KIP05198R3E.html)
+屹艮科技聚焦电池设计自动化BDA，宁德AI4S赛道首投。公司本次完成战略融资，融资金额为亿元级，披露的投资方包括宁德时代独家。 [来源1](https://www.163.com/dy/article/L56Q0KIP05198R3E.html)
 
 ### 托尔时代（P2）
 
-可控核聚变NBI中性束注入系统全栈 [来源1](https://so.html5.qq.com/page/real/search_news?docid=700)
+托尔时代聚焦可控核聚变NBI中性束注入系统全栈。公司本次完成天使轮，融资金额为近亿元，披露的投资方包括中科创星、元禾原点联合领投。 [来源1](https://so.html5.qq.com/page/real/search_news?docid=700)
 
 ### 材科源图（MatSource）（P2）
 
-AI+新材料研发平台（苏州） [来源1](https://www.chinaventure.com.cn/flash/20260825-90018.html)
+材科源图（MatSource）聚焦AI+新材料研发平台（苏州）。公司本次完成连续两轮，融资金额为超亿元，披露的投资方包括经纬创投领投，苏创投、中科创星、硅港资本。 [来源1](https://www.chinaventure.com.cn/flash/20260825-90018.html)
 
 ### 松正航空动力（P2）
 
-eVTOL电推进系统（四川） [来源1](https://www.chinaventure.com.cn/flash/20260825-90015.html)
+松正航空动力聚焦eVTOL电推进系统（四川）。公司本次完成A轮，融资金额为数千万，披露的投资方包括九洲君合、连界启辰、远致富海。 [来源1](https://www.chinaventure.com.cn/flash/20260825-90015.html)
 
 ### 芯光界（P2）
 
-光互连/硅光通信（上海） [来源1](https://36kr.com/p/3954319144926600)
+芯光界聚焦光互连/硅光通信（上海）。公司本次完成天使轮，融资金额为亿元，披露的投资方包括启明创投独家。 [来源1](https://36kr.com/p/3954319144926600)
 
 ### 中微达信（P2）
 
-量子计算测控（成都） [来源1](https://36kr.com/p/3954561144683657)
+中微达信聚焦量子计算测控（成都）。公司本次完成B轮，融资金额为数亿元，披露的投资方包括五大机构联合领投。 [来源1](https://36kr.com/p/3954561144683657)
 
 ### 智辰半导体（P2）
 
-端侧AI芯片，2026年国内端侧芯片最大早期融资 [来源1](https://www.163.com/dy/article/L56BTP8M0511RIVP.html)
+智辰半导体聚焦端侧AI芯片，2026年国内端侧芯片最大早期融资。公司本次完成天使轮（累计），融资金额为超10亿元，披露的投资方包括产业资本+头部财务机构。 [来源1](https://www.163.com/dy/article/L56BTP8M0511RIVP.html)
 
 ### 洛阳LYC轴承（P2）
 
-洛阳轴承集团股权运作 [来源1](https://stock.stockstar.com/RB2026082800045636.shtml)
+洛阳LYC轴承聚焦洛阳轴承集团股权运作。公司本次完成战略投资，融资金额为6.65亿元，投资方未完整披露。 [来源1](https://stock.stockstar.com/RB2026082800045636.shtml)
 
 ### 原力引擎（P2）
 
-AI4Engineering生成式仿真与智能控制引擎 [来源1](https://www.chinaventure.com.cn/flash/20260826-90022.html)
+原力引擎聚焦AI4Engineering生成式仿真与智能控制引擎。公司本次完成天使+轮，融资金额为近5000万元，披露的投资方包括上海未来产业基金、上海科创集团领投。 [来源1](https://www.chinaventure.com.cn/flash/20260826-90022.html)
 
 ### 星邑空间（P2）
 
-商业航天测运控，累计611颗星/箭测控、成功率99.8% [来源1](https://36kr.com/p/3956027533507970)
+星邑空间聚焦商业航天测运控，累计611颗星/箭测控、成功率99.8%。公司本次完成A轮（增资），融资金额为数亿元，披露的投资方包括苏创投、力合清瞳、七匹狼控股等。 [来源1](https://36kr.com/p/3956027533507970)
 
 ### 灵络科技（P2）
 
-睡眠AI硬件（李泽湘/深圳科创学院孵化） [来源1](https://36kr.com/p/3954623000952197)
+灵络科技聚焦睡眠AI硬件（李泽湘/深圳科创学院孵化）。公司本次完成天使轮，融资金额为数千万元，披露的投资方包括深高新投领投。 [来源1](https://36kr.com/p/3954623000952197)
 
 ### Groq（P2）
 
-AI推理芯片（转型英伟达系推理云） [来源1](https://www.vcnewsdaily.com/groq/venture-capital-fundin)
+Groq聚焦AI推理芯片（转型英伟达系推理云）。公司本次完成A轮，融资金额为3.5亿美元，披露的投资方包括Disruptive领投。 [来源1](https://www.vcnewsdaily.com/groq/venture-capital-fundin)
 
 ### Agentrys（P2）
 
-芯片设计自动化（Agent） [来源1](https://agentrys.ai/news/agentrys-raises-24-5-million)
+Agentrys聚焦芯片设计自动化（Agent）。公司本次完成种子轮，融资金额为2450万美元，投资方未完整披露。 [来源1](https://agentrys.ai/news/agentrys-raises-24-5-million)
 
 ### 晰见科技（P2）
 
-类脑视觉芯片"天眸"（清华类脑计算中心孵化） [来源1](https://www.36kr.com/p/3957052058025345)
+晰见科技聚焦类脑视觉芯片"天眸"（清华类脑计算中心孵化）。公司本次完成天使轮（连续3轮累计），融资金额为近5亿元，披露的投资方包括徐汇资本、经纬创投、华映资本、英诺基金、水木清华等。 [来源1](https://www.36kr.com/p/3957052058025345)
 
 ### 沐创（P2）
 
-400G/800G Scale-out智能网卡芯片（无锡） [来源1](https://www.chinaventure.com.cn/flash/20260827-90027.html)
+沐创聚焦400G/800G Scale-out智能网卡芯片（无锡）。公司本次完成B轮，融资金额为数亿元，披露的投资方包括沐曦股份、联想创投、广州白云金控等。 [来源1](https://www.chinaventure.com.cn/flash/20260827-90027.html)
 
 ### 光联芯科（P2）
 
-OIO光互连芯片，自研微环调制器MRM+硅光无掩膜光刻 [来源1](https://www.cls.cn/detail/2466855)
+光联芯科聚焦OIO光互连芯片，自研微环调制器MRM+硅光无掩膜光刻。公司本次完成A+轮，融资金额为近10亿元（估值超10亿美元），披露的投资方包括国寿资本、招商局资本、星连资本、红杉、高瓴。 [来源1](https://www.cls.cn/detail/2466855)
 
 ### 全脑芯科（P2）
 
-柔性硅基CMOS脑机接口（复旦宋梁团队） [来源1](https://www.toutiao.com/article/7679059409812636170/)
+全脑芯科聚焦柔性硅基CMOS脑机接口（复旦宋梁团队）。公司本次完成天使轮，融资金额为数千万元，披露的投资方包括复旦科创独家领投。 [来源1](https://www.toutiao.com/article/7679059409812636170/)
 
 ### 元启半导体（P2）
 
-AI高速互联芯片：112G/224G SerDes、O-DSP、AEC Retimer [来源1](https://finance.eastmoney.com/a/202608283858184654.html)
+元启半导体聚焦AI高速互联芯片：112G/224G SerDes、O-DSP、AEC Retimer。公司本次完成Pre-B轮，融资金额未披露，披露的投资方包括深产投、丰年投资、建投投资、沛坤盛华创投等。 [来源1](https://finance.eastmoney.com/a/202608283858184654.html)
 
 ### 鸣石峻致（P2）
 
-数字化脂肪肝小核磁+脑机接口专用中场磁共振 [来源1](https://finance.eastmoney.com/a/202608283858852937.html)
+鸣石峻致聚焦数字化脂肪肝小核磁+脑机接口专用中场磁共振。公司本次完成A+轮首关，融资金额为数千万元（累计超亿元），披露的投资方包括国生资本独家领投。 [来源1](https://finance.eastmoney.com/a/202608283858852937.html)
 
 ## P3 明细
