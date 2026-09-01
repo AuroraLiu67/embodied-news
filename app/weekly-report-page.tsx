@@ -1,4 +1,4 @@
-import {formatPrimaryInvestors, type WeeklyPreviewReport, type WeeklyPreviewSampleEvent} from "@/lib/site/weekly-preview";
+import {currentAmountSummary, formatPrimaryInvestors, type WeeklyPreviewReport, type WeeklyPreviewSampleEvent} from "@/lib/site/weekly-preview";
 import {loadPublicConfig} from "@/lib/config/public";
 
 const subcategoryLabels: Record<string, string> = {
@@ -64,15 +64,29 @@ const staticWeekHref = (href: string) => `${siteBasePath}${href}`;
 export function WeeklyReportPage({report}: {report: WeeklyPreviewReport}) {
   const {counts, events, p1Events, p2Events, p3Events, highlight} = report;
   const isArchive = report.weekStart !== "2026-08-24";
+  const headlineAmount = currentAmountSummary.singleRoundRanking[0]!;
+  const displayHighlight = isArchive ? highlight : {
+    company: headlineAmount.company,
+    amount: headlineAmount.normalizedAmount,
+    event: headlineAmount.basis,
+    status: "单轮融资额第一",
+    scopeNote: `按${currentAmountSummary.currencyNormalization.rateDate}人民币汇率中间价折算；累计融资与多轮合计另列`,
+  };
   return <main>
     <nav className="week-switcher" aria-label="周报版本">{weekOptions.map((week) => <a key={week.weekStart} href={staticWeekHref(week.href)} aria-current={report.weekStart === week.weekStart ? "page" : undefined}>{week.label}</a>)}</nav>
     <header className="report-header"><div className="preview-line"><span className="preview-badge">{isArchive ? "历史周报" : "本周预览"} · {counts.public}条</span><span>非飞书正式发布</span></div>
       <p className="eyebrow">EMBODIED INTELLIGENCE · WEEKLY BRIEF</p><h1>具身智能公司动态周报</h1><p className="issue-date">{displayWeek(report.weekStart, report.weekEnd)}</p>
       <p className="deck">聚焦具身智能、Physical AI 与硬科技资本动态。P1/P2 使用完整简介卡片，P3 使用紧凑行业表格。</p>
       <dl className="statistics" aria-label="本周事件统计"><div><dt>收集</dt><dd>{counts.original}</dd></div><div><dt>周报收录</dt><dd>{counts.public}</dd></div><div><dt>P1</dt><dd>{counts.P1}</dd></div><div><dt>P2</dt><dd>{counts.P2}</dd></div><div><dt>P3</dt><dd>{counts.P3}</dd></div></dl>
-      <div className="weekly-context"><section className="amount-highlight"><p>本周已披露最高资本金额</p><h2><span>{highlight.company}</span>{highlight.amount}</h2><p>{highlight.event} · {highlight.status}</p><small>{highlight.scopeNote}</small></section>
+      <div className="weekly-context"><section className="amount-highlight"><p>本周已披露最高单轮融资额</p><h2><span>{displayHighlight.company}</span>{displayHighlight.amount}</h2><p>{displayHighlight.event} · {displayHighlight.status}</p><small>{displayHighlight.scopeNote}</small></section>
         <section className="tier-guide"><div className="tier-guide-heading"><p>相关度分层依据</p><h2>P1 / P2 / P3</h2></div><dl><div><dt>P1</dt><dd>具身智能直接相关：机器人本体、全栈机器人、VLA、世界模型、机器人基础模型与学习控制平台。</dd></div><div><dt>P2</dt><dd>关键上下游或强相关技术：机器人核心部件、感知与执行、仿真和数据、Physical AI，以及泛 AI 与自动驾驶。</dd></div><div><dt>P3</dt><dd>具备技术壁垒、但与具身智能暂无明确直接联系的其他硬科技，包括半导体、材料、航天、能源、量子与生物医药。</dd></div></dl><p className="tier-note">P1–P3 表示与具身智能主题的相关程度，不代表融资金额、公司质量或投资建议。</p></section></div>
       <p className="sample-note">周报收录 {events.length} 条：P1 {counts.P1}、P2 {counts.P2}、P3 {counts.P3}。</p></header>
+    {!isArchive && <section className="amount-ranking" aria-labelledby="amount-ranking-title">
+      <div className="section-heading"><p>DISCLOSED FUNDING · CNY NORMALIZED</p><h2 id="amount-ranking-title">本周单轮融资额 TOP 10</h2></div>
+      <p className="amount-ranking-note">按 {currentAmountSummary.currencyNormalization.rateDate} 人民币汇率中间价折算：1美元={currentAmountSummary.currencyNormalization.usdToCny}元，1欧元={currentAmountSummary.currencyNormalization.eurToCny}元。{currentAmountSummary.currencyNormalization.note} <a href={currentAmountSummary.currencyNormalization.sourceUrl} target="_blank" rel="noopener noreferrer">汇率来源</a></p>
+      <div className="amount-ranking-frame"><table><thead><tr><th>排名</th><th>公司</th><th>原始金额</th><th>折合人民币</th><th>口径</th></tr></thead><tbody>{currentAmountSummary.singleRoundRanking.map((item) => <tr key={item.company}><td>{item.rank}</td><th scope="row">{item.company}</th><td>{item.originalAmount}</td><td><strong>{item.normalizedAmount}</strong></td><td>{item.basis}</td></tr>)}</tbody></table></div>
+      <div className="cumulative-disclosures"><h3>累计融资 / 多轮合计</h3><p>以下不与单轮融资混排。</p><ul>{currentAmountSummary.cumulativeFundingDisclosures.map((item) => <li key={item.company}><strong>{item.company}</strong><span>{item.amount}</span><small>{item.basis}</small></li>)}</ul></div>
+    </section>}
     <section className="events"><div className="section-heading"><p>P1 · DIRECTLY RELEVANT</p><h2>具身智能重点融资</h2></div>{p1Events.map((event, index) => <EventCard key={event.companyDisplayName} event={event} index={index} section="p1" />)}</section>
     <section className="events"><div className="section-heading"><p>P2 · ADJACENT TECHNOLOGY</p><h2>核心上下游与相邻技术</h2></div>{p2Events.map((event, index) => <EventCard key={event.companyDisplayName} event={event} index={index} section="p2" />)}</section>
     <section className="events p3-section"><div className="section-heading"><p>P3 · HARD TECHNOLOGY</p><h2>其他硬科技资本动态</h2></div><P3Table events={p3Events} /></section>

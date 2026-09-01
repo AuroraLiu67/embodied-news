@@ -3,6 +3,35 @@ import {readFile, writeFile} from "node:fs/promises";
 const INPUT = "融资新闻-周汇总-2026-08-24-0830.md";
 const OUTPUT_JSON = "docs/pilot/2026-08-24-to-30-capital-weekly-ready.json";
 const OUTPUT_MD = "docs/pilot/2026-08-24-to-30-capital-weekly-ready.md";
+const OUTPUT_AMOUNT_SUMMARY = "public/data/weekly/2026-08-24-amount-summary.json";
+
+const amountSummary = {
+  schemaVersion: "1.0.0", weekStart: "2026-08-24", weekEnd: "2026-08-30",
+  currencyNormalization: {rateDate: "2026-08-28", usdToCny: 6.7811, eurToCny: 7.8683, sourceName: "中国外汇交易中心", sourceUrl: "https://www.chinamoney.org.cn/chinese/ccprnoticecontent/index.html?searchDate=2026-08-28", note: "折算值仅用于本周横向比较，保留原始金额及超、近、约等限定词。"},
+  singleRoundRanking: [
+    {rank: 1, company: "小鹏机器人（鹏行智能）", originalAmount: "超9亿美元", normalizedAmount: "超61.03亿元", basis: "首轮融资"},
+    {rank: 2, company: "Groq", originalAmount: "3.5亿美元", normalizedAmount: "约23.73亿元", basis: "本轮融资"},
+    {rank: 3, company: "曦望Sunrise", originalAmount: "20亿元", normalizedAmount: "20亿元", basis: "本轮股权融资"},
+    {rank: 4, company: "Wispr AI", originalAmount: "2.8亿美元", normalizedAmount: "约18.99亿元", basis: "B轮"},
+    {rank: 5, company: "Muon Space", originalAmount: "2.5亿美元", normalizedAmount: "约16.95亿元", basis: "C轮"},
+    {rank: 6, company: "研微半导体", originalAmount: "近15亿元", normalizedAmount: "近15亿元", basis: "B轮"},
+    {rank: 7, company: "Emerald AI", originalAmount: "1.5亿美元", normalizedAmount: "约10.17亿元", basis: "A轮"},
+    {rank: 8, company: "浩博医药", originalAmount: "1.2亿美元", normalizedAmount: "约8.14亿元", basis: "C轮"},
+    {rank: 9, company: "Velaura AI", originalAmount: "1.1亿美元", normalizedAmount: "约7.46亿元", basis: "A轮"},
+    {rank: 10, company: "灵初智能", originalAmount: "超1亿美元", normalizedAmount: "超6.78亿元", basis: "A轮；保守口径"},
+  ],
+  cumulativeFundingDisclosures: [
+    {company: "Sharpa", amount: "累计超45亿元", basis: "累计融资披露"}, {company: "蜂巢互联", amount: "12亿元", basis: "数月内两轮合计"},
+    {company: "智辰半导体", amount: "累计超10亿元", basis: "天使轮系列累计"}, {company: "明视脑机（Mindtrix）", amount: "累计约5亿元", basis: "天使轮与Pre-A系列累计"},
+    {company: "晰见科技", amount: "累计近5亿元", basis: "连续三轮天使融资累计"}, {company: "涌泉创新（ToolDance）", amount: "累计数亿元", basis: "历史累计融资"},
+  ],
+} as const;
+
+function amountSummaryMarkdown(): string {
+  const rankingRows = amountSummary.singleRoundRanking.map((item) => `| ${item.rank} | ${item.company} | ${item.originalAmount} | **${item.normalizedAmount}** | ${item.basis} |`).join("\n");
+  const cumulative = amountSummary.cumulativeFundingDisclosures.map((item) => `${item.company}${item.amount}（${item.basis}）`).join("；");
+  return `## 本周单轮融资额排名\n\n> 统一按${amountSummary.currencyNormalization.rateDate}中国外汇交易中心人民币汇率中间价折算：1美元=${amountSummary.currencyNormalization.usdToCny}元人民币、1欧元=${amountSummary.currencyNormalization.eurToCny}元人民币。${amountSummary.currencyNormalization.note}\n\n| 排名 | 公司 | 原始披露金额 | 统一折合人民币 | 口径 |\n|---:|---|---:|---:|---|\n${rankingRows}\n\n累计融资与多轮合计不与单轮融资混排：${cumulative}。\n\n[汇率基准：中国外汇交易中心](${amountSummary.currencyNormalization.sourceUrl})`;
+}
 
 const p1 = new Set([
   "小鹏机器人（鹏行智能）", "枢途科技", "食铁兽科技（PANDAG）", "Embedd（英）", "Oshen（英）",
@@ -127,7 +156,8 @@ async function main() {
     return `## ${tier}\n\n${entries}`;
   });
   await writeFile(OUTPUT_JSON, `${JSON.stringify(ready, null, 2)}\n`, "utf8");
-  await writeFile(OUTPUT_MD, `# 2026-08-24—2026-08-30 网站发布准备\n\n${sections.join("\n\n")}\n\n## P3 明细\n`, "utf8");
+  await writeFile(OUTPUT_AMOUNT_SUMMARY, `${JSON.stringify(amountSummary, null, 2)}\n`, "utf8");
+  await writeFile(OUTPUT_MD, `# 2026-08-24—2026-08-30 网站发布准备\n\n${amountSummaryMarkdown()}\n\n${sections.join("\n\n")}\n\n## P3 明细\n`, "utf8");
   process.stdout.write(`${JSON.stringify({input: events.length, public: included.length, ...distribution})}\n`);
 }
 

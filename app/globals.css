@@ -181,6 +181,24 @@ h1 {
 .card-footer a { color: #20563a; font-size: 0.82rem; font-weight: 700; text-underline-offset: 4px; }
 .card-footer time { color: #69756d; font-weight: 500; }
 
+.amount-ranking { padding: 72px 0 12px; }
+.amount-ranking-note { max-width: 920px; margin: -16px 0 24px; color: #55645a; font-size: 0.82rem; line-height: 1.7; }
+.amount-ranking-note a { color: #20563a; font-weight: 700; text-underline-offset: 3px; }
+.amount-ranking-frame { overflow-x: auto; border: 1px solid #cbd1cb; border-radius: 10px; background: rgba(255, 255, 252, 0.9); box-shadow: 0 18px 42px rgba(26, 48, 35, 0.055); }
+.amount-ranking table { width: 100%; border-collapse: collapse; min-width: 720px; }
+.amount-ranking th, .amount-ranking td { padding: 14px 16px; border-bottom: 1px solid #dce1dc; text-align: left; }
+.amount-ranking thead th { background: #e6ebe5; color: #365342; font-size: 0.72rem; letter-spacing: 0.04em; }
+.amount-ranking tbody tr:last-child th, .amount-ranking tbody tr:last-child td { border-bottom: 0; }
+.amount-ranking tbody td:first-child { color: #657169; font-variant-numeric: tabular-nums; }
+.amount-ranking tbody strong { color: #153f29; white-space: nowrap; }
+.cumulative-disclosures { margin-top: 22px; padding: 24px; border: 1px solid #d5dbd5; border-radius: 10px; background: #f4f5f0; }
+.cumulative-disclosures h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.35rem; }
+.cumulative-disclosures > p { margin: 6px 0 18px; color: #69756d; font-size: 0.8rem; }
+.cumulative-disclosures ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
+.cumulative-disclosures li { display: grid; gap: 4px; padding: 14px; border-radius: 6px; background: #fff; }
+.cumulative-disclosures span { color: #1f5135; font-weight: 800; }
+.cumulative-disclosures small { color: #6b766e; line-height: 1.45; }
+
 .p3-table-frame { border: 1px solid #cbd1cb; border-radius: 10px; background: rgba(255, 255, 252, 0.9); box-shadow: 0 18px 42px rgba(26, 48, 35, 0.055); }
 .p3-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 0.76rem; line-height: 1.5; }
 .p3-table th, .p3-table td { padding: 14px 10px; border-bottom: 1px solid #dce1dc; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
@@ -215,6 +233,8 @@ h1 {
   .card-footer nav { display: grid; grid-template-columns: 1fr; }
   .card-footer a { overflow-wrap: anywhere; line-height: 1.5; }
   .weekly-context { grid-template-columns: 1fr; }
+  .amount-ranking { padding-top: 54px; }
+  .cumulative-disclosures ul { grid-template-columns: 1fr; }
   .amount-highlight, .tier-guide { padding: 20px; }
   .tier-guide-heading { align-items: flex-start; }
   .p3-table-frame { border: 0; background: transparent; box-shadow: none; }
