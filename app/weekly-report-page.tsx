@@ -53,14 +53,15 @@ function P3Table({events}: {events: readonly WeeklyPreviewSampleEvent[]}) {
 function displayWeek(start: string, end: string) { return `${start.replaceAll("-", ".")}–${end.slice(5).replace("-", ".")}`; }
 
 const weekOptions = [
-  {weekStart: "2026-08-17", href: "/", label: "本周 · 08.17—08.23"},
+  {weekStart: "2026-08-24", href: "/", label: "本周 · 08.24—08.30"},
+  {weekStart: "2026-08-17", href: "/archive/2026-08-17-to-2026-08-23", label: "往期 · 08.17—08.23"},
   {weekStart: "2026-08-10", href: "/archive/2026-08-10-to-2026-08-16", label: "往期 · 08.10—08.16"},
   {weekStart: "2026-08-03", href: "/archive/2026-08-03-to-2026-08-09", label: "往期 · 08.03—08.09"},
 ] as const;
 
 export function WeeklyReportPage({report}: {report: WeeklyPreviewReport}) {
   const {counts, events, p1Events, p2Events, p3Events, highlight} = report;
-  const isArchive = report.weekStart !== "2026-08-17";
+  const isArchive = report.weekStart !== "2026-08-24";
   return <main>
     <nav className="week-switcher" aria-label="周报版本">{weekOptions.map((week) => <Link key={week.weekStart} href={week.href} aria-current={report.weekStart === week.weekStart ? "page" : undefined}>{week.label}</Link>)}</nav>
     <header className="report-header"><div className="preview-line"><span className="preview-badge">{isArchive ? "历史周报" : "本周预览"} · {counts.public}条</span><span>非飞书正式发布</span></div>
