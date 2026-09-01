@@ -54,7 +54,7 @@ function parseArguments() {
 
 function parseIntroductions(markdown: string): Map<string, string> {
   const introductions = new Map<string, string>();
-  const pattern = /^### (.+?)（(P1|P2)）\n\n([\s\S]*?)(?=\n### |\n## P3 )/gm;
+  const pattern = /^### (.+?)（(P1|P2)）\n\n([\s\S]*?)(?=\n### |\n## P[123](?:\s|$))/gm;
   for (const match of markdown.matchAll(pattern)) {
     const company = match[1]?.trim();
     const paragraph = match[3]?.trim();

@@ -1,5 +1,6 @@
-import currentWeeklyPreview from "../../public/data/weekly/2026-08-17.json";
-import previousWeeklyPreview from "../../public/data/weekly/2026-08-10.json";
+import currentWeeklyPreview from "../../public/data/weekly/2026-08-24.json";
+import previousWeeklyPreview from "../../public/data/weekly/2026-08-17.json";
+import archivedWeeklyPreview from "../../public/data/weekly/2026-08-10.json";
 import firstWeeklyPreview from "../../public/data/weekly/2026-08-03.json";
 import {parseAmountSortBucket, weeklyPreviewProjectionSchema, type WeeklyPreviewProjection} from "../pipeline/weekly-preview-projection";
 
@@ -70,12 +71,13 @@ export function createWeeklyPreviewReport(data: WeeklyPreviewData) {
 
 export const currentWeeklyReport = createWeeklyPreviewReport(weeklyPreviewProjectionSchema.parse(currentWeeklyPreview));
 export const previousWeeklyReport = createWeeklyPreviewReport(weeklyPreviewProjectionSchema.parse(previousWeeklyPreview));
-export const archivedWeeklyReport = createWeeklyPreviewReport(weeklyPreviewProjectionSchema.parse(firstWeeklyPreview));
-export const weeklyPreviewSample = archivedWeeklyReport;
-export const weeklyPreviewHighlight = archivedWeeklyReport.highlight;
-export const WEEKLY_PREVIEW_P1_COUNT = archivedWeeklyReport.counts.P1;
-export const WEEKLY_PREVIEW_P2_COUNT = archivedWeeklyReport.counts.P2;
-export const WEEKLY_PREVIEW_P3_COUNT = archivedWeeklyReport.counts.P3;
+export const archivedWeeklyReport = createWeeklyPreviewReport(weeklyPreviewProjectionSchema.parse(archivedWeeklyPreview));
+export const firstArchivedWeeklyReport = createWeeklyPreviewReport(weeklyPreviewProjectionSchema.parse(firstWeeklyPreview));
+export const weeklyPreviewSample = firstArchivedWeeklyReport;
+export const weeklyPreviewHighlight = firstArchivedWeeklyReport.highlight;
+export const WEEKLY_PREVIEW_P1_COUNT = firstArchivedWeeklyReport.counts.P1;
+export const WEEKLY_PREVIEW_P2_COUNT = firstArchivedWeeklyReport.counts.P2;
+export const WEEKLY_PREVIEW_P3_COUNT = firstArchivedWeeklyReport.counts.P3;
 
 export type WeeklyPreviewReport = ReturnType<typeof createWeeklyPreviewReport>;
 export type WeeklyPreviewSampleEvent = WeeklyPreviewReport["events"][number];

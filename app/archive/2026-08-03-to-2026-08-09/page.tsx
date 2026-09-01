@@ -1,6 +1,6 @@
 import {WeeklyReportPage} from "@/app/weekly-report-page";
-import {archivedWeeklyReport} from "@/lib/site/weekly-preview";
+import {firstArchivedWeeklyReport} from "@/lib/site/weekly-preview";
 
 export default function ArchivedWeeklyReport() {
-  return <WeeklyReportPage report={archivedWeeklyReport} />;
+  return <WeeklyReportPage report={firstArchivedWeeklyReport} />;
 }

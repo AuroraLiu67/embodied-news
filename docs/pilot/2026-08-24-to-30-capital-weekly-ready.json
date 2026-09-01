@@ -1,0 +1,1082 @@
+{
+  "schemaVersion": "1.0.0",
+  "batch": "2026-08-24-to-2026-08-30",
+  "generatedAt": "2026-09-01T12:00:00+08:00",
+  "inputEventCount": 76,
+  "websiteReadyEventCount": 69,
+  "excludedP4Count": 7,
+  "relevanceDistribution": {
+    "P1": 21,
+    "P2": 26,
+    "P3": 22,
+    "P4": 7
+  },
+  "events": [
+    {
+      "company": "小鹏机器人（鹏行智能）",
+      "round": "首轮融资",
+      "amount": "超9亿美元（投后估值超63亿美元）",
+      "investors": "IDG资本领投、高榕创投，腾讯/阿里战略投资",
+      "sourcesMarkdown": "[来源1](https://news.pedaily.cn/202608/568048.shtml)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://news.pedaily.cn/202608/568048.shtml"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "人形机器人IRON（76自由度，图灵AI芯片2250TOPS），2026底量产",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "中数睿智",
+      "round": "战略融资",
+      "amount": "数亿元",
+      "investors": "中网投、苏创投、社保基金、金融街资本、工银资本、昆仑资本",
+      "sourcesMarkdown": "[来源1](https://news.pedaily.cn/202608/568010.shtml)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://news.pedaily.cn/202608/568010.shtml"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "产业级因果智能/\"中国版Palantir\"，服务50+央国企",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "枢途科技",
+      "round": "天使+++轮",
+      "amount": "近亿元",
+      "investors": "基石资本、南山战新投、苏州趋势资本、能量守恒资本、杭实集团、西湖科创投",
+      "sourcesMarkdown": "[来源1](https://news.pedaily.cn/202608/568029.shtml)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://news.pedaily.cn/202608/568029.shtml"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "具身智能数据管线，服务国内60%估值百亿级具身企业",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "涌泉创新（ToolDance）",
+      "round": "Pre-A轮",
+      "amount": "累计数亿元",
+      "investors": "方广资本领投，耀途、靖亚、元生资本，源码资本加码",
+      "sourcesMarkdown": "[来源1](https://news.pedaily.cn/202608/568032.shtml)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://news.pedaily.cn/202608/568032.shtml"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "智能桌面CNC数控设备，首款ToolDance X1年内全球发售",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "英维科生物",
+      "round": "天使轮",
+      "amount": "未披露",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://news.pedaily.cn/202608/568036.shtml)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://news.pedaily.cn/202608/568036.shtml"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "精准细胞靶向纳米递送平台，体内CAR-T/CAR-X纳米基因药物",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "穿越者（载人航天）",
+      "round": "Pre-A+轮",
+      "amount": "未披露",
+      "investors": "四川国经、金达资本、中天汇富、啟赋资本",
+      "sourcesMarkdown": "[来源1](https://www.chinaventure.com.cn/flash/20260824-90011.html)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://www.chinaventure.com.cn/flash/20260824-90011.html"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "亚轨道可重复使用载人飞船\"穿越者壹号\"，目标2028载人首飞",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "食铁兽科技（PANDAG）",
+      "round": "A轮",
+      "amount": "数千万元",
+      "investors": "云时资本独家，星辰资本任FA",
+      "sourcesMarkdown": "[来源1](https://36kr.com/p/3947977664347270)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://36kr.com/p/3947977664347270"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "商业园林机器人，PANDAG G1割草机器人落地KLPGA球场",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "锐莱热控",
+      "round": "A+轮",
+      "amount": "数千万",
+      "investors": "英诺天使、方广资本、集萃华财、湘江信成",
+      "sourcesMarkdown": "[来源1](https://36kr.com/p/3953370022034820)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://36kr.com/p/3953370022034820"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "宇航级主动液冷热控，液冷卫星系统国内市占率约90%",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "明视脑机（Mindtrix）",
+      "round": "Pre-A轮系列",
+      "amount": "累计约5亿元",
+      "investors": "本轮机构未披露",
+      "sourcesMarkdown": "[来源1](https://www.vbdata.cn/intelDetail/1078645)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://www.vbdata.cn/intelDetail/1078645"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "侵入式视皮层视觉重建脑机接口，1024通道柔性电极",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "鑫云生命",
+      "round": "天使轮",
+      "amount": "数千万",
+      "investors": "倚锋资本",
+      "sourcesMarkdown": "[来源1](https://wap.eastmoney.com/a/202608243851536063.html)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://wap.eastmoney.com/a/202608243851536063.html"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "AI血管介入器械",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "脑器时代",
+      "round": "种子轮",
+      "amount": "数千万",
+      "investors": "元禾璞华领投",
+      "sourcesMarkdown": "[来源1](https://www.cnstock.com/commonDetail/772921)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://www.cnstock.com/commonDetail/772921"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "非侵入式脑机接口，\"全能一号\"运动BCI赋能卒中康复",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "力磅科技",
+      "round": "天使轮",
+      "amount": "未披露",
+      "investors": "Brizan Ventures、后浪资本、和声AI投资等",
+      "sourcesMarkdown": "[来源1](https://www.163.com/dy/article/L54M528E05118K7K.html)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://www.163.com/dy/article/L54M528E05118K7K.html"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "体育消费智能设备",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Embedd",
+      "round": "Pre-seed轮",
+      "amount": "270万美元",
+      "investors": "Seedcamp领投",
+      "sourcesMarkdown": "[来源1](https://techfundingnews.com/seedcamp-leads-2-7m-round-for-ukrainian-founded-physical-ai-startup-embedd/)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://techfundingnews.com/seedcamp-leads-2-7m-round-for-ukrainian-founded-physical-ai-startup-embedd/"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "物理AI软件集成层，降低机器人/车/无人机软件集成成本",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Oshen",
+      "round": "新一轮",
+      "amount": "500万美元",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://www.eu-startups.com/2026/08/plymouth-based-oshen-raises-e4-27-million-to-scale-robot-swarms-that-act-as-the-oceans-eyes-and-ears/)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://www.eu-startups.com/2026/08/plymouth-based-oshen-raises-e4-27-million-to-scale-robot-swarms-that-act-as-the-oceans-eyes-and-ears/"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "自主海洋机器人",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "炎和科技",
+      "round": "A2+/A3/A4轮",
+      "amount": "A轮整体超5亿元",
+      "investors": "TCL中环海河基金、元航资本、粤开资本、上海科创基金等",
+      "sourcesMarkdown": "[来源1](https://new.qq.com/rain/a/20260825A0859C00)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://new.qq.com/rain/a/20260825A0859C00"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "钙钛矿光伏/太空能源（97年北大学霸创业）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "OJO",
+      "round": "天使轮",
+      "amount": "近亿元",
+      "investors": "顺为资本、联想创投，高鹄任FA",
+      "sourcesMarkdown": "[来源1](https://www.163.com/dy/article/L563J92M05198R3E.html)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://www.163.com/dy/article/L563J92M05198R3E.html"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "AI设计Agent（前剪映国内负责人张琪智创立）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "屹艮科技",
+      "round": "战略融资",
+      "amount": "亿元级",
+      "investors": "宁德时代独家",
+      "sourcesMarkdown": "[来源1](https://www.163.com/dy/article/L56Q0KIP05198R3E.html)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://www.163.com/dy/article/L56Q0KIP05198R3E.html"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "电池设计自动化BDA，宁德AI4S赛道首投",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "托尔时代",
+      "round": "天使轮",
+      "amount": "近亿元",
+      "investors": "中科创星、元禾原点联合领投",
+      "sourcesMarkdown": "[来源1](https://so.html5.qq.com/page/real/search_news?docid=700)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://so.html5.qq.com/page/real/search_news?docid=700"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "可控核聚变NBI中性束注入系统全栈",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "材科源图（MatSource）",
+      "round": "连续两轮",
+      "amount": "超亿元",
+      "investors": "经纬创投领投，苏创投、中科创星、硅港资本",
+      "sourcesMarkdown": "[来源1](https://www.chinaventure.com.cn/flash/20260825-90018.html)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://www.chinaventure.com.cn/flash/20260825-90018.html"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "AI+新材料研发平台（苏州）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "松正航空动力",
+      "round": "A轮",
+      "amount": "数千万",
+      "investors": "九洲君合、连界启辰、远致富海",
+      "sourcesMarkdown": "[来源1](https://www.chinaventure.com.cn/flash/20260825-90015.html)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://www.chinaventure.com.cn/flash/20260825-90015.html"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "eVTOL电推进系统（四川）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "影子科技（In2Mate）",
+      "round": "天使轮",
+      "amount": "数百万美元",
+      "investors": "未披露（港科大张福民教授）",
+      "sourcesMarkdown": "[来源1](https://www.163.com/dy/article/L560GEE905199LET.html)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://www.163.com/dy/article/L560GEE905199LET.html"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "机器人灵巧手/具身智能（港科大教授创业半年）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "芯光界",
+      "round": "天使轮",
+      "amount": "亿元",
+      "investors": "启明创投独家",
+      "sourcesMarkdown": "[来源1](https://36kr.com/p/3954319144926600)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://36kr.com/p/3954319144926600"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "光互连/硅光通信（上海）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "邻家桥科技",
+      "round": "种子轮",
+      "amount": "1000万元",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://36kr.com/p/3950117041864066)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://36kr.com/p/3950117041864066"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "L3自动驾驶数字化人机交互，响应30ms",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "中微达信",
+      "round": "B轮",
+      "amount": "数亿元",
+      "investors": "五大机构联合领投",
+      "sourcesMarkdown": "[来源1](https://36kr.com/p/3954561144683657)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://36kr.com/p/3954561144683657"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "量子计算测控（成都）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "BreezeBlue（微风蓝科技）",
+      "round": "种子轮",
+      "amount": "600万美元",
+      "investors": "元璟资本、红点中国领投",
+      "sourcesMarkdown": "[来源1](https://finance.eastmoney.com/a/202608253853340422.html)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://finance.eastmoney.com/a/202608253853340422.html"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "AI声音/语音（前MiniMax技术合伙人杨植麟系）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "智辰半导体",
+      "round": "天使轮（累计）",
+      "amount": "超10亿元",
+      "investors": "产业资本+头部财务机构",
+      "sourcesMarkdown": "[来源1](https://www.163.com/dy/article/L56BTP8M0511RIVP.html)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://www.163.com/dy/article/L56BTP8M0511RIVP.html"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "端侧AI芯片，2026年国内端侧芯片最大早期融资",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "洛阳LYC轴承",
+      "round": "战略投资",
+      "amount": "6.65亿元",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://stock.stockstar.com/RB2026082800045636.shtml)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://stock.stockstar.com/RB2026082800045636.shtml"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "洛阳轴承集团股权运作",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Velaura AI",
+      "round": "A轮",
+      "amount": "1.1亿美元",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://velaura.ai/velaura-ai-raises-110-million-series-a-to-advance-the-next-generation-of-ultra-low-power-ai-compute-infrastructure/)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://velaura.ai/velaura-ai-raises-110-million-series-a-to-advance-the-next-generation-of-ultra-low-power-ai-compute-infrastructure/"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "AI算力基础设施",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Muon Space",
+      "round": "C轮",
+      "amount": "2.5亿美元",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://www.globenewswire.com/news-release/2026/08/20/3348230/0/en/muon-space-closes-250-million-series-c-to-scale-space-infrastructure.html)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://www.globenewswire.com/news-release/2026/08/20/3348230/0/en/muon-space-closes-250-million-series-c-to-scale-space-infrastructure.html"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "卫星星座\"任务铸造厂\"",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Emerald AI",
+      "round": "A轮",
+      "amount": "1.5亿美元（估值10.5亿）",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://www.emeraldai.co/blog/150-million-series-a-valuation-investor-quotes)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://www.emeraldai.co/blog/150-million-series-a-valuation-investor-quotes"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "AI安全",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Stability AI",
+      "round": "B轮",
+      "amount": "7600万美元",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://www.prnewswire.com/apac/zh/news-releases/-stability-ai--302860583.html)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://www.prnewswire.com/apac/zh/news-releases/-stability-ai--302860583.html"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "AI创意工具（Stable Diffusion）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Airbound",
+      "round": "A轮",
+      "amount": "3700万美元",
+      "investors": "Greenoaks领投，DoorDash等参投",
+      "sourcesMarkdown": "[来源1](https://techcrunch.com/2026/08/24/indias-airbound-bags-37m-to-take-on-trucks-with-rocket-like-drones/)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://techcrunch.com/2026/08/24/indias-airbound-bags-37m-to-take-on-trucks-with-rocket-like-drones/"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "自主飞行器/无人机",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "简智机器人（GenRobot.AI）",
+      "round": "A轮",
+      "amount": "未披露",
+      "investors": "Momenta领投，老股东追投",
+      "sourcesMarkdown": "[来源1](https://www.chinaventure.com.cn/flash/20260826-90019.html)",
+      "reportDate": "2026-08-26",
+      "sourceUrls": [
+        "https://www.chinaventure.com.cn/flash/20260826-90019.html"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "无本体数据基础设施/物理AI评测闭环",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "原力引擎",
+      "round": "天使+轮",
+      "amount": "近5000万元",
+      "investors": "上海未来产业基金、上海科创集团领投",
+      "sourcesMarkdown": "[来源1](https://www.chinaventure.com.cn/flash/20260826-90022.html)",
+      "reportDate": "2026-08-26",
+      "sourceUrls": [
+        "https://www.chinaventure.com.cn/flash/20260826-90022.html"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "AI4Engineering生成式仿真与智能控制引擎",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "迈步机器人",
+      "round": "战略投资",
+      "amount": "近亿元",
+      "investors": "中信建投，浩观任FA",
+      "sourcesMarkdown": "[来源1](https://36kr.com/p/3954658788506755)",
+      "reportDate": "2026-08-26",
+      "sourceUrls": [
+        "https://36kr.com/p/3954658788506755"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "国产医疗外骨骼（国内首家盈利），柔性驱动器",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "星邑空间",
+      "round": "A轮（增资）",
+      "amount": "数亿元",
+      "investors": "苏创投、力合清瞳、七匹狼控股等",
+      "sourcesMarkdown": "[来源1](https://36kr.com/p/3956027533507970)",
+      "reportDate": "2026-08-26",
+      "sourceUrls": [
+        "https://36kr.com/p/3956027533507970"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "商业航天测运控，累计611颗星/箭测控、成功率99.8%",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "灵络科技",
+      "round": "天使轮",
+      "amount": "数千万元",
+      "investors": "深高新投领投",
+      "sourcesMarkdown": "[来源1](https://36kr.com/p/3954623000952197)",
+      "reportDate": "2026-08-26",
+      "sourceUrls": [
+        "https://36kr.com/p/3954623000952197"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "睡眠AI硬件（李泽湘/深圳科创学院孵化）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "灵御智能",
+      "round": "Pre-A轮（年内第三轮）",
+      "amount": "数亿元",
+      "investors": "株洲产投、飞图创投、未来边际创投、芯能创投",
+      "sourcesMarkdown": "[来源1](https://36kr.com/p/3948044825279621)",
+      "reportDate": "2026-08-26",
+      "sourceUrls": [
+        "https://36kr.com/p/3948044825279621"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "具身智能基础设施，TA系列轮式夹爪机器人百台级部署京东七鲜",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "基元律动",
+      "round": "A轮",
+      "amount": "未披露",
+      "investors": "弘晖资本、聚合资本、尚势资本",
+      "sourcesMarkdown": "[来源1](https://www.chinaventure.com.cn/news/113-20260827-392980.html)",
+      "reportDate": "2026-08-26",
+      "sourceUrls": [
+        "https://www.chinaventure.com.cn/news/113-20260827-392980.html"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "人工智能（亿欧收录）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Wispr AI",
+      "round": "B轮",
+      "amount": "2.8亿美元（估值20亿）",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/)",
+      "reportDate": "2026-08-26",
+      "sourceUrls": [
+        "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "语音AI（用语音操作计算机）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Groq",
+      "round": "A轮",
+      "amount": "3.5亿美元",
+      "investors": "Disruptive领投",
+      "sourcesMarkdown": "[来源1](https://www.vcnewsdaily.com/groq/venture-capital-fundin)",
+      "reportDate": "2026-08-26",
+      "sourceUrls": [
+        "https://www.vcnewsdaily.com/groq/venture-capital-fundin"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "AI推理芯片（转型英伟达系推理云）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Transfyr",
+      "round": "种子轮",
+      "amount": "2500万美元",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://www.transfyr.ai/news/transfyr-launches-physical-ai-platform-for-science-with-usd25m-seed-funding)",
+      "reportDate": "2026-08-26",
+      "sourceUrls": [
+        "https://www.transfyr.ai/news/transfyr-launches-physical-ai-platform-for-science-with-usd25m-seed-funding"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "Physical AI科学平台",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Agentrys",
+      "round": "种子轮",
+      "amount": "2450万美元",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://agentrys.ai/news/agentrys-raises-24-5-million)",
+      "reportDate": "2026-08-26",
+      "sourceUrls": [
+        "https://agentrys.ai/news/agentrys-raises-24-5-million"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "芯片设计自动化（Agent）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "晰见科技",
+      "round": "天使轮（连续3轮累计）",
+      "amount": "近5亿元",
+      "investors": "徐汇资本、经纬创投、华映资本、英诺基金、水木清华等",
+      "sourcesMarkdown": "[来源1](https://www.36kr.com/p/3957052058025345)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://www.36kr.com/p/3957052058025345"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "类脑视觉芯片\"天眸\"（清华类脑计算中心孵化）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "灵初智能",
+      "round": "A轮",
+      "amount": "超亿美元",
+      "investors": "未完整披露（投中网独家）",
+      "sourcesMarkdown": "[来源1](https://www.chinaventure.com.cn/flash/20260827-90028.html)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://www.chinaventure.com.cn/flash/20260827-90028.html"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "具身智能灵巧操作，端到端PSI系列模型",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "沐创",
+      "round": "B轮",
+      "amount": "数亿元",
+      "investors": "沐曦股份、联想创投、广州白云金控等",
+      "sourcesMarkdown": "[来源1](https://www.chinaventure.com.cn/flash/20260827-90027.html)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://www.chinaventure.com.cn/flash/20260827-90027.html"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "400G/800G Scale-out智能网卡芯片（无锡）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "蜂巢互联",
+      "round": "新一轮（数月两轮）",
+      "amount": "12亿元",
+      "investors": "国资CVC+市场化机构+产业资本",
+      "sourcesMarkdown": "[来源1](https://www.chinaventure.com.cn/flash/20260827-90026.html)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://www.chinaventure.com.cn/flash/20260827-90026.html"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "物理AI仿真引擎/工业AI基础设施（深圳）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "上海次元模因科技",
+      "round": "种子轮",
+      "amount": "未披露",
+      "investors": "浦东AI种子基金（此前百度风投数千万）",
+      "sourcesMarkdown": "[来源1](https://www.chinaventure.com.cn/flash/20260827-90025.html)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://www.chinaventure.com.cn/flash/20260827-90025.html"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "\"Popi AI\"母公司，AI内容创业",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "研微半导体",
+      "round": "B轮",
+      "amount": "近15亿元",
+      "investors": "中电科产业基金、中车资本、京东方等",
+      "sourcesMarkdown": "[来源1](https://m.pedaily.cn/news/568230)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://m.pedaily.cn/news/568230"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "高端ALD/PECVD/外延设备（无锡）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "星际觅元",
+      "round": "种子轮",
+      "amount": "千万元",
+      "investors": "同创伟业领投，卧安机器人、旭源资本跟投",
+      "sourcesMarkdown": "[来源1](https://m.pedaily.cn/news/568230)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://m.pedaily.cn/news/568230"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "全域具身智能系统（南洋理工院士团队）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "光联芯科",
+      "round": "A+轮",
+      "amount": "近10亿元（估值超10亿美元）",
+      "investors": "国寿资本、招商局资本、星连资本、红杉、高瓴",
+      "sourcesMarkdown": "[来源1](https://www.cls.cn/detail/2466855)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://www.cls.cn/detail/2466855"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "OIO光互连芯片，自研微环调制器MRM+硅光无掩膜光刻",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "艾联纳医药（ALLYRNA）",
+      "round": "种子+轮",
+      "amount": "超亿元",
+      "investors": "上海国投先导、齐济投资、上海未来产业基金领投",
+      "sourcesMarkdown": "[来源1](https://guba.eastmoney.com/news,cjpl,1765197972.html)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://guba.eastmoney.com/news,cjpl,1765197972.html"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "RNA表观遗传学首创小分子（何川院士）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "优理奇机器人（UniX AI）",
+      "round": "新一轮",
+      "amount": "数千万元",
+      "investors": "柯力传感",
+      "sourcesMarkdown": "[来源1](https://new.qq.com/rain/a/20260827A07XDP00)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://new.qq.com/rain/a/20260827A07XDP00"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "通用人形机器人（耶鲁博士杨丰瑜创立）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "拉塞特机器人",
+      "round": "股权融资（工商披露）",
+      "amount": "未披露",
+      "investors": "温氏股份、金蝶软件、深圳欣农天下",
+      "sourcesMarkdown": "[来源1](https://www.dahecube.com/article.html?artid=284816)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://www.dahecube.com/article.html?artid=284816"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "AI+养殖整体方案（轨道视觉机器人/智能饲喂）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "瑞阳生物制药",
+      "round": "A轮（工商披露）",
+      "amount": "未披露",
+      "investors": "先声药业、星禹投资、山东鲁中控股",
+      "sourcesMarkdown": "[来源1](https://www.dahecube.com/article.html?artid=284816)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://www.dahecube.com/article.html?artid=284816"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "抗体类生物大分子（山东）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Metriport",
+      "round": "A轮",
+      "amount": "2600万美元",
+      "investors": "Matrix领投，Y Combinator参投",
+      "sourcesMarkdown": "[来源1](https://www.metriport.com/blog/metriport-series-a)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://www.metriport.com/blog/metriport-series-a"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "开源医疗健康数据基础设施",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Onos Health",
+      "round": "A轮",
+      "amount": "1700万美元",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://onoshealth.com/news/onos-series-a-announcement/)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://onoshealth.com/news/onos-series-a-announcement/"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "行为健康临床智能",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Soctera",
+      "round": "种子轮",
+      "amount": "400万美元",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://www.soctera.com/post/soctera-raises-4-million-to-break-the-thermal-ceiling-of-defense-and-space-systems)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://www.soctera.com/post/soctera-raises-4-million-to-break-the-thermal-ceiling-of-defense-and-space-systems"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "海外科技融资",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Sharpa",
+      "round": "首轮披露（累计）",
+      "amount": "累计超45亿元（投后220亿）",
+      "investors": "阿里/美团/腾讯/京东/传音同场押注",
+      "sourcesMarkdown": "[来源1](https://www.nbd.com.cn/articles/2026-08-28/4563576.html)",
+      "reportDate": "2026-08-28",
+      "sourceUrls": [
+        "https://www.nbd.com.cn/articles/2026-08-28/4563576.html"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "灵巧手赛道（禾赛三创始人），创行业纪录",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "曦望Sunrise",
+      "round": "新一轮",
+      "amount": "20亿元（投后约200亿）",
+      "investors": "正大集团、九安医疗、盈峰环境、同程旅行、人保/建信股权",
+      "sourcesMarkdown": "[来源1](https://36kr.com/p/3957213787995526)",
+      "reportDate": "2026-08-28",
+      "sourceUrls": [
+        "https://36kr.com/p/3957213787995526"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "商汤分拆，全栈自研推理GPU（4个月估值翻倍）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "松应科技",
+      "round": "A轮+A1轮（半年三轮）",
+      "amount": "数亿元",
+      "investors": "中金资本、武汉洪山资本领投",
+      "sourcesMarkdown": "[来源1](https://m.chinaventure.com.cn/news/110.html)",
+      "reportDate": "2026-08-28",
+      "sourceUrls": [
+        "https://m.chinaventure.com.cn/news/110.html"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "物理AI操作系统ORCA OS（上海闵行）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "瞬适科技（InstAdapt）",
+      "round": "种子轮",
+      "amount": "千万美元",
+      "investors": "协创智慧、云晖资本、浦东创投、吴越天使",
+      "sourcesMarkdown": "[来源1](https://so.html5.qq.com/page/real/search_news?docid=700)",
+      "reportDate": "2026-08-28",
+      "sourceUrls": [
+        "https://so.html5.qq.com/page/real/search_news?docid=700"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "具身世界模型基础设施（上科大孵化）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "灵掌科技",
+      "round": "天使轮",
+      "amount": "数千万元",
+      "investors": "凯龙高科、无锡未来天使基金、仁正基金、遨博智能",
+      "sourcesMarkdown": "[来源1](https://finance.sina.cn/2026-08-28/detail-inipvrtx89955)",
+      "reportDate": "2026-08-28",
+      "sourceUrls": [
+        "https://finance.sina.cn/2026-08-28/detail-inipvrtx89955"
+      ],
+      "relevanceTier": "P1",
+      "relevanceRationale": "工业灵巧手（北航机器人所孵化，张超博士）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "迈之健医疗",
+      "round": "A轮",
+      "amount": "1500万元",
+      "investors": "盱眙都梁国石产业基金独家",
+      "sourcesMarkdown": "[来源1](https://finance.sina.cn/2026-08-28/detail-inipwait45837)",
+      "reportDate": "2026-08-28",
+      "sourceUrls": [
+        "https://finance.sina.cn/2026-08-28/detail-inipwait45837"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "适老化智慧康养，HEALTH-AMS全屋智能体征",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "合珀生物",
+      "round": "A轮（战略）",
+      "amount": "数千万元",
+      "investors": "江苏鼎泰药研集团",
+      "sourcesMarkdown": "[来源1](https://www.163.com/dy/article/L5E9AJ5005198R3E.html)",
+      "reportDate": "2026-08-28",
+      "sourceUrls": [
+        "https://www.163.com/dy/article/L5E9AJ5005198R3E.html"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "类器官/器官芯片（卡罗琳斯卡医学院背景）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "全脑芯科",
+      "round": "天使轮",
+      "amount": "数千万元",
+      "investors": "复旦科创独家领投",
+      "sourcesMarkdown": "[来源1](https://www.toutiao.com/article/7679059409812636170/)",
+      "reportDate": "2026-08-28",
+      "sourceUrls": [
+        "https://www.toutiao.com/article/7679059409812636170/"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "柔性硅基CMOS脑机接口（复旦宋梁团队）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "元启半导体",
+      "round": "Pre-B轮",
+      "amount": "未披露",
+      "investors": "深产投、丰年投资、建投投资、沛坤盛华创投等",
+      "sourcesMarkdown": "[来源1](https://finance.eastmoney.com/a/202608283858184654.html)",
+      "reportDate": "2026-08-28",
+      "sourceUrls": [
+        "https://finance.eastmoney.com/a/202608283858184654.html"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "AI高速互联芯片：112G/224G SerDes、O-DSP、AEC Retimer",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "鸣石峻致",
+      "round": "A+轮首关",
+      "amount": "数千万元（累计超亿元）",
+      "investors": "国生资本独家领投",
+      "sourcesMarkdown": "[来源1](https://finance.eastmoney.com/a/202608283858852937.html)",
+      "reportDate": "2026-08-28",
+      "sourceUrls": [
+        "https://finance.eastmoney.com/a/202608283858852937.html"
+      ],
+      "relevanceTier": "P2",
+      "relevanceRationale": "数字化脂肪肝小核磁+脑机接口专用中场磁共振",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "浩博医药",
+      "round": "C轮",
+      "amount": "1.2亿美元",
+      "investors": "未披露（官宣日 8/27-28 待核）",
+      "sourcesMarkdown": "[来源1](https://www.chinaventure.com.cn/news/111-20260828-392992.html)",
+      "reportDate": "2026-08-28",
+      "sourceUrls": [
+        "https://www.chinaventure.com.cn/news/111-20260828-392992.html"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "小核酸/寡核苷酸药物（HBV领域）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    }
+  ],
+  "excludedP4": [
+    {
+      "company": "BOOKR",
+      "round": "A轮",
+      "amount": "610万欧元",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://therecursive.com/hungarian-edtech-bookr-raises-)",
+      "reportDate": "2026-08-24",
+      "sourceUrls": [
+        "https://therecursive.com/hungarian-edtech-bookr-raises-"
+      ],
+      "relevanceTier": "P4",
+      "relevanceRationale": "儿童EdTech阅读平台，超30国60万学生",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "呈白",
+      "round": "Pre-A轮",
+      "amount": "数千万元",
+      "investors": "上影新视野独家",
+      "sourcesMarkdown": "[来源1](https://36kr.com/p/3947925280832901)",
+      "reportDate": "2026-08-25",
+      "sourceUrls": [
+        "https://36kr.com/p/3947925280832901"
+      ],
+      "relevanceTier": "P4",
+      "relevanceRationale": "东方非遗香氛品牌（非遗器+非遗香）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Primit",
+      "round": "天使轮",
+      "amount": "100万美元",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://data.iyiou.com/)",
+      "reportDate": "2026-08-26",
+      "sourceUrls": [
+        "https://data.iyiou.com/"
+      ],
+      "relevanceTier": "P4",
+      "relevanceRationale": "金融科技（亿欧收录）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Unrivaled",
+      "round": "C轮",
+      "amount": "1.06亿美元",
+      "investors": "Ten Pillars Sports Fund",
+      "sourcesMarkdown": "[来源1](https://www.prnewswire.com/news-releases/unrivaled-oversubscribes-series-c-fundraise-led-by-ten-pillars-sports-fund-exceeding-100-million-target-at-new-league-valuation-of-650-million-302860004.html)",
+      "reportDate": "2026-08-26",
+      "sourceUrls": [
+        "https://www.prnewswire.com/news-releases/unrivaled-oversubscribes-series-c-fundraise-led-by-ten-pillars-sports-fund-exceeding-100-million-target-at-new-league-valuation-of-650-million-302860004.html"
+      ],
+      "relevanceTier": "P4",
+      "relevanceRationale": "女子篮球联赛（WNBA球星联盟）",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Rox",
+      "round": "新一轮",
+      "amount": "未披露",
+      "investors": "未披露",
+      "sourcesMarkdown": "[来源1](https://fundbat.com/blog/daily-funding-aug-27-2026)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://fundbat.com/blog/daily-funding-aug-27-2026"
+      ],
+      "relevanceTier": "P4",
+      "relevanceRationale": "海外科技融资",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Yardstik",
+      "round": "新一轮",
+      "amount": "3000万美元（累计6500万）",
+      "investors": "Harbert Growth Partners领投",
+      "sourcesMarkdown": "[来源1](https://vcnewsdaily.com/)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://vcnewsdaily.com/"
+      ],
+      "relevanceTier": "P4",
+      "relevanceRationale": "雇主信任/背景调查平台",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    },
+    {
+      "company": "Owner",
+      "round": "D轮",
+      "amount": "2.4亿美元（投后23亿）",
+      "investors": "Goldman Sachs Alternatives领投",
+      "sourcesMarkdown": "[来源1](https://venturecapitaltracker.com/2026-august-28-29-investment-news-local-ai-hardware-debt)",
+      "reportDate": "2026-08-28",
+      "sourceUrls": [
+        "https://venturecapitaltracker.com/2026-august-28-29-investment-news-local-ai-hardware-debt"
+      ],
+      "relevanceTier": "P4",
+      "relevanceRationale": "AI餐厅/本地商业运营OS，年化营收超1亿美元",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    }
+  ]
+}
