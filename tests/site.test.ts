@@ -48,6 +48,12 @@ describe("weekly preview sample", () => {
     expect(routeSource).toContain("report={archivedWeeklyReport}");
     expect(routeSource).not.toContain("report={previousWeeklyReport}");
   });
+
+  it("uses document navigation between static weekly editions", () => {
+    const pageSource = readFileSync("app/weekly-report-page.tsx", "utf8");
+    expect(pageSource).toContain('<a key={week.weekStart} href={staticWeekHref(week.href)}');
+    expect(pageSource).not.toContain('from "next/link"');
+  });
   it("selects all 18 P1 events in their existing public projection order", () => {
     const projectedP1Names = weeklyProjection.events
       .filter((event) => event.relevanceTier === "P1")

@@ -188,3 +188,4 @@
 - 确定性生成第四周website-ready包和公开投影：输入76条，排除P4 7条，公开69条；P1 21、P2 26、P3 22。首页切换为2026-08-24—08-30，新增08-17—08-23归档，四周版本导航均可访问。
 - 验证通过：站点专项11项、`pnpm typecheck`、`pnpm lint`、带`/embodied-news` base path的生产构建、四条静态周报路由、事件ID/URL/计数检查、公开敏感字段扫描和`git diff --check`。
 - 本期继续明确标记PREVIEW，不代表飞书正式发布记录；网站未读取第三周PENDING候选或内部战投数据。发布文件将按用户明确授权交由Git/Release Agent严格选择后commit、push并核验GitHub Pages。
+- 首次Pages部署后的浏览器smoke test发现，从最早归档通过Next客户端导航返回本周时可能复用上一期RSC内容；改用带`NEXT_PUBLIC_SITE_BASE_PATH`前缀的静态文档链接，确保每次周切换完整加载对应HTML。新增导航回归后站点专项13项、typecheck、lint及带`/embodied-news`的生产构建均通过，静态产物确认“本周”链接为`/embodied-news/`。

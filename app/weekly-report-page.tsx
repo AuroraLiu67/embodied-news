@@ -1,6 +1,5 @@
-import Link from "next/link";
-
 import {formatPrimaryInvestors, type WeeklyPreviewReport, type WeeklyPreviewSampleEvent} from "@/lib/site/weekly-preview";
+import {loadPublicConfig} from "@/lib/config/public";
 
 const subcategoryLabels: Record<string, string> = {
   FULL_STACK_ROBOT: "全栈机器人", ROBOT_BODY: "机器人本体", VLA_WORLD_MODEL: "VLA / 世界模型",
@@ -59,11 +58,14 @@ const weekOptions = [
   {weekStart: "2026-08-03", href: "/archive/2026-08-03-to-2026-08-09", label: "往期 · 08.03—08.09"},
 ] as const;
 
+const {siteBasePath} = loadPublicConfig();
+const staticWeekHref = (href: string) => `${siteBasePath}${href}`;
+
 export function WeeklyReportPage({report}: {report: WeeklyPreviewReport}) {
   const {counts, events, p1Events, p2Events, p3Events, highlight} = report;
   const isArchive = report.weekStart !== "2026-08-24";
   return <main>
-    <nav className="week-switcher" aria-label="周报版本">{weekOptions.map((week) => <Link key={week.weekStart} href={week.href} aria-current={report.weekStart === week.weekStart ? "page" : undefined}>{week.label}</Link>)}</nav>
+    <nav className="week-switcher" aria-label="周报版本">{weekOptions.map((week) => <a key={week.weekStart} href={staticWeekHref(week.href)} aria-current={report.weekStart === week.weekStart ? "page" : undefined}>{week.label}</a>)}</nav>
     <header className="report-header"><div className="preview-line"><span className="preview-badge">{isArchive ? "历史周报" : "本周预览"} · {counts.public}条</span><span>非飞书正式发布</span></div>
       <p className="eyebrow">EMBODIED INTELLIGENCE · WEEKLY BRIEF</p><h1>具身智能公司动态周报</h1><p className="issue-date">{displayWeek(report.weekStart, report.weekEnd)}</p>
       <p className="deck">聚焦具身智能、Physical AI 与硬科技资本动态。P1/P2 使用完整简介卡片，P3 使用紧凑行业表格。</p>
