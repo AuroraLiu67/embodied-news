@@ -29,6 +29,12 @@ describe("weekly preview sample", () => {
     expect(currentWeeklyReport.events.find((event) => event.companyDisplayName === "小鹏机器人（鹏行智能）")?.introduction).toMatch(/IRON/);
     expect(currentWeeklyReport.events.every((event) => !event.introduction?.includes("## P"))).toBe(true);
     expect(currentWeeklyReport.events.some((event) => event.relevanceTier === ("P4" as never))).toBe(false);
+    expect(currentWeeklyReport.events.every((event) => event.regionScope === "CHINA" || event.regionScope === "OVERSEAS")).toBe(true);
+    expect(currentWeeklyReport.events.filter((event) => event.products.length > 0).length).toBeGreaterThanOrEqual(13);
+    expect(currentProjection.events.every((event) => Boolean(event.companyBusiness))).toBe(true);
+    expect(currentWeeklyReport.events.filter((event) => event.relevanceTier !== "P3").every((event) => event.introduction?.includes("融资"))).toBe(true);
+    expect(currentWeeklyReport.events.filter((event) => event.leadInvestors.length > 0).length).toBeGreaterThanOrEqual(18);
+    expect(currentWeeklyReport.events.filter((event) => event.followInvestors.length > 0).length).toBeGreaterThanOrEqual(5);
   });
 
   it("keeps all three previous issues available as complete archives", () => {

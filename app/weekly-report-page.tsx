@@ -27,7 +27,7 @@ function EventCard({event, index, section}: {event: WeeklyPreviewSampleEvent; in
     <p className="introduction">{event.introduction}</p>
     <dl className="facts">{event.round && <div><dt>轮次</dt><dd>{event.round}</dd></div>}{event.amount && <div><dt>金额</dt><dd>{event.amount}</dd></div>}{region && <div><dt>地域</dt><dd>{region}</dd></div>}</dl>
     <dl className="details"><InvestorGroup label="领投方" names={event.leadInvestors} /><InvestorGroup label="跟投 / 其他投资方" names={[...event.followInvestors, ...event.otherInvestors]} /></dl>
-    {event.products.length > 0 && <section className="products" aria-label="主要产品"><h3>主要产品</h3><ul>{event.products.map((product) => <li key={product}>{product}</li>)}</ul></section>}
+    {event.products.length > 0 && <section className="products" aria-label="主要产品与业务"><h3>主要产品 / 业务</h3><ul>{event.products.map((product) => <li key={product}>{product}</li>)}</ul></section>}
     <footer className="card-footer"><nav aria-label={`${event.companyDisplayName}公开链接`}>
       {event.officialWebsite && <a href={event.officialWebsite} target="_blank" rel="noopener noreferrer">公司官网</a>}
       <a href={source.url} target="_blank" rel="noopener noreferrer">来源1{source.publishedAt ? <time> · {source.publishedAt}</time> : null}</a>

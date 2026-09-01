@@ -15,8 +15,8 @@ const INDUSTRY_RULES: ReadonlyArray<{category: PreviewIndustryCategory; label: s
   {category: "QUANTUM_TECH", label: "量子科技", keywords: ["量子"]},
   {category: "ENERGY_FUSION", label: "新能源与核聚变", keywords: ["核聚变", "聚变能源", "新能源", "储能", "光伏", "电力电子"]},
   {category: "AEROSPACE_LOW_ALTITUDE", label: "商业航天与低空经济", keywords: ["商业航天", "运载火箭", "火箭", "卫星", "星座", "空天", "低空", "evtol", "宇航"]},
-  {category: "BIOTECH_HEALTHCARE", label: "生物医药", keywords: ["生物", "医药", "医疗", "药物", "临床", "器官", "血液", "脑机接口", "眼科", "蛋白", "生命世界模型"]},
-  {category: "SEMICONDUCTOR_ELECTRONICS", label: "半导体与电子", keywords: ["半导体", "芯片", "硅片", "电子", "光电", "显示", "pcb", "pcba", "光波导", "成像器件"]},
+  {category: "BIOTECH_HEALTHCARE", label: "生物医药", keywords: ["生物", "医药", "医疗", "药物", "临床", "器官", "血液", "脑机接口", "眼科", "蛋白", "生命世界模型", "小分子", "介入器械", "康养"]},
+  {category: "SEMICONDUCTOR_ELECTRONICS", label: "半导体与电子", keywords: ["半导体", "芯片", "硅片", "电子", "光电", "显示", "pcb", "pcba", "光波导", "成像器件", "gpu", "ald", "pecvd", "外延设备", "功率放大器"]},
   {category: "ADVANCED_MANUFACTURING_MATERIALS", label: "先进制造与材料", keywords: ["先进制造", "智能制造", "制造", "材料", "化工", "3d打印", "三维测量", "精密", "复合材料"]},
 ];
 

@@ -41,8 +41,46 @@ const urlOverrides: Record<string, string> = {
   "Soctera（美）": "https://www.soctera.com/post/soctera-raises-4-million-to-break-the-thermal-ceiling-of-defense-and-space-systems",
 };
 
+const businessOverrides: Record<string, string> = {
+  "基元律动": "AI基础设施，提供开源Agent、模型API、智能路由与协同能力",
+  "Soctera（美）": "研发高效功率放大器，提升高可靠无线系统的信号覆盖、保真度与热性能",
+};
+const investorOverrides: Record<string, string> = {
+  "基元律动": "弘晖基金领投，聚合资本、尚势资本参投",
+  "Soctera（美）": "Anorak Ventures、Multiball Capital，9Yards Capital、Mana Ventures、Red Bear Ventures参投",
+};
+const roundOverrides: Record<string, string> = {"基元律动": "新一轮"};
+const amountOverrides: Record<string, string> = {"基元律动": "数千万美元"};
+const productOverrides: Record<string, string[]> = {
+  "小鹏机器人（鹏行智能）": ["IRON人形机器人"],
+  "涌泉创新（ToolDance）": ["ToolDance X1桌面CNC设备"],
+  "穿越者（载人航天）": ["穿越者壹号亚轨道飞船"],
+  "食铁兽科技（PANDAG）": ["PANDAG G1割草机器人"],
+  "脑器时代": ["全能一号运动BCI"],
+  "Stability AI": ["Stable Diffusion"],
+  "灵御智能": ["TA系列轮式夹爪机器人"],
+  "晰见科技": ["天眸类脑视觉芯片"],
+  "上海次元模因科技": ["Popi AI"],
+  "松应科技": ["ORCA OS"],
+  "迈之健医疗": ["HEALTH-AMS全屋智能体征系统"],
+  "Soctera": ["功率放大器"],
+  "基元律动": ["TokenRhythm API平台"],
+};
+
 function cleanCompany(value: string): string {
   return value.replace(/（(?:英|美|匈|印)）$/, "").trim();
+}
+
+function regionFromCompany(value: string): "CHINA" | "OVERSEAS" {
+  return /（(?:英|美|匈|印)）$/.test(value) ? "OVERSEAS" : "CHINA";
+}
+
+function fullIntroduction(company: string, business: string, round: string, amount: string, investors: string): string {
+  const financing = amount === "未披露" ? `完成${round}，融资金额未披露` : `完成${round}，融资金额为${amount}`;
+  const investorSummary = /未披露|未完整披露|本轮机构未披露/.test(investors)
+    ? "，投资方未完整披露"
+    : `，披露的投资方包括${investors}`;
+  return `${company}聚焦${business}。公司本次${financing}${investorSummary}。`;
 }
 
 async function main() {
@@ -55,12 +93,20 @@ async function main() {
     const sourceUrl = urlOverrides[company] ?? link;
     if (!sourceUrl || !/^https?:\/\//.test(sourceUrl)) throw new Error(`缺少公开HTTP来源: ${company}`);
     const relevanceTier = p1.has(company) ? "P1" : p2.has(company) ? "P2" : p4.has(company) ? "P4" : "P3";
+    const companyName = cleanCompany(company);
+    const companyBusiness = businessOverrides[company] ?? business;
     return {
-      company: cleanCompany(company), round, amount, investors,
+      company: companyName,
+      round: roundOverrides[company] ?? round,
+      amount: amountOverrides[company] ?? amount,
+      investors: investorOverrides[company] ?? investors,
+      regionScope: regionFromCompany(company),
+      companyBusiness,
+      products: productOverrides[companyName] ?? [],
       sourcesMarkdown: `[来源1](${sourceUrl})`,
       reportDate: `2026-${date.replace("/", "-").padStart(5, "0")}`,
       sourceUrls: [sourceUrl], relevanceTier,
-      relevanceRationale: business,
+      relevanceRationale: companyBusiness,
       status: "READY_FROM_PROVIDED_SOURCE",
     } as const;
   });
@@ -76,7 +122,7 @@ async function main() {
   };
   const sections = (["P1", "P2"] as const).map((tier) => {
     const entries = included.filter((event) => event.relevanceTier === tier)
-      .map((event) => `### ${event.company}（${tier}）\n\n${event.relevanceRationale} ${event.sourcesMarkdown}`)
+      .map((event) => `### ${event.company}（${tier}）\n\n${fullIntroduction(event.company, event.companyBusiness, event.round, event.amount, event.investors)} ${event.sourcesMarkdown}`)
       .join("\n\n");
     return `## ${tier}\n\n${entries}`;
   });
