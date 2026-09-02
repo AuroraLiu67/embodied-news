@@ -46,6 +46,7 @@ const p2 = new Set([
   "晰见科技", "沐创", "光联芯科", "全脑芯科", "元启半导体", "鸣石峻致",
 ]);
 const p4 = new Set(["BOOKR（匈）", "呈白", "Primit", "Unrivaled（美）", "Rox（美）", "Yardstik（美）", "Owner（美）"]);
+const dateConflicts = new Set(["瑞阳生物制药"]);
 
 const urlOverrides: Record<string, string> = {
   "Embedd（英）": "https://techfundingnews.com/seedcamp-leads-2-7m-round-for-ukrainian-founded-physical-ai-startup-embedd/",
@@ -141,13 +142,16 @@ async function main() {
   });
   const distribution = {P1: 0, P2: 0, P3: 0, P4: 0};
   for (const event of events) distribution[event.relevanceTier] += 1;
-  const included = events.filter((event) => event.relevanceTier !== "P4");
+  const included = events.filter((event) => event.relevanceTier !== "P4" && !dateConflicts.has(event.company));
   const excluded = events.filter((event) => event.relevanceTier === "P4");
+  const excludedDateConflicts = events.filter((event) => dateConflicts.has(event.company));
   const ready = {
     schemaVersion: "1.0.0", batch: "2026-08-24-to-2026-08-30",
     generatedAt: "2026-09-01T12:00:00+08:00", inputEventCount: events.length,
     websiteReadyEventCount: included.length, excludedP4Count: excluded.length,
+    excludedDateConflictCount: excludedDateConflicts.length,
     relevanceDistribution: distribution, events: included, excludedP4: excluded,
+    excludedDateConflicts,
   };
   const sections = (["P1", "P2"] as const).map((tier) => {
     const entries = included.filter((event) => event.relevanceTier === tier)
@@ -158,7 +162,7 @@ async function main() {
   await writeFile(OUTPUT_JSON, `${JSON.stringify(ready, null, 2)}\n`, "utf8");
   await writeFile(OUTPUT_AMOUNT_SUMMARY, `${JSON.stringify(amountSummary, null, 2)}\n`, "utf8");
   await writeFile(OUTPUT_MD, `# 2026-08-24—2026-08-30 网站发布准备\n\n${amountSummaryMarkdown()}\n\n${sections.join("\n\n")}\n\n## P3 明细\n`, "utf8");
-  process.stdout.write(`${JSON.stringify({input: events.length, public: included.length, ...distribution})}\n`);
+  process.stdout.write(`${JSON.stringify({input: events.length, public: included.length, excludedDateConflict: excludedDateConflicts.length, ...distribution})}\n`);
 }
 
 void main();

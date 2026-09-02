@@ -221,10 +221,15 @@ h1 {
 .tier-bars > div > div { height: 12px; overflow: hidden; border-radius: 999px; background: #e3e7e2; }
 .tier-bars i { display: block; height: 100%; border-radius: inherit; background: #2f6b49; }
 .dashboard-ranking { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
-.dashboard-ranking li { display: grid; grid-template-columns: 28px minmax(120px, 1fr) auto; gap: 5px 12px; padding: 10px 0; border-bottom: 1px solid #e0e4df; }
-.dashboard-ranking li > span { grid-row: 1 / span 2; color: #7a857d; font-variant-numeric: tabular-nums; }
-.dashboard-ranking b { color: #1e5335; }
-.dashboard-ranking small { grid-column: 2 / 4; color: #707b73; }
+.dashboard-ranking li { display: grid; grid-template-columns: 28px minmax(150px, 0.85fr) minmax(180px, 1.15fr); align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid #e0e4df; }
+.dashboard-ranking li > span { color: #7a857d; font-variant-numeric: tabular-nums; }
+.dashboard-ranking-name { display: grid; gap: 4px; min-width: 0; }
+.dashboard-ranking-name strong { overflow-wrap: anywhere; }
+.dashboard-ranking small { color: #707b73; }
+.dashboard-ranking-measure { display: grid; gap: 5px; text-align: right; }
+.dashboard-ranking-measure b { color: #1e5335; }
+.dashboard-ranking-measure > div { height: 10px; overflow: hidden; border-radius: 999px; background: #e3e7e2; }
+.dashboard-ranking-measure i { display: block; height: 100%; min-width: 2px; border-radius: inherit; background: #2f6b49; transition: width 180ms ease; }
 .dashboard-source { margin: 16px 0 0; color: #6d7971; font-size: 0.72rem; }
 .dashboard-source a, .dashboard-table-frame a { color: #20563a; font-weight: 750; }
 .dashboard-detail { padding-top: 64px; }
@@ -274,6 +279,8 @@ h1 {
   .dashboard-filters { grid-template-columns: 1fr; }
   .dashboard-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .dashboard-grid { grid-template-columns: 1fr; }
+  .dashboard-ranking li { grid-template-columns: 24px minmax(0, 1fr); }
+  .dashboard-ranking-measure { grid-column: 2; text-align: left; }
   .amount-highlight, .tier-guide { padding: 20px; }
   .tier-guide-heading { align-items: flex-start; }
   .p3-table-frame { border: 0; background: transparent; box-shadow: none; }

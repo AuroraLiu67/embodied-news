@@ -7,6 +7,7 @@ import currentProjection from "../public/data/weekly/2026-08-24.json";
 import previousProjection from "../public/data/weekly/2026-08-17.json";
 import archivedProjection from "../public/data/weekly/2026-08-10.json";
 import {archivedWeeklyReport, currentAmountSummary, currentWeeklyReport, firstArchivedWeeklyReport, formatPrimaryInvestors, previousWeeklyReport, WEEKLY_PREVIEW_P1_COUNT, WEEKLY_PREVIEW_P2_COUNT, WEEKLY_PREVIEW_P3_COUNT, weeklyPreviewHighlight, weeklyPreviewSample} from "../lib/site/weekly-preview";
+import {buildDomesticRanking, type DashboardRow} from "../app/dashboard/dashboard-client";
 
 describe("site metadata", () => {
   it("provides the minimum homepage content", () => {
@@ -16,12 +17,33 @@ describe("site metadata", () => {
   });
 });
 
+describe("dashboard domestic ranking", () => {
+  const row = (overrides: Partial<DashboardRow>): DashboardRow => ({
+    id: "base", weekStart: "2026-08-24", weekLabel: "08.24—08.30", company: "测试公司", tier: "P1",
+    region: "CHINA", round: "A轮", amount: "1亿元", currency: "CNY", financingStatus: "已完成",
+    investors: "未披露", business: "测试业务", sourceUrl: "https://example.com/source", ...overrides,
+  });
+
+  it("switches ranking by week and uses only the primary financing amount", () => {
+    const rows = [
+      row({id: "xpeng", company: "小鹏机器人", amount: "超9亿美元（投后估值超63亿美元）", currency: "USD"}),
+      row({id: "light", company: "光联芯科", amount: "近10亿元（估值超10亿美元）", currency: "USD"}),
+      row({id: "laihua", weekStart: "2026-08-10", company: "来画", amount: "6800万元；投后估值约37亿元"}),
+      row({id: "intent", weekStart: "2026-08-10", company: "意向公司", amount: "拟融资15亿元", financingStatus: "进行中"}),
+    ];
+    const rates = currentAmountSummary.currencyNormalization;
+    expect(buildDomesticRanking(rows, "2026-08-24", rates).map((item) => item.company)).toEqual(["小鹏机器人", "光联芯科"]);
+    expect(buildDomesticRanking(rows, "2026-08-10", rates).map((item) => [item.company, item.normalizedAmount])).toEqual([["来画", "0.68亿元"]]);
+  });
+});
+
 describe("weekly preview sample", () => {
   it("uses the reviewed weekly-ready events for the 08-24 to 08-30 issue", () => {
     expect(currentWeeklyReport.weekStart).toBe("2026-08-24");
     expect(currentWeeklyReport.weekEnd).toBe("2026-08-30");
-    expect(currentWeeklyReport.counts).toEqual({original: 76, excludedP4: 7, public: 69, P1: 21, P2: 26, P3: 22});
-    expect(currentWeeklyReport.events).toHaveLength(69);
+    expect(currentWeeklyReport.counts).toEqual({original: 75, excludedP4: 7, public: 68, P1: 21, P2: 26, P3: 21});
+    expect(currentWeeklyReport.events).toHaveLength(68);
+    expect(currentWeeklyReport.events.some((event) => event.companyDisplayName === "瑞阳生物制药")).toBe(false);
     expect(currentWeeklyReport.events.map((event) => event.companyDisplayName)).toEqual(
       currentProjection.events.map((event) => event.companyDisplayName),
     );
@@ -41,6 +63,8 @@ describe("weekly preview sample", () => {
     expect(previousWeeklyReport.weekStart).toBe("2026-08-17");
     expect(previousWeeklyReport.weekEnd).toBe("2026-08-23");
     expect(previousWeeklyReport.counts).toEqual({original: 72, excludedP4: 4, public: 68, P1: 13, P2: 20, P3: 35});
+    expect(previousWeeklyReport.events.filter((event) => event.regionScope === "CHINA")).toHaveLength(63);
+    expect(previousWeeklyReport.events.filter((event) => event.regionScope === "OVERSEAS")).toHaveLength(5);
     expect(previousWeeklyReport.events.map((event) => event.companyDisplayName)).toEqual(previousProjection.events.map((event) => event.companyDisplayName));
     expect(archivedWeeklyReport.weekStart).toBe("2026-08-10");
     expect(archivedWeeklyReport.counts).toEqual({original: 67, excludedP4: 0, public: 67, P1: 15, P2: 21, P3: 31});
@@ -79,8 +103,11 @@ describe("weekly preview sample", () => {
     expect(dashboardSource).toContain("setTier");
     expect(dashboardSource).toContain("setRegion");
     expect(dashboardSource).toContain("国内单轮融资 TOP 10");
+    expect(dashboardSource).toContain("buildDomesticRanking(rows, week");
+    expect(dashboardSource).toContain("item.cnyAmount / rankingMaximum");
+    expect(dashboardSource).toContain("榜单随周次切换");
     expect(dashboardPageSource).toContain("reports.flatMap(toRows)");
-    expect(currentWeeklyReport.events.length + previousWeeklyReport.events.length + archivedWeeklyReport.events.length + firstArchivedWeeklyReport.events.length).toBe(286);
+    expect(currentWeeklyReport.events.length + previousWeeklyReport.events.length + archivedWeeklyReport.events.length + firstArchivedWeeklyReport.events.length).toBe(285);
   });
   it("selects all 18 P1 events in their existing public projection order", () => {
     const projectedP1Names = weeklyProjection.events

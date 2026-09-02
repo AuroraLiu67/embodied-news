@@ -30,6 +30,7 @@ function toPreviewCard(event: WeeklyPreviewData["events"][number], requireIntrod
     round: event.round,
     financingStatus: event.financingStatus,
     amount: event.amount,
+    currency: event.currency,
     regionScope: event.regionScope,
     leadInvestors: event.leadInvestors,
     followInvestors: event.followInvestors,
