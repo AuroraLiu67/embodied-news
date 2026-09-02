@@ -73,6 +73,7 @@ export function WeeklyReportPage({report}: {report: WeeklyPreviewReport}) {
     scopeNote: `按${currentAmountSummary.currencyNormalization.rateDate}人民币汇率中间价折算；累计融资与多轮合计另列`,
   };
   return <main>
+    <nav className="site-tabs" aria-label="网站栏目"><a href={staticWeekHref("/")} aria-current="page">周报</a><a href={staticWeekHref("/dashboard")}>融资数据面板</a></nav>
     <nav className="week-switcher" aria-label="周报版本">{weekOptions.map((week) => <a key={week.weekStart} href={staticWeekHref(week.href)} aria-current={report.weekStart === week.weekStart ? "page" : undefined}>{week.label}</a>)}</nav>
     <header className="report-header"><div className="preview-line"><span className="preview-badge">{isArchive ? "历史周报" : "本周预览"} · {counts.public}条</span><span>非飞书正式发布</span></div>
       <p className="eyebrow">EMBODIED INTELLIGENCE · WEEKLY BRIEF</p><h1>具身智能公司动态周报</h1><p className="issue-date">{displayWeek(report.weekStart, report.weekEnd)}</p>
@@ -82,7 +83,7 @@ export function WeeklyReportPage({report}: {report: WeeklyPreviewReport}) {
         <section className="tier-guide"><div className="tier-guide-heading"><p>相关度分层依据</p><h2>P1 / P2 / P3</h2></div><dl><div><dt>P1</dt><dd>具身智能直接相关：机器人本体、全栈机器人、VLA、世界模型、机器人基础模型与学习控制平台。</dd></div><div><dt>P2</dt><dd>关键上下游或强相关技术：机器人核心部件、感知与执行、仿真和数据、Physical AI，以及泛 AI 与自动驾驶。</dd></div><div><dt>P3</dt><dd>具备技术壁垒、但与具身智能暂无明确直接联系的其他硬科技，包括半导体、材料、航天、能源、量子与生物医药。</dd></div></dl><p className="tier-note">P1–P3 表示与具身智能主题的相关程度，不代表融资金额、公司质量或投资建议。</p></section></div>
       <p className="sample-note">周报收录 {events.length} 条：P1 {counts.P1}、P2 {counts.P2}、P3 {counts.P3}。</p></header>
     {!isArchive && <section className="amount-ranking" aria-labelledby="amount-ranking-title">
-      <div className="section-heading"><p>DISCLOSED FUNDING · CNY NORMALIZED</p><h2 id="amount-ranking-title">本周单轮融资额 TOP 10</h2></div>
+      <div className="section-heading"><p>CHINA · DISCLOSED FUNDING · CNY NORMALIZED</p><h2 id="amount-ranking-title">本周国内公司单轮融资额 TOP 10</h2></div>
       <p className="amount-ranking-note">按 {currentAmountSummary.currencyNormalization.rateDate} 人民币汇率中间价折算：1美元={currentAmountSummary.currencyNormalization.usdToCny}元，1欧元={currentAmountSummary.currencyNormalization.eurToCny}元。{currentAmountSummary.currencyNormalization.note} <a href={currentAmountSummary.currencyNormalization.sourceUrl} target="_blank" rel="noopener noreferrer">汇率来源</a></p>
       <div className="amount-ranking-frame"><table><thead><tr><th>排名</th><th>公司</th><th>原始金额</th><th>折合人民币</th><th>口径</th></tr></thead><tbody>{currentAmountSummary.singleRoundRanking.map((item) => <tr key={item.company}><td>{item.rank}</td><th scope="row">{item.company}</th><td>{item.originalAmount}</td><td><strong>{item.normalizedAmount}</strong></td><td>{item.basis}</td></tr>)}</tbody></table></div>
       <div className="cumulative-disclosures"><h3>累计融资 / 多轮合计</h3><p>以下不与单轮融资混排。</p><ul>{currentAmountSummary.cumulativeFundingDisclosures.map((item) => <li key={item.company}><strong>{item.company}</strong><span>{item.amount}</span><small>{item.basis}</small></li>)}</ul></div>
