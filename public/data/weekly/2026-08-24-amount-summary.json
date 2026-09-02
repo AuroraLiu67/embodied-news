@@ -20,66 +20,66 @@
     },
     {
       "rank": 2,
-      "company": "Groq",
-      "originalAmount": "3.5亿美元",
-      "normalizedAmount": "约23.73亿元",
-      "basis": "本轮融资"
-    },
-    {
-      "rank": 3,
       "company": "曦望Sunrise",
       "originalAmount": "20亿元",
       "normalizedAmount": "20亿元",
       "basis": "本轮股权融资"
     },
     {
-      "rank": 4,
-      "company": "Wispr AI",
-      "originalAmount": "2.8亿美元",
-      "normalizedAmount": "约18.99亿元",
-      "basis": "B轮"
-    },
-    {
-      "rank": 5,
-      "company": "Muon Space",
-      "originalAmount": "2.5亿美元",
-      "normalizedAmount": "约16.95亿元",
-      "basis": "C轮"
-    },
-    {
-      "rank": 6,
+      "rank": 3,
       "company": "研微半导体",
       "originalAmount": "近15亿元",
       "normalizedAmount": "近15亿元",
       "basis": "B轮"
     },
     {
-      "rank": 7,
-      "company": "Emerald AI",
-      "originalAmount": "1.5亿美元",
-      "normalizedAmount": "约10.17亿元",
-      "basis": "A轮"
+      "rank": 4,
+      "company": "光联芯科",
+      "originalAmount": "近10亿元",
+      "normalizedAmount": "近10亿元",
+      "basis": "A+轮"
     },
     {
-      "rank": 8,
+      "rank": 5,
       "company": "浩博医药",
       "originalAmount": "1.2亿美元",
       "normalizedAmount": "约8.14亿元",
       "basis": "C轮"
     },
     {
-      "rank": 9,
-      "company": "Velaura AI",
-      "originalAmount": "1.1亿美元",
-      "normalizedAmount": "约7.46亿元",
-      "basis": "A轮"
-    },
-    {
-      "rank": 10,
+      "rank": 6,
       "company": "灵初智能",
       "originalAmount": "超1亿美元",
       "normalizedAmount": "超6.78亿元",
       "basis": "A轮；保守口径"
+    },
+    {
+      "rank": 7,
+      "company": "洛阳LYC轴承",
+      "originalAmount": "6.65亿元",
+      "normalizedAmount": "6.65亿元",
+      "basis": "战略投资"
+    },
+    {
+      "rank": 8,
+      "company": "基元律动",
+      "originalAmount": "数千万美元",
+      "normalizedAmount": "约1.36亿元起",
+      "basis": "新一轮；按2000万美元下限折算"
+    },
+    {
+      "rank": 9,
+      "company": "艾联纳医药（ALLYRNA）",
+      "originalAmount": "超亿元",
+      "normalizedAmount": "超1亿元",
+      "basis": "种子+轮"
+    },
+    {
+      "rank": 10,
+      "company": "材科源图（MatSource）",
+      "originalAmount": "超亿元",
+      "normalizedAmount": "超1亿元",
+      "basis": "连续两轮；同量级按公开投影顺序"
     }
   ],
   "cumulativeFundingDisclosures": [

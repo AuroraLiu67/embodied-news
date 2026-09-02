@@ -66,10 +66,21 @@ describe("weekly preview sample", () => {
     expect(currentAmountSummary.singleRoundRanking).toHaveLength(10);
     expect(currentAmountSummary.singleRoundRanking.map((item) => item.rank)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
     expect(currentAmountSummary.singleRoundRanking.every((item) => publishedCompanies.has(item.company))).toBe(true);
-    expect(currentAmountSummary.singleRoundRanking.map((item) => item.company)).not.toContain("Owner");
-    expect(currentAmountSummary.singleRoundRanking.map((item) => item.company)).not.toContain("快造科技（Snapmaker）");
+    expect(currentAmountSummary.singleRoundRanking.every((item) => currentWeeklyReport.events.find((event) => event.companyDisplayName === item.company)?.regionScope === "CHINA")).toBe(true);
     expect(currentAmountSummary.cumulativeFundingDisclosures.map((item) => item.company)).toContain("Sharpa");
     expect(currentAmountSummary.currencyNormalization).toMatchObject({rateDate: "2026-08-28", usdToCny: 6.7811, eurToCny: 7.8683});
+  });
+
+  it("provides an interactive dashboard route over all four public editions", () => {
+    const dashboardSource = readFileSync("app/dashboard/dashboard-client.tsx", "utf8");
+    const dashboardPageSource = readFileSync("app/dashboard/page.tsx", "utf8");
+    expect(dashboardSource).toContain('"use client"');
+    expect(dashboardSource).toContain("setWeek");
+    expect(dashboardSource).toContain("setTier");
+    expect(dashboardSource).toContain("setRegion");
+    expect(dashboardSource).toContain("国内单轮融资 TOP 10");
+    expect(dashboardPageSource).toContain("reports.flatMap(toRows)");
+    expect(currentWeeklyReport.events.length + previousWeeklyReport.events.length + archivedWeeklyReport.events.length + firstArchivedWeeklyReport.events.length).toBe(286);
   });
   it("selects all 18 P1 events in their existing public projection order", () => {
     const projectedP1Names = weeklyProjection.events
