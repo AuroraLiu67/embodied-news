@@ -15,6 +15,8 @@ function toRows(report: WeeklyPreviewReport): DashboardRow[] {
     region: event.regionScope,
     round: event.round,
     amount: event.amount,
+    currency: event.currency,
+    financingStatus: event.financingStatus,
     investors: formatPrimaryInvestors(event),
     business: (event.introduction ?? event.businessLabel ?? event.products.join("、")) || "未披露",
     sourceUrl: event.sources[0]!.url,

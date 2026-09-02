@@ -3,8 +3,9 @@
   "batch": "2026-08-24-to-2026-08-30",
   "generatedAt": "2026-09-01T12:00:00+08:00",
   "inputEventCount": 76,
-  "websiteReadyEventCount": 69,
+  "websiteReadyEventCount": 68,
   "excludedP4Count": 7,
+  "excludedDateConflictCount": 1,
   "relevanceDistribution": {
     "P1": 21,
     "P2": 26,
@@ -951,23 +952,6 @@
       "status": "READY_FROM_PROVIDED_SOURCE"
     },
     {
-      "company": "瑞阳生物制药",
-      "round": "A轮（工商披露）",
-      "amount": "未披露",
-      "investors": "先声药业、星禹投资、山东鲁中控股",
-      "regionScope": "CHINA",
-      "companyBusiness": "抗体类生物大分子（山东）",
-      "products": [],
-      "sourcesMarkdown": "[来源1](https://www.dahecube.com/article.html?artid=284816)",
-      "reportDate": "2026-08-27",
-      "sourceUrls": [
-        "https://www.dahecube.com/article.html?artid=284816"
-      ],
-      "relevanceTier": "P3",
-      "relevanceRationale": "抗体类生物大分子（山东）",
-      "status": "READY_FROM_PROVIDED_SOURCE"
-    },
-    {
       "company": "Metriport",
       "round": "A轮",
       "amount": "2600万美元",
@@ -1330,6 +1314,25 @@
       ],
       "relevanceTier": "P4",
       "relevanceRationale": "AI餐厅/本地商业运营OS，年化营收超1亿美元",
+      "status": "READY_FROM_PROVIDED_SOURCE"
+    }
+  ],
+  "excludedDateConflicts": [
+    {
+      "company": "瑞阳生物制药",
+      "round": "A轮（工商披露）",
+      "amount": "未披露",
+      "investors": "先声药业、星禹投资、山东鲁中控股",
+      "regionScope": "CHINA",
+      "companyBusiness": "抗体类生物大分子（山东）",
+      "products": [],
+      "sourcesMarkdown": "[来源1](https://www.dahecube.com/article.html?artid=284816)",
+      "reportDate": "2026-08-27",
+      "sourceUrls": [
+        "https://www.dahecube.com/article.html?artid=284816"
+      ],
+      "relevanceTier": "P3",
+      "relevanceRationale": "抗体类生物大分子（山东）",
       "status": "READY_FROM_PROVIDED_SOURCE"
     }
   ]

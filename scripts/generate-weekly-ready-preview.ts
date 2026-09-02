@@ -36,9 +36,11 @@ const readyFileSchema = z.object({
   inputEventCount: z.number().int().nonnegative().max(5_000),
   websiteReadyEventCount: z.number().int().nonnegative().max(5_000),
   excludedP4Count: z.number().int().nonnegative().max(5_000),
+  excludedDateConflictCount: z.number().int().nonnegative().max(5_000).default(0),
   relevanceDistribution: z.object({P1: z.number().int().nonnegative(), P2: z.number().int().nonnegative(), P3: z.number().int().nonnegative(), P4: z.number().int().nonnegative()}).strict(),
   events: z.array(readyEventSchema).max(5_000),
   excludedP4: z.array(readyEventSchema.extend({relevanceTier: z.literal("P4")})).max(5_000),
+  excludedDateConflicts: z.array(readyEventSchema).max(5_000).default([]),
 }).strict();
 
 function parseArguments() {
@@ -130,9 +132,11 @@ async function main() {
   const ready = readyFileSchema.parse(JSON.parse(jsonText) as unknown);
   const introductions = parseIntroductions(markdown);
   const problems: string[] = [];
-  if (ready.inputEventCount !== ready.events.length + ready.excludedP4.length) problems.push("inputEventCount统计不一致");
+  if (ready.inputEventCount !== ready.events.length + ready.excludedP4.length + ready.excludedDateConflicts.length) problems.push("inputEventCount统计不一致");
   if (ready.websiteReadyEventCount !== ready.events.length) problems.push("websiteReadyEventCount统计不一致");
   if (ready.excludedP4Count !== ready.excludedP4.length) problems.push("excludedP4Count统计不一致");
+  if (ready.excludedDateConflictCount !== ready.excludedDateConflicts.length) problems.push("excludedDateConflictCount统计不一致");
+  if (ready.excludedDateConflicts.some((event) => ready.events.some((included) => included.company === event.company))) problems.push("日期冲突事件不得进入公开事件");
   if (new Set(ready.events.map((event) => event.company)).size !== ready.events.length) problems.push("公司事件重复");
   for (const event of ready.events.filter((item) => item.relevanceTier === "P1" || item.relevanceTier === "P2")) {
     if (!introductions.has(event.company)) problems.push(`缺少P1/P2简介: ${event.company}`);
@@ -146,7 +150,7 @@ async function main() {
     businessDates,
     generatedAt: ready.generatedAt,
     inputEventCount: ready.events.length,
-    sourceEventCount: ready.inputEventCount,
+    sourceEventCount: ready.inputEventCount - ready.excludedDateConflictCount,
     excludedP4Count: ready.excludedP4.length,
     events: ready.events.map((event) => {
       const investors = parseInvestors(event.investors);
