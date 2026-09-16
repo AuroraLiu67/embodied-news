@@ -1,8 +1,8 @@
 import {DashboardClient, type DashboardRow} from "./dashboard-client";
 import {loadPublicConfig} from "@/lib/config/public";
-import {archivedWeeklyReport, currentAmountSummary, currentWeeklyReport, firstArchivedWeeklyReport, formatPrimaryInvestors, previousWeeklyReport, type WeeklyPreviewReport} from "@/lib/site/weekly-preview";
+import {archivedWeeklyReport, currentAmountSummary, currentWeeklyReport, firstArchivedWeeklyReport, formatPrimaryInvestors, previousWeeklyReport, secondArchivedWeeklyReport, type WeeklyPreviewReport} from "@/lib/site/weekly-preview";
 
-const reports = [currentWeeklyReport, previousWeeklyReport, archivedWeeklyReport, firstArchivedWeeklyReport];
+const reports = [currentWeeklyReport, previousWeeklyReport, archivedWeeklyReport, secondArchivedWeeklyReport, firstArchivedWeeklyReport];
 
 function toRows(report: WeeklyPreviewReport): DashboardRow[] {
   const weekLabel = `${report.weekStart.slice(5).replace("-", ".")}—${report.weekEnd.slice(5).replace("-", ".")}`;

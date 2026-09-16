@@ -52,7 +52,8 @@ function P3Table({events}: {events: readonly WeeklyPreviewSampleEvent[]}) {
 function displayWeek(start: string, end: string) { return `${start.replaceAll("-", ".")}–${end.slice(5).replace("-", ".")}`; }
 
 const weekOptions = [
-  {weekStart: "2026-08-24", href: "/", label: "本周 · 08.24—08.30"},
+  {weekStart: "2026-08-31", href: "/", label: "本周 · 08.31—09.06"},
+  {weekStart: "2026-08-24", href: "/archive/2026-08-24-to-2026-08-30", label: "往期 · 08.24—08.30"},
   {weekStart: "2026-08-17", href: "/archive/2026-08-17-to-2026-08-23", label: "往期 · 08.17—08.23"},
   {weekStart: "2026-08-10", href: "/archive/2026-08-10-to-2026-08-16", label: "往期 · 08.10—08.16"},
   {weekStart: "2026-08-03", href: "/archive/2026-08-03-to-2026-08-09", label: "往期 · 08.03—08.09"},
@@ -63,14 +64,14 @@ const staticWeekHref = (href: string) => `${siteBasePath}${href}`;
 
 export function WeeklyReportPage({report}: {report: WeeklyPreviewReport}) {
   const {counts, events, p1Events, p2Events, p3Events, highlight} = report;
-  const isArchive = report.weekStart !== "2026-08-24";
+  const isArchive = report.weekStart !== "2026-08-31";
   const headlineAmount = currentAmountSummary.singleRoundRanking[0]!;
   const displayHighlight = isArchive ? highlight : {
     company: headlineAmount.company,
     amount: headlineAmount.normalizedAmount,
     event: headlineAmount.basis,
-    status: "单轮融资额第一",
-    scopeNote: `按${currentAmountSummary.currencyNormalization.rateDate}人民币汇率中间价折算；累计融资与多轮合计另列`,
+    status: "国内单轮融资额第一",
+    scopeNote: `按${currentAmountSummary.currencyNormalization.rateDate}人民币汇率中间价折算；仅比较中国公司合规单轮股权融资`,
   };
   return <main>
     <nav className="site-tabs" aria-label="网站栏目"><a href={staticWeekHref("/")} aria-current="page">周报</a><a href={staticWeekHref("/dashboard")}>融资数据面板</a></nav>
@@ -83,10 +84,10 @@ export function WeeklyReportPage({report}: {report: WeeklyPreviewReport}) {
         <section className="tier-guide"><div className="tier-guide-heading"><p>相关度分层依据</p><h2>P1 / P2 / P3</h2></div><dl><div><dt>P1</dt><dd>具身智能直接相关：机器人本体、全栈机器人、VLA、世界模型、机器人基础模型与学习控制平台。</dd></div><div><dt>P2</dt><dd>关键上下游或强相关技术：机器人核心部件、感知与执行、仿真和数据、Physical AI，以及泛 AI 与自动驾驶。</dd></div><div><dt>P3</dt><dd>具备技术壁垒、但与具身智能暂无明确直接联系的其他硬科技，包括半导体、材料、航天、能源、量子与生物医药。</dd></div></dl><p className="tier-note">P1–P3 表示与具身智能主题的相关程度，不代表融资金额、公司质量或投资建议。</p></section></div>
       <p className="sample-note">周报收录 {events.length} 条：P1 {counts.P1}、P2 {counts.P2}、P3 {counts.P3}。</p></header>
     {!isArchive && <section className="amount-ranking" aria-labelledby="amount-ranking-title">
-      <div className="section-heading"><p>CHINA · DISCLOSED FUNDING · CNY NORMALIZED</p><h2 id="amount-ranking-title">本周国内公司单轮融资额 TOP 10</h2></div>
-      <p className="amount-ranking-note">按 {currentAmountSummary.currencyNormalization.rateDate} 人民币汇率中间价折算：1美元={currentAmountSummary.currencyNormalization.usdToCny}元，1欧元={currentAmountSummary.currencyNormalization.eurToCny}元。{currentAmountSummary.currencyNormalization.note} <a href={currentAmountSummary.currencyNormalization.sourceUrl} target="_blank" rel="noopener noreferrer">汇率来源</a></p>
-      <div className="amount-ranking-frame"><table><thead><tr><th>排名</th><th>公司</th><th>原始金额</th><th>折合人民币</th><th>口径</th></tr></thead><tbody>{currentAmountSummary.singleRoundRanking.map((item) => <tr key={item.company}><td>{item.rank}</td><th scope="row">{item.company}</th><td>{item.originalAmount}</td><td><strong>{item.normalizedAmount}</strong></td><td>{item.basis}</td></tr>)}</tbody></table></div>
-      <div className="cumulative-disclosures"><h3>累计融资 / 多轮合计</h3><p>以下不与单轮融资混排。</p><ul>{currentAmountSummary.cumulativeFundingDisclosures.map((item) => <li key={item.company}><strong>{item.company}</strong><span>{item.amount}</span><small>{item.basis}</small></li>)}</ul></div>
+      <div className="section-heading"><p>CHINA · SINGLE ROUND · CNY NORMALIZED</p><h2 id="amount-ranking-title">本周国内公司单轮融资额 TOP 10</h2></div>
+      <p className="amount-ranking-note">{currentAmountSummary.rankingMethodNote} 按 {currentAmountSummary.currencyNormalization.rateDate} 人民币汇率中间价折算：1美元={currentAmountSummary.currencyNormalization.usdToCny}元，1欧元={currentAmountSummary.currencyNormalization.eurToCny}元。{currentAmountSummary.currencyNormalization.note} <a href={currentAmountSummary.currencyNormalization.sourceUrl} target="_blank" rel="noopener noreferrer">汇率来源</a></p>
+      <div className="amount-ranking-frame"><table><thead><tr><th>排名</th><th>公司</th><th>原始金额</th><th>折合人民币</th><th>口径</th></tr></thead><tbody>{currentAmountSummary.singleRoundRanking.map((item) => <tr key={item.company}><td>{item.rank}</td><th scope="row">{item.company}</th><td>{item.originalAmount}</td><td><strong>{item.normalizedAmount}</strong></td><td>{item.basis}<br /><small>{item.note}</small></td></tr>)}</tbody></table></div>
+      {currentAmountSummary.cumulativeFundingDisclosures.length > 0 && <div className="cumulative-disclosures"><h3>累计融资补充披露</h3><p>以下不与主榜单混排。</p><ul>{currentAmountSummary.cumulativeFundingDisclosures.map((item) => <li key={item.company}><strong>{item.company}</strong><span>{item.amount}</span><small>{item.basis}</small></li>)}</ul></div>}
     </section>}
     <section className="events"><div className="section-heading"><p>P1 · DIRECTLY RELEVANT</p><h2>具身智能重点融资</h2></div>{p1Events.map((event, index) => <EventCard key={event.companyDisplayName} event={event} index={index} section="p1" />)}</section>
     <section className="events"><div className="section-heading"><p>P2 · ADJACENT TECHNOLOGY</p><h2>核心上下游与相邻技术</h2></div>{p2Events.map((event, index) => <EventCard key={event.companyDisplayName} event={event} index={index} section="p2" />)}</section>
