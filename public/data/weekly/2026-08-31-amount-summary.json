@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0.0",
+  "weekStart": "2026-08-31",
+  "weekEnd": "2026-09-06",
+  "currencyNormalization": {
+    "rateDate": "2026-09-04",
+    "usdToCny": 6.7787,
+    "eurToCny": 7.8397,
+    "sourceName": "中国外汇交易中心（商务部转载）",
+    "sourceUrl": "https://hzf.mofcom.gov.cn/article/zyfw/jrfw/jrfwywzn/jrfwwh/hlfxglzy/202609/7872.html",
+    "note": "折算值仅用于国内单轮融资横向比较，保留约、超、近等原始限定词。"
+  },
+  "rankingMethodNote": "仅列CHINA单次股权融资。排除海外、累计融资、多轮合计、债务、基金、并购、未交割、IPO及定增。‘数亿元’无法确定上下界的事件未强行纳入精确排名；同为‘超1亿元/亿元级’者仅按披露强度列示，不代表精确金额先后。",
+  "singleRoundRanking": [
+    {
+      "rank": 1,
+      "company": "可灵AI",
+      "originalAmount": "15.31亿元",
+      "normalizedAmount": "15.31亿元",
+      "basis": "A+轮增资",
+      "note": "本次增资金额；不是A+轮完整总额。"
+    },
+    {
+      "rank": 2,
+      "company": "氦星光联",
+      "originalAmount": "超5亿元",
+      "normalizedAmount": "超5亿元",
+      "basis": "A2轮",
+      "note": "单轮下限口径。"
+    },
+    {
+      "rank": 3,
+      "company": "科塞尔医疗",
+      "originalAmount": "4亿元",
+      "normalizedAmount": "4亿元",
+      "basis": "C轮",
+      "note": "明确单轮金额。"
+    },
+    {
+      "rank": 4,
+      "company": "先博生物 Simnova",
+      "originalAmount": "近4亿元",
+      "normalizedAmount": "近4亿元",
+      "basis": "B轮",
+      "note": "明确单轮近似金额。"
+    },
+    {
+      "rank": 5,
+      "company": "ACE时域科技",
+      "originalAmount": "4000万美元",
+      "normalizedAmount": "约2.71亿元",
+      "basis": "Pre-B轮",
+      "note": "按1美元=6.7787元折算。"
+    },
+    {
+      "rank": 6,
+      "company": "沃生医药",
+      "originalAmount": "1500万美元",
+      "normalizedAmount": "约1.02亿元",
+      "basis": "Seed+轮",
+      "note": "按1美元=6.7787元折算。"
+    },
+    {
+      "rank": 7,
+      "company": "览翌航空",
+      "originalAmount": "超1亿元",
+      "normalizedAmount": "超1亿元",
+      "basis": "Pre-A轮第三笔",
+      "note": "单笔融资下限。"
+    },
+    {
+      "rank": 8,
+      "company": "麦得发 MedPHA",
+      "originalAmount": "超1亿元",
+      "normalizedAmount": "超1亿元",
+      "basis": "B轮",
+      "note": "单轮下限；与览翌无法精确比较。"
+    },
+    {
+      "rank": 9,
+      "company": "艾斐智药 AIPher",
+      "originalAmount": "亿元",
+      "normalizedAmount": "约1亿元",
+      "basis": "天使轮",
+      "note": "报道为亿元金额表述。"
+    },
+    {
+      "rank": 10,
+      "company": "弓望传感",
+      "originalAmount": "近亿元",
+      "normalizedAmount": "近1亿元",
+      "basis": "A轮",
+      "note": "与亿元级项目无法精确比较；按保守披露值列示。"
+    }
+  ],
+  "cumulativeFundingDisclosures": [
+    {
+      "company": "Current Robotics（元流）",
+      "amount": "累计数亿元",
+      "basis": "种子轮、天使轮和Pre-A轮累计"
+    },
+    {
+      "company": "蘑菇物联",
+      "amount": "累计近2亿元",
+      "basis": "C1+C2系列融资合计"
+    }
+  ]
+}
