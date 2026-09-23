@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0.0",
+  "weekStart": "2026-09-07",
+  "weekEnd": "2026-09-13",
+  "currencyNormalization": {
+    "rateDate": "2026-09-11",
+    "usdToCny": 6.7743,
+    "eurToCny": 7.8367,
+    "sourceName": "中国外汇交易中心",
+    "sourceUrl": "https://www.chinamoney.org.cn/chinese/ccprnoticecontent/index.html?searchDate=2026-09-11",
+    "note": "折算值仅用于国内单轮融资横向比较，保留约、超、近等原始限定词。"
+  },
+  "rankingMethodNote": "仅统计地域overlay确认为CHINA且金额可严格比较的单次股权融资；排除海外、模糊区间、累计融资、多轮或系列合计、债务、基金、并购、未交割、IPO、定增及再融资。影目科技、星测未来、烨知心、超维动力等累计或多轮披露不进入名次。",
+  "singleRoundRanking": [
+    {
+      "rank": 1,
+      "company": "微纳核芯",
+      "originalAmount": "10亿元",
+      "normalizedAmount": "10亿元",
+      "basis": "C1轮",
+      "note": "人民币单轮股权融资"
+    },
+    {
+      "rank": 2,
+      "company": "费莫一科技 PHYMI",
+      "originalAmount": "近1亿美元",
+      "normalizedAmount": "近6.77亿元",
+      "basis": "种子轮",
+      "note": "按2026-09-11美元中间价折算"
+    },
+    {
+      "rank": 3,
+      "company": "亮亮视野 LLVision",
+      "originalAmount": "超3亿元",
+      "normalizedAmount": "超3亿元",
+      "basis": "C+轮",
+      "note": "人民币单轮股权融资"
+    },
+    {
+      "rank": 4,
+      "company": "矩量光启",
+      "originalAmount": "3亿元",
+      "normalizedAmount": "3亿元",
+      "basis": "天使+轮",
+      "note": "人民币单轮股权融资"
+    },
+    {
+      "rank": 5,
+      "company": "纵苇科技",
+      "originalAmount": "2亿元",
+      "normalizedAmount": "2亿元",
+      "basis": "Pre-C++轮",
+      "note": "人民币单轮股权融资"
+    },
+    {
+      "rank": 6,
+      "company": "赛那德 SENAD",
+      "originalAmount": "近2亿元",
+      "normalizedAmount": "近2亿元",
+      "basis": "C+轮",
+      "note": "人民币单轮股权融资；同量级按Ready顺序"
+    },
+    {
+      "rank": 7,
+      "company": "博格科技",
+      "originalAmount": "近2亿元",
+      "normalizedAmount": "近2亿元",
+      "basis": "B轮",
+      "note": "人民币单轮股权融资；同量级按Ready顺序"
+    },
+    {
+      "rank": 8,
+      "company": "莱檬生物",
+      "originalAmount": "近2亿元",
+      "normalizedAmount": "近2亿元",
+      "basis": "B轮",
+      "note": "人民币单轮股权融资；同量级按Ready顺序"
+    },
+    {
+      "rank": 9,
+      "company": "阿法龙",
+      "originalAmount": "超亿元",
+      "normalizedAmount": "超1亿元",
+      "basis": "B轮",
+      "note": "人民币单轮股权融资；同量级按Ready顺序"
+    },
+    {
+      "rank": 10,
+      "company": "曦融兆波",
+      "originalAmount": "超亿元",
+      "normalizedAmount": "超1亿元",
+      "basis": "A轮",
+      "note": "人民币单轮股权融资；同量级按Ready顺序"
+    }
+  ],
+  "cumulativeFundingDisclosures": [
+    {
+      "company": "影目科技 INMO",
+      "amount": "C轮累计近10亿元",
+      "basis": "C1至C3累计，不作为C3单轮金额"
+    },
+    {
+      "company": "超维动力 Kinetix AI",
+      "amount": "天使+轮系列超5亿元",
+      "basis": "系列披露，不作为单一子轮"
+    },
+    {
+      "company": "烨知心 Yeats.AI",
+      "amount": "成立以来三轮累计近10亿元",
+      "basis": "Pre-A本轮金额未披露"
+    },
+    {
+      "company": "佳量脑科学",
+      "amount": "累计数亿元",
+      "basis": "C轮与D轮累计"
+    },
+    {
+      "company": "旌晟超导",
+      "amount": "近亿元",
+      "basis": "种子轮与天使轮两轮合计"
+    },
+    {
+      "company": "元始智能科技（南通）",
+      "amount": "数千万元",
+      "basis": "Pre-A与Pre-A+两轮合计；非深圳RWKV主体"
+    }
+  ]
+}

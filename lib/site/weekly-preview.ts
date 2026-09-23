@@ -1,9 +1,11 @@
-import currentWeeklyPreview from "../../public/data/weekly/2026-08-31.json";
-import previousWeeklyPreview from "../../public/data/weekly/2026-08-24.json";
-import archivedWeeklyPreview from "../../public/data/weekly/2026-08-17.json";
-import secondArchivedWeeklyPreview from "../../public/data/weekly/2026-08-10.json";
+import currentWeeklyPreview from "../../public/data/weekly/2026-09-07.json";
+import previousWeeklyPreview from "../../public/data/weekly/2026-08-31.json";
+import archivedWeeklyPreview from "../../public/data/weekly/2026-08-24.json";
+import secondArchivedWeeklyPreview from "../../public/data/weekly/2026-08-17.json";
+import thirdArchivedWeeklyPreview from "../../public/data/weekly/2026-08-10.json";
 import firstWeeklyPreview from "../../public/data/weekly/2026-08-03.json";
-import currentAmountSummaryJson from "../../public/data/weekly/2026-08-31-amount-summary.json";
+import currentAmountSummaryJson from "../../public/data/weekly/2026-09-07-amount-summary.json";
+import previousAmountSummaryJson from "../../public/data/weekly/2026-08-31-amount-summary.json";
 import {z} from "zod";
 import {safePublicHttpUrlSchema} from "../domain/schemas/primitives";
 import {parseAmountSortBucket, weeklyPreviewProjectionSchema, type WeeklyPreviewProjection} from "../pipeline/weekly-preview-projection";
@@ -19,6 +21,7 @@ const amountSummarySchema = z.object({
 }).strict();
 
 export const currentAmountSummary = amountSummarySchema.parse(currentAmountSummaryJson);
+export const previousAmountSummary = amountSummarySchema.parse(previousAmountSummaryJson);
 
 function toPreviewCard(event: WeeklyPreviewData["events"][number], requireIntroduction = true) {
   const firstSource = event.sources[0];
@@ -88,6 +91,7 @@ export const currentWeeklyReport = createWeeklyPreviewReport(weeklyPreviewProjec
 export const previousWeeklyReport = createWeeklyPreviewReport(weeklyPreviewProjectionSchema.parse(previousWeeklyPreview));
 export const archivedWeeklyReport = createWeeklyPreviewReport(weeklyPreviewProjectionSchema.parse(archivedWeeklyPreview));
 export const secondArchivedWeeklyReport = createWeeklyPreviewReport(weeklyPreviewProjectionSchema.parse(secondArchivedWeeklyPreview));
+export const thirdArchivedWeeklyReport = createWeeklyPreviewReport(weeklyPreviewProjectionSchema.parse(thirdArchivedWeeklyPreview));
 export const firstArchivedWeeklyReport = createWeeklyPreviewReport(weeklyPreviewProjectionSchema.parse(firstWeeklyPreview));
 export const weeklyPreviewSample = firstArchivedWeeklyReport;
 export const weeklyPreviewHighlight = firstArchivedWeeklyReport.highlight;

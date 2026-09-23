@@ -3,11 +3,12 @@ import {readFileSync} from "node:fs";
 
 import weeklyProjection from "../public/data/weekly/2026-08-03.json";
 import { site } from "../lib/site";
-import currentProjection from "../public/data/weekly/2026-08-31.json";
-import previousProjection from "../public/data/weekly/2026-08-24.json";
-import archivedProjection from "../public/data/weekly/2026-08-17.json";
-import secondArchivedProjection from "../public/data/weekly/2026-08-10.json";
-import {archivedWeeklyReport, createWeeklyPreviewReport, currentAmountSummary, currentWeeklyReport, firstArchivedWeeklyReport, formatPrimaryInvestors, previousWeeklyReport, secondArchivedWeeklyReport, WEEKLY_PREVIEW_P1_COUNT, WEEKLY_PREVIEW_P2_COUNT, WEEKLY_PREVIEW_P3_COUNT, weeklyPreviewHighlight, weeklyPreviewSample} from "../lib/site/weekly-preview";
+import currentProjection from "../public/data/weekly/2026-09-07.json";
+import previousProjection from "../public/data/weekly/2026-08-31.json";
+import archivedProjection from "../public/data/weekly/2026-08-24.json";
+import secondArchivedProjection from "../public/data/weekly/2026-08-17.json";
+import thirdArchivedProjection from "../public/data/weekly/2026-08-10.json";
+import {archivedWeeklyReport, createWeeklyPreviewReport, currentAmountSummary, currentWeeklyReport, firstArchivedWeeklyReport, formatPrimaryInvestors, previousAmountSummary, previousWeeklyReport, secondArchivedWeeklyReport, thirdArchivedWeeklyReport, WEEKLY_PREVIEW_P1_COUNT, WEEKLY_PREVIEW_P2_COUNT, WEEKLY_PREVIEW_P3_COUNT, weeklyPreviewHighlight, weeklyPreviewSample} from "../lib/site/weekly-preview";
 import {weeklyPreviewProjectionSchema} from "../lib/pipeline/weekly-preview-projection";
 import {buildDomesticRanking, type DashboardRow} from "../app/dashboard/dashboard-client";
 
@@ -40,46 +41,51 @@ describe("dashboard domestic ranking", () => {
 });
 
 describe("weekly preview sample", () => {
-  it("uses the reviewed weekly-ready events for the 08-31 to 09-06 issue", () => {
-    expect(currentWeeklyReport.weekStart).toBe("2026-08-31");
-    expect(currentWeeklyReport.weekEnd).toBe("2026-09-06");
-    expect(currentWeeklyReport.counts).toEqual({original: 58, excludedP4: 0, public: 58, P1: 12, P2: 29, P3: 17});
-    expect(currentWeeklyReport.events).toHaveLength(58);
+  it("uses the reviewed weekly-ready events for the 09-07 to 09-13 issue", () => {
+    expect(currentWeeklyReport.weekStart).toBe("2026-09-07");
+    expect(currentWeeklyReport.weekEnd).toBe("2026-09-13");
+    expect(currentWeeklyReport.counts).toEqual({original: 64, excludedP4: 0, public: 64, P1: 19, P2: 25, P3: 20});
+    expect(currentWeeklyReport.events).toHaveLength(64);
     const projectedDisplayOrder = (["P1", "P2", "P3"] as const).flatMap((tier) =>
       currentProjection.events.filter((event) => event.relevanceTier === tier).map((event) => event.companyDisplayName),
     );
     expect(currentWeeklyReport.events.map((event) => event.companyDisplayName)).toEqual(projectedDisplayOrder);
     expect(currentWeeklyReport.events.every((event) => event.sources.length === 1)).toBe(true);
-    expect(currentWeeklyReport.events.find((event) => event.companyDisplayName === "天工机器人")?.introduction).toMatch(/数亿元融资/);
+    expect(currentWeeklyReport.events.find((event) => event.companyDisplayName === "赛那德 SENAD")?.introduction).toMatch(/近2亿元C\+轮融资/);
+    expect(currentWeeklyReport.events.find((event) => event.companyDisplayName === "元始智能科技（南通）")?.introduction).toMatch(/须与深圳RWKV元始智能区分/);
     expect(currentWeeklyReport.events.every((event) => !event.introduction?.includes("## P"))).toBe(true);
     expect(currentWeeklyReport.events.some((event) => event.relevanceTier === ("P4" as never))).toBe(false);
-    expect(currentWeeklyReport.events.filter((event) => event.regionScope === "CHINA")).toHaveLength(51);
-    expect(currentWeeklyReport.events.filter((event) => event.regionScope === "OVERSEAS")).toHaveLength(7);
+    expect(currentWeeklyReport.events.filter((event) => event.regionScope === "CHINA")).toHaveLength(53);
+    expect(currentWeeklyReport.events.filter((event) => event.regionScope === "OVERSEAS")).toHaveLength(11);
     expect(currentWeeklyReport.events.every((event) => event.regionScope !== null)).toBe(true);
     expect(currentProjection.events.every((event) => Boolean(event.companyBusiness))).toBe(true);
     expect(currentWeeklyReport.events.filter((event) => event.relevanceTier !== "P3").every((event) => Boolean(event.introduction?.trim()))).toBe(true);
     expect(JSON.stringify(currentWeeklyReport.events)).not.toMatch(/fieldEvidence|missingFields|conflicts|accessLimitations|researchStatus|appSecret|tenantAccessToken|P4/);
   });
 
-  it("keeps all four previous issues available as complete archives", () => {
-    expect(previousWeeklyReport.weekStart).toBe("2026-08-24");
-    expect(previousWeeklyReport.weekEnd).toBe("2026-08-30");
-    expect(previousWeeklyReport.counts).toEqual({original: 75, excludedP4: 7, public: 68, P1: 21, P2: 26, P3: 21});
-    expect(previousWeeklyReport.events.map((event) => event.companyDisplayName)).toEqual(previousProjection.events.map((event) => event.companyDisplayName));
-    expect(archivedWeeklyReport.weekStart).toBe("2026-08-17");
-    expect(archivedWeeklyReport.counts).toEqual({original: 72, excludedP4: 4, public: 68, P1: 13, P2: 20, P3: 35});
-    expect(archivedWeeklyReport.events.map((event) => event.companyDisplayName)).toEqual(archivedProjection.events.map((event) => event.companyDisplayName));
-    expect(secondArchivedWeeklyReport.weekStart).toBe("2026-08-10");
-    expect(secondArchivedWeeklyReport.counts).toEqual({original: 67, excludedP4: 0, public: 67, P1: 15, P2: 21, P3: 31});
-    expect(secondArchivedWeeklyReport.events.map((event) => event.companyDisplayName)).toEqual(secondArchivedProjection.events.map((event) => event.companyDisplayName));
+  it("keeps all five previous issues available as complete archives", () => {
+    expect(previousWeeklyReport.weekStart).toBe("2026-08-31");
+    expect(previousWeeklyReport.weekEnd).toBe("2026-09-06");
+    expect(previousWeeklyReport.counts).toEqual({original: 58, excludedP4: 0, public: 58, P1: 12, P2: 29, P3: 17});
+    expect(previousWeeklyReport.events.map((event) => event.companyDisplayName)).toEqual((["P1", "P2", "P3"] as const).flatMap((tier) => previousProjection.events.filter((event) => event.relevanceTier === tier).map((event) => event.companyDisplayName)));
+    expect(archivedWeeklyReport.weekStart).toBe("2026-08-24");
+    expect(archivedWeeklyReport.counts).toEqual({original: 75, excludedP4: 7, public: 68, P1: 21, P2: 26, P3: 21});
+    expect(archivedWeeklyReport.events.map((event) => event.companyDisplayName)).toEqual((["P1", "P2", "P3"] as const).flatMap((tier) => archivedProjection.events.filter((event) => event.relevanceTier === tier).map((event) => event.companyDisplayName)));
+    expect(secondArchivedWeeklyReport.weekStart).toBe("2026-08-17");
+    expect(secondArchivedWeeklyReport.counts).toEqual({original: 72, excludedP4: 4, public: 68, P1: 13, P2: 20, P3: 35});
+    expect(secondArchivedWeeklyReport.events.map((event) => event.companyDisplayName)).toEqual((["P1", "P2", "P3"] as const).flatMap((tier) => secondArchivedProjection.events.filter((event) => event.relevanceTier === tier).map((event) => event.companyDisplayName)));
+    expect(thirdArchivedWeeklyReport.weekStart).toBe("2026-08-10");
+    expect(thirdArchivedWeeklyReport.counts).toEqual({original: 67, excludedP4: 0, public: 67, P1: 15, P2: 21, P3: 31});
+    expect(thirdArchivedWeeklyReport.events.map((event) => event.companyDisplayName)).toEqual((["P1", "P2", "P3"] as const).flatMap((tier) => thirdArchivedProjection.events.filter((event) => event.relevanceTier === tier).map((event) => event.companyDisplayName)));
     expect(firstArchivedWeeklyReport.weekStart).toBe("2026-08-03");
     expect(firstArchivedWeeklyReport.events).toHaveLength(82);
   });
 
   it("binds each recent archive route to its matching report", () => {
-    expect(readFileSync("app/archive/2026-08-24-to-2026-08-30/page.tsx", "utf8")).toContain("report={previousWeeklyReport}");
-    expect(readFileSync("app/archive/2026-08-17-to-2026-08-23/page.tsx", "utf8")).toContain("report={archivedWeeklyReport}");
-    expect(readFileSync("app/archive/2026-08-10-to-2026-08-16/page.tsx", "utf8")).toContain("report={secondArchivedWeeklyReport}");
+    expect(readFileSync("app/archive/2026-08-31-to-2026-09-06/page.tsx", "utf8")).toContain("report={previousWeeklyReport}");
+    expect(readFileSync("app/archive/2026-08-24-to-2026-08-30/page.tsx", "utf8")).toContain("report={archivedWeeklyReport}");
+    expect(readFileSync("app/archive/2026-08-17-to-2026-08-23/page.tsx", "utf8")).toContain("report={secondArchivedWeeklyReport}");
+    expect(readFileSync("app/archive/2026-08-10-to-2026-08-16/page.tsx", "utf8")).toContain("report={thirdArchivedWeeklyReport}");
   });
 
   it("uses document navigation between static weekly editions", () => {
@@ -95,15 +101,16 @@ describe("weekly preview sample", () => {
     expect(currentAmountSummary.singleRoundRanking.map((item) => item.rank)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
     expect(currentAmountSummary.singleRoundRanking.every((item) => publishedCompanies.has(item.company))).toBe(true);
     expect(currentAmountSummary.singleRoundRanking.every((item) => domesticCompanies.has(item.company))).toBe(true);
-    expect(currentAmountSummary.singleRoundRanking[0]).toMatchObject({company: "可灵AI", normalizedAmount: "15.31亿元"});
-    expect(currentAmountSummary.singleRoundRanking.map((item) => item.company)).not.toEqual(expect.arrayContaining(["Crusoe", "Fluidstack", "Wonderful", "Lyte", "iPronics", "Gimlet Labs"]));
-    expect(currentAmountSummary.rankingMethodNote).toMatch(/排除海外、累计融资、多轮合计、债务、基金、并购、未交割、IPO及定增/);
-    expect(currentAmountSummary.cumulativeFundingDisclosures.map((item) => item.company)).toEqual(["Current Robotics（元流）", "蘑菇物联"]);
-    expect(currentAmountSummary.currencyNormalization).toMatchObject({rateDate: "2026-09-04", usdToCny: 6.7787, eurToCny: 7.8397});
+    expect(currentAmountSummary.singleRoundRanking[0]).toMatchObject({company: "微纳核芯", normalizedAmount: "10亿元"});
+    expect(currentAmountSummary.singleRoundRanking.every((item) => !/累计|合计|系列|多轮|两轮|三轮|债务|基金|并购|收购|未交割|IPO|上市|定增/.test(`${item.originalAmount} ${item.basis}`))).toBe(true);
+    expect(currentAmountSummary.singleRoundRanking.map((item) => item.company)).not.toEqual(expect.arrayContaining(["The Boring Company", "Cognition AI", "Motive", "影目科技 INMO", "超维动力 Kinetix AI", "烨知心 Yeats.AI", "元始智能科技（南通）"]));
+    expect(currentAmountSummary.rankingMethodNote).toMatch(/排除海外、模糊区间、累计融资、多轮或系列合计、债务、基金、并购、未交割、IPO、定增及再融资/);
+    expect(currentAmountSummary.cumulativeFundingDisclosures.map((item) => item.company)).toEqual(expect.arrayContaining(["影目科技 INMO", "超维动力 Kinetix AI", "烨知心 Yeats.AI", "佳量脑科学", "旌晟超导", "元始智能科技（南通）"]));
+    expect(currentAmountSummary.currencyNormalization).toMatchObject({rateDate: "2026-09-11", usdToCny: 6.7743, eurToCny: 7.8367});
   });
 
-  it("uses the curated fifth-week domestic ranking and keeps all previous weekly rankings", () => {
-    const reports = [currentWeeklyReport, previousWeeklyReport, archivedWeeklyReport, secondArchivedWeeklyReport, firstArchivedWeeklyReport];
+  it("uses the curated sixth- and fifth-week domestic rankings and keeps all previous weekly rankings", () => {
+    const reports = [currentWeeklyReport, previousWeeklyReport, archivedWeeklyReport, secondArchivedWeeklyReport, thirdArchivedWeeklyReport, firstArchivedWeeklyReport];
     const rows: DashboardRow[] = reports.flatMap((report) => report.events.map((event) => ({
       id: `${report.weekStart}-${event.companyDisplayName}`,
       weekStart: report.weekStart,
@@ -119,18 +126,18 @@ describe("weekly preview sample", () => {
       business: event.introduction ?? event.businessLabel ?? "未披露",
       sourceUrl: event.sources[0]!.url,
     })));
-    const curated = {weekStart: currentAmountSummary.weekStart, singleRoundRanking: currentAmountSummary.singleRoundRanking};
-    const currentRanking = buildDomesticRanking(rows, "2026-08-31", currentAmountSummary.currencyNormalization, curated);
+    const curated = [currentAmountSummary, previousAmountSummary];
+    const currentRanking = buildDomesticRanking(rows, "2026-09-07", currentAmountSummary.currencyNormalization, curated);
     expect(currentRanking).toHaveLength(10);
-    expect(currentRanking[0]?.company).toBe("可灵AI");
+    expect(currentRanking[0]?.company).toBe("微纳核芯");
     expect(currentRanking.every((item) => item.region === "CHINA")).toBe(true);
     expect(currentRanking.map((item) => item.company)).toEqual(currentAmountSummary.singleRoundRanking.map((item) => item.company));
-    expect(["2026-08-24", "2026-08-17", "2026-08-10", "2026-08-03"].map((week) =>
+    expect(["2026-08-31", "2026-08-24", "2026-08-17", "2026-08-10", "2026-08-03"].map((week) =>
       buildDomesticRanking(rows, week, currentAmountSummary.currencyNormalization, curated)[0]?.company,
-    )).toEqual(["小鹏机器人（鹏行智能）", "垣信卫星", "谦合益邦", "昉擎科技"]);
+    )).toEqual(["可灵AI", "小鹏机器人（鹏行智能）", "垣信卫星", "谦合益邦", "昉擎科技"]);
   });
 
-  it("provides an interactive dashboard route over all five public editions", () => {
+  it("provides an interactive dashboard route over all six public editions", () => {
     const dashboardSource = readFileSync("app/dashboard/dashboard-client.tsx", "utf8");
     const dashboardPageSource = readFileSync("app/dashboard/page.tsx", "utf8");
     expect(dashboardSource).toContain('"use client"');
@@ -143,36 +150,34 @@ describe("weekly preview sample", () => {
     expect(dashboardSource).toContain("榜单随周次切换");
     expect(dashboardPageSource).toContain("reports.flatMap(toRows)");
     expect(dashboardSource).toContain("allIssuesLabel");
-    expect(currentWeeklyReport.events.length + previousWeeklyReport.events.length + archivedWeeklyReport.events.length + secondArchivedWeeklyReport.events.length + firstArchivedWeeklyReport.events.length).toBe(343);
+    expect(currentWeeklyReport.events.length + previousWeeklyReport.events.length + archivedWeeklyReport.events.length + secondArchivedWeeklyReport.events.length + thirdArchivedWeeklyReport.events.length + firstArchivedWeeklyReport.events.length).toBe(407);
   });
 
   it("preserves every Ready event and primary source at the public projection boundary", () => {
-    const ready = JSON.parse(readFileSync("docs/pilot/2026-08-31-to-2026-09-06-capital-weekly-ready.json", "utf8")) as {
+    const ready = JSON.parse(readFileSync("docs/pilot/2026-09-07-to-2026-09-13-capital-weekly-ready.json", "utf8")) as {
       websiteReadyEventCount: number;
       events: Array<{company: string; sourceUrls: string[]}>;
     };
     const projection = weeklyPreviewProjectionSchema.parse(currentProjection);
     const report = createWeeklyPreviewReport(projection);
-    expect(ready.websiteReadyEventCount).toBe(58);
+    expect(ready.websiteReadyEventCount).toBe(64);
     expect(projection.events).toHaveLength(ready.events.length);
     expect(projection.events.map((event) => event.companyDisplayName)).toEqual(ready.events.map((event) => event.company));
     expect(projection.events.map((event) => event.sources.map((source) => source.url))).toEqual(ready.events.map((event) => event.sourceUrls));
     expect(report.events.every((event) => event.sources.length === 1)).toBe(true);
   });
 
-  it("applies the fifth-week region overlay one-to-one", () => {
-    const overlay = JSON.parse(readFileSync("docs/pilot/2026-08-31-to-2026-09-06-region-overlay.json", "utf8")) as {
+  it("applies the sixth-week region overlay one-to-one", () => {
+    const overlay = JSON.parse(readFileSync("docs/pilot/2026-09-07-to-2026-09-13-region-overlay.json", "utf8")) as {
       inputEventCount: number;
       regionCounts: {CHINA: number; OVERSEAS: number};
       events: Array<{company: string; regionScope: "CHINA" | "OVERSEAS"}>;
-      domesticSingleRoundTop10: Array<{company: string}>;
     };
-    expect(overlay.inputEventCount).toBe(58);
-    expect(overlay.regionCounts).toEqual({CHINA: 51, OVERSEAS: 7});
+    expect(overlay.inputEventCount).toBe(64);
+    expect(overlay.regionCounts).toEqual({CHINA: 53, OVERSEAS: 11});
     expect(currentProjection.events.map((event) => [event.companyDisplayName, event.regionScope])).toEqual(
       overlay.events.map((event) => [event.company, event.regionScope]),
     );
-    expect(currentAmountSummary.singleRoundRanking.map((item) => item.company)).toEqual(overlay.domesticSingleRoundTop10.map((item) => item.company));
   });
   it("selects all 18 P1 events in their existing public projection order", () => {
     const projectedP1Names = weeklyProjection.events
