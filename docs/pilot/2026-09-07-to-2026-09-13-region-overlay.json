@@ -1,0 +1,399 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-09-22T00:00:00Z",
+  "inputEventCount": 64,
+  "allowedRegionScopes": [
+    "CHINA",
+    "OVERSEAS"
+  ],
+  "events": [
+    {
+      "company": "赛那德 SENAD",
+      "regionScope": "CHINA",
+      "evidence": "https://www.163.com/dy/article/L67RRO0H0534A4SC.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "中科类脑",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260907-90063.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "寰宇心生 WorldMind",
+      "regionScope": "CHINA",
+      "evidence": "http://www.shangdaovc.cn/h-nr.html?g=139&p=800",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "粼动科技",
+      "regionScope": "CHINA",
+      "evidence": "https://news.pedaily.cn/202609/568592.shtml",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "云通数达",
+      "regionScope": "CHINA",
+      "evidence": "http://view.inews.qq.com/a/20260907A0A3KU00",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "Pixxel",
+      "regionScope": "OVERSEAS",
+      "evidence": "https://techstartups.com/2026/09/07/startup-funding-news-today-september-7-2026-pixxel-jet-zero-navana-ai-more/",
+      "decisionNote": "来源明确为境外注册或总部运营主体。"
+    },
+    {
+      "company": "Navana.ai",
+      "regionScope": "OVERSEAS",
+      "evidence": "https://yourstory.com/2026/09/startup-news-and-updates-daily-roundup-september-7-2026",
+      "decisionNote": "来源明确为境外注册或总部运营主体。"
+    },
+    {
+      "company": "深空矩阵",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260908-90066.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "深度智控 DeepCtrls",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260908-90068.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "麒砺创新",
+      "regionScope": "CHINA",
+      "evidence": "https://new.qq.com/rain/a/20260908A08QCM00",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "天机智能",
+      "regionScope": "CHINA",
+      "evidence": "https://news.pedaily.cn/202609/568677.shtml",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "小雨智造",
+      "regionScope": "CHINA",
+      "evidence": "https://m.bjnews.com.cn/detail/1788849790129380.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "千诀科技",
+      "regionScope": "CHINA",
+      "evidence": "https://finance.sina.com.cn/roll/2026-09-08/doc-inirayqu9192965.shtml",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "Cognition AI",
+      "regionScope": "OVERSEAS",
+      "evidence": "https://www.thecodew.com/2026/09/startup-funding-watch-news-september9-2026.html",
+      "decisionNote": "来源明确为境外注册或总部运营主体。"
+    },
+    {
+      "company": "微纳核芯",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260909-90070.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "亮亮视野 LLVision",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260909-90072.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "费莫一科技 PHYMI",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260909-90074.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "无问智科",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260909-90075.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "影目科技 INMO",
+      "regionScope": "CHINA",
+      "evidence": "https://www.jiemian.com/article/15073774.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "比特无限",
+      "regionScope": "CHINA",
+      "evidence": "https://news.pedaily.cn/202609/568727.shtml",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "斯年智驾",
+      "regionScope": "CHINA",
+      "evidence": "https://www.senior.auto/news-detail/1408.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "镭萌科技",
+      "regionScope": "CHINA",
+      "evidence": "https://finance.eastmoney.com/a/202609093869592123.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "中科太赫兹",
+      "regionScope": "CHINA",
+      "evidence": "https://www.cls.cn/detail/2478687",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "Antioch",
+      "regionScope": "OVERSEAS",
+      "evidence": "https://alleywatch.com/2026/09/the-alleywatch-startup-daily-funding-report-9-9-2026",
+      "decisionNote": "来源明确为境外注册或总部运营主体。"
+    },
+    {
+      "company": "Harvey",
+      "regionScope": "OVERSEAS",
+      "evidence": "https://www.harvey.ai/en-US/blog/harvey-raises-dollar550m-at-a-dollar155b-valuation-to-help-legal-teams-own-their-intelligence",
+      "decisionNote": "来源明确为境外注册或总部运营主体。"
+    },
+    {
+      "company": "Celero Communications",
+      "regionScope": "OVERSEAS",
+      "evidence": "https://www.tradingview.com/news/DJN_DN20260909004165:0-investors-see-lessons-in-hugging-face-s-pivot-wsj",
+      "decisionNote": "来源明确为境外注册或总部运营主体。"
+    },
+    {
+      "company": "Clay",
+      "regionScope": "OVERSEAS",
+      "evidence": "https://alleywatch.com/2026/09/the-alleywatch-startup-daily-funding-report-9-9-2026",
+      "decisionNote": "来源明确为境外注册或总部运营主体。"
+    },
+    {
+      "company": "华拟智能",
+      "regionScope": "CHINA",
+      "evidence": "https://news.pedaily.cn/202609/568784.shtml",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "大鱼智行 DYU",
+      "regionScope": "CHINA",
+      "evidence": "https://www.163.com/dy/article/L6F6GNAA0534A4SC.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "南芥智能 SinapisAI",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260910-90079.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "航景创新",
+      "regionScope": "CHINA",
+      "evidence": "https://news.10jqka.com.cn/field/20260910/679790611.shtml",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "The Boring Company",
+      "regionScope": "OVERSEAS",
+      "evidence": "https://36kr.com/newsflashes/3977489660195330",
+      "decisionNote": "来源明确为境外注册或总部运营主体。"
+    },
+    {
+      "company": "Metacognition AI",
+      "regionScope": "OVERSEAS",
+      "evidence": "https://techstartups.com/2026/09/10/startup-funding-news-today-september-10-2026-metacognition-ai-dyu-sinapisai-wyre-ai-more/",
+      "decisionNote": "来源明确为境外注册或总部运营主体。"
+    },
+    {
+      "company": "Motive",
+      "regionScope": "OVERSEAS",
+      "evidence": "https://www.bdtonline.com/region/motive-secures-more-than-1-3-billion-in-growth-financing-from-general-catalyst/article_c9c00fef-5996-505e-a201-d4ba2c85fa64.html",
+      "decisionNote": "来源明确为境外注册或总部运营主体。"
+    },
+    {
+      "company": "IPTAG",
+      "regionScope": "CHINA",
+      "evidence": "https://www.bjnews.com.cn/detail/1789112835129093.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "超维动力 Kinetix AI",
+      "regionScope": "CHINA",
+      "evidence": "https://36kr.com/newsflashes/3978413691157512",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "航链科技",
+      "regionScope": "CHINA",
+      "evidence": "https://news.pedaily.cn/202609/568875.shtml",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "悦点科技",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260911-90082.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "烨知心 Yeats.AI",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260911-90086.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "西湖机器人",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinastarmarket.cn/detail/2480793",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "AIDIN Robotics",
+      "regionScope": "OVERSEAS",
+      "evidence": "https://www.aidinrobotics.co.kr/post/%EC%97%90%EC%9D%B4%EB%94%98%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4-hd%ED%98%84%EB%8C%80%EB%A1%9C%EB%B3%B4%ED%8B%B1%EC%8A%A4-%EC%82%BC%EC%84%B1%EB%B2%A4%EC%B2%98%ED%88%AC%EC%9E%90%EC%84%9C-160%EC%96%B5-%ED%88%AC%EC%9E%90-%EC%9C%A0%EC%B9%98-%EB%A1%9C%EB%B4%87%ED%95%B8%EB%93%9C-%EA%B3%B5%EB%8F%99%EA%B0%9C%EB%B0%9C",
+      "decisionNote": "来源明确为境外注册或总部运营主体。"
+    },
+    {
+      "company": "莎士比亚 SHAKESPEARE",
+      "regionScope": "CHINA",
+      "evidence": "https://36kr.com/p/3977590035119112",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "斜跃智能",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinastarmarket.cn/detail/2481364",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "元始智能科技（南通）",
+      "regionScope": "CHINA",
+      "evidence": "https://36kr.com/p/3981147673345033",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "矩量光启",
+      "regionScope": "CHINA",
+      "evidence": "https://www.prnasia.com/story/546759-1.shtml",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "光啾科技",
+      "regionScope": "CHINA",
+      "evidence": "https://www.163.com/dy/article/L67JAVGP05198R3E.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "阿法龙",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/news/114-20260909-393167.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "博格科技",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260907-90061.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "芯升半导体",
+      "regionScope": "CHINA",
+      "evidence": "http://view.inews.qq.com/a/20260908A00GWY00",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "曦融兆波",
+      "regionScope": "CHINA",
+      "evidence": "https://news.qq.com/rain/a/20260907A0D3LU00",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "佳量脑科学",
+      "regionScope": "CHINA",
+      "evidence": "https://www.cls.cn/detail/2476379",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "旌晟超导",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260908-90067.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "莱檬生物",
+      "regionScope": "CHINA",
+      "evidence": "https://www.sohu.com/a/1073306972_121400326",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "卓誉科技",
+      "regionScope": "CHINA",
+      "evidence": "https://new.qq.com/rain/a/20260908A08QCM00",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "微光基因",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260909-90071.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "纵苇科技",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260909-90076.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "茵诺医药",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260910-90080.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "智星空间",
+      "regionScope": "CHINA",
+      "evidence": "https://www.taibo.cn/newsflashes/31878429",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "镭昱半导体",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/news/114-20260910-393201.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "九章智电",
+      "regionScope": "CHINA",
+      "evidence": "https://www.chinaventure.com.cn/flash/20260910-90078.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "维刻量光",
+      "regionScope": "CHINA",
+      "evidence": "https://36kr.com/p/3978313800285187",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "上海星翼芯能",
+      "regionScope": "CHINA",
+      "evidence": "https://news.pedaily.cn/202609/568876.shtml",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "传周科技",
+      "regionScope": "CHINA",
+      "evidence": "https://www.163.com/dy/article/L6ISEVBT0550B1DU.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    },
+    {
+      "company": "派铂宇航",
+      "regionScope": "CHINA",
+      "evidence": "https://www.stcn.com/article/detail/4183074.html",
+      "decisionNote": "来源明确为中国境内注册、总部或主要运营主体。"
+    }
+  ],
+  "regionCounts": {
+    "CHINA": 53,
+    "OVERSEAS": 11
+  }
+}

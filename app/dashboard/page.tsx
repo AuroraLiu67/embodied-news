@@ -1,8 +1,8 @@
 import {DashboardClient, type DashboardRow} from "./dashboard-client";
 import {loadPublicConfig} from "@/lib/config/public";
-import {archivedWeeklyReport, currentAmountSummary, currentWeeklyReport, firstArchivedWeeklyReport, formatPrimaryInvestors, previousWeeklyReport, secondArchivedWeeklyReport, type WeeklyPreviewReport} from "@/lib/site/weekly-preview";
+import {archivedWeeklyReport, currentAmountSummary, currentWeeklyReport, firstArchivedWeeklyReport, formatPrimaryInvestors, previousAmountSummary, previousWeeklyReport, secondArchivedWeeklyReport, thirdArchivedWeeklyReport, type WeeklyPreviewReport} from "@/lib/site/weekly-preview";
 
-const reports = [currentWeeklyReport, previousWeeklyReport, archivedWeeklyReport, secondArchivedWeeklyReport, firstArchivedWeeklyReport];
+const reports = [currentWeeklyReport, previousWeeklyReport, archivedWeeklyReport, secondArchivedWeeklyReport, thirdArchivedWeeklyReport, firstArchivedWeeklyReport];
 
 function toRows(report: WeeklyPreviewReport): DashboardRow[] {
   const weekLabel = `${report.weekStart.slice(5).replace("-", ".")}—${report.weekEnd.slice(5).replace("-", ".")}`;
@@ -25,5 +25,5 @@ function toRows(report: WeeklyPreviewReport): DashboardRow[] {
 
 export default function DashboardPage() {
   const {siteBasePath} = loadPublicConfig();
-  return <DashboardClient rows={reports.flatMap(toRows)} amountSummary={currentAmountSummary} basePath={siteBasePath} />;
+  return <DashboardClient rows={reports.flatMap(toRows)} amountSummaries={[currentAmountSummary, previousAmountSummary]} basePath={siteBasePath} />;
 }

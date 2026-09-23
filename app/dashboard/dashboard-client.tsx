@@ -56,11 +56,12 @@ export function buildDomesticRanking(
   rows: DashboardRow[],
   week: string,
   rates: AmountSummary["currencyNormalization"],
-  curated?: Pick<AmountSummary, "weekStart" | "singleRoundRanking">,
+  curated?: Pick<AmountSummary, "weekStart" | "singleRoundRanking"> | ReadonlyArray<Pick<AmountSummary, "weekStart" | "singleRoundRanking">>,
 ): RankingItem[] {
+  const curatedList = !curated ? [] : "weekStart" in curated ? [curated] : curated;
   const excludedEventPattern = /累计|合计|连续.*轮|两轮|三轮|债务|债权|基金|并购|收购|未交割|IPO|上市|发行价|市值|定增|配套募资|拟募资|拟融资|拟增资|融资意向|寻求融资|进行中/i;
   const calculated = rows
-    .filter((row) => !(curated && week === "ALL" && row.weekStart === curated.weekStart))
+    .filter((row) => !curatedList.some((summary) => row.weekStart === summary.weekStart && (week === "ALL" || week === summary.weekStart)))
     .filter((row) => row.region === "CHINA" && (week === "ALL" || row.weekStart === week))
     .filter((row) => !excludedEventPattern.test(`${row.round ?? ""} ${row.amount ?? ""} ${row.financingStatus}`))
     .flatMap((row) => {
@@ -75,15 +76,15 @@ export function buildDomesticRanking(
       return [{...row, cnyAmount, normalizedAmount: normalizedLabel(cnyAmount, primaryAmount)}];
     })
     .sort((left, right) => right.cnyAmount - left.cnyAmount || left.id.localeCompare(right.id, "zh-CN"));
-  const curatedRows = curated && (week === "ALL" || week === curated.weekStart)
-    ? curated.singleRoundRanking.map((item) => {
-      const row = rows.find((candidate) => candidate.weekStart === curated.weekStart && candidate.company === item.company);
+  const curatedRows = curatedList
+    .filter((summary) => week === "ALL" || week === summary.weekStart)
+    .flatMap((summary) => summary.singleRoundRanking.map((item) => {
+      const row = rows.find((candidate) => candidate.weekStart === summary.weekStart && candidate.company === item.company);
       const cnyAmount = amountMagnitude(item.normalizedAmount);
       if (!row || row.region !== "CHINA" || !cnyAmount) throw new Error(`国内单轮融资榜无法匹配公开事件: ${item.company}`);
       return {...row, cnyAmount, normalizedAmount: item.normalizedAmount};
-    })
-    : [];
-  if (curated && week === curated.weekStart) return curatedRows;
+    }));
+  if (curatedList.some((summary) => week === summary.weekStart)) return curatedRows;
   const seenCompanies = new Set<string>();
   return [...calculated, ...curatedRows]
     .sort((left, right) => right.cnyAmount - left.cnyAmount || left.id.localeCompare(right.id, "zh-CN"))
@@ -95,7 +96,9 @@ export function buildDomesticRanking(
     .slice(0, 10);
 }
 
-export function DashboardClient({rows, amountSummary, basePath}: {rows: DashboardRow[]; amountSummary: AmountSummary; basePath: string}) {
+export function DashboardClient({rows, amountSummaries, basePath}: {rows: DashboardRow[]; amountSummaries: AmountSummary[]; basePath: string}) {
+  const amountSummary = amountSummaries[0];
+  if (!amountSummary) throw new Error("融资数据面板缺少当前周金额摘要");
   const [week, setWeek] = useState("ALL");
   const [tier, setTier] = useState("ALL");
   const [region, setRegion] = useState("ALL");
@@ -110,7 +113,7 @@ export function DashboardClient({rows, amountSummary, basePath}: {rows: Dashboar
   const tierCounts = tierOrder.map((item) => ({tier: item, count: filtered.filter((row) => row.tier === item).length}));
   const maxTierCount = Math.max(1, ...tierCounts.map((item) => item.count));
   const disclosed = filtered.filter((row) => row.amount).length;
-  const ranking = useMemo(() => buildDomesticRanking(rows, week, amountSummary.currencyNormalization, amountSummary), [amountSummary, rows, week]);
+  const ranking = useMemo(() => buildDomesticRanking(rows, week, amountSummary.currencyNormalization, amountSummaries), [amountSummaries, amountSummary.currencyNormalization, rows, week]);
   const rankingMaximum = Math.max(1, ...ranking.map((item) => item.cnyAmount));
   const allIssuesLabel = `全部${weeks.length}期`;
   const rankingLabel = week === "ALL" ? allIssuesLabel : weeks.find(([value]) => value === week)?.[1] ?? week;

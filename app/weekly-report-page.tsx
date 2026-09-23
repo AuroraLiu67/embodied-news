@@ -52,7 +52,8 @@ function P3Table({events}: {events: readonly WeeklyPreviewSampleEvent[]}) {
 function displayWeek(start: string, end: string) { return `${start.replaceAll("-", ".")}–${end.slice(5).replace("-", ".")}`; }
 
 const weekOptions = [
-  {weekStart: "2026-08-31", href: "/", label: "本周 · 08.31—09.06"},
+  {weekStart: "2026-09-07", href: "/", label: "本周 · 09.07—09.13"},
+  {weekStart: "2026-08-31", href: "/archive/2026-08-31-to-2026-09-06", label: "往期 · 08.31—09.06"},
   {weekStart: "2026-08-24", href: "/archive/2026-08-24-to-2026-08-30", label: "往期 · 08.24—08.30"},
   {weekStart: "2026-08-17", href: "/archive/2026-08-17-to-2026-08-23", label: "往期 · 08.17—08.23"},
   {weekStart: "2026-08-10", href: "/archive/2026-08-10-to-2026-08-16", label: "往期 · 08.10—08.16"},
@@ -64,7 +65,7 @@ const staticWeekHref = (href: string) => `${siteBasePath}${href}`;
 
 export function WeeklyReportPage({report}: {report: WeeklyPreviewReport}) {
   const {counts, events, p1Events, p2Events, p3Events, highlight} = report;
-  const isArchive = report.weekStart !== "2026-08-31";
+  const isArchive = report.weekStart !== "2026-09-07";
   const headlineAmount = currentAmountSummary.singleRoundRanking[0]!;
   const displayHighlight = isArchive ? highlight : {
     company: headlineAmount.company,
